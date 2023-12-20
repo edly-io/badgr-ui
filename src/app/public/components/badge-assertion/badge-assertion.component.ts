@@ -71,9 +71,9 @@ export class PublicBadgeAssertionComponent {
 	levelOptions: { [key in BadgeClassLevel]: string } = {
 		a1: 'A1 beginner',
 		a2: 'A2 explorer',
-		b1: 'B1 Insider*in',
+		b1: 'B1 Insider',
 		b2: 'B2 Expert',
-		c1: 'C1 Leader*in',
+		c1: 'C1 Leader',
 		c2: 'C2 pioneer',
 	};
 
