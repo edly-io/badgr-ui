@@ -8,7 +8,7 @@ import { BadgrEnvironment } from './badgr-environment';
 export const environment: BadgrEnvironment = {
 	production: false,
 	config: {
-		theme: {
+				theme: {
 			welcomeMessage: 'Welcome to MINT-O-Badges',
 			serviceName: 'MINT-O-Badges',
 			showPoweredByBadgr: true,
