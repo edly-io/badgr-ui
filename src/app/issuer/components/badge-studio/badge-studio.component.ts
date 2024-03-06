@@ -185,6 +185,10 @@ export class BadgeStudioComponent implements OnInit, OnChanges {
 			})
 		);
 	}
+	generateDummyImage(uploadedImage, formdata): Promise<string> {
+		return this.fontPromise.then(()=>uploadedImage);
+	}
+
 	generateUploadImage(uploadedImage, formdata): Promise<string> {
 		return this.fontPromise.then(
 			() => new Promise<string>((resolve, reject) => {
