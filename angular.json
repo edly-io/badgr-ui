@@ -9,7 +9,9 @@
 			"projectType": "application",
 			"i18n": {
 				"sourceLocale": "en-US",
-				"locales": {}
+				"locales": {
+					"ar-SA" : "src/locale/message.ar.xlf"
+				}
 			},
 			"architect": {
 				"build": {
@@ -21,7 +23,7 @@
 						"tsConfig": "src/tsconfig.app.json",
 						"polyfills": "src/polyfills.ts",
 						"localize": [
-							"en-US"
+							"en-US", "ar-SA"
 						],
 						"assets": [
 							"src/assets",
@@ -56,7 +58,7 @@
 						"namedChunks": true
 					},
 					"configurations": {
-						"production": {
+												"production": {
 							"budgets": [
 								{
 									"type": "anyComponentStyle",
@@ -94,7 +96,7 @@
 						"buildTarget": "badgr-ui-cli:build"
 					},
 					"configurations": {
-						"production": {
+												"production": {
 							"buildTarget": "badgr-ui-cli:build:production"
 						},
 						"development": {
@@ -105,7 +107,9 @@
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
 					"options": {
-						"buildTarget": "badgr-ui-cli:build"
+						"buildTarget": "badgr-ui-cli:build",
+						"format": "xlf",
+    					"outputPath": "src/locale"
 					}
 				},
 				"test": {
