@@ -10,7 +10,7 @@
 			"i18n": {
 				"sourceLocale": "en-US",
 				"locales": {
-					"ar-SA" : "src/locale/message.ar.xlf"
+					"ar" : "src/locale/message.ar.xlf"
 				}
 			},
 			"architect": {
@@ -23,7 +23,7 @@
 						"tsConfig": "src/tsconfig.app.json",
 						"polyfills": "src/polyfills.ts",
 						"localize": [
-							"en-US", "ar-SA"
+							"en-US", "ar"
 						],
 						"assets": [
 							"src/assets",
