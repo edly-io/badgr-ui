@@ -8,9 +8,10 @@
 			"sourceRoot": "src",
 			"projectType": "application",
 			"i18n": {
-				"sourceLocale": "en-US",
+				"sourceLocale": "en",
 				"locales": {
-					"ar-SA" : "src/locale/message.ar.xlf"
+					"ar" : "src/locale/message.ar.xlf",
+					"en" : "src/locale/message.en.xlf"
 				}
 			},
 			"architect": {
@@ -23,7 +24,7 @@
 						"tsConfig": "src/tsconfig.app.json",
 						"polyfills": "src/polyfills.ts",
 						"localize": [
-							"en-US", "ar-SA"
+							"en", "ar"
 						],
 						"assets": [
 							"src/assets",
