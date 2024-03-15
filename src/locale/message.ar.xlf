@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en-US" datatype="plaintext" original="ng2.template" target-language="ar-SA">
+  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="ar">
     <body>
       <trans-unit id="8a82884c48193bd6e6015b81cc1a8e9404835f48" datatype="html">
         <source> Badges </source>
