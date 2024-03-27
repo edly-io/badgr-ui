@@ -1,3 +1,7 @@
+body {
+	font-family: var(--IBM-font-family) !important;
+}
+
 .badgecard-x-issuer:hover {
 	text-decoration: underline;
 }
@@ -13,10 +17,21 @@
 	z-index: 100;
 }
 
+.fixed-imagefield:dir(rtl) {
+	left: unset;
+
+	right: 5px;
+}
 .fixed-imagefield .forminput-x-label {
 	display: none;
 }
 
+label.forminput-x-label,
+.forminput .forminput-x-inputs select,
+.forminput .forminput-x-sublabel {
+	color: var(--primary-color) !important;
+	font-family: var(--IBM-font-family) !important;
+}
 .maplibregl-popup-close-button {
 	right: 5px !important;
 }

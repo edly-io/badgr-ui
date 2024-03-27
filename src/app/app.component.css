@@ -64,7 +64,9 @@
 	margin-right: 0;
 	margin-left: 0;
 }
-
+.menuitem:hover {
+	color: var(--burnt-sienna);
+}
 /* footer stylke */
 
 .newFooter {

@@ -15,15 +15,15 @@
 	border-radius: 0 0 16px 16px;
 	display: flex;
 	flex-direction: column;
-	gap: 32px;
-	padding: 50px 35px 30px;
-	padding-left: 350px;
+	gap: 16px;
+	padding: 40px 35px 16px;
+	padding-left: 325px;
 	max-width: 1600px;
 	width: 100%;
 	margin: 0 auto;
 }
 .newBadgeDetail-header:dir(rtl) {
-	padding-right: 350px;
+	padding-right: 325px;
 	padding-left: unset;
 }
 
@@ -105,10 +105,6 @@
 	font-weight: 500;
 }
 
-
-.newBadgeDetail-link:hover {
-	color: var(--burnt-sienna);
-}
 .newBadgeDetail-imgWrapper.mobileView img {
 	width: 100px;
 }

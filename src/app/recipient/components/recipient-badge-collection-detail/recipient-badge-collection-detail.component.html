@@ -1,156 +1,168 @@
 <form-message></form-message>
 
-<header class="topbar">
-	<div class="l-containerxaxis">
+<header class="newBadgeTopBar justify-content-between">
+	<!-- <div class="l-containerxaxis">
 		<div class="topbar-x-breadcrumbs">
 			<bg-breadcrumbs [linkentries]="crumbs"> </bg-breadcrumbs>
 		</div>
-	</div>
-	<div class="l-containerxaxis">
-		<div class="topbar-x-wrap" *bgAwaitPromises="[collectionLoadedPromise]">
-			<ng-container *ngIf="!editForm.isEditing">
-				<div class="topbar-x-heading">{{ collection?.name }}</div>
-				<div class="topbar-x-subheading">
+	</div> -->
+	<div class="topbar-x-wrap w-100 d-flex justify-content-between gap-3" *bgAwaitPromises="[collectionLoadedPromise]">
+		<ng-container *ngIf="!editForm.isEditing">
+			<div class="w-100">
+				<div class="topbar-x-heading py-0">{{ collection?.name }}</div>
+				<div class="topbar-x-subheading pt-3">
 					<p class="u-text" [truncatedText]="collection?.description" [maxLength]="100"></p>
 
 					<div class="switch u-margin-top2x">
 						<fieldset class="switch-x-container">
 							<div class="switch-x-inputcontainer">
-								<label class="switch-x-label">
+								<label class="switch-x-label gap-2">
 									<input
 										class="switch-x-toggletrack"
 										type="checkbox"
 										[(ngModel)]="collectionPublished"
 									/>
-									<span class="switch-x-labeltext" i18n>Public</span>
+									<span class="switch-x-labeltext m-0" i18n>Public</span>
 									<div class="switch-x-toggle"></div>
 								</label>
 							</div>
 						</fieldset>
 					</div>
 				</div>
-				<div class="topbar-x-checkboxbuttonform">
-					<div class="l-primarymore">
+			</div>
+			<div class="topbar-x-checkboxbuttonform">
+				<div class="l-primarymore">
+					<button
+						class="primary-button"
+						[class.button-is-disabled]="!collection?.published"
+						[disabled]="!collection?.published"
+						(click)="shareCollection()"
+						i18n
+					>
+						Share collection
+					</button>
+					<button
+						class="buttonicon new-button-secondary"
+						style=""
+						[bgPopupMenuTrigger]="collectionActionMenu"
+					>
+						<svg icon="icon_more"></svg>
+						<span class="visuallyhidden" i18n>more</span>
+					</button>
+					<bg-popup-menu #collectionActionMenu>
 						<button
-							class="button"
-							[class.button-is-disabled]="!collection?.published"
-							[disabled]="!collection?.published"
-							(click)="shareCollection()"
+							class="menuitem"
+							routerLinkActive="menuitem-is-active"
+							(click)="editForm.startEditing()"
 							i18n
 						>
-							Share collection
+							<svg icon="icon_edit"></svg>
+							Edit
 						</button>
-						<button class="buttonicon buttonicon-secondary" [bgPopupMenuTrigger]="collectionActionMenu">
-							<svg icon="icon_more"></svg>
-							<span class="visuallyhidden" i18n>more</span>
-						</button>
-						<bg-popup-menu #collectionActionMenu>
-							<button
-								class="menuitem"
-								routerLinkActive="menuitem-is-active"
-								(click)="editForm.startEditing()"
-								i18n
-							>
-								<svg icon="icon_edit"></svg>
-									Edit
-							</button>
-							<!-- <button
+						<!-- <button
 								class="menuitem"
 								(click)="exportPdf()"
 								loading-message="Loading badge..."
 								[disabled-when-requesting]="true"
 								><svg icon="icon_file"></svg>Export to PDF</button> -->
-							<button class="menuitem" routerLinkActive="menuitem-is-active" (click)="deleteCollection()" i18n>
-								<svg icon="icon_remove"></svg>
-								Delete
-							</button>
-						</bg-popup-menu>
-					</div>
+						<button
+							class="menuitem"
+							routerLinkActive="menuitem-is-active"
+							(click)="deleteCollection()"
+							i18n
+						>
+							<svg icon="icon_remove"></svg>
+							Delete
+						</button>
+					</bg-popup-menu>
 				</div>
-			</ng-container>
-
-			<recipient-badge-collection-edit-form
-				[badgeCollection]="collection"
-				#editForm
-			></recipient-badge-collection-edit-form>
-		</div>
+			</div>
+		</ng-container>
+		<recipient-badge-collection-edit-form
+			style="width: 100%"
+			[badgeCollection]="collection"
+			#editForm
+		></recipient-badge-collection-edit-form>
 	</div>
 </header>
 
-<section class="l-containerxaxis l-containeryaxis" *bgAwaitPromises="[collectionLoadedPromise]">
+<section *bgAwaitPromises="[collectionLoadedPromise]" class="newContainer">
 	<!-- Empty State for badges -->
 	<ng-container *ngIf="collection?.badgeEntries.length === 0">
 		<div class="emptysection l-emptysection">
+			<div class="emptysection-x-imagecontainer">
+				<img alt="Illustration" class="emptysection-x-image" [src]="noCollectionsImageUrl" />
+			</div>
 			<h2 class="emptysection-x-headline" i18n>Your collection is empty</h2>
 			<p class="emptysection-x-copy" i18n>It's still pretty empty here. Add some badges!</p>
 			<div class="emptysection-x-buttons">
-				<button class="button button-secondary" type="button" (click)="manageBadges()" i18n>Add badge</button>
-			</div>
-			<div class="emptysection-x-imagecontainer">
-				<img alt="Illustration" class="emptysection-x-image" [src]="noCollectionsImageUrl" />
+				<button class="new-button-secondary" type="button" (click)="manageBadges()" i18n>Add badge</button>
 			</div>
 		</div>
 	</ng-container>
 
 	<!-- List of Badges in Collection -->
 	<ng-container *ngIf="collection?.badgeEntries.length > 0">
-		<div class="l-stack u-margin-bottom2x">
-			<h2 class="u-text-h3-semibold u-text-dark2">{{ badgesInCollectionCount }}</h2>
-			<button class="button button-secondary" type="button" (click)="manageBadges()" i18n>Add badges</button>
+		<div class="l-stack my-3">
+			<h2 class="u-text-h3-semibold u-text-dark2 font-family-plex-blue">{{ badgesInCollectionCount }}</h2>
+			<button class="new-button-secondary" type="button" (click)="manageBadges()" i18n>Add badges</button>
 		</div>
-
-		<table class="datatable datatable-roundheaders datatable-verticalalignmiddle datatable-onlyfirstcolumn">
-			<thead class="datatable-x-head">
-				<tr class="datatable-x-header">
-					<th class="datatable-x-cell" scope="col" i18n>Badge</th>
-					<th class="datatable-x-cell" scope="col" i18n>Institution</th>
-					<th class="datatable-x-cell" scope="col" i18n>Awarded on</th>
-					<th class="datatable-x-cell" scope="col" i18n><span class="visuallyhidden">Actions</span></th>
-				</tr>
-			</thead>
-			<tbody class="datatable-x-body">
-				<tr class="datatable-x-row" *ngFor="let entry of collection?.badgeEntries">
-					<th class="datatable-x-cell">
-						<a
-							[routerLink]="['/recipient/earned-badge', entry.badge.slug]"
-							class="l-flex l-flex-1x l-flex-aligncenter"
-						>
-							<img
-								[loaded-src]="entry.badge.image"
-								[loading-src]="badgeLoadingImageUrl"
-								[error-src]="badgeFailedImageUrl"
-								[ngStyle]="entry.badge.isExpired && { filter: 'grayscale(1)' }"
-								width="40"
-								height="40"
-							/>
-							<p class="u-text-link u-text-breakword">{{ entry.badge.badgeClass.name }}</p>
-							<span
-								*ngIf="entry.badge.mostRelevantStatus"
-								class="u-margin-right1x badgestatus badgestatus-{{ entry.badge.mostRelevantStatus }}"
+		<div class="issuerMainWrapper pt-0">
+			<table class="datatable datatable-roundheaders datatable-verticalalignmiddle datatable-onlyfirstcolumn">
+				<thead class="datatable-x-head">
+					<tr class="datatable-x-header">
+						<th class="datatable-x-cell" scope="col" i18n>Badge</th>
+						<th class="datatable-x-cell" scope="col" i18n>Institution</th>
+						<th class="datatable-x-cell" scope="col" i18n>Awarded on</th>
+						<th class="datatable-x-cell" scope="col" i18n><span class="visuallyhidden">Actions</span></th>
+					</tr>
+				</thead>
+				<tbody class="datatable-x-body">
+					<tr class="datatable-x-row" *ngFor="let entry of collection?.badgeEntries">
+						<th class="datatable-x-cell">
+							<a
+								[routerLink]="['/recipient/earned-badge', entry.badge.slug]"
+								class="l-flex l-flex-1x l-flex-aligncenter"
 							>
-								{{ entry.badge.mostRelevantStatus }}
-							</span>
-						</a>
-						<div class="u-hidden-minmobilelarge u-margin-top1x">
-							<a class="u-text-link-small" (click)="removeEntry(entry)" i18n>Remove</a>
-						</div>
-					</th>
-					<td class="datatable-x-cell">{{ entry.badge.badgeClass.issuer.name }}</td>
-					<td class="datatable-x-cell"><time [date]="entry.badge.issueDate" format="longDate"></time></td>
-					<td class="datatable-x-cell">
-						<button
-							class="u-text-link-small u-margin-leftauto"
-							type="button"
-							(click)="removeEntry(entry)"
-							[disabled-when-requesting]="true"
-							i18n
-						>
-							Remove
-						</button>
-					</td>
-				</tr>
-			</tbody>
-		</table>
+								<img
+									[loaded-src]="entry.badge.image"
+									[loading-src]="badgeLoadingImageUrl"
+									[error-src]="badgeFailedImageUrl"
+									[ngStyle]="entry.badge.isExpired && { filter: 'grayscale(1)' }"
+									width="40"
+									height="40"
+								/>
+								<p class="u-text-link u-text-breakword">{{ entry.badge.badgeClass.name }}</p>
+								<span
+									*ngIf="entry.badge.mostRelevantStatus"
+									class="u-margin-right1x badgestatus badgestatus-{{
+										entry.badge.mostRelevantStatus
+									}}"
+								>
+									{{ entry.badge.mostRelevantStatus }}
+								</span>
+							</a>
+							<div class="u-hidden-minmobilelarge u-margin-top1x">
+								<a class="u-text-link-small" (click)="removeEntry(entry)" i18n>Remove</a>
+							</div>
+						</th>
+						<td class="datatable-x-cell">{{ entry.badge.badgeClass.issuer.name }}</td>
+						<td class="datatable-x-cell"><time [date]="entry.badge.issueDate" format="longDate"></time></td>
+						<td class="datatable-x-cell">
+							<button
+								class="u-text-link-small u-margin-leftauto"
+								type="button"
+								(click)="removeEntry(entry)"
+								[disabled-when-requesting]="true"
+								i18n
+							>
+								Remove
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</ng-container>
 </section>
 

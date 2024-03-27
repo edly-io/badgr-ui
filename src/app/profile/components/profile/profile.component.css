@@ -1,0 +1,8 @@
+.groupInput .forminput-x-inputs input:dir(rtl) {
+	border-top-right-radius: unset;
+	border-bottom-right-radius: unset;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-right-color: transparent;
+	border-left-color: var(--color-light1) !important;
+}

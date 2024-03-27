@@ -4,13 +4,6 @@
 	width: 100%;
 	padding: 1rem 10px;
 }
-.newBadgeTopBar .topbar-x-heading {
-	font-size: 32px;
-	font-weight: 600;
-	font-family: var(--IBM-font-family);
-	color: var(--primary-color);
-	padding: 15px 0;
-}
 
 .newFaqsAccordion {
 	display: flex;
@@ -43,6 +36,7 @@
 	padding: 0;
 	background-color: transparent;
 	box-shadow: none;
+	font-size: 20px;
 }
 .newFaqsAccordion .accordion-body {
 	font-family: var(--IBM-font-family);
@@ -53,6 +47,7 @@
 .newFaqsAccordion .accordion-button::after {
 	background-image: url(../../../../breakdown/static/images/chevron.svg);
 	margin-top: 10px;
+	margin-right: 8px;
 }
 .newFaqsAccordion .accordion-button:dir(rtl)::after {
 	margin-left: unset;

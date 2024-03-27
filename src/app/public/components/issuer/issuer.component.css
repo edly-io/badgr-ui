@@ -30,6 +30,7 @@
 	font-weight: 600;
 	font-family: var(--IBM-font-family);
 	color: var(--primary-color);
+	line-height: 30px;
 }
 
 .issuer-desc {
@@ -46,20 +47,6 @@
 	gap: 20px;
 	margin-bottom: 35px;
 	justify-content: space-between;
-}
-
-#issuer-detail-header .l-primarymore button,
-#issuer-detail-header .l-primarymore .button {
-	background-color: var(--primary-color);
-	font-family: var(--IBM-font-family);
-	border-radius: 12px;
-	border: 0;
-	padding: 15px 20px;
-	font-size: 24px;
-	font-weight: bold;
-}
-#issuer-detail-header .l-primarymore button svg {
-	fill: white;
 }
 
 .issuerDetail-footer {
@@ -147,3 +134,22 @@ h3.issuerDetail-total-badge {
 		margin-left: calc(50% - 770px);
 	}
 } */
+
+.issuer-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+
+.issuer-wrapper-award {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.issuer-detail-block .u-text {
+	font-size: 14px;
+	font-family: var(--IBM-font-family);
+	color: var(--secondary-color);
+}

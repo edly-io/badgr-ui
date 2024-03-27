@@ -1,206 +1,183 @@
 <form-message></form-message>
 <ng-template sourceListener></ng-template>
 <main *bgAwaitPromises="[profileLoaded, emailsLoaded]">
-	<div class="topbar">
-		<div class="l-containerxaxis">
-			<div class="topbar-x-heading l-spacestack">
-				{{ profile?.firstName }} {{ profile?.lastName}}
-				<div class="l-primarymore">
-					<button [routerLink]="['/profile/edit']"
-						class="button"
-						i18n
-					>
-						Edit
-					</button>
-				</div>
+	<div class="newBadgeTopBar">
+		<div class="topbar-x-heading l-spacestack py-0">
+			{{ profile?.firstName }} {{ profile?.lastName }}
+			<div class="l-primarymore">
+				<button [routerLink]="['/profile/edit']" class="primary-button" i18n>Edit</button>
 			</div>
 		</div>
 	</div>
 
-	<div class="l-containerxaxis l-containeryaxis">
+	<div class="newContainer">
 		<div class="l-stack u-margin-yaxis3x">
-			<p class="u-text-h3-bold u-text-dark2" i18n>
-				Emails
-			</p>
-			<form class="table-x-tr table-x-active"
-			      [formGroup]="emailForm.rawControl"
-			      (ngSubmit)="submitEmailForm()"
-			>
-				<div class="forminput forminput-withbutton forminput-light1 u-width-formsmall">
-
-					<bg-formfield-text [control]="emailForm.rawControlMap.email"
-					                   errorMessage="Please enter a valid email address"
-					                   fieldType="email"
-					                   placeholder="Email Address"
-					                   inlineButtonText="Add"
-					>
-					</bg-formfield-text>
-
-				</div>
-			</form>
-		</div>
-
-		<table class="datatable datatable-roundheaders datatable-tallrows">
-			<thead class="datatable-x-head">
-			<tr class="datatable-x-header">
-				<th class="datatable-x-cell"
-				    style="width:80%;"
-					i18n
-				>Email Address
-				</th>
-				<th class="datatable-x-cell" i18n>Status</th>
-				<th class="datatable-x-cell"><span class="visuallyhidden" i18n>Actions</span></th>
-			</tr>
-			</thead>
-			<tbody class="datatable-x-body">
-
-			<tr class="datatable-x-row"
-			    *ngFor="let email of emails"
-			>
-				<td class="datatable-x-cell">
-					<div class="l-stack l-stack-start">
-						<p class="u-text-body u-break-word">
-							{{email.email}}
-						</p>
-						<div *ngIf="email.primary"
-						     class="badgestatus badgestatus-new badgestatus-intable"
-							 i18n
-						>primary
-						</div>
-					</div>
-				</td>
-				<td class="datatable-x-cell u-text-body">
-					<div class="l-flex l-flex-aligncenter l-flex-1x">
-						<div *ngIf="email.verified"
-						     class="l-flex l-flex-aligncenter l-flex-1x"
-						>
-							<svg icon="icon_checkmark_circle"
-							     class="icon icon-success"
-							     viewBox="0 0 24 24"
-							></svg>
-							<p class="u-text-body u-hidden-maxtablet" i18n>
-								Verified
-							</p>
-						</div>
-						<div *ngIf="!email.verified"
-						     class="l-flex l-flex-aligncenter l-flex-1x"
-						>
-							<svg icon="icon_pending"
-							     class="icon icon-dark4"
-							     viewBox="0 0 24 24"
-							></svg>
-							<p class="u-text-body u-hidden-maxtablet" i18n>
-								Pending
-							</p>
-						</div>
-					</div>
-				</td>
-				<td class="datatable-x-cell">
-
-					<button *ngIf="!email.verified || (email.verified && !email.primary) || (emails.length > 1 && ! email.primary)"
-					        [bgPopupMenuTrigger]="emailMenu"
-					        class="buttonicon buttonicon-link"
-					>
-						<svg icon="icon_more"></svg>
-						<span class="visuallyhidden" i18n>More</span>
-					</button>
-
-					<bg-popup-menu #emailMenu
-					               class="menu"
-					               id="menu1"
-					>
-
-						<div *ngIf="!email.verified"
-						     class="menuitem"
-						     (click)="clickResendVerification($event, email)" i18n
-						>
-							<svg icon="icon_refresh"></svg>
-							Resend Verification
-						</div>
-
-						<div *ngIf="email.verified && !email.primary"
-						     class="menuitem"
-						     (click)="clickMakePrimary($event, email)" i18n
-						>
-							<svg icon="icon_refresh"></svg>
-							Make primary
-						</div>
-
-						<div class="menuitem"
-						     [class.button-is-disabled]="email.primary"
-						     (click)="clickConfirmRemove($event, email)"
-						     *ngIf="emails.length > 1 && ! email.primary" i18n
-						>
-							<svg icon="icon_remove"></svg>
-							Remove
-						</div>
-
-					</bg-popup-menu>
-
-				</td>
-			</tr>
-
-			</tbody>
-		</table>
-
-		<ng-template [ngIf]="(socialAccounts.length > 0) || (configService.featuresConfig?.socialAccountProviders?.length > 0)">
-			<h2 class="u-text-h3-bold u-margin-yaxis3x u-text-dark2" i18n>Linked Accounts</h2>
-
-			<table class="datatable datatable-roundheaders">
-				<thead class="datatable-x-head"
-							 *ngIf="socialAccounts.length > 0"
+			<p class="u-text-h3-bold font-family-plex-blue" i18n>Emails</p>
+			<div class="groupInput">
+				<form
+					class="table-x-tr table-x-active"
+					[formGroup]="emailForm.rawControl"
+					(ngSubmit)="submitEmailForm()"
 				>
-				<tr class="datatable-x-header">
-					<th class="datatable-x-cell" i18n>Service</th>
-					<th class="datatable-x-cell" i18n>Account</th>
-					<th class="datatable-x-cell"><span class="visuallyhidden" i18n>Actions</span></th>
-				</tr>
+					<div class="forminput forminput-withbutton forminput-light1 u-width-formsmall">
+						<bg-formfield-text
+							[control]="emailForm.rawControlMap.email"
+							errorMessage="Please enter a valid email address"
+							fieldType="email"
+							placeholder="Email Address"
+							inlineButtonText="Add"
+						>
+						</bg-formfield-text>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="issuerMainWrapper pt-0">
+			<table class="datatable datatable-roundheaders datatable-tallrows">
+				<thead class="datatable-x-head">
+					<tr class="datatable-x-header">
+						<th class="datatable-x-cell" style="width: 80%" i18n>Email Address</th>
+						<th class="datatable-x-cell" i18n>Status</th>
+						<th class="datatable-x-cell"><span class="visuallyhidden" i18n>Actions</span></th>
+					</tr>
 				</thead>
 				<tbody class="datatable-x-body">
-				<tr *ngFor="let account of socialAccounts"
-						class="datatable-x-row"
-				>
-					<td class="datatable-x-cell u-text-small">
-						{{ account.providerInfo?.name }}
-					</td>
-					<td class="datatable-x-cell u-text-small u-break-all">
-						{{ account.fullLabel }}
-					</td>
-					<td class="datatable-x-cell">
-						<div class="l-flex l-flex-justifyend">
-							<a href="#"
-								 class="u-text u-text-small u-text-bold"
-								 (click)="unlinkAccount($event, account, socialAccounts.length)"
-								 i18n
-							>Unlink</a>
-						</div>
-					</td>
-				</tr>
+					<tr class="datatable-x-row" *ngFor="let email of emails">
+						<td class="datatable-x-cell">
+							<div class="d-flex align-items-center gap-2">
+								<p class="u-text-body u-break-word">
+									{{ email.email }}
+								</p>
+								<div *ngIf="email.primary" class="badgestatus badgestatus-new badgestatus-intable" i18n>
+									primary
+								</div>
+							</div>
+						</td>
+						<td class="datatable-x-cell u-text-body">
+							<div class="l-flex l-flex-aligncenter l-flex-1x">
+								<div *ngIf="email.verified" class="l-flex l-flex-aligncenter l-flex-1x">
+									<svg
+										icon="icon_checkmark_circle"
+										class="icon icon-success"
+										viewBox="0 0 24 24"
+									></svg>
+									<p class="u-text-body u-hidden-maxtablet" i18n>Verified</p>
+								</div>
+								<div *ngIf="!email.verified" class="l-flex l-flex-aligncenter l-flex-1x">
+									<svg icon="icon_pending" class="icon icon-dark4" viewBox="0 0 24 24"></svg>
+									<p class="u-text-body u-hidden-maxtablet" i18n>Pending</p>
+								</div>
+							</div>
+						</td>
+						<td class="datatable-x-cell">
+							<button
+								*ngIf="
+									!email.verified ||
+									(email.verified && !email.primary) ||
+									(emails.length > 1 && !email.primary)
+								"
+								[bgPopupMenuTrigger]="emailMenu"
+								class="buttonicon buttonicon-link"
+							>
+								<svg icon="icon_more"></svg>
+								<span class="visuallyhidden" i18n>More</span>
+							</button>
+
+							<bg-popup-menu #emailMenu class="menu" id="menu1">
+								<div
+									*ngIf="!email.verified"
+									class="menuitem"
+									(click)="clickResendVerification($event, email)"
+									i18n
+								>
+									<svg icon="icon_refresh"></svg>
+									Resend Verification
+								</div>
+
+								<div
+									*ngIf="email.verified && !email.primary"
+									class="menuitem"
+									(click)="clickMakePrimary($event, email)"
+									i18n
+								>
+									<svg icon="icon_refresh"></svg>
+									Make primary
+								</div>
+
+								<div
+									class="menuitem"
+									[class.button-is-disabled]="email.primary"
+									(click)="clickConfirmRemove($event, email)"
+									*ngIf="emails.length > 1 && !email.primary"
+									i18n
+								>
+									<svg icon="icon_remove"></svg>
+									Remove
+								</div>
+							</bg-popup-menu>
+						</td>
+					</tr>
 				</tbody>
 			</table>
+		</div>
+
+		<ng-template
+			[ngIf]="socialAccounts.length > 0 || configService.featuresConfig?.socialAccountProviders?.length > 0"
+		>
+			<h2 class="u-text-h3-bold u-margin-yaxis3x font-family-plex-blue" i18n>Linked Accounts</h2>
+			<div class="issuerMainWrapper pt-0">
+				<table class="datatable datatable-roundheaders">
+					<thead class="datatable-x-head" *ngIf="socialAccounts.length > 0">
+						<tr class="datatable-x-header">
+							<th class="datatable-x-cell" i18n>Service</th>
+							<th class="datatable-x-cell" i18n>Account</th>
+							<th class="datatable-x-cell"><span class="visuallyhidden" i18n>Actions</span></th>
+						</tr>
+					</thead>
+					<tbody class="datatable-x-body">
+						<tr *ngFor="let account of socialAccounts" class="datatable-x-row">
+							<td class="datatable-x-cell u-text-small">
+								{{ account.providerInfo?.name }}
+							</td>
+							<td class="datatable-x-cell u-text-small u-break-all">
+								{{ account.fullLabel }}
+							</td>
+							<td class="datatable-x-cell">
+								<div class="l-flex l-flex-justifyend">
+									<a
+										href="#"
+										class="u-text u-text-small u-text-bold"
+										(click)="unlinkAccount($event, account, socialAccounts.length)"
+										i18n
+										>Unlink</a
+									>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
 			<p class="u-text-body u-margin-yaxis3x u-width-paragraph" i18n>
-				Click one of the provider buttons below to allow you to log in
-				to {{configService.theme['serviceName'] || "Badgr"}}
+				Click one of the provider buttons below to allow you to log in to
+				{{ configService.theme['serviceName'] || 'Badgr' }}
 				in the future using that service rather than your email and password.
 			</p>
-			<p class="u-text-small u-text-bold u-text-dark2 u-margin-bottom1x">Link Account:</p>
+			<p class="u-text-small u-text-bold font-family-plex-blue u-margin-bottom1x">Link Account:</p>
 
 			<div class="rule u-margin-bottom2x"></div>
 
 			<div class="l-grid l-grid-medium">
-
 				<button
 					*ngFor="let provider of sessionService.enabledExternalAuthProviders"
 					(click)="linkAccount($event, provider)"
 					class="socialbutton"
-					[style.backgroundColor]="provider.color">
-					<div class="visuallyhidden" i18n>Access with {{provider.label}}</div>
-					<img [src]="sanitize(provider.imgSrc)" alt="">
+					[style.backgroundColor]="provider.color"
+				>
+					<div class="visuallyhidden" i18n>Access with {{ provider.label }}</div>
+					<img [src]="sanitize(provider.imgSrc)" alt="" />
 				</button>
-
 			</div>
 		</ng-template>
-
 	</div>
 </main>

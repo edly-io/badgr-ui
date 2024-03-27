@@ -115,7 +115,7 @@
 			</ng-container>
 			<ng-container *ngIf="groupBy == 'Issuer'">
 				<ng-container *ngFor="let issuerGroup of badgeResultsByIssuer">
-					<h3 class="badgeMainHeading">
+					<h3 class="badgeMainHeading mt-5">
 						{{ issuerGroup.issuerName }}
 						<span class="badgeSubTitle"
 							>{{ issuerGroup.badges.length }}
@@ -141,7 +141,7 @@
 			</ng-container>
 			<ng-container *ngIf="groupBy == 'Category'">
 				<ng-container *ngFor="let categoryGroup of badgeResultsByCategory">
-					<h3 class="badgeMainHeading">
+					<h3 class="badgeMainHeading mt-5">
 						{{ categoryOptions[categoryGroup.category] }}
 						<span class="badgeSubTitle">
 							{{ categoryGroup.badges.length }}

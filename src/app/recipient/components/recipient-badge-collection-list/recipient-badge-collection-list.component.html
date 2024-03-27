@@ -1,33 +1,36 @@
 <main>
 	<form-message></form-message>
 
-	<div class="topbar">
-		<div class="l-containerxaxis topbar-x-wrap">
-			<h2 class="topbar-x-heading" i18n>
-				Collections
-				<span class="topbar-x-internalheading" *ngIf="!!badgeCollections">
-					{{ badgeCollections.length }} {{ badgeCollections.length == 1 ? 'collection' : 'Collections' }}
-				</span>
-			</h2>
-			<button
-				class="button topbar-x-button"
-				[routerLink]="['/recipient/badge-collections/create']"
-				[disabled-when-requesting]="true"
-				i18n
-			>
-				Add collection
-			</button>
-		</div>
+	<div class="newBadgeTopBar justify-content-between">
+		<h2 class="topbar-x-heading py-0" i18n>
+			Collections
+			<span class="badgeSubTitle" *ngIf="!!badgeCollections">
+				{{ badgeCollections.length }} {{ badgeCollections.length == 1 ? 'collection' : 'Collections' }}
+			</span>
+		</h2>
+		<button
+			class="primary-button"
+			[routerLink]="['/recipient/badge-collections/create']"
+			[disabled-when-requesting]="true"
+			i18n
+		>
+			Add collection
+		</button>
 	</div>
 
 	<ng-template [bgAwaitPromises]="[collectionListLoaded]">
 		<!--  Empty state - collection has not badges -->
 		<div class="emptysection l-emptysection" *ngIf="badgeCollections.length == 0">
+			<div class="emptysection-x-imagecontainer">
+				<img alt="Illustration" class="emptysection-x-image" [src]="noCollectionsImageUrl" />
+			</div>
 			<h2 class="emptysection-x-headline" i18n>You don't have any collections</h2>
-			<p class="emptysection-x-copy" i18n>Collections allow you to organize and share the badges you've earned.</p>
+			<p class="emptysection-x-copy" i18n>
+				Collections allow you to organize and share the badges you've earned.
+			</p>
 			<div class="emptysection-x-buttons">
 				<button
-					class="button button-secondary"
+					class="new-button-secondary"
 					[routerLink]="['/recipient/badge-collections/create']"
 					[disabled-when-requesting]="true"
 					i18n
@@ -35,13 +38,10 @@
 					Create collection
 				</button>
 			</div>
-			<div class="emptysection-x-imagecontainer">
-				<img alt="Illustration" class="emptysection-x-image" [src]="noCollectionsImageUrl" />
-			</div>
 		</div>
 
 		<!--  Collection of Badges -->
-		<div *ngIf="badgeCollections.length > 0" class="l-containerxaxis l-containeryaxis l-grid l-grid-medium">
+		<div *ngIf="badgeCollections.length > 0" class="collectioncardWrapper l-grid l-grid-medium">
 			<div class="collectioncard" *ngFor="let collection of badgeCollections">
 				<a
 					class="collectioncard-x-headline"
@@ -55,7 +55,7 @@
 					<img
 						*ngFor="
 							let entry of collection.badgeEntries.entities
-								| slice: 0:(collection.badgeEntries.length > 3 ? 3 : 4)
+								| slice : 0 : (collection.badgeEntries.length > 3 ? 3 : 4)
 						"
 						class="badgeimage badgeimage-48px"
 						[loaded-src]="entry.badge?.image"
@@ -79,7 +79,7 @@
 					<div class="switch">
 						<fieldset class="switch-x-container">
 							<div class="switch-x-inputcontainer">
-								<label class="switch-x-label">
+								<label class="switch-x-label gap-2">
 									<input
 										class="switch-x-toggletrack"
 										type="checkbox"
@@ -88,7 +88,7 @@
 										[checked]="collection.published"
 										(change)="togglePublishCollection(collection)"
 									/>
-									<span class="switch-x-labeltext" i18n>Public</span>
+									<span class="switch-x-labeltext m-0" i18n>Public</span>
 									<div class="switch-x-toggle"></div>
 								</label>
 							</div>

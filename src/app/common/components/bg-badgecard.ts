@@ -4,7 +4,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 	selector: 'bg-badgecard',
 	host: { class: '  badgeNewCard' },
 	template: `
-		<div class="badgecard-x-status badgestatus badgestatus-{{ mostRelevantStatus }}" *ngIf="mostRelevantStatus">
+		<div class="badgePills badgestatus-{{ mostRelevantStatus }}" *ngIf="mostRelevantStatus">
 			{{ mostRelevantStatus }}
 		</div>
 
@@ -46,11 +46,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 		<div class="badgeNewCard-footer">
 			<div class="badgeNewCard-date">
 				<span *ngIf="badgeClass" i18n>
-					متاح منذ:
-					<!--  Available since: -->
+					<!--	متاح منذ: -->
+					Available since:
 				</span>
-				<!--	<time [date]="badgeIssueDate" format="mediumDate"></time> -->
-				12 يناير 2024
+				<time [date]="badgeIssueDate" format="mediumDate"></time>
+				<!-- 12 يناير 2024 -->
 			</div>
 			<!-- Show Verify or Share Button unless public -->
 			<button

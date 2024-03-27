@@ -1,0 +1,14 @@
+.backPackGrid {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-top: 45px;
+	&__checkboxWrapper {
+		display: flex;
+		align-items: center;
+		gap: 100px;
+	}
+	.l-grid.l-grid-large {
+		margin-top: 20px;
+	}
+}

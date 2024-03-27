@@ -50,7 +50,7 @@ import { MessageService } from '../services/message.service';
 				[class.dropzone-is-dragging]="isDragging"
 				[class.dropzone-is-error]="imageErrorMessage || (control.dirty && !control.valid)"
 			>
-				<div class="dropzone-x-preview" *ngIf="imageDataUrl">
+				<div class="dropzone-x-preview align-items-center" *ngIf="imageDataUrl">
 					<img [src]="imageDataUrl" alt="" />
 					<p class="u-text-body">
 						{{ imageName }}
@@ -98,12 +98,8 @@ export class BgFormFieldImageComponent {
 	@Input() generateRandom = false;
 
 	@Output() generateRandomImage: EventEmitter<unknown> = new EventEmitter();
-	readonly imageLoadingSrc = preloadImageURL(
-		'../../../breakdown/static/images/placeholderavatar-loading.svg'
-	);
-	readonly imageFailedSrc = preloadImageURL(
-		'../../../breakdown/static/images/placeholderavatar-failed.svg'
-	);
+	readonly imageLoadingSrc = preloadImageURL('../../../breakdown/static/images/placeholderavatar-loading.svg');
+	readonly imageFailedSrc = preloadImageURL('../../../breakdown/static/images/placeholderavatar-failed.svg');
 
 	@Output() imageUploaded = new EventEmitter();
 

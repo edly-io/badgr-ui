@@ -1,32 +1,27 @@
 <ng-container *bgAwaitPromises="[issuerLoaded]">
-
 	<form-message></form-message>
 
-	<header class="topbar">
-		<div class="l-containerxaxis">
-			<div class="topbar-x-breadcrumbs">
-				<bg-breadcrumbs [linkentries]="editBadgeCrumbs">
-				</bg-breadcrumbs>
-			</div>
+	<header class="newBadgeTopBar flex-column gap-2 align-items-start">
+		<!-- <div class="topbar-x-breadcrumbs">
+				<bg-breadcrumbs [linkentries]="editBadgeCrumbs"> </bg-breadcrumbs>
+			</div> -->
 
-
-			<div class="topbar-x-heading">
-				<h1 i18n>Edit Badge</h1>
-			</div>
-			<p class="topbar-x-subheading" i18n>Edit the information about this achievement.</p>
+		<div class="topbar-x-heading p-0">
+			<h1 i18n>Edit Badge</h1>
 		</div>
+		<p class="badgeSubTitle" i18n>Edit the information about this achievement.</p>
 	</header>
 
-	<div class="l-containerxaxis l-containeryaxis">
-		<badgeclass-edit-form #badgeimage
+	<div class="l-containerxaxis l-containeryaxis mt-5">
+		<badgeclass-edit-form
+			#badgeimage
 			(save)="badgeClassSaved($event)"
 			(cancel)="editingCanceled()"
 			[issuerSlug]="issuerSlug"
 			[badgeClass]="badgeClass"
 			[scrolled]="scrolled"
 			submitText="Save Changes"
-			submittingText="Saving..."></badgeclass-edit-form>
+			submittingText="Saving..."
+		></badgeclass-edit-form>
 	</div>
-
-
 </ng-container>

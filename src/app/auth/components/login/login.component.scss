@@ -1,0 +1,24 @@
+.loginPage {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border-radius: 16px;
+	&__heading {
+		font-size: 20px;
+		font-weight: 600;
+		font-family: var(--IBM-font-family);
+	}
+	&__button {
+		background-color: var(--primary-color);
+		font-size: 18px;
+		font-weight: 500;
+		font-family: var(--IBM-font-family);
+		padding: 16px 25px;
+		border-radius: 8px;
+		color: white;
+		&:hover {
+			background-color: var(--burnt-sienna);
+		}
+	}
+}

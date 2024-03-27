@@ -1,0 +1,19 @@
+.collectioncardWrapper {
+	width: 100%;
+	max-width: 1660px;
+	margin: 0 auto;
+	padding: 1rem 10px;
+	padding-top: 0;
+	margin-top: 45px;
+
+	.collectioncard {
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		border-radius: 8px;
+		padding: 25px;
+	}
+}
+
+.switch .switch-x-toggle:dir(rtl) {
+	right: 16px;
+	left: unset;
+}

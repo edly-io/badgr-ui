@@ -52,9 +52,10 @@
 									[href]="issuer.url"
 									i18n
 								>
+									Visit website
+									<!-- زيارة الموقع -->
+
 									<img src="../../../../breakdown/static/images/arrow-external.svg" alt="arrow" />
-									<!-- Visit website -->
-									زيارة الموقع
 								</a>
 							</div>
 							<!-- <a href="{{ badgeClass.id }}" class="newBadgeDetail-link" target="_blank">
@@ -65,12 +66,12 @@
 					</div>
 					<div class="topbar-x-buttons">
 						<div class="l-primarymore">
-							<a class="button" href="mailto:{{ issuer.email }}" i18n>
-								التواصل
-								<!-- Contact institution -->
-							</a>
+							<button class="primary-button" href="mailto:{{ issuer.email }}" i18n>
+								<!-- التواصل -->
+								Contact institution
+							</button>
 							<button
-								class="buttonicon buttonicon-secondary"
+								class="buttonicon new-button-secondary"
 								id="actionstrigger"
 								[bgPopupMenuTrigger]="moreMenu"
 							>
