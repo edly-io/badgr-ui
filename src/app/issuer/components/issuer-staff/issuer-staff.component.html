@@ -1,22 +1,38 @@
 <div *bgAwaitPromises="[issuerLoaded, profileEmailsLoaded]">
 	<form-message></form-message>
-	<div class="topbar topbar-withimage">
-		<div class="l-containerxaxis">
-			<div class="topbar-x-breadcrumbs">
+	<div class="topMainHeaderWrapper">
+		<!-- <div class="topbar-x-breadcrumbs">
 				<bg-breadcrumbs [linkentries]="breadcrumbLinkEntries"> </bg-breadcrumbs>
-			</div>
-			<div class="topbar-x-wrap">
-				<img *ngIf="issuer.image" class="topbar-x-image" [src]="issuer.image" alt="{{ issuer.name }} logo " />
+			</div> -->
+		<header class="newBadgeTopBar gap-3">
+			<div
+				style="
+					border: 1px solid var(--border-color);
+					background-color: var(--bg-color-card);
+					border-radius: 16px;
+					padding: 12px;
+				"
+			>
+				<img
+					*ngIf="issuer.image"
+					style="width: 60px; height: 60px"
+					class="topbar-x-image"
+					[src]="issuer.image"
+					alt="{{ issuer.name }} logo "
+				/>
 				<img
 					*ngIf="!issuer.image"
 					class="topbar-x-image"
 					[src]="issuerImagePlaceHolderUrl"
 					alt="Default issuer image"
+					style="width: 60px; height: 60px"
 				/>
-				<h1 class="topbar-x-heading" i18n>
+			</div>
+			<div class="d-flex flex-column gap-2">
+				<h1 class="topbar-x-heading py-0" i18n>
 					{{ isCurrentUserIssuerOwner ? 'Edit members' : 'Members' }}
 				</h1>
-				<div class="topbar-x-subheading" i18n>
+				<div class="badgeSubTitle" i18n>
 					{{
 						isCurrentUserIssuerOwner
 							? 'Edit the members of the institution.'
@@ -24,102 +40,105 @@
 					}}
 				</div>
 			</div>
-		</div>
+		</header>
 	</div>
 
-	<div class="l-containerxaxis l-containeryaxis">
+	<div class="newContainer">
 		<div class="l-stack u-margin-bottom2x" *ngIf="isCurrentUserIssuerOwner">
-			<p class="u-text-h3-bold" i18n>Members</p>
+			<p class="u-text-h3-bold font-family-plex-blue" i18n>Members</p>
 			<issuer-staff-create-dialog #issuerStaffCreateDialog></issuer-staff-create-dialog>
-			<button class="button button-secondary" (click)="addStaff()" i18n>Add member</button>
+			<button class="new-button-secondary" (click)="addStaff()" i18n>Add member</button>
 		</div>
-
-		<table class="datatable datatable-roundheaders datatable-onlyfirstcolumntablet datatable-verticalalignmiddle">
-			<thead class="datatable-x-head">
-				<tr class="datatable-x-header">
-					<th class="datatable-x-cell" i18n>Name</th>
-					<th class="datatable-x-cell" i18n>ID</th>
-					<th class="datatable-x-cell" i18n>Role</th>
-				</tr>
-			</thead>
-			<tbody class="datatable-x-body">
-				<tr *ngFor="let member of issuer.staff" class="datatable-x-row">
-					<td class="datatable-x-cell u-text-body">
-						{{ member.nameLabel }}
-						<div class="l-flex l-flex-column l-flex-2x u-hidden-mintablet u-margin-top2x">
-							<p class="u-text-small u-text-breakword">
-								{{ memberId(member) }}
-							</p>
-							<div class="forminput forminput-full" *ngIf="isCurrentUserIssuerOwner">
-								<div class="forminput-x-label" i18n>Role</div>
-								<div class="forminput-x-inputs">
-									<select
-										[value]="member.roleSlug"
-										[disabled]="member == issuer.currentUserStaffMember"
-										(change)="changeMemberRole(member, $event.target.value)"
-										*ngIf="isCurrentUserIssuerOwner"
+		<div class="issuerMainWrapper pt-0">
+			<table
+				class="datatable datatable-roundheaders datatable-onlyfirstcolumntablet datatable-verticalalignmiddle"
+			>
+				<thead class="datatable-x-head">
+					<tr class="datatable-x-header">
+						<th class="datatable-x-cell" i18n>Name</th>
+						<th class="datatable-x-cell" i18n>ID</th>
+						<th class="datatable-x-cell" i18n>Role</th>
+					</tr>
+				</thead>
+				<tbody class="datatable-x-body">
+					<tr *ngFor="let member of issuer.staff" class="datatable-x-row">
+						<td class="datatable-x-cell u-text-body">
+							{{ member.nameLabel }}
+							<div class="l-flex l-flex-column l-flex-2x u-hidden-mintablet u-margin-top2x">
+								<p class="u-text-small u-text-breakword">
+									{{ memberId(member) }}
+								</p>
+								<div class="forminput forminput-full" *ngIf="isCurrentUserIssuerOwner">
+									<div class="forminput-x-label" i18n>Role</div>
+									<div class="forminput-x-inputs">
+										<select
+											[value]="member.roleSlug"
+											[disabled]="member == issuer.currentUserStaffMember"
+											(change)="changeMemberRole(member, $event.target.value)"
+											*ngIf="isCurrentUserIssuerOwner"
+										>
+											<option *ngFor="let role of issuerStaffRoleOptions" [value]="role.value">
+												{{ role.label }}
+											</option>
+										</select>
+									</div>
+								</div>
+								<span *ngIf="!isCurrentUserIssuerOwner">
+									{{ member.roleInfo.label }}
+								</span>
+								<div *ngIf="isCurrentUserIssuerOwner">
+									<button
+										class="u-text-link-small"
+										type="button"
+										[disabled-when-requesting]="true"
+										(click)="removeMember(member)"
+										*ngIf="member != issuer.currentUserStaffMember"
+										i18n
 									>
-										<option *ngFor="let role of issuerStaffRoleOptions" [value]="role.value">
-											{{ role.label }}
-										</option>
-									</select>
+										Entfernen
+									</button>
 								</div>
 							</div>
-							<span *ngIf="!isCurrentUserIssuerOwner">
-								{{ member.roleInfo.label }}
-							</span>
-							<div *ngIf="isCurrentUserIssuerOwner">
-								<button
-									class="u-text-link-small"
-									type="button"
-									[disabled-when-requesting]="true"
-									(click)="removeMember(member)"
-									*ngIf="member != issuer.currentUserStaffMember"
-									i18n
-								>
-									Entfernen
-								</button>
-							</div>
-						</div>
-					</td>
-					<td class="datatable-x-cell u-text-small">
-						{{ memberId(member) }}
-					</td>
-					<td class="datatable-x-cell">
-						<div class="l-flex l-flex-aligncenter l-flex-2x">
-							<span *ngIf="!isCurrentUserIssuerOwner">
-								{{ member.roleInfo.label }}
-							</span>
-							<div class="forminput" *ngIf="isCurrentUserIssuerOwner">
-								<div class="forminput-x-inputs">
-									<select
-										[value]="member.roleSlug"
-										[disabled]="member == issuer.currentUserStaffMember"
-										(change)="changeMemberRole(member, $event.target.value)"
-										*ngIf="isCurrentUserIssuerOwner"
+						</td>
+						<td class="datatable-x-cell">
+							{{ memberId(member) }}
+						</td>
+						<td class="datatable-x-cell">
+							<div class="l-flex l-flex-aligncenter justify-content-between gap-2 l-flex-2x">
+								<span *ngIf="!isCurrentUserIssuerOwner">
+									{{ member.roleInfo.label }}
+								</span>
+								<div class="forminput" *ngIf="isCurrentUserIssuerOwner">
+									<div class="forminput-x-inputs">
+										<select
+											[value]="member.roleSlug"
+											[disabled]="member == issuer.currentUserStaffMember"
+											(change)="changeMemberRole(member, $event.target.value)"
+											*ngIf="isCurrentUserIssuerOwner"
+										>
+											<option *ngFor="let role of issuerStaffRoleOptions" [value]="role.value">
+												{{ role.label }}
+											</option>
+										</select>
+									</div>
+								</div>
+								<div *ngIf="isCurrentUserIssuerOwner">
+									<button
+										class="u-text-link-small"
+										type="button"
+										[disabled-when-requesting]="true"
+										(click)="removeMember(member)"
+										*ngIf="member != issuer.currentUserStaffMember"
+										i18n
 									>
-										<option *ngFor="let role of issuerStaffRoleOptions" [value]="role.value">
-											{{ role.label }}
-										</option>
-									</select>
+										Remove
+									</button>
 								</div>
 							</div>
-							<div *ngIf="isCurrentUserIssuerOwner" class="u-margin-leftauto">
-								<button
-									class="u-text-link-small"
-									type="button"
-									[disabled-when-requesting]="true"
-									(click)="removeMember(member)"
-									*ngIf="member != issuer.currentUserStaffMember"
-									i18n
-								>
-									Remove
-								</button>
-							</div>
-						</div>
-					</td>
-				</tr>
-			</tbody>
-		</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 </div>

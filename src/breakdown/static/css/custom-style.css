@@ -86,7 +86,10 @@
 	padding: 15px 20px;
 }
 .mainHeaderWrapper {
-	padding: 0 22px;
+	padding: 0 10px;
+}
+.topMainHeaderWrapper {
+	padding: 0 20px;
 }
 header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	padding: 0;
@@ -119,6 +122,8 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 .badgeCardContainer .l-grid-large {
 	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)) !important;
 	grid-gap: calc(var(--gridspacing) * 4.5);
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .newBadgeSearchBar .forminput .forminput-x-inputs input {
@@ -298,6 +303,7 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	background-color: var(--color-light1);
 	border-radius: 16px;
 	padding-bottom: 0;
+	width: 100%;
 	position: relative;
 }
 .badgeNewCard .badgePills {
@@ -574,6 +580,9 @@ button.new-button-secondary:hover {
 	.newBadgeSearchBar .viewtoggle .viewtoggle-x-list {
 		height: 60px;
 	}
+	.badgeCardContainer .l-grid-large {
+		display: grid;
+	}
 	button.new-button-secondary,
 	.primary-button {
 		padding: 16px 25px;
@@ -695,6 +704,10 @@ button.new-button-secondary:hover {
 	.issuercard-main-wrap {
 		flex-wrap: nowrap;
 		gap: 30px;
+	}
+	.mainHeaderWrapper,
+	.topMainHeaderWrapper {
+		padding: 0 22px;
 	}
 }
 

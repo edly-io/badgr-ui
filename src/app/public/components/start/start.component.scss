@@ -152,11 +152,12 @@
 				font-size: 16px;
 			}
 		}
-		&__star {
-			width: 100px;
-		}
+
 		.badgePanel {
 			width: 50%;
+			&__star {
+				width: 100px;
+			}
 		}
 	}
 	.principalBlocksMain {
@@ -183,7 +184,7 @@
 		margin: 60px 0 100px 0;
 		gap: 80px;
 		&__heading {
-			font-size: 35px;
+			font-size: 40px;
 			line-height: 50px;
 		}
 	}
@@ -196,9 +197,14 @@
 	.badgePanelWrapper {
 		.badgePanelBody {
 			padding: 50px;
-		}
-		&__text {
-			font-size: 20px;
+			&__text {
+				font-size: 20px;
+				line-height: 30px;
+			}
+			&__heading {
+				font-size: 18px;
+				line-height: 25px;
+			}
 		}
 	}
 	.principalBlocksMain {

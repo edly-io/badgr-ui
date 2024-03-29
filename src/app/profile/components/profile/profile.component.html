@@ -1,7 +1,7 @@
 <form-message></form-message>
 <ng-template sourceListener></ng-template>
 <main *bgAwaitPromises="[profileLoaded, emailsLoaded]">
-	<div class="mainHeaderWrapper">
+	<div class="topMainHeaderWrapper">
 		<div class="newBadgeTopBar">
 			<div class="topbar-x-heading l-spacestack py-0">
 				{{ profile?.firstName }} {{ profile?.lastName }}
@@ -56,10 +56,10 @@
 						</td>
 						<td class="datatable-x-cell u-text-body">
 							<div class="l-flex l-flex-aligncenter l-flex-1x">
-								<div *ngIf="email.verified" class="l-flex l-flex-aligncenter l-flex-1x">
+								<div *ngIf="email.verified" class="l-flex l-flex-aligncenter l-flex-1x gap-2">
 									<svg
 										icon="icon_checkmark_circle"
-										class="icon icon-success"
+										class="icon icon-success m-0"
 										viewBox="0 0 24 24"
 									></svg>
 									<p class="u-text-body u-hidden-maxtablet" i18n>Verified</p>

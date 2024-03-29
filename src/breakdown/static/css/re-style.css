@@ -115,3 +115,21 @@ a.menuitem:hover {
 	border-radius: 16px !important;
 	font-family: var(--IBM-font-family) !important;
 }
+
+.datatable .datatable-x-cell:dir(rtl) {
+	text-align: right;
+}
+.datatable .datatable-x-cell,
+p,
+span,
+label,
+td,
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--IBM-font-family) !important;
+}

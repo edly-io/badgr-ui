@@ -7,7 +7,7 @@
 	<div class="dialog-x-box o-container">
 		<!-- Header and Search Area -->
 		<header class="dialog-x-header">
-			<h1>{{ dialogTitle }}</h1>
+			<h1 class="font-family-plex-blue">{{ dialogTitle }}</h1>
 			<button (click)="cancelDialog()" class="buttonicon buttonicon-link">
 				<svg icon="icon_close"></svg>
 				<span class="visuallyhidden" i18n>Close</span>
@@ -17,7 +17,7 @@
 		<!-- Badge List -->
 		<div class="u-padding-all2x">
 			<div class="forminput u-margin-bottom2x">
-				<div class="forminput-x-label">Filter your collections</div>
+				<div class="forminput-x-label font-family-plex-blue">Filter your collections</div>
 				<div class="forminput-x-inputs">
 					<input type="text" placeholder="Filter your collections" [(ngModel)]="searchQuery" />
 				</div>
@@ -35,7 +35,11 @@
 				<tbody class="datatable-x-body">
 					<tr class="datatable-x-row" *ngFor="let collection of badgeCollectionsResults">
 						<td class="datatable-x-cell">
-							<label htmlFor="collection-{{ collection.slug }}" class="checkbox">
+							<label
+								class="d-flex align-content-center gap-2"
+								htmlFor="collection-{{ collection.slug }}"
+								class="checkbox"
+							>
 								<input
 									type="checkbox"
 									#collectionsCheckbox
@@ -43,7 +47,7 @@
 									[name]="'collection-' + collection.slug"
 									(change)="updateCollection(collection, collectionsCheckbox.checked)"
 								/>
-								<span class="checkbox-x-text">{{ collection.name }}</span>
+								<span class="checkbox-x-text font-family-plex-blue">{{ collection.name }}</span>
 							</label>
 						</td>
 					</tr>
@@ -51,13 +55,13 @@
 			</table>
 
 			<div class="l-flex l-flex-1x l-flex-justifyend u-margin-top2x gap-2">
-				<button class="button" (click)="saveDialog()" i18n>Apply</button>
-				<button class="button button-secondary" (click)="cancelDialog()" i18n>Cancel</button>
+				<button class="primary-button" (click)="saveDialog()" i18n>Apply</button>
+				<button class="new-button-secondary" (click)="cancelDialog()" i18n>Cancel</button>
 			</div>
 		</div>
 
 		<div
-			class="bordered bordered-top text-center u-text-body py-2"
+			class="bordered bordered-top text-center u-text-body py-2 text-center"
 			*ngIf="badgeCollectionsResults.length == 0"
 			i18n
 		>

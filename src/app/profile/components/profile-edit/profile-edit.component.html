@@ -1,16 +1,16 @@
 <ng-container *bgAwaitPromises="[profileLoaded]">
 	<form-message></form-message>
-
-	<div class="newBadgeTopBar">
-		<!-- <div class="l-containerxaxis">
+	<div class="topMainHeaderWrapper">
+		<div class="newBadgeTopBar">
+			<!-- <div class="l-containerxaxis">
 			<div class="topbar-x-breadcrumbs">
 				<bg-breadcrumbs [linkentries]="crumbs"> </bg-breadcrumbs>
 			</div>
 		</div> -->
 
-		<div class="topbar-x-heading" i18n>Edit Profile Name</div>
+			<div class="topbar-x-heading" i18n>Edit Profile Name</div>
+		</div>
 	</div>
-
 	<div class="smallContainer">
 		<form [formGroup]="profileEditForm.rawControl" (ngSubmit)="submitEdit()" class="l-form" novalidate>
 			<div class="w-100">
