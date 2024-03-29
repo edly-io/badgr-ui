@@ -66,3 +66,52 @@ label.forminput-x-label,
 	max-width: None;
 	max-height: None;
 }
+
+.loginPage__heading .markdown p {
+	font-size: 20px;
+	font-weight: 500;
+	font-family: var(--IBM-font-family);
+	color: var(--primary-color);
+	margin-bottom: 0;
+}
+.forminput .forminput-x-inputs select {
+	width: 100%;
+	min-width: 100%;
+}
+.forminput .forminput-x-inputs .forminput-x-icon:dir(rtl) {
+	right: unset;
+	left: 10px;
+}
+
+.forminput-hasicon .forminput-x-inputs input:dir(rtl) {
+	padding-right: unset;
+	padding-left: calc(24px + calc(var(--gridspacing) * 2));
+}
+
+.menuitem svg {
+	margin-right: 0;
+}
+
+.menuitem:hover,
+a.menuitem:hover {
+	color: var(--burnt-sienna);
+}
+
+.menuitem {
+	gap: 15px;
+}
+
+.l-tags .tag {
+	color: var(--primary-color);
+	border-radius: 10px;
+	padding: 7px 20px;
+	font-weight: 500;
+	max-width: max-content !important;
+	border: 1px solid var(--border-color);
+}
+
+.dialog .dialog-x-box {
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+	border-radius: 16px !important;
+	font-family: var(--IBM-font-family) !important;
+}

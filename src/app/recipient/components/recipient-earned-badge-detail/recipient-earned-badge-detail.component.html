@@ -8,161 +8,178 @@
 			</div>
 		</div>
 	</div> -->
-	<header class="topbar-withimage newBadgeTopBar flex-column gap-2" id="issuer-detail-header">
-		<div class="issuerDetail-main">
-			<div class="issuerDetail-body">
-				<img
-					[loaded-src]="badge.image"
-					[loading-src]="badgeLoadingImageUrl"
-					[error-src]="badgeFailedImageUrl"
-					[ngStyle]="badge.isExpired && { filter: 'grayscale(1)' }"
-					class="topbar-x-image"
-					width="200"
-				/>
-				<div>
-					<h1 class="issuer-heading">{{ badge.badgeClass.name }}</h1>
+	<div class="mainHeaderWrapper">
+		<section *ngIf="badge.badgeClass.tags.length > 0" class="newContainer pt-0">
+			<h3 class="u-text-h3-semibold u-text-dark2 u-margin-bottom2x u-margin-top4x font-family-plex-blue" i18n>
+				Tags
+			</h3>
+			<div class="l-tags">
+				<div class="tag" *ngFor="let tag of badge.badgeClass.tags; last as last">{{ tag }}</div>
+			</div>
+		</section>
 
-					<div class="badgedetail-x-desc">
-						<p class="issuer-desc u-width-paragraph">{{ badge.badgeClass.description }}</p>
+		<header class="topbar-withimage newBadgeTopBar flex-column gap-2 mt-3" id="issuer-detail-header">
+			<div class="issuerDetail-main">
+				<div class="issuerDetail-body">
+					<img
+						[loaded-src]="badge.image"
+						[loading-src]="badgeLoadingImageUrl"
+						[error-src]="badgeFailedImageUrl"
+						[ngStyle]="badge.isExpired && { filter: 'grayscale(1)' }"
+						class="topbar-x-image"
+						width="200"
+					/>
+					<div>
+						<h1 class="issuer-heading">{{ badge.badgeClass.name }}</h1>
+
+						<div class="badgedetail-x-desc">
+							<p class="issuer-desc u-width-paragraph">{{ badge.badgeClass.description }}</p>
+							<div class="u-margin-yaxis2x" *ngIf="badge.badgeClass.criteria_url">
+								<a
+									class="u-text-outlink font-family-plex-blue"
+									target="_blank"
+									[href]="badge.badgeClass.criteria_url"
+									i18n
+									>View external Criteria URL
+									<svg icon="icon_external_link"></svg>
+								</a>
+							</div>
+						</div>
+						<section
+							*ngIf="
+								badge.badgeClass.criteria_url ||
+								badge.badgeClass.criteria_text ||
+								badge.badgeClass.criteria
+							"
+						>
+							<h3
+								class="u-text-h3-semibold u-text-dark2 u-margin-bottom2x u-margin-top4x font-family-plex-blue"
+								i18n
+							>
+								Criteria
+							</h3>
+							<show-more class="u-margin-bottom8x" *ngIf="badge.badgeClass.criteria_text">
+								<markdown-display
+									id="recipient-earned-badge-detail-markdown-display"
+									[value]="badge.badgeClass.criteria_text"
+								></markdown-display>
+							</show-more>
+						</section>
 					</div>
 				</div>
-			</div>
 
-			<div class="topbar-x-buttons">
-				<div class="l-primarymore">
-					<button
-						*ngIf="badge.mostRelevantStatus !== 'pending'"
-						class="primary-button"
-						type="button"
-						(click)="shareBadge()"
-						i18n
-					>
-						Share Badge
-					</button>
-					<button class="buttonicon new-button-secondary" id="actionstrigger" [bgPopupMenuTrigger]="moreMenu">
-						<svg icon="icon_more"></svg>
-						<span class="visuallyhidden" i18n>More</span>
-					</button>
-					<bg-popup-menu #moreMenu>
-						<a class="menuitem" [href]="verifyUrl" i18n><svg icon="icon_checkmark"></svg>Verify</a>
-						<!--<a class="menuitem"
+				<div class="topbar-x-buttons">
+					<div class="l-primarymore">
+						<button
+							*ngIf="badge.mostRelevantStatus !== 'pending'"
+							class="primary-button"
+							type="button"
+							(click)="shareBadge()"
+							i18n
+						>
+							Share Badge
+						</button>
+						<button
+							class="buttonicon new-button-secondary"
+							id="actionstrigger"
+							[bgPopupMenuTrigger]="moreMenu"
+						>
+							<svg icon="icon_more"></svg>
+							<span class="visuallyhidden" i18n>More</span>
+						</button>
+						<bg-popup-menu #moreMenu>
+							<a class="menuitem" [href]="verifyUrl" i18n><svg icon="icon_checkmark"></svg>Verify</a>
+							<!--<a class="menuitem"
 						[href]="v2JsonUrl"
 						>Download JSON</a>
 					<a class="menuitem"
 						[href]="v2BakedUrl"
 						>Download Baked Image</a>
 					-->
-						<button
-							class="menuitem"
-							(click)="exportPdf()"
-							loading-message="Loading badge..."
-							[disabled-when-requesting]="true"
-							i18n
-						>
-							<svg icon="icon_file"></svg>Export to PDF
-						</button>
-						<button class="menuitem" (click)="deleteBadge(badge)" [disabled-when-requesting]="true">
-							<svg icon="icon_remove" i18n></svg>Delete
-						</button>
-						<ng-container *ngIf="launchpoints">
-							<a class="menuitem" *ngFor="let lp of launchpoints" (click)="clickLaunchpoint(lp)">
-								<svg icon="icon_external_link"></svg>
-								{{ lp.label }}
-							</a>
-						</ng-container>
-					</bg-popup-menu>
+							<button
+								class="menuitem"
+								(click)="exportPdf()"
+								loading-message="Loading badge..."
+								[disabled-when-requesting]="true"
+								i18n
+							>
+								<svg icon="icon_file"></svg>Export to PDF
+							</button>
+							<button class="menuitem" (click)="deleteBadge(badge)" [disabled-when-requesting]="true">
+								<svg icon="icon_remove" i18n></svg>Delete
+							</button>
+							<ng-container *ngIf="launchpoints">
+								<a class="menuitem" *ngFor="let lp of launchpoints" (click)="clickLaunchpoint(lp)">
+									<svg icon="icon_external_link"></svg>
+									{{ lp.label }}
+								</a>
+							</ng-container>
+						</bg-popup-menu>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="badgedetail-x-sidebar w-100">
-			<div class="badgedetail-x-sidebarinternal">
-				<div
-					class="badgestatus badgestatus-{{ badge.mostRelevantStatus }} u-margin-top2x"
-					*ngIf="badge.mostRelevantStatus"
-				>
-					{{ badge.mostRelevantStatus }}
-				</div>
-				<div class="issuer-wrapper">
-					<div class="issuer-wrapper-award">
-						<div>
-							<img
-								[loaded-src]="badge.badgeClass?.issuer?.image"
-								[loading-src]="issuerImagePlacholderUrl"
-								[error-src]="issuerImagePlacholderUrl"
-								width="40"
-							/>
-						</div>
-						<div>
-							<div class="u-text-small-bold font-family-plex-gray" i18n>Issued by:</div>
-							<div class="u-text">
-								<a class="u-break-word" [href]="badge.badgeClass.issuer.id">{{
-									badge.badgeClass.issuer.name
-								}}</a>
+			<div class="badgedetail-x-sidebar w-100">
+				<div class="badgedetail-x-sidebarinternal">
+					<div
+						class="badgestatus badgestatus-{{ badge.mostRelevantStatus }} u-margin-top2x"
+						*ngIf="badge.mostRelevantStatus"
+					>
+						{{ badge.mostRelevantStatus }}
+					</div>
+					<div class="issuer-wrapper">
+						<div class="issuer-wrapper-award">
+							<div>
+								<img
+									[loaded-src]="badge.badgeClass?.issuer?.image"
+									[loading-src]="issuerImagePlacholderUrl"
+									[error-src]="issuerImagePlacholderUrl"
+									width="40"
+								/>
+							</div>
+							<div>
+								<div class="u-text-small-bold font-family-plex-gray" i18n>Issued by:</div>
+								<div class="u-text">
+									<a class="u-break-word" [href]="badge.badgeClass.issuer.id">{{
+										badge.badgeClass.issuer.name
+									}}</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="issuer-detail-block" i18n>
-						<div class="font-family-plex-blue u-text-small-bold">Issued on:</div>
-						<div class="u-text"><time [date]="badge?.issueDate" format="mediumDate"></time></div>
-					</div>
-					<div class="issuer-detail-block" i18n>
-						<div class="font-family-plex-blue u-text-small-bold">Awarded to:</div>
-						<div>
-							<span class="u-text u-break-all" *ngIf="badge.hasExtension('extensions:recipientProfile')">
-								{{ badge.getExtension('extensions:recipientProfile', null).name }}
-							</span>
-							<span class="u-text u-break-all">{{ badge.recipientEmail }}</span>
-						</div>
-					</div>
-
-					<div *ngIf="badge && badge.expiresDate">
 						<div class="issuer-detail-block" i18n>
-							<div class="font-family-plex-blue u-text-small-bold">
-								{{ compareDate(badge.expiresDate, now) | i18nPlural : tense['expires'] }} on:
+							<div class="font-family-plex-blue u-text-small-bold">Issued on:</div>
+							<div class="u-text"><time [date]="badge?.issueDate" format="mediumDate"></time></div>
+						</div>
+						<div class="issuer-detail-block" i18n>
+							<div class="font-family-plex-blue u-text-small-bold">Awarded to:</div>
+							<div>
+								<span
+									class="u-text u-break-all"
+									*ngIf="badge.hasExtension('extensions:recipientProfile')"
+								>
+									{{ badge.getExtension('extensions:recipientProfile', null).name }}
+								</span>
+								<span class="u-text u-break-all">{{ badge.recipientEmail }}</span>
 							</div>
-							<div class="u-text"><time [date]="badge?.expiresDate" format="mediumDate"></time></div>
+						</div>
+
+						<div *ngIf="badge && badge.expiresDate">
+							<div class="issuer-detail-block" i18n>
+								<div class="font-family-plex-blue u-text-small-bold">
+									{{ compareDate(badge.expiresDate, now) | i18nPlural : tense['expires'] }} on:
+								</div>
+								<div class="u-text"><time [date]="badge?.expiresDate" format="mediumDate"></time></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</header>
+		</header>
+	</div>
 	<div class="newContainer">
 		<div class="badgedetail-x-body">
 			<!-- tags -->
-			<section *ngIf="badge.badgeClass.tags.length > 0">
-				<h3 class="u-text-h3-semibold u-text-dark2 u-margin-bottom2x u-margin-top4x font-family-plex-blue" i18n>
-					Tags
-				</h3>
-				<div class="l-tags">
-					<div class="tag" *ngFor="let tag of badge.badgeClass.tags; last as last">{{ tag }}</div>
-				</div>
-			</section>
 
 			<!-- criteria -->
-			<section
-				*ngIf="badge.badgeClass.criteria_url || badge.badgeClass.criteria_text || badge.badgeClass.criteria"
-			>
-				<h3 class="u-text-h3-semibold u-text-dark2 u-margin-bottom2x u-margin-top4x font-family-plex-blue" i18n>
-					Criteria
-				</h3>
-				<show-more class="u-margin-bottom8x" *ngIf="badge.badgeClass.criteria_text">
-					<markdown-display
-						id="recipient-earned-badge-detail-markdown-display"
-						[value]="badge.badgeClass.criteria_text"
-					></markdown-display>
-				</show-more>
-				<div class="u-margin-yaxis2x" *ngIf="badge.badgeClass.criteria_url">
-					<a
-						class="u-text-outlink font-family-plex-blue"
-						target="_blank"
-						[href]="badge.badgeClass.criteria_url"
-						i18n
-						>View external Criteria URL
-						<svg icon="icon_external_link"></svg>
-					</a>
-				</div>
-			</section>
 
 			<!-- alignment -->
 			<section>

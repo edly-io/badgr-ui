@@ -3,8 +3,7 @@
 	<div class="dialog-x-box o-container">
 		<div class="dialog-x-header u-background-light3">
 			<h1 i18n>Verify Badge</h1>
-			<button class="buttonicon buttonicon-link"
-			        (click)="closeDialog()">
+			<button class="buttonicon buttonicon-link" (click)="closeDialog()">
 				<svg class="navitem-x-icon" icon="icon_close"></svg>
 				<span class="visuallyhidden" i18n>Close</span>
 			</button>
@@ -18,99 +17,116 @@
 	</div>
 </ng-template>
 
-
 <!-- Dialog -->
-<dialog aria-labelledby="verifyBadgeDialog"
-        aria-describedby="dialog1Desc"
-        class="dialog dialog-is-active l-dialog"
-        role="dialog"
+<dialog
+	aria-labelledby="verifyBadgeDialog"
+	aria-describedby="dialog1Desc"
+	class="dialog dialog-is-active l-dialog"
+	role="dialog"
 >
-	<div *ngIf="badgeAssertion; else dialogLoading"
-		     class="dialog-x-box o-container"
-	>
-
+	<div *ngIf="badgeAssertion; else dialogLoading" class="dialog-x-box o-container">
 		<div class="dialog-x-header u-background-light3">
 			<h1>Verify Badge</h1>
-			<button class="buttonicon buttonicon-link"
-			        (click)="closeDialog()"
-			>
+			<button class="buttonicon buttonicon-link" (click)="closeDialog()">
 				<svg class="navitem-x-icon" icon="icon_close"></svg>
 				<span class="visuallyhidden" i18n>Close</span>
 			</button>
 		</div>
 
 		<div class="u-padding-all3x">
-
 			<div class="l-stack l-stack-withimage">
 				<div>
-					<img [loaded-src]="badgeAssertion.image"
-					     [loading-src]="issuerImagePlaceholderUrl"
-					     [error-src]="issuerImagePlaceholderUrl"
-					     width="128"
+					<img
+						[loaded-src]="badgeAssertion.image"
+						[loading-src]="issuerImagePlaceholderUrl"
+						[error-src]="issuerImagePlaceholderUrl"
+						width="128"
 					/>
 				</div>
 				<div class="l-flex l-flex-1x u-margin-bottom3x">
-					<svg class="u-animate-step4 icon icon icon-large l-flex-x-shrink0"
-					     [ngClass]="isBadgeVerified ? 'icon-large icon-success' : 'icon-notice' "
-					     [icon]="   isBadgeVerified ? 'icon_checkmark_circle' : 'icon_error' "
+					<svg
+						class="u-animate-step4 icon icon icon-large l-flex-x-shrink0"
+						[ngClass]="isBadgeVerified ? 'icon-large icon-success' : 'icon-notice'"
+						[icon]="isBadgeVerified ? 'icon_checkmark_circle' : 'icon_error'"
 					></svg>
 
 					<div class="l-flex l-flex-1x l-flex-justifybetween u-width-full">
 						<div class="l-flex l-flex-column">
-							<h1 class="u-text-h3 u-text-bold u-text-dark2">
-								{{badgeAssertion?.badge.name}}
+							<h1 class="u-text-h3 u-text-bold font-family-plex-blue">
+								{{ badgeAssertion?.badge.name }}
 							</h1>
-							<p class="u-text u-text-small u-width-small u-animate-step6" i18n>
-								{{isBadgeVerified
-									? 'This badge has been verified by Badgr and its information is valid.'
-									: 'This badge has not been verified by Badgr.'
+							<p class="u-text u-text-small font-family-plex-gray u-width-small u-animate-step6" i18n>
+								{{
+									isBadgeVerified
+										? 'This badge has been verified by Badgr and its information is valid.'
+										: 'This badge has not been verified by Badgr.'
 								}}
 							</p>
 							<dl class="u-text u-margin-top2x">
-
 								<div class="l-flex l-flex-1x">
-									<svg class="u-animate-step1 icon l-flex-x-shrink0"
-									     [ngClass]="awardedState === AWARDED_STATES.MATCH ? 'icon-success' : 'icon-notice' "
-									     [icon]="   awardedState === AWARDED_STATES.MATCH ? 'icon_checkmark_circle' : 'icon_error' "
+									<svg
+										class="u-animate-step1 icon l-flex-x-shrink0"
+										[ngClass]="
+											awardedState === AWARDED_STATES.MATCH ? 'icon-success' : 'icon-notice'
+										"
+										[icon]="
+											awardedState === AWARDED_STATES.MATCH
+												? 'icon_checkmark_circle'
+												: 'icon_error'
+										"
 									></svg>
 									<div>
-										<dt class="u-text-small-bold u-text-dark2" i18n>Awarded To</dt>
-										<dd class="u-margin-bottom2x"
-										    [ngSwitch]="awardedState"
-										>
-											<ng-container *ngSwitchCase="AWARDED_STATES.MATCH" i18n> {{identityEmail}}</ng-container>
-											<ng-container *ngSwitchCase="AWARDED_STATES.NO_MATCH" i18n> This badge was not awarded to {{identityEmail}} </ng-container>
-											<ng-container *ngSwitchCase="AWARDED_STATES.NOT_VERIFIED" i18n> Recipient not verified </ng-container>
+										<dt class="u-text-small-bold font-family-plex-blue" i18n>Awarded To</dt>
+										<dd class="u-margin-bottom2x" [ngSwitch]="awardedState">
+											<ng-container *ngSwitchCase="AWARDED_STATES.MATCH" i18n>
+												{{ identityEmail }}</ng-container
+											>
+											<ng-container *ngSwitchCase="AWARDED_STATES.NO_MATCH" i18n>
+												This badge was not awarded to {{ identityEmail }}
+											</ng-container>
+											<ng-container *ngSwitchCase="AWARDED_STATES.NOT_VERIFIED" i18n>
+												Recipient not verified
+											</ng-container>
 										</dd>
 									</div>
 								</div>
 
 								<div class="l-flex l-flex-1x">
-									<svg class="u-animate-step2 icon icon-success l-flex-x-shrink0"
-									     icon="icon_checkmark_circle"
+									<svg
+										class="u-animate-step2 icon icon-success l-flex-x-shrink0"
+										icon="icon_checkmark_circle"
 									></svg>
 									<div>
-										<dt class="u-text-small-bold u-text-dark2" i18n>Issued On</dt>
-										<dd class="u-margin-bottom2x"><time [date]="badgeAssertion?.issuedOn" format="mediumDate"></time></dd>
+										<dt class="u-text-small-bold font-family-plex-blue" i18n>Issued On</dt>
+										<dd class="u-margin-bottom2x">
+											<time [date]="badgeAssertion?.issuedOn" format="mediumDate"></time>
+										</dd>
 									</div>
 								</div>
 
 								<div class="l-flex l-flex-1x">
-									<svg class="u-animate-step3 icon l-flex-x-shrink0"
-											 [ngClass]="expiryState !== EXPIRY_STATES.EXPIRED ? 'icon-success' : 'icon-notice' "
-											 [icon]="expiryState !== EXPIRY_STATES.EXPIRED ? 'icon_checkmark_circle' : 'icon_error' "
+									<svg
+										class="u-animate-step3 icon l-flex-x-shrink0"
+										[ngClass]="
+											expiryState !== EXPIRY_STATES.EXPIRED ? 'icon-success' : 'icon-notice'
+										"
+										[icon]="
+											expiryState !== EXPIRY_STATES.EXPIRED
+												? 'icon_checkmark_circle'
+												: 'icon_error'
+										"
 									></svg>
 									<div>
-										<dt class="u-text-small-bold u-text-dark2" i18n>Expires On</dt>
-										<dd class="u-margin-bottom2x"
-												[ngSwitch]="expiryState"
-										>
-											<ng-container *ngSwitchCase="EXPIRY_STATES.EXPIRED" i18n> Expired</ng-container>
-											<ng-container *ngSwitchCase="EXPIRY_STATES.NEVER_EXPIRES" i18n> Does not expire</ng-container>
+										<dt class="u-text-small-bold font-family-plex-blue" i18n>Expires On</dt>
+										<dd class="u-margin-bottom2x" [ngSwitch]="expiryState">
+											<ng-container *ngSwitchCase="EXPIRY_STATES.EXPIRED" i18n>
+												Expired</ng-container
+											>
+											<ng-container *ngSwitchCase="EXPIRY_STATES.NEVER_EXPIRES" i18n>
+												Does not expire</ng-container
+											>
 											<ng-container *ngSwitchCase="EXPIRY_STATES.NOT_EXPIRED">
-												<time [date]="badgeAssertion?.expires"
-															format="mediumDate"
-												></time>
+												<time [date]="badgeAssertion?.expires" format="mediumDate"></time>
 											</ng-container>
 										</dd>
 									</div>
@@ -121,17 +137,13 @@
 				</div>
 			</div>
 
-			<div class="l-stack l-stack-justifybetween u-margin-top3x">
-				<a class="u-text-outlink"
-				   [href]="verifyUrl"
-				   i18n
-				>
+			<div class="d-flex align-items-center justify-content-between u-margin-top3x gap-2">
+				<a class="u-text-outlink" [href]="verifyUrl" i18n>
 					Independently Verify Badge
 					<svg icon="icon_external_link"></svg>
 				</a>
-				<button class="button" (click)="closeDialog()" i18n>Done</button>
+				<button class="primary-button" (click)="closeDialog()" i18n>Done</button>
 			</div>
-
 		</div>
 	</div>
 </dialog>

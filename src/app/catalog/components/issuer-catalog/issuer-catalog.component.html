@@ -1,102 +1,121 @@
 <form-message></form-message>
+<div class="mainHeaderWrapper">
+	<header class="newBadgeTopBar instituationTopBar">
+		<h2 class="topbar-x-heading p-0">
+			<img src="../../../../assets/badges/insitituation.svg" alt="insitituations" />
+			<ng-template [showLoader]="false" [bgAwaitPromises]="[issuersLoaded]">
+				<span class="totalBadges">
+					{{ issuers.length | i18nPlural : plural['issuer'] }}
+				</span>
+			</ng-template>
+		</h2>
+		<div class="newBadgeSearchBar largeToggle">
+			<div class="newBadgeSearchBar-wrapper">
+				<div class="forminput l-actionbar-x-search">
+					<div class="forminput-x-inputs">
+						<input
+							type="text"
+							name="forminput"
+							changeOrder
+							id="forminput"
+							placeholder="Search institutions"
+							[(ngModel)]="searchQuery"
+						/>
+						<img
+							class="forminput-x-icon"
+							src="../../../../assets/badges/search-icon.svg"
+							alt="search-icon"
+						/>
+					</div>
+				</div>
+				<div class="l-actionbar-x-groupby" *ngIf="badgesDisplay != 'map'">
+					<label class="checkbox checkbox-small searchGroupBy-wrapper">
+						<input name="groupby" type="checkbox" [(ngModel)]="groupByCategory" />
+						<span class="groupBy" i18n>Group by categories</span>
+					</label>
+				</div>
+				<div class="viewtoggle-container">
+					<div class="viewtoggle-map">
+						<button
+							class="viewtoggle-button"
+							[class.active]="badgesDisplay == 'map'"
+							(click)="openMap()"
+							i18n
+						>
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+									stroke="#1C355E"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+									stroke="#1C355E"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</div>
 
-<header class="newBadgeTopBar instituationTopBar">
-	<h2 class="topbar-x-heading">
-		<img src="../../../../assets/badges/insitituation.svg" alt="insitituations" />
-		<ng-template [showLoader]="false" [bgAwaitPromises]="[issuersLoaded]">
-			<span class="totalBadges">
-				{{ issuers.length | i18nPlural : plural['issuer'] }}
-			</span>
-		</ng-template>
-	</h2>
-	<div class="newBadgeSearchBar largeToggle">
-		<div class="newBadgeSearchBar-wrapper">
-			<div class="forminput l-actionbar-x-search">
-				<div class="forminput-x-inputs">
-					<input
-						type="text"
-						name="forminput"
-						changeOrder
-						id="forminput"
-						placeholder="Search institutions"
-						[(ngModel)]="searchQuery"
-					/>
-					<img class="forminput-x-icon" src="../../../../assets/badges/search-icon.svg" alt="search-icon" />
+					<div
+						class="viewtoggle l-actionbar-x-viewtoggle"
+						[class.mapView]="badgesDisplay == 'map'"
+						[class.viewtoggle-is-listview]="badgesDisplay == 'list'"
+					>
+						<label class="viewtoggle-x-grid">
+							<span class="visuallyhidden" i18n>grid</span>
+							<input
+								checked="checked"
+								name="radiobutton"
+								id="radiobutton1"
+								type="radio"
+								value="grid"
+								[(ngModel)]="badgesDisplay"
+							/>
+							<svg icon="icon_grid"></svg>
+						</label>
+						<label class="viewtoggle-x-list">
+							<span class="visuallyhidden" i18n>list</span>
+							<input
+								type="radio"
+								name="radiobutton"
+								id="radiobutton2"
+								value="list"
+								[(ngModel)]="badgesDisplay"
+							/>
+							<svg icon="icon_list"></svg>
+						</label>
+					</div>
 				</div>
 			</div>
-			<div class="l-actionbar-x-groupby" *ngIf="badgesDisplay != 'map'">
-				<label class="checkbox checkbox-small searchGroupBy-wrapper">
-					<input name="groupby" type="checkbox" [(ngModel)]="groupByCategory" />
-					<span class="groupBy" i18n>Group by categories</span>
+			<div
+				class="viewtoggle l-actionbar-x-viewtoggle lastToggle"
+				[class.viewtoggle-is-listview]="order == 'desc'"
+			>
+				<label class="viewtoggle-x-grid" (click)="changeOrder('asc')">
+					<span class="visuallyhidden" i18n>name</span>
+					<input name="radiobutton2" id="radiobutton3" type="radio" value="asc" [(ngModel)]="order" />
+					<svg style="transform: rotateZ(90deg)" icon="icon_arrow"></svg>
+				</label>
+				<label class="viewtoggle-x-list" (click)="changeOrder('desc')">
+					<span class="visuallyhidden" i18n>-name</span>
+					<input type="radio" name="radiobutton2" id="radiobutton4" value="desc" [(ngModel)]="order" />
+					<svg style="transform: rotateZ(-90deg)" icon="icon_arrow"></svg>
 				</label>
 			</div>
-			<div class="viewtoggle-container">
-				<div class="viewtoggle-map">
-					<button class="viewtoggle-button" [class.active]="badgesDisplay == 'map'" (click)="openMap()" i18n>
-						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
-								stroke="#1C355E"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							/>
-							<path
-								d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
-								stroke="#1C355E"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							/>
-						</svg>
-					</button>
-				</div>
-
-				<div
-					class="viewtoggle l-actionbar-x-viewtoggle"
-					[class.mapView]="badgesDisplay == 'map'"
-					[class.viewtoggle-is-listview]="badgesDisplay == 'list'"
-				>
-					<label class="viewtoggle-x-grid">
-						<span class="visuallyhidden" i18n>grid</span>
-						<input
-							checked="checked"
-							name="radiobutton"
-							id="radiobutton1"
-							type="radio"
-							value="grid"
-							[(ngModel)]="badgesDisplay"
-						/>
-						<svg icon="icon_grid"></svg>
-					</label>
-					<label class="viewtoggle-x-list">
-						<span class="visuallyhidden" i18n>list</span>
-						<input
-							type="radio"
-							name="radiobutton"
-							id="radiobutton2"
-							value="list"
-							[(ngModel)]="badgesDisplay"
-						/>
-						<svg icon="icon_list"></svg>
-					</label>
-				</div>
-			</div>
 		</div>
-		<div class="viewtoggle l-actionbar-x-viewtoggle lastToggle" [class.viewtoggle-is-listview]="order == 'desc'">
-			<label class="viewtoggle-x-grid" (click)="changeOrder('asc')">
-				<span class="visuallyhidden" i18n>name</span>
-				<input name="radiobutton2" id="radiobutton3" type="radio" value="asc" [(ngModel)]="order" />
-				<svg style="transform: rotateZ(90deg)" icon="icon_arrow"></svg>
-			</label>
-			<label class="viewtoggle-x-list" (click)="changeOrder('desc')">
-				<span class="visuallyhidden" i18n>-name</span>
-				<input type="radio" name="radiobutton2" id="radiobutton4" value="desc" [(ngModel)]="order" />
-				<svg style="transform: rotateZ(-90deg)" icon="icon_arrow"></svg>
-			</label>
-		</div>
-	</div>
-</header>
+	</header>
+</div>
 
 <div id="main-page">
 	<ng-template [showLoader]="true" [bgAwaitPromises]="[issuersLoaded]">

@@ -1,7 +1,7 @@
 <main>
 	<form-message></form-message>
 
-	<div *ngIf="isEditing">
+	<div *ngIf="isEditing" class="collectionEditForm">
 		<form [formGroup]="badgeCollectionForm.rawControl" (ngSubmit)="onSubmit(badgeCollectionForm.value)" novalidate>
 			<fieldset>
 				<bg-formfield-text
@@ -21,7 +21,7 @@
 					[multiline]="true"
 					[sublabel]="' remaining characters'"
 				></bg-formfield-text>
-				<div class="l-flex l-flex-2x u-margin-top2x">
+				<div class="l-flex l-flex-1x l-flex-justifyend u-margin-top2x gap-2">
 					<button
 						class="new-button-secondary"
 						[disabled-when-requesting]="true"

@@ -24,117 +24,114 @@
 	</div>
 
 	<!-- Regular View -->
-	<main *ngIf="!embedService.isEmbedded" id="issuer-main">
+	<main *ngIf="!embedService.isEmbedded" id="issuer-main" class="pt-0">
 		<form-message></form-message>
-		<header class="topbar-withimage newBadgeTopBar" id="issuer-detail-header">
-			<div class="topbar-x-wrap">
-				<div class="issuerDetail-main">
-					<div class="issuerDetail-body">
-						<img
-							[loaded-src]="issuer.image || issuerImagePlaceholderUrl"
-							[loading-src]="badgeLoadingImageUrl"
-							[error-src]="badgeFailedImageUrl"
-							alt="Logo for issuer {{ issuer.name }}"
-							class="topbar-x-image"
-							width="60"
-							height="60"
-						/>
-						<div>
-							<h1 class="issuer-heading">{{ issuer.name }}</h1>
-							<p class="issuer-desc u-width-paragraph">
-								{{ issuer.description }}
-							</p>
-							<div class="newBadgeDetail-linkWrapper">
-								<a
-									class="u-text-outlink"
-									class="newBadgeDetail-link"
-									target="_blank"
-									[href]="issuer.url"
-									i18n
-								>
-									Visit website
-									<!-- زيارة الموقع -->
+		<div class="mainHeaderWrapper">
+			<header class="topbar-withimage newBadgeTopBar" id="issuer-detail-header">
+				<div class="topbar-x-wrap">
+					<div class="issuerDetail-main">
+						<div class="issuerDetail-body">
+							<img
+								[loaded-src]="issuer.image || issuerImagePlaceholderUrl"
+								[loading-src]="badgeLoadingImageUrl"
+								[error-src]="badgeFailedImageUrl"
+								alt="Logo for issuer {{ issuer.name }}"
+								class="topbar-x-image"
+								width="60"
+								height="60"
+							/>
+							<div>
+								<h1 class="issuer-heading">{{ issuer.name }}</h1>
+								<p class="issuer-desc u-width-paragraph">
+									{{ issuer.description }}
+								</p>
+								<div class="newBadgeDetail-linkWrapper">
+									<a class="newBadgeDetail-link" target="_blank" [href]="issuer.url" i18n>
+										Visit website
+										<!-- زيارة الموقع -->
 
-									<img src="../../../../breakdown/static/images/arrow-external.svg" alt="arrow" />
-								</a>
-							</div>
-							<!-- <a href="{{ badgeClass.id }}" class="newBadgeDetail-link" target="_blank">
+										<img src="../../../../breakdown/static/images/arrow-external.svg" alt="arrow" />
+									</a>
+								</div>
+								<!-- <a href="{{ badgeClass.id }}" class="newBadgeDetail-link" target="_blank">
 							<img src="../../../../breakdown/static/images/arrow-external.svg" alt="arrow" />
 							اعرف أكثر
 						</a> -->
+							</div>
+						</div>
+						<div class="topbar-x-buttons">
+							<div class="l-primarymore">
+								<a class="primary-button" href="mailto:{{ issuer.email }}" i18n>
+									<!-- التواصل -->
+									Contact institution
+								</a>
+								<button
+									class="buttonicon new-button-secondary"
+									id="actionstrigger"
+									[bgPopupMenuTrigger]="moreMenu"
+								>
+									<svg icon="icon_more"></svg>
+									<span class="visuallyhidden" i18n>More</span>
+								</button>
+								<bg-popup-menu #moreMenu>
+									<a class="menuitem" target="_blank" [href]="rawJsonUrl"
+										><svg icon="icon_external_link" i18n></svg>JSON view</a
+									>
+									<a
+										class="menuitem"
+										target="_blank"
+										[href]="issuer.sourceUrl"
+										*ngIf="issuer.sourceUrl"
+										i18n
+										><svg icon="icon_external_link"></svg>Original view</a
+									>
+								</bg-popup-menu>
+							</div>
 						</div>
 					</div>
-					<div class="topbar-x-buttons">
-						<div class="l-primarymore">
-							<button class="primary-button" href="mailto:{{ issuer.email }}" i18n>
-								<!-- التواصل -->
-								Contact institution
-							</button>
-							<button
-								class="buttonicon new-button-secondary"
-								id="actionstrigger"
-								[bgPopupMenuTrigger]="moreMenu"
-							>
-								<svg icon="icon_more"></svg>
-								<span class="visuallyhidden" i18n>More</span>
-							</button>
-							<bg-popup-menu #moreMenu>
-								<a class="menuitem" target="_blank" [href]="rawJsonUrl"
-									><svg icon="icon_external_link" i18n></svg>JSON view</a
-								>
-								<a
-									class="menuitem"
-									target="_blank"
-									[href]="issuer.sourceUrl"
-									*ngIf="issuer.sourceUrl"
-									i18n
-									><svg icon="icon_external_link"></svg>Original view</a
-								>
-							</bg-popup-menu>
-						</div>
+					<div class="issuerDetail-footer">
+						<h3 class="issuerDetail-total-badge">
+							<img src="../../../../assets/badges/badge-icon.svg" alt="badge" />
+							{{ badgeClasses.length | i18nPlural : plural['badge'] }}
+						</h3>
+						<p class="issuer-email">
+							<img src="../../../../assets/badges/envelop.svg" alt="envelop" />
+							{{ issuer.email }}
+						</p>
 					</div>
 				</div>
-				<div class="issuerDetail-footer">
-					<h3 class="issuerDetail-total-badge">
-						<img src="../../../../assets/badges/badge-icon.svg" alt="badge" />
-						{{ badgeClasses.length | i18nPlural : plural['badge'] }}
-					</h3>
-					<p class="issuer-email">
-						<img src="../../../../assets/badges/envelop.svg" alt="envelop" />
-						{{ issuer.email }}
-					</p>
-				</div>
-			</div>
-		</header>
-		<div class="issuer-detail-list">
-			<div *ngIf="badgeClasses && badgeClasses.length > 0">
-				<table class="datatable datatable-roundheaders datatable-singlecolumn datatable-verticalalignmiddle">
-					<!-- <thead class="datatable-x-head">
+			</header>
+			<div class="issuer-detail-list">
+				<div *ngIf="badgeClasses && badgeClasses.length > 0">
+					<table
+						class="datatable datatable-roundheaders datatable-singlecolumn datatable-verticalalignmiddle"
+					>
+						<!-- <thead class="datatable-x-head">
 						<tr class="datatable-x-header">
 							<th class="datatable-x-cell" scope="col" i18n>Badge</th>
 						</tr>
 					</thead> -->
-					<tbody class="datatable-x-body">
-						<tr class="datatable-x-row" *ngFor="let badgeClass of badgeClasses">
-							<th class="datatable-x-cell" scope="row">
-								<div class="issuer-detail-badge-list">
-									<img
-										class="l-flex-x-shrink0 badge-image badgeimage-small"
-										[src]="badgeClass.image"
-										[alt]="badgeClass.name"
-										width="80"
-									/>
-									<a
-										class="issuer-badge-name u-text-breakword"
-										[routerLink]="routerLinkForUrl(badgeClass.hostedUrl || badgeClass.id)"
-										>{{ badgeClass.name }}</a
-									>
-								</div>
-							</th>
-						</tr>
-					</tbody>
-				</table>
-				<!--
+						<tbody class="datatable-x-body">
+							<tr class="datatable-x-row" *ngFor="let badgeClass of badgeClasses">
+								<th class="datatable-x-cell" scope="row">
+									<div class="issuer-detail-badge-list">
+										<img
+											class="l-flex-x-shrink0 badge-image badgeimage-small"
+											[src]="badgeClass.image"
+											[alt]="badgeClass.name"
+											width="80"
+										/>
+										<a
+											class="issuer-badge-name u-text-breakword"
+											[routerLink]="routerLinkForUrl(badgeClass.hostedUrl || badgeClass.id)"
+											>{{ badgeClass.name }}</a
+										>
+									</div>
+								</th>
+							</tr>
+						</tbody>
+					</table>
+					<!--
 
 				TO DO: Add API support for pagination and implement the following pattern
 
@@ -160,6 +157,7 @@
 					</nav>
 				</div>
 				-->
+				</div>
 			</div>
 		</div>
 	</main>

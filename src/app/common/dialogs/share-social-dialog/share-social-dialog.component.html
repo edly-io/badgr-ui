@@ -7,7 +7,7 @@
 	<div class="dialog-x-box o-container">
 		<!-- Header -->
 		<div class="dialog-x-header u-background-light3">
-			<h1>{{ options?.title }}</h1>
+			<h1 class="font-family-plex-blue">{{ options?.title }}</h1>
 			<button (click)="closeDialog()" class="buttonicon buttonicon-link">
 				<svg icon="icon_close"></svg>
 				<span class="visuallyhidden" i18n>Close</span>
@@ -58,8 +58,14 @@
 				</label>
 			</ng-template>
 
-			<div class="forminput forminput-hasiconleft forminput-withbutton u-margin-bottom3x" *ngIf="options">
-				<label class="forminput-x-label" for="link-input" i18n>Copy this link to share</label>
+			<div
+				class="forminput groupInput forminput-hasiconleft forminput-withbutton u-margin-bottom3x"
+				*ngIf="options"
+			>
+				<label class="forminput-x-label font-family-plex-blue" for="link-input" i18n
+					>Copy this link to share</label
+				>
+
 				<div class="forminput-x-inputs">
 					<svg class="forminput-x-icon" icon="icon_link"></svg>
 
@@ -86,7 +92,12 @@
 				</div>
 			</div>
 
-			<a *ngIf="options" [href]="currentShareUrl" target="_blank" class="u-text-link-small" i18n
+			<a
+				*ngIf="options"
+				[href]="currentShareUrl"
+				target="_blank"
+				class="u-text-link-small font-family-plex-blue"
+				i18n
 				>Open in new window</a
 			>
 		</div>
@@ -243,7 +254,7 @@ The embed code goes here and changes dynamically as the checks and radios are pr
 			</div>
 			<div class="l-stack l-stack-right">
 				<button
-					type="button"
+					type="primary-button"
 					[hidden]="!copySupported"
 					(click)="copyToClipboard(embedHtmlInput)"
 					class="button button-secondary"

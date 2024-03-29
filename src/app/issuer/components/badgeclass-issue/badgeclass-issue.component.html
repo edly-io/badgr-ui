@@ -1,23 +1,25 @@
 <ng-container *bgAwaitPromises="[issuerLoaded, badgeClassLoaded]">
 	<form-message></form-message>
 
-	<div class="newBadgeTopBar flex-column gap-2 align-items-start">
-		<!-- <div class="topbar-x-breadcrumbs">
+	<div class="mainHeaderWrapper">
+		<div class="newBadgeTopBar flex-column gap-2 align-items-start">
+			<!-- <div class="topbar-x-breadcrumbs">
 				<bg-breadcrumbs [linkentries]="breadcrumbLinkEntries"></bg-breadcrumbs>
 			</div> -->
-		<div class="topbar-x-heading p-0" i18n>Badge awarded</div>
-		<div class="badgeSubTitle" i18n>
-			Award the badge to a user or
-			<a
-				class="u-text font-family-plex-blue"
-				[routerLink]="['/issuer/issuers', issuerSlug, 'badges', badgeSlug, 'bulk-import']"
-				>click here to send the badge to several users at the same time</a
-			>
-			to award.
+			<div class="topbar-x-heading p-0" i18n>Badge awarded</div>
+			<div class="badgeSubTitle" i18n>
+				Award the badge to a user or
+				<a
+					class="u-text font-family-plex-blue"
+					[routerLink]="['/issuer/issuers', issuerSlug, 'badges', badgeSlug, 'bulk-import']"
+					>click here to send the badge to several users at the same time</a
+				>
+				to award.
+			</div>
 		</div>
 	</div>
 
-	<div class="l-containerxaxis l-containeryaxis mt-5">
+	<div class="l-containerxaxis l-containeryaxis mt-3 mt-md-5">
 		<form class="l-responsivelist" [formGroup]="issueForm.rawControl" (ngSubmit)="onSubmit()" novalidate>
 			<!-- Recipient Information -->
 			<div class="formsection new-box-shadow" role="group" aria-labelledby="heading-recipientinformation">
@@ -70,7 +72,7 @@
 						</div>
 					</div>
 					<div class="l-formsection-x-checkbox" *ngIf="issueForm.controls.recipient_type.value == 'email'">
-						<label class="checkbox checkbox-center u-margin-top2x" for="notifybyemail">
+						<label class="checkbox checkbox-center u-margin-top2x gap-2" for="notifybyemail">
 							<input
 								name="notifybyemail"
 								id="notifybyemail"
@@ -93,7 +95,7 @@
 				*ngIf="narrativeEnabled"
 			>
 				<div class="formsection-x-title">
-					<h2 i18n class="font-family-plex-blue">
+					<h2 i18n class="font-family-plex-blue d-flex align-items-center gap-2">
 						Narrative
 						<span>(Optional)</span>
 					</h2>
@@ -129,7 +131,7 @@
 				*ngIf="evidenceEnabled"
 			>
 				<div class="formsection-x-title">
-					<h2 i18n class="font-family-plex-blue">
+					<h2 i18n class="font-family-plex-blue d-flex align-items-center gap-2">
 						Proof
 						<span>(Optional)</span>
 					</h2>
@@ -193,7 +195,7 @@
 				*ngIf="expirationEnabled"
 			>
 				<div class="formsection-x-title">
-					<h2 i18n class="font-family-plex-blue">
+					<h2 i18n class="font-family-plex-blue d-flex align-items-center gap-2">
 						Expiry Date
 						<span>(Optional)</span>
 					</h2>
@@ -258,8 +260,10 @@
 
 				<div class="formsection-x-body">
 					<ul>
-						<li class="l-flex l-flex-justifybetween l-flex-aligncenter u-padding-bottom2x">
-							<div class="l-flex l-flex-2x">
+						<li
+							class="l-flex l-flex-justifybetween l-flex-aligncenter u-padding-bottom2x border-bottom mb-2"
+						>
+							<div class="l-flex l-flex-2x gap-2">
 								<svg class="icon icon-dark4" icon="icon_narrative"></svg>
 								<p
 									class="u-text-body-semibold font-family-plex-gray"
@@ -281,8 +285,10 @@
 							</button>
 						</li>
 
-						<li class="l-flex l-flex-justifybetween l-flex-aligncenter u-padding-bottom2x">
-							<div class="l-flex l-flex-2x">
+						<li
+							class="l-flex l-flex-justifybetween l-flex-aligncenter u-padding-bottom2x border-bottom mb-2"
+						>
+							<div class="l-flex l-flex-2x gap-2">
 								<svg class="icon icon-dark4" icon="icon_search"></svg>
 								<p
 									class="u-text-body-semibold font-family-plex-gray"
@@ -304,8 +310,10 @@
 							</button>
 						</li>
 
-						<li class="l-flex l-flex-justifybetween l-flex-aligncenter u-padding-bottom2x">
-							<div class="l-flex l-flex-2x">
+						<li
+							class="l-flex l-flex-justifybetween l-flex-aligncenter u-padding-bottom2x border-bottom mb-2"
+						>
+							<div class="l-flex l-flex-2x gap-2">
 								<svg class="icon icon-dark4" icon="icon_pending"></svg>
 								<p
 									class="u-text-body-semibold font-family-plex-gray"
@@ -334,11 +342,11 @@
 			</div>
 
 			<!-- Buttons -->
-			<div class="l-stack l-stack-right d-flex align-items-center gap-2">
+			<div class="l-flex l-flex-1x l-flex-justifyend u-margin-top2x gap-2">
 				<button
 					[routerLink]="['/issuer/issuers', issuer.slug, 'badges', badgeClass.slug]"
 					type="submit"
-					class="button new-button-secondary"
+					class="new-button-secondary"
 					[disabled-when-requesting]="true"
 					i18n
 				>

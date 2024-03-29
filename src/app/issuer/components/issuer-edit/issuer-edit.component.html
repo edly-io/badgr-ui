@@ -1,17 +1,19 @@
 <form-message></form-message>
 
-<div class="topbar">
-	<div class="l-containerxaxis">
-		<div class="topbar-x-breadcrumbs">
+<div class="mainHeaderWrapper">
+	<header class="newBadgeTopBar">
+		<!-- <div class="topbar-x-breadcrumbs">
 			<bg-breadcrumbs [linkentries]="editIssuerCrumbs"> </bg-breadcrumbs>
+		</div> -->
+		<div class="d-flex gap-2 flex-column">
+			<h2 class="topbar-x-heading py-0" i18n>Edit institution</h2>
+			<div class="badgeSubTitle" i18n>Edit this institution's information.</div>
 		</div>
-		<div class="topbar-x-heading" i18n>Edit institution</div>
-		<div class="topbar-x-subheading" i18n>Edit this institution's information.</div>
-	</div>
+	</header>
 </div>
 
-<div class="l-containerxaxis l-containeryaxis">
-	<form (ngSubmit)="onSubmit()" class="u-width-formsmall u-margin-top3x" novalidate>
+<div class="smallContainer mt-3 mt-md-5 pt-0">
+	<form (ngSubmit)="onSubmit()" class="u-margin-top3x" novalidate>
 		<fieldset>
 			<bg-formfield-image
 				#imageField
@@ -55,22 +57,24 @@
 			></bg-formfield-text>
 
 			<bg-formfield-select
-			class="u-margin-bottom2x"
-			[control]="issuerForm.rawControlMap.issuer_category"
-			[label]="'Category'"
-			[placeholder]="'Please enter a category'"
-			[options]="[
-				{
-					label: 'School (primary schools, secondary schools, vocational schools, institutions of formal school education)', 
-					value: 'School'
-				}, {
-					label: 'University (universities, technical colleges, ...)', 
-					value: 'University'
-				}, {
-					label: 'Others (libraries, museums, FabLabs, companies, associations, ...)', 
-					value: 'Others'
-				}]"
-
+				class="u-margin-bottom2x"
+				[control]="issuerForm.rawControlMap.issuer_category"
+				[label]="'Category'"
+				[placeholder]="'Please enter a category'"
+				[options]="[
+					{
+						label: 'School (primary schools, secondary schools, vocational schools, institutions of formal school education)',
+						value: 'School'
+					},
+					{
+						label: 'University (universities, technical colleges, ...)',
+						value: 'University'
+					},
+					{
+						label: 'Others (libraries, museums, FabLabs, companies, associations, ...)',
+						value: 'Others'
+					}
+				]"
 			></bg-formfield-select>
 
 			<h2>Adresse</h2>
@@ -105,11 +109,18 @@
 				[errorMessage]="{ required: 'Please enter a city' }"
 			></bg-formfield-text>
 
-
-			<div class="l-stack l-stack-buttons">
+			<div class="l-flex l-flex-1x l-flex-justifyend u-margin-top2x gap-2">
+				<button
+					[routerLink]="['/issuer/issuers', issuerSlug]"
+					class="new-button-secondary"
+					[disabled-when-requesting]="true"
+					i18n
+				>
+					Cancel
+				</button>
 				<button
 					type="submit"
-					class="button"
+					class="primary-button"
 					[disabled]="!!editIssuerFinished"
 					[loading-promises]="[editIssuerFinished]"
 					loading-message="Adding"
@@ -117,13 +128,6 @@
 				>
 					Save
 				</button>
-				<a
-					[routerLink]="['/issuer/issuers', issuerSlug]"
-					class="button button-secondary"
-					[disabled-when-requesting]="true"
-					i18n
-					>Cancel</a
-				>
 			</div>
 		</fieldset>
 	</form>

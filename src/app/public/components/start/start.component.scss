@@ -1,8 +1,8 @@
 .logo {
-	width: 350px;
-	height: 350px;
-	min-width: 350px;
-	min-height: 350px;
+	width: 150px;
+	height: 150px;
+	min-width: 150px;
+	min-height: 150px;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	border-radius: 16px;
 }
@@ -10,32 +10,33 @@
 .mainSection {
 	display: flex;
 	justify-content: space-between;
-	gap: 80px;
+	gap: 20px;
 	align-items: center;
-	margin: 60px 0 100px 0;
+	margin: 10px 0 60px 0;
+	flex-wrap: wrap;
 	&__heading {
-		font-size: 45px;
+		font-size: 25px;
 		font-weight: bold;
-		color: var(--primary-color);
-		line-height: 50px;
-		font-family: var(--IBM-font-family);
+		line-height: 35px;
 	}
 }
 
 .badgePanelWrapper {
 	display: flex;
 	border-radius: 12px;
+	flex-wrap: wrap;
+	gap: 70px;
 	.badgePanel {
 		background-color: var(--primary-color);
 		position: relative;
-		width: 50%;
+		width: 100%;
 		color: white;
 		&.orange {
 			background-color: var(--burnt-sienna);
 		}
 		&__star {
 			position: absolute;
-			width: 100px;
+			width: 80px;
 			right: 50px;
 			top: -50px;
 			background-color: white;
@@ -45,50 +46,54 @@
 		}
 	}
 	.badgePanelBody {
-		padding: 50px;
+		padding: 20px;
 		&__heading {
-			font-size: 16px;
+			font-size: 14px;
 			font-weight: 700;
 			line-height: 1.5em;
 			margin-bottom: 15px;
 			font-family: var(--IBM-font-family);
 		}
 		&__text {
-			font-size: 20px;
+			font-size: 16px;
 			font-weight: 700;
 			font-family: var(--IBM-font-family);
-
 			line-height: 1.5em;
 		}
 	}
 }
+.badgePanelWrapper .badgePanel__star:dir(rtl) {
+	right: unset;
+	left: 50px;
+}
+
 .principalBlocksMain {
-	margin-top: 60px;
+	margin-top: 30px;
 
 	.principalBlocks {
-		font-size: 45px;
+		font-size: 25px;
 		font-weight: bold;
 		color: var(--primary-color);
-		line-height: 50px;
+		line-height: 30px;
 		font-family: var(--IBM-font-family);
 		text-align: center;
 		&__img {
-			min-width: 80px;
-			width: 80px;
-			height: 80px;
+			min-width: 60px;
+			width: 60px;
+			height: 60px;
 			object-fit: contain;
 			border-radius: 4px;
 			padding: 10px;
 			box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 			position: absolute;
-			top: -43px;
+			top: -30px;
 			left: 50%;
 			background: var(--primary-color);
 			transform: translateX(-50%);
 		}
 		&__heading {
 			color: var(--primary-color);
-			font-size: 18px;
+			font-size: 16px;
 			font-weight: 700;
 			line-height: 1.5em;
 			margin-bottom: 15px;
@@ -104,7 +109,7 @@
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	gap: 2rem;
-	margin-top: 100px;
+	margin-top: 60px;
 	@media (max-width: 650px) {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -118,18 +123,99 @@
 	position: relative;
 	padding: 50px 20px 20px 20px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-	margin-bottom: 50px;
+	margin-bottom: 32px;
 }
 
-.video-container {
-	height: 500px;
-	width: 100%;
-	padding-bottom: 5rem;
-}
+@media (min-width: 768px) {
+	.mainSection {
+		flex-wrap: nowrap;
+		gap: 50px;
+		margin: 30px 0 80px 0;
 
-.video-container iframe,
-.video-container object,
-.video-container embed {
-	width: 100%;
-	height: 100%;
+		&__heading {
+			font-size: 30px;
+			line-height: 40px;
+		}
+	}
+	.logo {
+		width: 250px;
+		height: 250px;
+		min-width: 250px;
+		min-height: 250px;
+	}
+	.badgePanelWrapper {
+		flex-wrap: nowrap;
+		gap: 0;
+		.badgePanelBody {
+			padding: 30;
+			&__heading {
+				font-size: 16px;
+			}
+		}
+		&__star {
+			width: 100px;
+		}
+		.badgePanel {
+			width: 50%;
+		}
+	}
+	.principalBlocksMain {
+		margin-top: 40px;
+		.principalBlocks {
+			font-size: 30px;
+			font-weight: bold;
+			line-height: 35px;
+			text-align: center;
+			&__img {
+				min-width: 80px;
+				width: 80px;
+				height: 80px;
+				top: -43px;
+			}
+		}
+	}
+	.grid {
+		margin-top: 80px;
+	}
+}
+@media (min-width: 1200px) {
+	.mainSection {
+		margin: 60px 0 100px 0;
+		gap: 80px;
+		&__heading {
+			font-size: 35px;
+			line-height: 50px;
+		}
+	}
+	.logo {
+		width: 350px;
+		height: 350px;
+		min-width: 350px;
+		min-height: 350px;
+	}
+	.badgePanelWrapper {
+		.badgePanelBody {
+			padding: 50px;
+		}
+		&__text {
+			font-size: 20px;
+		}
+	}
+	.principalBlocksMain {
+		margin-top: 60px;
+
+		.principalBlocks {
+			font-size: 45px;
+			line-height: 50px;
+			&__heading {
+				font-size: 18px;
+			}
+		}
+	}
+	.grid {
+		margin-top: 100px;
+	}
+	.grid-card {
+		margin-bottom: 50px;
+	}
 }

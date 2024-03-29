@@ -186,6 +186,7 @@
 			<a class="menuitem" routerLinkActive="menuitem-is-active" [routerLink]="['/issuer']"
 				><svg icon="icon_issuer" i18n></svg>My institutions</a
 			>
+
 			<a class="menuitem" routerLinkActive="menuitem-is-active" [routerLink]="['/auth/logout']"
 				><svg icon="icon_exit_to_app" i18n></svg>Logout</a
 			>
@@ -200,9 +201,11 @@
 			<div class="mobilenav-x-navitems">
 				<a routerLinkActive="menuitem-is-active" [routerLink]="['/catalog/badges']" i18n>Badges</a>
 				<a routerLinkActive="menuitem-is-active" [routerLink]="['/catalog/issuers']" i18n>Institutions</a>
+				<a routerLinkActive="menuitem-is-active" [routerLink]="['/public/faq']" i18n>FAQs</a>
 				<a routerLinkActive="menuitem-is-active" [routerLink]="['/auth/login']" i18n>Login</a>
-				<a routerLinkActive="menuitem-is-active" [routerLink]="['/signup']" i18n>To Register</a>
-				<a routerLinkActive="menuitem-is-active" [routerLink]="['/public/about']" i18n>About MINT-O-Badges</a>
+
+				<!-- <a routerLinkActive="menuitem-is-active" [routerLink]="['/signup']" i18n>To Register</a> -->
+				<!-- <a routerLinkActive="menuitem-is-active" [routerLink]="['/public/about']" i18n>About MINT-O-Badges</a> -->
 
 				<hr class="mobilenav-x-rule" />
 				<p class="mobilenav-x-label" *ngIf="launchpoints?.length">Apps</p>
@@ -235,11 +238,11 @@
 				</a>
 
 				<hr class="mobilenav-x-rule" />
-				<p class="mobilenav-x-label">Account</p>
-				<a [routerLink]="['/profile/profile']">Profil</a>
+				<p class="mobilenav-x-label fw-bold">Account</p>
+				<a [routerLink]="['/profile/profile']">Profile</a>
 				<a [routerLink]="['/issuer']" *ngIf="showIssuersTab" i18n>My institutions</a>
-				<a [routerLink]="['/profile/app-integrations']" i18n>App Integrations</a>
-				<a [routerLink]="['/public/about']" i18n>About MINT-O-Badges</a>
+				<!-- <a [routerLink]="['/profile/app-integrations']" i18n>App Integrations</a> -->
+				<!-- <a [routerLink]="['/public/about']" i18n>About MINT-O-Badges</a> -->
 				<a [routerLink]="['/auth/logout']" i18n>Logout</a>
 			</div>
 		</nav>
@@ -284,11 +287,11 @@
 		<ul class="footer-x-leftlinks">
 			<li *ngIf="theme.showPoweredByBadgr === undefined || theme.showPoweredByBadgr" i18n>
 				<!-- Powered by <a href="https://badgr.io">Badgr</a> -->
-				<img src="../assets/logos/footer-logo.svg" alt="logo" />
+				<img src="../assets/logos/footer-logo.svg" class="footerLogo" alt="logo" />
 			</li>
 			<li *ngIf="theme.providedBy" i18n>
 				<!-- Powered by -->
-				<img src="../assets/logos/footer-logo.svg" alt="logo" />
+				<img src="../assets/logos/footer-logo.svg" class="footerLogo" alt="logo" />
 
 				<!-- <a href="{{ theme.providedBy.url }}" target="_blank">{{ theme.providedBy.name }}</a> -->
 			</li>

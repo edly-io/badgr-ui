@@ -1,91 +1,96 @@
 <form-message></form-message>
-
-<header class="newBadgeTopBar justify-content-between">
-	<!-- <div class="l-containerxaxis">
+<div class="mainHeaderWrapper">
+	<header class="newBadgeTopBar justify-content-between">
+		<!-- <div class="l-containerxaxis">
 		<div class="topbar-x-breadcrumbs">
 			<bg-breadcrumbs [linkentries]="crumbs"> </bg-breadcrumbs>
 		</div>
 	</div> -->
-	<div class="topbar-x-wrap w-100 d-flex justify-content-between gap-3" *bgAwaitPromises="[collectionLoadedPromise]">
-		<ng-container *ngIf="!editForm.isEditing">
-			<div class="w-100">
-				<div class="topbar-x-heading py-0">{{ collection?.name }}</div>
-				<div class="topbar-x-subheading pt-3">
-					<p class="u-text" [truncatedText]="collection?.description" [maxLength]="100"></p>
+		<div
+			class="topbar-x-wrap w-100 d-flex justify-content-between gap-3 flex-column flex-lg-row"
+			*bgAwaitPromises="[collectionLoadedPromise]"
+		>
+			<ng-container *ngIf="!editForm.isEditing">
+				<div class="w-100">
+					<div class="topbar-x-heading py-0">{{ collection?.name }}</div>
+					<div class="topbar-x-subheading pt-3">
+						<p class="u-text" [truncatedText]="collection?.description" [maxLength]="100"></p>
 
-					<div class="switch u-margin-top2x">
-						<fieldset class="switch-x-container">
-							<div class="switch-x-inputcontainer">
-								<label class="switch-x-label gap-2">
-									<input
-										class="switch-x-toggletrack"
-										type="checkbox"
-										[(ngModel)]="collectionPublished"
-									/>
-									<span class="switch-x-labeltext m-0" i18n>Public</span>
-									<div class="switch-x-toggle"></div>
-								</label>
-							</div>
-						</fieldset>
+						<div class="switch u-margin-top2x">
+							<fieldset class="switch-x-container">
+								<div class="switch-x-inputcontainer">
+									<label class="switch-x-label gap-2">
+										<input
+											class="switch-x-toggletrack"
+											type="checkbox"
+											[(ngModel)]="collectionPublished"
+										/>
+										<span class="switch-x-labeltext m-0" i18n>Public</span>
+										<div class="switch-x-toggle"></div>
+									</label>
+								</div>
+							</fieldset>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="topbar-x-checkboxbuttonform">
-				<div class="l-primarymore">
-					<button
-						class="primary-button"
-						[class.button-is-disabled]="!collection?.published"
-						[disabled]="!collection?.published"
-						(click)="shareCollection()"
-						i18n
-					>
-						Share collection
-					</button>
-					<button
-						class="buttonicon new-button-secondary"
-						style=""
-						[bgPopupMenuTrigger]="collectionActionMenu"
-					>
-						<svg icon="icon_more"></svg>
-						<span class="visuallyhidden" i18n>more</span>
-					</button>
-					<bg-popup-menu #collectionActionMenu>
+				<div class="topbar-x-checkboxbuttonform">
+					<div class="l-primarymore">
 						<button
-							class="menuitem"
-							routerLinkActive="menuitem-is-active"
-							(click)="editForm.startEditing()"
+							class="primary-button"
+							[class.button-is-disabled]="!collection?.published"
+							[disabled]="!collection?.published"
+							(click)="shareCollection()"
 							i18n
 						>
-							<svg icon="icon_edit"></svg>
-							Edit
+							Share collection
 						</button>
-						<!-- <button
+						<button
+							class="buttonicon new-button-secondary"
+							style=""
+							[bgPopupMenuTrigger]="collectionActionMenu"
+						>
+							<svg icon="icon_more"></svg>
+							<span class="visuallyhidden" i18n>more</span>
+						</button>
+						<bg-popup-menu #collectionActionMenu>
+							<button
+								class="menuitem"
+								routerLinkActive="menuitem-is-active"
+								(click)="editForm.startEditing()"
+								i18n
+							>
+								<svg icon="icon_edit"></svg>
+								Edit
+							</button>
+							<!-- <button
 								class="menuitem"
 								(click)="exportPdf()"
 								loading-message="Loading badge..."
 								[disabled-when-requesting]="true"
 								><svg icon="icon_file"></svg>Export to PDF</button> -->
-						<button
-							class="menuitem"
-							routerLinkActive="menuitem-is-active"
-							(click)="deleteCollection()"
-							i18n
-						>
-							<svg icon="icon_remove"></svg>
-							Delete
-						</button>
-					</bg-popup-menu>
+							<button
+								class="menuitem"
+								routerLinkActive="menuitem-is-active"
+								(click)="deleteCollection()"
+								i18n
+							>
+								<svg icon="icon_remove"></svg>
+								Delete
+							</button>
+						</bg-popup-menu>
+					</div>
 				</div>
-			</div>
-		</ng-container>
-		<recipient-badge-collection-edit-form
-			style="width: 100%"
-			[badgeCollection]="collection"
-			#editForm
-		></recipient-badge-collection-edit-form>
-	</div>
-</header>
-
+			</ng-container>
+		</div>
+	</header>
+</div>
+<div class="newContainer">
+	<recipient-badge-collection-edit-form
+		[badgeCollection]="collection"
+		#editForm
+		style="width: 100%"
+	></recipient-badge-collection-edit-form>
+</div>
 <section *bgAwaitPromises="[collectionLoadedPromise]" class="newContainer">
 	<!-- Empty State for badges -->
 	<ng-container *ngIf="collection?.badgeEntries.length === 0">
@@ -103,7 +108,7 @@
 
 	<!-- List of Badges in Collection -->
 	<ng-container *ngIf="collection?.badgeEntries.length > 0">
-		<div class="l-stack my-3">
+		<div class="l-stack mb-3">
 			<h2 class="u-text-h3-semibold u-text-dark2 font-family-plex-blue">{{ badgesInCollectionCount }}</h2>
 			<button class="new-button-secondary" type="button" (click)="manageBadges()" i18n>Add badges</button>
 		</div>

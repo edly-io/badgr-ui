@@ -1,48 +1,61 @@
-import {Component, ElementRef, Renderer2} from '@angular/core';
-import {BaseDialog} from './base-dialog';
-import {AppConfigService} from '../app-config.service';
-import {UserProfileManager} from '../services/user-profile-manager.service';
-import {UserProfile} from '../model/user-profile.model';
+import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { BaseDialog } from './base-dialog';
+import { AppConfigService } from '../app-config.service';
+import { UserProfileManager } from '../services/user-profile-manager.service';
+import { UserProfile } from '../model/user-profile.model';
 
 @Component({
 	selector: 'new-terms-dialog',
-	template: `
-	<dialog 
-		aria-labelledby="updatedTermsDialog" 
-		aria-describedby="dialog1Desc" 
-		class="dialog dialog-is-active l-dialog" 
-		role="dialog">
+	template: ` <dialog
+		aria-labelledby="updatedTermsDialog"
+		aria-describedby="dialog1Desc"
+		class="dialog dialog-is-active l-dialog"
+		role="dialog"
+	>
 		<div class="dialog-x-box o-container">
 			<div class="l-flex l-flex-justifybetween u-padding-top2x u-padding-xaxis3x">
-				<h2 id="updatedTermsDialog" class="u-text-body-bold-caps text-dark1">
+				<h2 id="updatedTermsDialog" class="u-text-body-bold-caps font-family-plex-blue">
 					Updated Terms of Service
 				</h2>
 			</div>
 			<div class="u-padding-all3x">
-
-				<p class="u-text u-text-body u-margin-bottom2x">We’ve updated our <a target="_blank" [href]="termsOfServiceLink">Terms of Service</a>. </p>
+				<p class="u-text u-text-body u-margin-bottom2x font-family-plex-blue">
+					We’ve updated our <a target="_blank" [href]="termsOfServiceLink">Terms of Service</a>.
+				</p>
 
 				<div class="u-background-light3 u-padding-all2x u-margin-bottom3x">
-					<p class="u-text u-text-body" *ngIf="profile && profile.latestTermsDescription">{{profile.latestTermsDescription}}</p>
+					<p class="u-text u-text-body" *ngIf="profile && profile.latestTermsDescription">
+						{{ profile.latestTermsDescription }}
+					</p>
 				</div>
 
-				<label class="checkbox checkbox-small u-margin-bottom3x" [class.checkbox-is-error]="isErrorState">
-					<input name="terms" id="terms" type="checkbox" [(ngModel)]="agreedToTerms">
-					<span class="checkbox-x-text">I have read and agree to the <a target="_blank" [href]="termsOfServiceLink">Terms of Service</a>.
-					<div *ngIf="isErrorState" class="checkbox-x-errortext">Please read and agree to the Terms of Service if you want to continue.</div>
+				<label class="checkbox checkbox-small u-margin-bottom3x gap-2" [class.checkbox-is-error]="isErrorState">
+					<input name="terms" id="terms" type="checkbox" [(ngModel)]="agreedToTerms" />
+					<span
+						class="checkbox-x-text font-family-plex-gray p-0 d-flex  gap-1"
+						style="    flex-direction: column;"
+					>
+						<div>
+							I have read and agree to the
+							<a target="_blank" [href]="termsOfServiceLink">Terms of Service</a>.
+						</div>
+						<div *ngIf="isErrorState" class="checkbox-x-errortext font-family-plex-gray">
+							Please read and agree to the Terms of Service if you want to continue.
+						</div>
 					</span>
 				</label>
 
-				<div class="l-flex l-flex-2x">
-					<button class="button" (click)="submitAgreement()">Continue</button>
-					<a class="button button-secondary" *ngIf="termsHelpLink" [href]="termsHelpLink" target="_blank">Need Help?</a>
+				<div class="l-flex l-flex-2x gap-2">
+					<button class="primary-button" (click)="submitAgreement()">Continue</button>
+					<button class="new-button-secondary" *ngIf="termsHelpLink" [href]="termsHelpLink" target="_blank">
+						Need Help?
+					</button>
 				</div>
 			</div>
 		</div>
 	</dialog>`,
 })
 export class NewTermsDialog extends BaseDialog {
-
 	agreedToTerms = false;
 
 	resolveFunc: () => void;
@@ -64,10 +77,10 @@ export class NewTermsDialog extends BaseDialog {
 
 	get agreedPromise(): Promise<void> {
 		if (!this._agreedPromise) {
-				this._agreedPromise = new Promise((resolve, reject) => {
-					this.resolveFunc = resolve;
-					this.rejectFunc = reject;
-				});
+			this._agreedPromise = new Promise((resolve, reject) => {
+				this.resolveFunc = resolve;
+				this.rejectFunc = reject;
+			});
 		}
 		return this._agreedPromise;
 	}
@@ -85,22 +98,20 @@ export class NewTermsDialog extends BaseDialog {
 	}
 
 	submitAgreement() {
-
 		this.hasSubmitted = true;
-		if (this.agreedToTerms ) {
+		if (this.agreedToTerms) {
 			const profile = this.profile ? this.profile : this.profileManager.userProfile;
-			profile.agreeToLatestTerms().then(_ => {
+			profile.agreeToLatestTerms().then((_) => {
 				this.closeDialog();
 				if (this.resolveFunc) {
 					this.resolveFunc();
 				}
 			});
 		}
-
 	}
 
 	openDialog() {
-		this.profileManager.userProfilePromise.then(profile => {
+		this.profileManager.userProfilePromise.then((profile) => {
 			this.profile = profile;
 		});
 		if (!this.isOpen) this.showModal();

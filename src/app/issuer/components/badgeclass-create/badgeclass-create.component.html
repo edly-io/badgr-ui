@@ -1,27 +1,29 @@
-<div class="newBadgeTopBar justify-content-between">
-	<!-- <div class="topbar-x-breadcrumbs">
+<div class="mainHeaderWrapper">
+	<div class="newBadgeTopBar justify-content-between">
+		<!-- <div class="topbar-x-breadcrumbs">
 			<bg-breadcrumbs [linkentries]="breadcrumbLinkEntries"></bg-breadcrumbs>
 		</div> -->
-	<div class="d-flex gap-2 flex-column">
-		<h2 class="topbar-x-heading py-0" i18n>Create badge</h2>
-		<span class="badgeSubTitle" i18n>
-			Once you have created a badge, you can give it to as many recipients as you want.
-		</span>
-	</div>
+		<div class="d-flex gap-2 flex-column">
+			<h2 class="topbar-x-heading py-0" i18n>Create badge</h2>
+			<span class="badgeSubTitle" i18n>
+				Once you have created a badge, you can give it to as many recipients as you want.
+			</span>
+		</div>
 
-	<button
-		type="submit"
-		class="primary-button"
-		(click)="copyBadge()"
-		loading-message="Loading badges..."
-		[disabled-when-requesting]="true"
-		i18n
-	>
-		Copy badge
-	</button>
+		<button
+			type="submit"
+			class="primary-button"
+			(click)="copyBadge()"
+			loading-message="Loading badges..."
+			[disabled-when-requesting]="true"
+			i18n
+		>
+			Copy badge
+		</button>
+	</div>
 </div>
 
-<div *bgAwaitPromises="[issuerLoaded]" class="l-containerxaxis l-containeryaxis mt-5">
+<div *bgAwaitPromises="[issuerLoaded]" class="l-containerxaxis l-containeryaxis mt-3 mt-md-5 pt-0">
 	<div class="l-responsivelist">
 		<badgeclass-edit-form
 			#badgeimage

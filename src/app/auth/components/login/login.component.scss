@@ -1,24 +1,32 @@
 .loginPage {
-	margin-top: 60px;
+	margin-top: 30px;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 30px;
 	border-radius: 16px;
-	&__heading {
-		font-size: 20px;
-		font-weight: 600;
-		font-family: var(--IBM-font-family);
-	}
+	padding: 30px;
+
 	&__button {
 		background-color: var(--primary-color);
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: 500;
-		font-family: var(--IBM-font-family);
-		padding: 16px 25px;
+		padding: 14px 20px;
 		border-radius: 8px;
 		color: white;
+		text-align: center;
 		&:hover {
 			background-color: var(--burnt-sienna);
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.loginPage {
+		margin-top: 60px;
+		padding: 48px;
+		&__button {
+			font-size: 18px;
+			padding: 16px 25px;
 		}
 	}
 }

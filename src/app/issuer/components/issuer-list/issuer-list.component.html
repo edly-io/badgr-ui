@@ -1,24 +1,25 @@
 <form-message></form-message>
-
-<header class="newBadgeTopBar justify-content-between">
-	<div class="d-flex gap-3 align-items-center">
-		<h2 class="topbar-x-heading py-0" i18n>Institutions</h2>
-		<ng-template [showLoader]="false" [bgAwaitPromises]="[issuersLoaded]">
-			<span class="badgeSubTitle">
-				{{ issuers.length | i18nPlural : plural['issuer'] }}
-			</span>
-		</ng-template>
-	</div>
-	<button
-		class="primary-button topbar-x-button"
-		*ngIf="!features.disableIssuers"
-		[routerLink]="['/issuer/create']"
-		[disabled-when-requesting]="true"
-		i18n
-	>
-		Create institution
-	</button>
-</header>
+<div class="mainHeaderWrapper">
+	<header class="newBadgeTopBar justify-content-between">
+		<div class="d-flex gap-3 align-items-center">
+			<h2 class="topbar-x-heading py-0" i18n>Institutions</h2>
+			<ng-template [showLoader]="false" [bgAwaitPromises]="[issuersLoaded]">
+				<span class="badgeSubTitle">
+					{{ issuers.length | i18nPlural : plural['issuer'] }}
+				</span>
+			</ng-template>
+		</div>
+		<button
+			class="primary-button topbar-x-button"
+			*ngIf="!features.disableIssuers"
+			[routerLink]="['/issuer/create']"
+			[disabled-when-requesting]="true"
+			i18n
+		>
+			Create institution
+		</button>
+	</header>
+</div>
 
 <div>
 	<ng-template [showLoader]="true" [bgAwaitPromises]="[issuersLoaded]">

@@ -91,205 +91,208 @@
 	<!-- Regular View -->
 	<main class="o-container" *ngIf="!embedService.isEmbedded">
 		<form-message></form-message>
-
-		<div class="badgedetail">
-			<div class="badgedetail-x-header">
-				<!-- Badge Name -->
-				<h1>
-					{{ badgeClass.name }}
-				</h1>
-
-				<div class="l-primarymore">
-					<a class="button" *ngIf="!showDownload" (click)="verifyBadge()" i18n>Verify Badge</a>
-
-					<a class="button" (click)="openSaveDialog(assertion)" *ngIf="showDownload" i18n>Download</a>
-
-					<button class="buttonicon buttonicon-secondary" id="actionstrigger" [bgPopupMenuTrigger]="moreMenu">
-						<svg icon="icon_more"></svg>
-						<span class="visuallyhidden">More</span>
-					</button>
-					<bg-popup-menu #moreMenu>
-						<a class="menuitem" [href]="rawJsonUrl"><svg icon="icon_external_link" i18n></svg>Download JSON</a>
-						<a class="menuitem" [href]="rawBakedUrl" download="true" target="_blank"
-							><svg icon="icon_external_link" i18n></svg>Download Baked Image</a
-						>
-						<a class="menuitem" *ngIf="assertion.sourceUrl" [href]="assertion.sourceUrl"
-							><svg icon="icon_external_link" i18n></svg>View Original</a
-						>
-						<a class="menuitem" [routerLink]="routerLinkForUrl(badgeClass.hostedUrl || badgeClass.id)">
-							<svg icon="icon_badge" i18n></svg>View Badge</a
-						>
-					</bg-popup-menu>
+		<div class="mainHeaderWrapper">
+			<section class="newContainer pt-0">
+				<!-- tags -->
+				<h3
+					class="u-text-h3-semibold u-text-dark2 u-margin-bottom2x u-margin-top4x font-family-plex-blue"
+					*ngIf="badgeClass.tags && badgeClass.tags.length"
+					i18n
+				>
+					Tags
+				</h3>
+				<div class="l-tags">
+					<div class="tag" *ngFor="let tag of badgeClass.tags; last as last">{{ tag }}</div>
 				</div>
-			</div>
-			<div class="badgedetail-x-sidebar">
-				<div class="badgedetail-x-sidebarinternal">
-					<!-- Badge Assertion Image -->
-					<img
-						[loaded-src]="assertion.image"
-						[loading-src]="badgeLoadingImageUrl"
-						[error-src]="badgeFailedImageUrl"
-						[ngStyle]="assertion.expires && isExpired && { filter: 'grayscale(1)' }"
-						class="badgeimage badgeimage-center badgeimage-large"
-						width="200"
-					/>
+			</section>
+			<div class="topbar-withimage newBadgeTopBar flex-column gap-2 mt-3" id="issuer-detail-header">
+				<div class="issuerDetail-main">
+					<div class="issuerDetail-body">
+						<img
+							[loaded-src]="assertion.image"
+							[loading-src]="badgeLoadingImageUrl"
+							[error-src]="badgeFailedImageUrl"
+							[ngStyle]="assertion.expires && isExpired && { filter: 'grayscale(1)' }"
+							class="topbar-x-image"
+							width="200"
+						/>
+						<div>
+							<!-- Badge Name -->
+							<h1 class="issuer-heading">
+								{{ badgeClass.name }}
+							</h1>
+							<div class="badgedetail-x-desc">
+								<p class="issuer-desc u-width-paragraph">{{ assertion.badge.description }}</p>
+							</div>
+							<div class="u-margin-yaxis2x" *ngIf="badgeClass.criteria.id">
+								<a class="u-text-outlink" target="_blank" [href]="badgeClass.criteria.id" i18n
+									>View External Criteria URL
+									<svg icon="icon_external_link"></svg>
+								</a>
+							</div>
+							<!-- criteria -->
+							<section>
+								<h3
+									*ngIf="
+										badgeClass.criteria.id || badgeClass.criteria.narrative || badgeClass.criteria
+									"
+									class="u-text-h3-semibold font-family-plex-blue u-margin-bottom2x u-margin-top4x"
+									i18n
+								>
+									Criteria
+								</h3>
+								<show-more class="u-margin-bottom8x" *ngIf="badgeClass.criteria.narrative">
+									<markdown-display [value]="badgeClass.criteria.narrative"></markdown-display>
+								</show-more>
+							</section>
+						</div>
+					</div>
+					<div class="topbar-x-buttons">
+						<div class="l-primarymore">
+							<a class="primary-button" *ngIf="!showDownload" (click)="verifyBadge()" i18n
+								>Verify Badge</a
+							>
+
+							<a class="primary-button" (click)="openSaveDialog(assertion)" *ngIf="showDownload" i18n
+								>Download</a
+							>
+
+							<button
+								class="buttonicon new-button-secondary"
+								id="actionstrigger"
+								[bgPopupMenuTrigger]="moreMenu"
+							>
+								<svg icon="icon_more"></svg>
+								<span class="visuallyhidden">More</span>
+							</button>
+							<bg-popup-menu #moreMenu>
+								<a class="menuitem mr-0 d-flex align-items-center gap-2" [href]="rawJsonUrl"
+									><svg icon="icon_external_link" i18n></svg>Download JSON</a
+								>
+								<a
+									class="menuitem mr-0 d-flex align-items-center gap-2"
+									[href]="rawBakedUrl"
+									download="true"
+									target="_blank"
+									><svg icon="icon_external_link" i18n></svg>Download Baked Image</a
+								>
+								<a
+									class="menuitem mr-0 d-flex align-items-center gap-2"
+									*ngIf="assertion.sourceUrl"
+									[href]="assertion.sourceUrl"
+									><svg icon="icon_external_link" i18n></svg>View Original</a
+								>
+								<a
+									class="menuitem mr-0 d-flex align-items-center gap-2"
+									[routerLink]="routerLinkForUrl(badgeClass.hostedUrl || badgeClass.id)"
+								>
+									<svg icon="icon_badge" i18n></svg>View Badge</a
+								>
+							</bg-popup-menu>
+						</div>
+					</div>
+					<!-- Issuer Information -->
+				</div>
+				<div class="issuer-wrapper w-100">
 					<div class="badgestatus badgestatus-expired u-margin-auto" *ngIf="assertion.expires && isExpired">
 						Expired
 					</div>
-
-					<!-- Issuer Information -->
-					<dl>
-						<div class="l-flex l-flex-2x u-padding-top2x border border-top border-light3">
-							<div>
-								<img
-									[loaded-src]="issuer.image"
-									[loading-src]="issuerImagePlacholderUrl"
-									[error-src]="issuerImagePlacholderUrl"
-									width="40"
-								/>
-							</div>
-							<div>
-								<dt class="u-text-small-bold u-text-dark2" i18n>Issued by:</dt>
-								<dd class="u-text">
-									<a class="u-break-word" [href]="issuer.id">{{ issuer.name }}</a>
-								</dd>
-							</div>
+					<div class="issuer-wrapper-award">
+						<img
+							[loaded-src]="issuer.image"
+							[loading-src]="issuerImagePlacholderUrl"
+							[error-src]="issuerImagePlacholderUrl"
+							width="40"
+						/>
+						<div class="issuer-detail-block">
+							<dt class="font-family-plex-blue u-text-small-bold" i18n>Issued by:</dt>
+							<dd class="u-text">
+								<a class="u-break-word" [href]="issuer.id">{{ issuer.name }}</a>
+							</dd>
 						</div>
-						<dt
-							class="
-								u-text-small-bold u-padding-top2x u-margin-top2x
-								border border-top border-light3
-								u-text-dark2
-							"
-							i18n
-						>
-							Issued on:
-						</dt>
-						<dd class="u-text"><time [date]="assertion.issuedOn" format="mediumDate"></time></dd>
-						<dt
-							class="
-								u-text-small-bold u-padding-top2x u-margin-top2x
-								border border-top border-light3
-								u-text-dark2
-							"
-							*ngIf="awardedToDisplayName"
-							i18n
-						>
+					</div>
+					<div class="issuer-detail-block">
+						<div class="font-family-plex-blue u-text-small-bold" i18n>Issued on:</div>
+						<div class="u-text"><time [date]="assertion.issuedOn" format="mediumDate"></time></div>
+					</div>
+					<div class="issuer-detail-block">
+						<div class="font-family-plex-blue u-text-small-bold" *ngIf="awardedToDisplayName" i18n>
 							Awarded to:
-						</dt>
-						<dd class="u-text u-break-all">{{ awardedToDisplayName }}</dd>
-						<dt
-							class="
-								u-text-small-bold u-padding-top2x u-margin-top2x
-								border border-top border-light3
-								u-text-dark2
-							"
-							*ngIf="assertion.expires"
-						>
-							<span>{{ +isExpired | i18nPlural: tense['expires'] }} on:</span>
-						</dt>
-						<dd class="u-text" *ngIf="assertion.expires">
+						</div>
+						<div class="u-text u-break-all">{{ awardedToDisplayName }}</div>
+					</div>
+					<div class="issuer-detail-block">
+						<div class="font-family-plex-blue u-text-small-bold" *ngIf="assertion.expires">
+							<span>{{ +isExpired | i18nPlural : tense['expires'] }} on:</span>
+						</div>
+						<div class="u-text" *ngIf="assertion.expires">
 							<time [date]="assertion?.expires" format="mediumDate"></time>
-						</dd>
-					</dl>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="badgedetail-x-desc">
-				<h2 class="u-text-h3-semibold u-margin-bottom2x u-hidden-mintablet" i18n>Description</h2>
-				<p class="u-text-body u-width-paragraph">{{ assertion.badge.description }}</p>
-			</div>
-			<div class="badgedetail-x-body">
-				<!-- criteria -->
-				<section>
-					<h3
-						*ngIf="badgeClass.criteria.id || badgeClass.criteria.narrative || badgeClass.criteria"
-						class="u-text-h3-semibold u-text-dark2 u-margin-bottom2x u-margin-top4x"
-						i18n
-					>
-						Criteria
-					</h3>
-					<show-more class="u-margin-bottom8x" *ngIf="badgeClass.criteria.narrative">
-						<markdown-display [value]="badgeClass.criteria.narrative"></markdown-display>
-					</show-more>
-					<div class="u-margin-yaxis2x" *ngIf="badgeClass.criteria.id">
-						<a class="u-text-outlink" target="_blank" [href]="badgeClass.criteria.id" i18n
-							>View External Criteria URL
-							<svg icon="icon_external_link"></svg>
-						</a>
-					</div>
-				</section>
+				<div class="badgedetail-x-body">
+					<!-- alignment -->
+					<section>
+						<h3
+							class="u-text-h3-semibold u-margin-yaxis2x"
+							*ngIf="badgeClass.alignment && badgeClass?.alignment.length > 0"
+						>
+							Alignment
+						</h3>
 
-				<!-- alignment -->
-				<section>
-					<h3
-						class="u-text-h3-semibold u-margin-yaxis2x"
-						*ngIf="badgeClass.alignment && badgeClass?.alignment.length > 0"
-					>
-						Alignment
-					</h3>
-
-					<div
-						class="bordered l-padding-2x l-marginBottom-2x"
-						*ngFor="let alignment of badgeClass.alignment; let i = index"
-					>
-						<div class="l-flex l-flex-justifybetween">
-							<h4 class="u-text-body-bold u-margin-bottom1x">{{ alignment.targetName }}</h4>
-							<small>{{ alignment.targetCode }}</small>
+						<div
+							class="bordered l-padding-2x l-marginBottom-2x"
+							*ngFor="let alignment of badgeClass.alignment; let i = index"
+						>
+							<div class="l-flex l-flex-justifybetween">
+								<h4 class="u-text-body-bold u-margin-bottom1x">{{ alignment.targetName }}</h4>
+								<small>{{ alignment.targetCode }}</small>
+							</div>
+							<p class="u-break-word u-text-body u-width-paragraph">{{ alignment.targetDescription }}</p>
+							<div *ngIf="alignment.frameworkName">
+								<h1>Framework</h1>
+								{{ alignment.frameworkName }}
+							</div>
+							<div class="u-margin-yaxis2x" *ngIf="alignment.targetUrl">
+								<a class="u-text-outlink" [href]="alignment.targetUrl" target="_blank" i18n
+									>View alignment URL
+									<svg icon="icon_external_link"></svg>
+								</a>
+							</div>
 						</div>
-						<p class="u-break-word u-text-body u-width-paragraph">{{ alignment.targetDescription }}</p>
-						<div *ngIf="alignment.frameworkName">
-							<h1>Framework</h1>
-							{{ alignment.frameworkName }}
+					</section>
+
+					<!-- evidence -->
+					<section *ngIf="assertion?.evidence?.length > 0 || assertion?.narrative || assertion?.evidence">
+						<!-- || assertion.evidence.narrative -->
+						<h3
+							*ngIf="assertion?.narrative"
+							class="u-text-h3-semibold u-margin-bottom2x u-margin-top4x"
+							i18n
+						>
+							Narrative
+						</h3>
+
+						<show-more *ngIf="assertion?.narrative">
+							<markdown-display [value]="assertion?.narrative"></markdown-display>
+						</show-more>
+
+						<show-more *ngIf="assertion?.evidence?.narrative">
+							<markdown-display [value]="assertion?.evidence?.narrative"></markdown-display>
+						</show-more>
+
+						<div *ngFor="let evidence of assertion?.evidence; let i = index">
+							<h3 class="u-text-h3-semibold u-margin-bottom2x u-margin-top4x" i18n>Evidence</h3>
+							<markdown-display [value]="evidence?.narrative"></markdown-display>
+							<div class="u-margin-yaxis2x">
+								<a *ngIf="evidence.id" class="u-text-outlink" [href]="evidence.id" target="_blank" i18n
+									>View Evidence URL
+									<svg icon="icon_external_link"></svg>
+								</a>
+							</div>
 						</div>
-						<div class="u-margin-yaxis2x" *ngIf="alignment.targetUrl">
-							<a class="u-text-outlink" [href]="alignment.targetUrl" target="_blank" i18n
-								>View alignment URL
-								<svg icon="icon_external_link"></svg>
-							</a>
-						</div>
-					</div>
-				</section>
-
-				<!-- tags -->
-				<section>
-					<h3
-						class="u-text-h3-semibold u-margin-bottom2x u-margin-top4x"
-						*ngIf="badgeClass.tags && badgeClass.tags.length"
-						i18n
-					>
-						Tags
-					</h3>
-					<div class="l-tags">
-						<div class="tag" *ngFor="let tag of badgeClass.tags; last as last">{{ tag }}</div>
-					</div>
-				</section>
-
-				<!-- evidence -->
-				<section *ngIf="assertion?.evidence?.length > 0 || assertion?.narrative || assertion?.evidence">
-					<!-- || assertion.evidence.narrative -->
-					<h3 *ngIf="assertion?.narrative" class="u-text-h3-semibold u-margin-bottom2x u-margin-top4x" i18n>
-						Narrative
-					</h3>
-
-					<show-more *ngIf="assertion?.narrative">
-						<markdown-display [value]="assertion?.narrative"></markdown-display>
-					</show-more>
-
-					<show-more *ngIf="assertion?.evidence?.narrative">
-						<markdown-display [value]="assertion?.evidence?.narrative"></markdown-display>
-					</show-more>
-
-					<div *ngFor="let evidence of assertion?.evidence; let i = index">
-						<h3 class="u-text-h3-semibold u-margin-bottom2x u-margin-top4x" i18n>Evidence</h3>
-						<markdown-display [value]="evidence?.narrative"></markdown-display>
-						<div class="u-margin-yaxis2x">
-							<a *ngIf="evidence.id" class="u-text-outlink" [href]="evidence.id" target="_blank" i18n
-								>View Evidence URL
-								<svg icon="icon_external_link"></svg>
-							</a>
-						</div>
-					</div>
-				</section>
+					</section>
+				</div>
 			</div>
 		</div>
 	</main>

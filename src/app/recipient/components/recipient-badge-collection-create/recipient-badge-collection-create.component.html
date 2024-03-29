@@ -1,11 +1,13 @@
 <main class="badgeCardContainer">
 	<form-message></form-message>
-	<header class="newBadgeTopBar gap-3">
-		<h3 class="topbar-x-heading" i18n>Create collection</h3>
-		<p class="badgeSubTitle" i18n>Organize your badges into collections.</p>
-	</header>
+	<div class="mainHeaderWrapper">
+		<header class="newBadgeTopBar gap-3">
+			<h3 class="topbar-x-heading p-0" i18n>Create collection</h3>
+			<p class="badgeSubTitle" i18n>Organize your badges into collections.</p>
+		</header>
+	</div>
 
-	<div class="smallContainer">
+	<div class="smallContainer pt-0">
 		<form [formGroup]="badgeCollectionForm.rawControl" (ngSubmit)="onSubmit(badgeCollectionForm.value)" novalidate>
 			<fieldset aria-labelledby="heading-add-badge-collection" role="group">
 				<legend class="visuallyhidden" id="heading-add-badge-collection" i18n>Create collection</legend>

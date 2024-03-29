@@ -1,15 +1,16 @@
 <form-message></form-message>
 <ng-template sourceListener></ng-template>
 <main *bgAwaitPromises="[profileLoaded, emailsLoaded]">
-	<div class="newBadgeTopBar">
-		<div class="topbar-x-heading l-spacestack py-0">
-			{{ profile?.firstName }} {{ profile?.lastName }}
-			<div class="l-primarymore">
-				<button [routerLink]="['/profile/edit']" class="primary-button" i18n>Edit</button>
+	<div class="mainHeaderWrapper">
+		<div class="newBadgeTopBar">
+			<div class="topbar-x-heading l-spacestack py-0">
+				{{ profile?.firstName }} {{ profile?.lastName }}
+				<div class="l-primarymore">
+					<button [routerLink]="['/profile/edit']" class="primary-button" i18n>Edit</button>
+				</div>
 			</div>
 		</div>
 	</div>
-
 	<div class="newContainer">
 		<div class="l-stack u-margin-yaxis3x">
 			<p class="u-text-h3-bold font-family-plex-blue" i18n>Emails</p>

@@ -1,93 +1,100 @@
 <form-message></form-message>
 
 <ng-template [bgAwaitPromises]="[issuerLoaded]">
-	<header class="topbar-withimage newBadgeTopBar" id="issuer-detail-header">
-		<!-- <div class="l-containerxaxis">
+	<div class="mainHeaderWrapper">
+		<header class="topbar-withimage newBadgeTopBar" id="issuer-detail-header">
+			<!-- <div class="l-containerxaxis">
 			<div class="topbar-x-breadcrumbs">
 				<bg-breadcrumbs [linkentries]="crumbs"> </bg-breadcrumbs>
 			</div>
 		</div> -->
-		<div class="topbar-x-wrap">
-			<div class="issuerDetail-main">
-				<div class="issuerDetail-body">
-					<img
-						class="topbar-x-image"
-						*ngIf="issuer.image"
-						[src]="issuer.image"
-						alt="{{ issuer.name }} logo "
-					/>
-					<img
-						class="topbar-x-image"
-						*ngIf="!issuer.image"
-						[src]="issuerImagePlaceHolderUrl"
-						alt="Default issuer image"
-					/>
-					<div>
-						<div class="issuer-heading">{{ issuer.name }}</div>
-						<div class="topbar-x-subheading">
-							<p class="u-text u-text-small font-family-plex-gray" i18n>
-								<strong [truncatedText]="issuer.email" [maxLength]="64"></strong>
-								<br class="u-hidden-minmobilelarge" /><span class="u-hidden-maxmobilelarge"> — </span
-								>Your Role:
-								{{ issuer?.currentUserStaffMember?.roleInfo?.label }}
-							</p>
-							<p class="issuer-desc u-width-paragraph">
-								{{ issuer.description }}
-							</p>
-							<div class="newBadgeDetail-linkWrapper" i18n>
-								<a href="{{ issuer.websiteUrl }}" class="newBadgeDetail-link">
-									Visit website
-									<img src="../../../../breakdown/static/images/arrow-external.svg" alt="arrow" />
-								</a>
+			<div class="topbar-x-wrap">
+				<div class="issuerDetail-main">
+					<div class="issuerDetail-body">
+						<img
+							class="topbar-x-image"
+							*ngIf="issuer.image"
+							[src]="issuer.image"
+							alt="{{ issuer.name }} logo "
+						/>
+						<img
+							class="topbar-x-image"
+							*ngIf="!issuer.image"
+							[src]="issuerImagePlaceHolderUrl"
+							alt="Default issuer image"
+						/>
+						<div>
+							<div class="issuer-heading">{{ issuer.name }}</div>
+							<div class="topbar-x-subheading">
+								<p class="u-text u-text-small font-family-plex-gray" i18n>
+									<strong [truncatedText]="issuer.email" [maxLength]="64"></strong>
+									<br class="u-hidden-minmobilelarge" /><span class="u-hidden-maxmobilelarge">
+										— </span
+									>Your Role:
+									{{ issuer?.currentUserStaffMember?.roleInfo?.label }}
+								</p>
+								<p class="issuer-desc u-width-paragraph">
+									{{ issuer.description }}
+								</p>
+								<div class="newBadgeDetail-linkWrapper" i18n>
+									<a href="{{ issuer.websiteUrl }}" class="newBadgeDetail-link">
+										Visit website
+										<img src="../../../../breakdown/static/images/arrow-external.svg" alt="arrow" />
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="topbar-x-buttons">
-					<p
-						*ngIf="!issuer.apiModel.verified"
-						class="u-margin-top1x u-width-paragraph font-family-plex-gray"
-						i18n
-					>
-						This issuer has not yet been verified
-					</p>
-					<div class="l-primarymore">
-						<button
-							class="primary-button"
-							[routerLink]="['./badges/create']"
-							[disabled]="!issuer.apiModel.verified"
+					<div class="topbar-x-buttons">
+						<p
+							*ngIf="!issuer.apiModel.verified"
+							class="u-margin-top1x u-width-paragraph font-family-plex-gray"
 							i18n
 						>
-							Create badge
-						</button>
-						<button class="buttonicon new-button-secondary" [bgPopupMenuTrigger]="issuerActionsMenu">
-							<svg icon="icon_more"></svg>
-							<span class="visuallyhidden">More</span>
-						</button>
+							This issuer has not yet been verified
+						</p>
+						<div class="l-primarymore">
+							<button
+								class="primary-button"
+								[routerLink]="['./badges/create']"
+								[disabled]="!issuer.apiModel.verified"
+								i18n
+							>
+								Create badge
+							</button>
+							<button class="buttonicon new-button-secondary" [bgPopupMenuTrigger]="issuerActionsMenu">
+								<svg icon="icon_more"></svg>
+								<span class="visuallyhidden">More</span>
+							</button>
+						</div>
+						<bg-popup-menu #issuerActionsMenu>
+							<a class="menuitem d-flex align-items-center gap-1" [routerLink]="['./edit']" i18n>
+								<svg icon="icon_edit"></svg>
+								Edit
+							</a>
+							<a class="menuitem align-items-center gap-1" (click)="delete($event)" href="#" i18n>
+								<svg icon="icon_remove"></svg>
+								Delete
+							</a>
+							<a class="menuitem align-items-center gap-1" [routerLink]="['./staff']" i18n>
+								<svg icon="icon_group"></svg>
+								Members {{ issuer?.currentUserStaffMember?.isOwner ? 'edit' : '' }}
+							</a>
+							<a
+								class="menuitem align-items-center gap-1"
+								*ngFor="let lp of launchpoints"
+								href="{{ lp.launch_url }}"
+								target="_blank"
+							>
+								<svg icon="icon_external_link"></svg>
+								{{ lp.label }}
+							</a>
+						</bg-popup-menu>
 					</div>
-					<bg-popup-menu #issuerActionsMenu>
-						<a class="menuitem" [routerLink]="['./edit']" i18n>
-							<svg icon="icon_edit"></svg>
-							Edit
-						</a>
-						<a class="menuitem" (click)="delete($event)" href="#" i18n>
-							<svg icon="icon_remove"></svg>
-							Delete
-						</a>
-						<a class="menuitem" [routerLink]="['./staff']" i18n>
-							<svg icon="icon_group"></svg>
-							Members {{ issuer?.currentUserStaffMember?.isOwner ? 'edit' : '' }}
-						</a>
-						<a class="menuitem" *ngFor="let lp of launchpoints" href="{{ lp.launch_url }}" target="_blank">
-							<svg icon="icon_external_link"></svg>
-							{{ lp.label }}
-						</a>
-					</bg-popup-menu>
 				</div>
 			</div>
-		</div>
-	</header>
-
+		</header>
+	</div>
 	<div *bgAwaitPromises="[issuerLoaded, badgesLoaded]">
 		<!-- EMPTY STATE: No badge classes -->
 		<section class="emptysection l-emptysection" *ngIf="!badges?.length">
@@ -120,7 +127,7 @@
 					<tbody class="datatable-x-body">
 						<tr class="datatable-x-row" *ngFor="let badge of badges; let i = index">
 							<td class="datatable-x-cell">
-								<div class="l-flex l-flex-aligncenter l-flex-1x">
+								<div class="l-flex l-flex-aligncenter l-flex-1x gap-4">
 									<img
 										class="l-flex-x-shrink0 badgeimage badgeimage-small"
 										src="{{ badge.image }}"
@@ -132,7 +139,7 @@
 										[routerLink]="['/issuer/issuers', issuer.slug, 'badges', badge.slug]"
 										>{{ badge.name }}</a
 									>
-									<div class="u-hidden-minmobilelarge l-flex-x-selfcenter u-margin-leftauto">
+									<div class="u-hidden-minmobilelarge l-flex-x-selfcenter">
 										<a
 											class="u-text-link-small"
 											[routerLink]="[

@@ -1,21 +1,22 @@
 <main importLauncher class="badgeCardContainer">
 	<form-message></form-message>
 
-	<div class="newBadgeTopBar">
-		<!--<div class="l-containerxaxis">
+	<div class="mainHeaderWrapper">
+		<div class="newBadgeTopBar">
+			<!--<div class="l-containerxaxis">
 			<div class="topbar-x-breadcrumbs">
 				<bg-breadcrumbs [linkentries]="crumbs">
 				</bg-breadcrumbs>
 			</div>
 		</div>-->
-		<h2 class="topbar-x-heading p-0">
-			Backpack
-			<span class="badgeSubTitle" *ngIf="!!allBadges"
-				>{{ allBadges.length }} {{ allBadges.length == 1 ? 'Badge' : 'Badges' }}</span
-			>
-		</h2>
-		<!-- <div class="l-primarymore"> -->
-		<!-- <button class="topbar-x-button buttonicon buttonicon-secondary" [bgPopupMenuTrigger]="collectionActionMenu">
+			<h2 class="topbar-x-heading p-0">
+				Backpack
+				<span class="badgeSubTitle" *ngIf="!!allBadges"
+					>{{ allBadges.length }} {{ allBadges.length == 1 ? 'Badge' : 'Badges' }}</span
+				>
+			</h2>
+			<!-- <div class="l-primarymore"> -->
+			<!-- <button class="topbar-x-button buttonicon buttonicon-secondary" [bgPopupMenuTrigger]="collectionActionMenu">
 					<svg icon="icon_more"></svg>
 					<span class="visuallyhidden">mehr</span>
 				</button>
@@ -27,9 +28,9 @@
 						[disabled-when-requesting]="true"
 						><svg icon="icon_file"></svg>Export to PDF</button>
 				</bg-popup-menu> -->
-		<!-- </div> -->
+			<!-- </div> -->
+		</div>
 	</div>
-
 	<ng-template [bgAwaitPromises]="[badgesLoaded]">
 		<ng-container *ngIf="mozillaFeatureEnabled">
 			<div *ngIf="!mozillaTransitionOver" #mozzBanner>
@@ -172,65 +173,25 @@
 			<!-- List View -->
 			<ng-template [ngIf]="badgesDisplay == 'list'">
 				<div class="issuerMainWrapper pt-0">
-					<table
-						class="datatable datatable-roundheaders datatable-onlyfirstcolumn datatable-verticalalignmiddle"
-					>
-						<thead class="datatable-x-head">
-							<tr class="datatable-x-header">
-								<th class="datatable-x-cell" scope="col" i18n>Badge</th>
-								<th class="datatable-x-cell" scope="col" i18n>Institution</th>
-								<th class="datatable-x-cell" scope="col" i18n>Awarded on</th>
-								<th class="datatable-x-cell" scope="col">
-									<span class="visuallyhidden">Actions</span>
-								</th>
-							</tr>
-						</thead>
-						<tbody class="datatable-x-body">
-							<!-- Issuer title if grouped by issuer -->
-							<ng-template ngFor let-issuerGroup [ngForOf]="issuerResults" let-i="index">
-								<tr class="datatable-x-row" *ngIf="groupByIssuer">
-									<th class="datatable-x-inlineheader" scope="row" colspan="4">
-										<a
-											class="u-text u-text-link u-text-breakword"
-											[routerLink]="[
-												'../../public/issuers',
-												issuerIdToSlug(issuerGroup.issuerId)
-											]"
-										>
-											{{ issuerGroup.issuer.name }}
-										</a>
+					<div class="table-responsive">
+						<table
+							class="datatable datatable-roundheaders datatable-onlyfirstcolumn datatable-verticalalignmiddle"
+						>
+							<thead class="datatable-x-head">
+								<tr class="datatable-x-header">
+									<th class="datatable-x-cell" scope="col" i18n>Badge</th>
+									<th class="datatable-x-cell" scope="col" i18n>Institution</th>
+									<th class="datatable-x-cell" scope="col" i18n>Awarded on</th>
+									<th class="datatable-x-cell" scope="col">
+										<span class="visuallyhidden">Actions</span>
 									</th>
 								</tr>
-								<!-- Badges -->
-								<ng-template ngFor let-badge [ngForOf]="issuerGroup.badges" let-i="index">
-									<tr class="datatable-x-row">
-										<td class="datatable-x-cell">
-											<div class="l-flex l-flex-2x l-flex-aligncenter">
-												<img
-													class="badgeimage badgeimage-{{
-														badge.mostRelevantStatus
-													}} badgeimage-small u-margin-right2x l-flex-x-shrink0"
-													width="40"
-													[loading-src]="badgeLoadingImageUrl"
-													[error-src]="badgeFailedImageUrl"
-													[loaded-src]="badge.image"
-												/>
-												<a
-													class="u-text u-text-link u-text-breakword"
-													[routerLink]="['../earned-badge', badge.slug]"
-													>{{ badge.badgeClass.name }}</a
-												>
-												<div
-													class="datatable-x-status badgestatus badgestatus-intable badgestatus-{{
-														badge.mostRelevantStatus
-													}}"
-													*ngIf="badge.mostRelevantStatus"
-												>
-													{{ badge.mostRelevantStatus }}
-												</div>
-											</div>
-										</td>
-										<td class="datatable-x-cell u-text-body">
+							</thead>
+							<tbody class="datatable-x-body">
+								<!-- Issuer title if grouped by issuer -->
+								<ng-template ngFor let-issuerGroup [ngForOf]="issuerResults" let-i="index">
+									<tr class="datatable-x-row" *ngIf="groupByIssuer">
+										<th class="datatable-x-inlineheader" scope="row" colspan="4">
 											<a
 												class="u-text u-text-link u-text-breakword"
 												[routerLink]="[
@@ -240,23 +201,65 @@
 											>
 												{{ issuerGroup.issuer.name }}
 											</a>
-										</td>
-										<td class="datatable-x-cell u-text-body">
-											<time [date]="badge?.issueDate" format="mediumDate"></time>
-										</td>
-										<td class="datatable-x-cell">
-											<button
-												class="u-text-link-small u-text-bold u-margin-leftauto"
-												(click)="shareBadge(badge)"
-											>
-												Split
-											</button>
-										</td>
+										</th>
 									</tr>
+									<!-- Badges -->
+									<ng-template ngFor let-badge [ngForOf]="issuerGroup.badges" let-i="index">
+										<tr class="datatable-x-row">
+											<td class="datatable-x-cell">
+												<div class="d-flex align-items-center gap-2 l-flex-aligncenter m-0">
+													<img
+														class="badgeimage badgeimage-{{
+															badge.mostRelevantStatus
+														}} badgeimage-small  l-flex-x-shrink0"
+														width="40"
+														[loading-src]="badgeLoadingImageUrl"
+														[error-src]="badgeFailedImageUrl"
+														[loaded-src]="badge.image"
+													/>
+													<a
+														class="u-text u-text-link u-text-breakword"
+														[routerLink]="['../earned-badge', badge.slug]"
+														>{{ badge.badgeClass.name }}</a
+													>
+													<div
+														class="datatable-x-status badgestatus badgestatus-intable badgestatus-{{
+															badge.mostRelevantStatus
+														}}"
+														*ngIf="badge.mostRelevantStatus"
+													>
+														{{ badge.mostRelevantStatus }}
+													</div>
+												</div>
+											</td>
+											<td class="datatable-x-cell u-text-body">
+												<a
+													class="u-text u-text-link u-text-breakword"
+													[routerLink]="[
+														'../../public/issuers',
+														issuerIdToSlug(issuerGroup.issuerId)
+													]"
+												>
+													{{ issuerGroup.issuer.name }}
+												</a>
+											</td>
+											<td class="datatable-x-cell u-text-body">
+												<time [date]="badge?.issueDate" format="mediumDate"></time>
+											</td>
+											<td class="datatable-x-cell">
+												<button
+													class="u-text-link-small u-text-bold u-margin-leftauto"
+													(click)="shareBadge(badge)"
+												>
+													Split
+												</button>
+											</td>
+										</tr>
+									</ng-template>
 								</ng-template>
-							</ng-template>
-						</tbody>
-					</table>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</ng-template>
 		</div>
