@@ -47,17 +47,18 @@
 	}
 	.badgePanelBody {
 		padding: 20px;
+
 		&__heading {
 			font-size: 14px;
 			font-weight: 700;
 			line-height: 1.5em;
+			color: white;
 			margin-bottom: 15px;
-			font-family: var(--IBM-font-family);
 		}
 		&__text {
 			font-size: 16px;
 			font-weight: 700;
-			font-family: var(--IBM-font-family);
+			color: white;
 			line-height: 1.5em;
 		}
 	}
@@ -73,9 +74,7 @@
 	.principalBlocks {
 		font-size: 25px;
 		font-weight: bold;
-		color: var(--primary-color);
 		line-height: 30px;
-		font-family: var(--IBM-font-family);
 		text-align: center;
 		&__img {
 			min-width: 60px;
@@ -92,13 +91,11 @@
 			transform: translateX(-50%);
 		}
 		&__heading {
-			color: var(--primary-color);
 			font-size: 16px;
 			font-weight: 700;
 			line-height: 1.5em;
 			margin-bottom: 15px;
 			text-transform: uppercase;
-			font-family: var(--IBM-font-family);
 			margin-bottom: 10px;
 		}
 	}

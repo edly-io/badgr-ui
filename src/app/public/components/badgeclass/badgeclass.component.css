@@ -54,13 +54,20 @@
 	font-size: 18px;
 	line-height: 25px;
 	font-weight: 600;
-	color: var(--primary-color);
+	overflow: hidden;
+	display: block;
+	max-height: 5rem;
+	-webkit-line-clamp: 2;
+	display: box;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	white-space: normal;
 }
 
 .newBadgeDetail-subtitle .markdown p {
 	margin-bottom: 0;
 	font-size: var(--normal-font);
-	color: var(--primary-color);
 }
 
 .newBadgeDetail-issuedBy {
@@ -71,7 +78,6 @@
 }
 
 .issue-heading {
-	color: var(--secondar-color);
 	font-size: 14px;
 	font-weight: 500;
 }
@@ -84,7 +90,6 @@
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	color: var(--primary-color);
 	font-size: 16px;
 	line-height: 20px;
 	font-weight: 600;
@@ -104,7 +109,7 @@
 }
 @media only screen and (min-width: 768px) {
 	.newBadgeDetail-header {
-		padding: 25px 25px 15px 25px;
+		padding: 25px 25px 20px 25px;
 		padding-left: 290px;
 	}
 	.newBadgeDetail-header:dir(rtl) {
@@ -161,12 +166,11 @@
 
 @media only screen and (min-width: 1200px) {
 	.newBadgeDetail-header {
-		padding: 40px 35px 16px;
+		padding: 40px 35px 24px;
 		padding-left: 325px;
 	}
 	.newBadgeDetail--heading {
 		font-size: 28px;
-		line-height: 40px;
 	}
 
 	.newBadgeDetail-header:dir(rtl) {

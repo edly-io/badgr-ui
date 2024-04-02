@@ -20,12 +20,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 			</div>
 			<div class="badgeNewCard-title-wrapper">
 				<!--
-				Need to discuss with ali
 				<a *ngIf="badgeSlug" class="badgeNewCard-title " [routerLink]="['../earned-badge', badgeSlug]">
 				{{ badgeTitle }}
 					مقدمة في تحليل البيانات
 				</a> -->
-				<a *ngIf="publicUrl" class="badgeNewCard-title  " [href]="publicUrl"> مقدمة في تحليل البيانات </a>
+				<a *ngIf="publicUrl" class="badgeNewCard-title  " [href]="publicUrl"> {{ badgeTitle }} </a>
 
 				<a
 					*ngIf="issuerSlug; else noIssuerSlug"
@@ -35,9 +34,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 				>
 				<ng-template #noIssuerSlug>
 					<div class="badgeNewCard-issuer">
-						أكاديمية سدايا
-
-						<!--{{ issuerTitle }} -->
+						{{ issuerTitle }}
 					</div>
 				</ng-template>
 				<p class="badgeNewCard-desc" [truncatedText]="badgeDescription" [maxLength]="100"></p>

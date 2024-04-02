@@ -63,7 +63,13 @@
 								Create badge
 							</button>
 							<button class="buttonicon new-button-secondary" [bgPopupMenuTrigger]="issuerActionsMenu">
-								<svg icon="icon_more"></svg>
+								<!-- <svg icon="icon_more"></svg>
+								 -->
+								<img
+									class="forminput-x-icon"
+									src="../../../../assets/badges/icon-more.svg"
+									alt="search"
+								/>
 								<span class="visuallyhidden">More</span>
 							</button>
 						</div>
@@ -98,10 +104,10 @@
 	<div *bgAwaitPromises="[issuerLoaded, badgesLoaded]">
 		<!-- EMPTY STATE: No badge classes -->
 		<section class="emptysection l-emptysection" *ngIf="!badges?.length">
-			<h2 class="emptysection-x-headline" i18n>The issuer does not have any badges yet</h2>
 			<div class="emptysection-x-imagecontainer">
 				<img alt="Illustration" class="emptysection-x-image" [src]="noIssuersPlaceholderSrc" />
 			</div>
+			<h2 class="emptysection-x-headline font-family-plex-blue" i18n>The issuer does not have any badges yet</h2>
 		</section>
 
 		<!-- Has Badge Classes -->
@@ -110,36 +116,61 @@
 				<h4 class="u-text-h3-bold font-family-plex-blue u-margin-top1x">
 					{{ badges.length }} Badge{{ badges.length == 1 ? '' : 's' }}
 				</h4>
-				<table
-					class="datatable datatable-roundheaders datatable-onlyfirstcolumn datatable-verticalalignmiddle u-margin-top2x"
-					*ngIf="badges?.length"
-				>
-					<thead class="datatable-x-head">
-						<tr class="datatable-x-header">
-							<th class="datatable-x-cell" i18n>Badge</th>
-							<th class="datatable-x-cell" i18n>Created on</th>
-							<th class="datatable-x-cell" i18n>Recipients</th>
-							<th class="datatable-x-cell">
-								<span class="visuallyhidden" i18n>Actions</span>
-							</th>
-						</tr>
-					</thead>
-					<tbody class="datatable-x-body">
-						<tr class="datatable-x-row" *ngFor="let badge of badges; let i = index">
-							<td class="datatable-x-cell">
-								<div class="l-flex l-flex-aligncenter l-flex-1x gap-4">
-									<img
-										class="l-flex-x-shrink0 badgeimage badgeimage-small"
-										src="{{ badge.image }}"
-										alt="{{ badge.description }}"
-										width="40"
-									/>
-									<a
-										class="u-text u-text-breakword"
-										[routerLink]="['/issuer/issuers', issuer.slug, 'badges', badge.slug]"
-										>{{ badge.name }}</a
-									>
-									<div class="u-hidden-minmobilelarge l-flex-x-selfcenter">
+				<div class="table-responsive">
+					<table class="table table-striped table-hover mb-0" *ngIf="badges?.length">
+						<thead class="thead-dark">
+							<tr>
+								<th i18n>Badge</th>
+								<th i18n>Created on</th>
+								<th i18n>Recipients</th>
+								<th>
+									<span class="visuallyhidden" i18n>Actions</span>
+								</th>
+							</tr>
+						</thead>
+						<tbody class="datatable-x-body">
+							<tr class="datatable-x-row" *ngFor="let badge of badges; let i = index">
+								<td class="datatable-x-cell">
+									<div class="l-flex l-flex-aligncenter l-flex-1x gap-4">
+										<img
+											class="l-flex-x-shrink0 badgeimage badgeimage-small"
+											src="{{ badge.image }}"
+											alt="{{ badge.description }}"
+											width="40"
+										/>
+										<a
+											class="u-text u-text-breakword"
+											[routerLink]="['/issuer/issuers', issuer.slug, 'badges', badge.slug]"
+											>{{ badge.name }}</a
+										>
+										<div class="u-hidden-minmobilelarge l-flex-x-selfcenter">
+											<a
+												class="u-text-link-small"
+												[routerLink]="[
+													'/issuer/issuers/',
+													issuer.slug,
+													'badges',
+													badge.slug,
+													'issue'
+												]"
+												i18n
+												>Forgive</a
+											>
+										</div>
+									</div>
+								</td>
+								<td class="datatable-x-cell">
+									<div class="l-flex l-flex-aligncenter">
+										<p class="u-text"><time [date]="badge.createdAt" format="mediumDate"></time></p>
+									</div>
+								</td>
+								<td class="datatable-x-cell">
+									<div class="l-flex l-flex-aligncenter">
+										<p class="u-text">{{ badge.recipientCount }}</p>
+									</div>
+								</td>
+								<td class="datatable-x-cell">
+									<div class="l-flex l-flex-aligncenter l-flex-justifyend">
 										<a
 											class="u-text-link-small"
 											[routerLink]="[
@@ -153,31 +184,11 @@
 											>Forgive</a
 										>
 									</div>
-								</div>
-							</td>
-							<td class="datatable-x-cell">
-								<div class="l-flex l-flex-aligncenter">
-									<p class="u-text"><time [date]="badge.createdAt" format="mediumDate"></time></p>
-								</div>
-							</td>
-							<td class="datatable-x-cell">
-								<div class="l-flex l-flex-aligncenter">
-									<p class="u-text">{{ badge.recipientCount }}</p>
-								</div>
-							</td>
-							<td class="datatable-x-cell">
-								<div class="l-flex l-flex-aligncenter l-flex-justifyend">
-									<a
-										class="u-text-link-small"
-										[routerLink]="['/issuer/issuers/', issuer.slug, 'badges', badge.slug, 'issue']"
-										i18n
-										>Forgive</a
-									>
-								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</section>
 		</div>
 	</div>

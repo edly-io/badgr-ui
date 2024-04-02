@@ -1,4 +1,21 @@
-body {
+.datatable .datatable-x-cell,
+body,
+html p,
+span,
+label,
+td,
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+ul,
+button {
+	color: var(--primary-color);
 	font-family: var(--IBM-font-family) !important;
 }
 
@@ -119,17 +136,32 @@ a.menuitem:hover {
 .datatable .datatable-x-cell:dir(rtl) {
 	text-align: right;
 }
-.datatable .datatable-x-cell,
-p,
-span,
-label,
-td,
-th,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: var(--IBM-font-family) !important;
+
+.notVerified {
+	overflow: hidden;
+	display: block;
+	max-height: 4rem;
+	-webkit-line-clamp: 2;
+	display: box;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	white-space: normal;
+	width: 300px;
+}
+
+.socialbutton {
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	align-items: center;
+	text-transform: capitalize;
+}
+
+.socialbutton::after {
+	display: none;
+}
+
+.markdown p {
+	margin-bottom: 0;
 }

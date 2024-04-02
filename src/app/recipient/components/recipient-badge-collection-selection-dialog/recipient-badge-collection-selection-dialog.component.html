@@ -22,37 +22,37 @@
 					<input type="text" placeholder="Filter your collections" [(ngModel)]="searchQuery" />
 				</div>
 			</div>
-
-			<table
-				class="datatable datatable-roundheaders datatable-singlecolumn"
-				*bgAwaitPromises="[collectionListLoaded]"
-			>
-				<thead class="datatable-x-head">
-					<tr class="datatable-x-header">
-						<th class="datatable-x-cell" i18n>Collection</th>
-					</tr>
-				</thead>
-				<tbody class="datatable-x-body">
-					<tr class="datatable-x-row" *ngFor="let collection of badgeCollectionsResults">
-						<td class="datatable-x-cell">
-							<label
-								class="d-flex align-content-center gap-2"
-								htmlFor="collection-{{ collection.slug }}"
-								class="checkbox"
-							>
-								<input
-									type="checkbox"
-									#collectionsCheckbox
-									[id]="'collection-' + collection.slug"
-									[name]="'collection-' + collection.slug"
-									(change)="updateCollection(collection, collectionsCheckbox.checked)"
-								/>
-								<span class="checkbox-x-text font-family-plex-blue">{{ collection.name }}</span>
-							</label>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+			<div class="issuerMainWrapper pt-0">
+				<div class="table-responsive">
+					<table class="table table-striped table-hover mb-0" *bgAwaitPromises="[collectionListLoaded]">
+						<thead class="thead-dark">
+							<tr>
+								<th i18n>Collection</th>
+							</tr>
+						</thead>
+						<tbody class="datatable-x-body">
+							<tr class="datatable-x-row" *ngFor="let collection of badgeCollectionsResults">
+								<td class="datatable-x-cell">
+									<label
+										class="d-flex align-content-center gap-2"
+										htmlFor="collection-{{ collection.slug }}"
+										class="checkbox"
+									>
+										<input
+											type="checkbox"
+											#collectionsCheckbox
+											[id]="'collection-' + collection.slug"
+											[name]="'collection-' + collection.slug"
+											(change)="updateCollection(collection, collectionsCheckbox.checked)"
+										/>
+										<span class="checkbox-x-text font-family-plex-blue">{{ collection.name }}</span>
+									</label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 
 			<div class="l-flex l-flex-1x l-flex-justifyend u-margin-top2x gap-2">
 				<button class="primary-button" (click)="saveDialog()" i18n>Apply</button>

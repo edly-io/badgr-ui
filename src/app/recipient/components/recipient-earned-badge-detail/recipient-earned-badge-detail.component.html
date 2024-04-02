@@ -84,7 +84,8 @@
 							id="actionstrigger"
 							[bgPopupMenuTrigger]="moreMenu"
 						>
-							<svg icon="icon_more"></svg>
+							<!-- <svg icon="icon_more"></svg> -->
+							<img class="forminput-x-icon" src="../../../../assets/badges/icon-more.svg" alt="search" />
 							<span class="visuallyhidden" i18n>More</span>
 						</button>
 						<bg-popup-menu #moreMenu>
@@ -267,31 +268,38 @@
 					</button>
 				</div>
 				<div class="issuerMainWrapper pt-0">
-					<table
-						class="datatable datatable-roundheaders datatable-verticalalignmiddle"
-						*ngIf="badge.collections.length > 0"
-					>
-						<thead class="datatable-x-head">
-							<tr class="datatable-x-header">
-								<th class="datatable-x-cell" i18n>Collection</th>
-								<th class="datatable-x-cell"><span class="visuallyhidden" i18n>Actions</span></th>
-							</tr>
-						</thead>
-						<tbody class="datatable-x-body">
-							<tr class="datatable-x-row" *ngFor="let collection of badge.collections">
-								<td class="datatable-x-cell">
-									<p class="u-text-body-semibold u-break-word">{{ collection.name }}</p>
-								</td>
-								<td class="datatable-x-cell">
-									<div class="l-flex l-flex-justifyend">
-										<button class="u-text-link-small" (click)="removeCollection(collection)" i18n>
-											Remove
-										</button>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="table-responsive">
+						<table
+							class="table table-striped table-hover mb-0"
+							class="datatable datatable-roundheaders datatable-verticalalignmiddle"
+							*ngIf="badge.collections.length > 0"
+						>
+							<thead class="thead-dark">
+								<tr>
+									<th i18n>Collection</th>
+									<th><span class="visuallyhidden" i18n>Actions</span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr *ngFor="let collection of badge.collections">
+									<td class="datatable-x-cell">
+										<p class="u-text-body-semibold u-break-word">{{ collection.name }}</p>
+									</td>
+									<td class="datatable-x-cell">
+										<div class="l-flex l-flex-justifyend">
+											<button
+												class="u-text-link-small"
+												(click)="removeCollection(collection)"
+												i18n
+											>
+												Remove
+											</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</section>
 		</div>

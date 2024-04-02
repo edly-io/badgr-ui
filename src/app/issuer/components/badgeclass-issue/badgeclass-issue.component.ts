@@ -91,7 +91,7 @@ export class BadgeClassIssueComponent extends BaseAuthenticatedRoutableComponent
 	badgeClassLoaded: Promise<unknown>;
 
 	identifierOptionMap = {
-		email: 'E-Mail Adresse',
+		email: 'E-Mail Address',
 		url: 'URL',
 		// telephone: "Telephone",
 	};

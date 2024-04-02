@@ -5,7 +5,7 @@
 	--bg-topbar: #f3f2ee;
 	--bg-color-card: #f9f8f5;
 	--primary-color: #1c355e;
-	--secondar-color: #7c7c7c;
+	--secondary-color: #7c7c7c;
 	--IBM-font-family: 'IBM Plex Sans Arabic', sans-serif;
 	--normal-font: 16px;
 	--burnt-sienna: #ea6852;
@@ -13,12 +13,11 @@
 	--sliver: #bbbbbb;
 }
 
-.body-bg {
+.body-bg,
+.newBadgeContainer {
 	background: var(--bg-body);
 }
-.newBadgeContainer {
-	margin-top: 39px;
-}
+
 .newContainer {
 	width: 100%;
 	max-width: 1660px;
@@ -39,13 +38,12 @@
 }
 .font-family-plex-gray {
 	font-family: var(--IBM-font-family) !important;
-	color: var(--secondar-color) !important;
+	color: var(--secondary-color) !important;
 }
 
 .new-box-shadow {
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
 	border-radius: 16px !important;
-	font-family: var(--IBM-font-family) !important;
 }
 
 .groupInput .forminput-x-inputs input,
@@ -102,21 +100,18 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	gap: 10px;
 	flex-shrink: 0;
 	font-weight: 600;
-	color: var(--primary-color);
 	padding: 10px 0;
 	line-height: 25px;
 }
 .newBadgeTopBar .totalBadges {
 	font-size: 20px;
 	font-weight: 600;
-	color: var(--primary-color);
 }
 .badgeCardContainer {
 	width: 100%;
 	max-width: 1660px;
 	margin: 0 auto;
-	padding: 1rem 10px;
-	padding-top: 0;
+	padding: 0 10px;
 }
 
 .badgeCardContainer .l-grid-large {
@@ -138,7 +133,6 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	color: var(--sliver);
 	font-size: 18px;
 	font-weight: 400;
-	font-family: var(--IBM-font-family);
 }
 .newBadgeSearchBar .forminput .forminput-x-inputs select {
 	background-image: url(../images/dropdown-icon.svg);
@@ -176,7 +170,6 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 }
 .newBadgeSearchBar-wrapper .groupBy {
 	font-size: 16px;
-	color: var(--primary-color);
 }
 
 .searchGroupBy-wrapper {
@@ -271,7 +264,7 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 
 .badgeSubTitle {
 	font-size: 16px;
-	color: var(--secondar-color);
+	color: var(--secondary-color);
 	line-height: 20px;
 }
 .newBadgeCardTags {
@@ -279,7 +272,6 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	display: flex !important;
 }
 .newBadgeCardTags .tag-button {
-	color: var(--primary-color);
 	border-radius: 10px;
 	padding: 7px 20px;
 	font-weight: 500;
@@ -292,7 +284,6 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	gap: 28px;
 }
 .tagsHeading {
-	color: var(--primary-color);
 	font-size: 20px;
 	font-weight: 500;
 }
@@ -346,17 +337,26 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 }
 
 .badgeNewCard-title {
-	color: var(--primary-color);
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 25px;
+	overflow: hidden;
+	display: block;
+	max-height: 4rem;
+	-webkit-line-clamp: 2;
+	display: box;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	white-space: normal;
 }
 .badgeNewCard-title:hover {
 	color: var(--burnt-sienna);
 }
 .badgeNewCard-issuer,
-.badgeNewCard-date {
-	color: var(--secondar-color);
+.badgeNewCard-date,
+.badgeNewCard-date span {
+	color: var(--secondary-color);
 	font-weight: 500;
 	font-size: var(--normal-font);
 }
@@ -365,7 +365,6 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	color: var(--burnt-sienna);
 }
 .badgeNewCard-desc {
-	color: var(--primary-color);
 	line-height: 25px;
 	font-size: var(--normal-font);
 	font-weight: 500;
@@ -380,9 +379,7 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	white-space: normal;
 }
 .badgeNewCard-sharelink {
-	color: var(--primary-color);
 	font-size: var(--normal-font);
-	font-family: var(--IBM-font-family);
 }
 .badgeNewCard-footer {
 	padding: 18px 0;
@@ -399,11 +396,16 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	width: max-content;
 }
 .newBadgeDetail-link {
-	color: var(--primary-color);
 	font-size: 18px;
 	font-weight: 500;
 	display: flex;
 	gap: 10px;
+}
+.newBadgeDetail-link img {
+	transform: scaleX(-1);
+}
+.newBadgeDetail-link img:dir(rtl) {
+	transform: scaleX(1);
 }
 .newBadgeDetail-link:hover {
 	color: var(--burnt-sienna);
@@ -432,39 +434,54 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	transform: scaleX(1);
 }
 /* list view */
-.issuerMainWrapper .datatable-roundheaders .datatable-x-header .datatable-x-cell {
+.issuerMainWrapper table .thead-dark th {
 	box-shadow: none;
 	padding: 18px;
-}
-.issuerMainWrapper .datatable-roundheaders .datatable-x-header .datatable-x-cell:first-child {
-	border-top-left-radius: 10px;
-}
-.issuerMainWrapper .datatable-roundheaders .datatable-x-header .datatable-x-cell:first-child:dir(rtl) {
-	border-top-left-radius: unset;
-	border-top-right-radius: 10px;
-}
-.issuerMainWrapper .datatable-roundheaders .datatable-x-header .datatable-x-cell:last-child {
-	border-top-right-radius: 10px;
-}
-.issuerMainWrapper .datatable-roundheaders .datatable-x-header .datatable-x-cell:last-child:dir(rtl) {
-	border-top-right-radius: unset;
-	border-top-left-radius: 10px;
-}
-.issuerMainWrapper .datatable-roundheaders .datatable-x-row .datatable-x-cell:last-child:dir(rtl) {
-	border-right: none;
-	border-left: solid 1px var(--color-light4);
-}
-.issuerMainWrapper .datatable-roundheaders .datatable-x-row .datatable-x-cell:first-child:dir(rtl) {
-	border-left: none;
-	border-right: solid 1px var(--color-light4);
-}
-
-.issuerMainWrapper .datatable-roundheaders .datatable-x-head {
 	background-color: var(--burnt-sienna);
 	font-size: 18px;
 	font-weight: 500;
-	font-family: var(--IBM-font-family);
 	color: var(--color-light1);
+}
+.issuerMainWrapper .datatable-x-cell {
+	vertical-align: middle;
+}
+.issuerMainWrapper .datatable-x-cell a {
+	overflow: hidden;
+	display: block;
+	max-height: 4rem;
+	-webkit-line-clamp: 2;
+	display: box;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	white-space: normal;
+	max-width: 500px;
+}
+.issuerMainWrapper .table-responsive {
+	border-radius: 10px;
+	border: 1px solid var(--border-color);
+}
+.issuerMainWrapper table .thead-dark th:first-child {
+	border-top-left-radius: 10px;
+}
+.issuerMainWrapper table .thead-dark th:first-child:dir(rtl) {
+	border-top-left-radius: unset;
+	border-top-right-radius: 10px;
+}
+.issuerMainWrapper table .thead-dark th:last-child {
+	border-top-right-radius: 10px;
+}
+.issuerMainWrapper table .thead-dark th:last-child:dir(rtl) {
+	border-top-right-radius: unset;
+	border-top-left-radius: 10px;
+}
+.issuerMainWrapper table .thead-dark th:dir(rtl) {
+	border-right: none;
+	border-left: solid 1px var(--color-light4);
+}
+.issuerMainWrapper table .thead-dark th:dir(rtl) {
+	border-left: none;
+	border-right: solid 1px var(--color-light4);
 }
 
 .issuerMainWrapper .issuers-list-img {
@@ -505,8 +522,14 @@ button.new-button-secondary {
 	border: 1px solid var(--border-color);
 	color: var(--primary-color);
 }
+button.new-button-secondary:focus {
+	color: var(--sliver);
+}
 button.new-button-secondary:hover {
 	border: 1px solid var(--primary-color);
+}
+.buttonicon.new-button-secondary {
+	padding: 14px;
 }
 
 /* new Issuer Card */
@@ -559,7 +582,6 @@ button.new-button-secondary:hover {
 }
 
 .total-issuer-text {
-	color: var(--primary-color);
 	font-size: 18px;
 	font-weight: 600;
 }
@@ -588,6 +610,9 @@ button.new-button-secondary:hover {
 		padding: 16px 25px;
 		font-size: 18px;
 	}
+	.buttonicon.new-button-secondary {
+		padding: 16px;
+	}
 	.newBadgeTopBar .topbar-x-heading {
 		font-size: 25px;
 		gap: 18px;
@@ -598,9 +623,7 @@ button.new-button-secondary:hover {
 		flex-wrap: wrap;
 		padding: 15px 20px;
 	}
-	.newBadgeContainer {
-		margin-top: 58px;
-	}
+
 	.newBadgeSearchBar-wrapper {
 		align-items: center;
 		justify-content: space-between;

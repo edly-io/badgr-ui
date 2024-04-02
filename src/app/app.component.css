@@ -1,7 +1,7 @@
 /* Header styling */
 
 .header-wrapper {
-	padding: 1rem 10px;
+	padding: 1rem 10px 0;
 }
 .new-header {
 	padding: 29px 32px;
@@ -74,6 +74,9 @@
 
 .newFooter {
 	margin: 25px 10px 30px 10px;
+	margin-top: auto;
+	padding: 40px 0;
+	background: var(--bg-body);
 }
 
 .newFooter .footer-x-links {
