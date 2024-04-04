@@ -2,14 +2,10 @@
 <ng-template sourceListener></ng-template>
 <main *bgAwaitPromises="[profileLoaded, emailsLoaded]">
 	<div class="topMainHeaderWrapper">
-		<div class="newBadgeTopBar">
-			<div class="topbar-x-heading l-spacestack py-0">
-				{{ profile?.firstName }} {{ profile?.lastName }}
-				<div class="l-primarymore">
-					<button [routerLink]="['/profile/edit']" class="primary-button" i18n>Edit</button>
-				</div>
-			</div>
-		</div>
+		<header class="newBadgeTopBar justify-content-between">
+			<h3 class="topbar-x-heading p-0" i18n>{{ profile?.firstName }} {{ profile?.lastName }}</h3>
+			<button [routerLink]="['/profile/edit']" class="primary-button" i18n>Edit</button>
+		</header>
 	</div>
 	<div class="newContainer">
 		<div class="l-stack u-margin-yaxis3x">

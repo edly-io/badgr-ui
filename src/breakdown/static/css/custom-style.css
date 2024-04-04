@@ -523,7 +523,10 @@ button.new-button-secondary {
 	color: var(--primary-color);
 }
 button.new-button-secondary:focus {
-	color: var(--sliver);
+	color: var(--burnt-sienna);
+}
+button.new-button-secondary:focus:hover {
+	background-color: white;
 }
 button.new-button-secondary:hover {
 	border: 1px solid var(--primary-color);
