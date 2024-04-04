@@ -1,15 +1,17 @@
 <ng-container *bgAwaitPromises="[issuerLoaded, badgeClassLoaded]">
 	<form-message></form-message>
 
-	<div class="topbar">
-		<div class="l-containerxaxis">
-			<div class="topbar-x-breadcrumbs">
+	<div class="topMainHeaderWrapper">
+		<div class="newBadgeTopBar flex-column gap-2 align-items-start">
+			<!-- <div class="topbar-x-breadcrumbs">
 				<bg-breadcrumbs [linkentries]="breadcrumbLinkEntries"></bg-breadcrumbs>
-			</div>
-			<div class="topbar-x-heading" i18n>Badge awarded</div>
-			<div class="topbar-x-subheading" i18n>
+			</div> -->
+			<div class="topbar-x-heading p-0" i18n>Badge awarded</div>
+			<div class="badgeSubTitle" i18n>
 				Award the badge to a user or
-				<a class="u-text" [routerLink]="['/issuer/issuers', issuerSlug, 'badges', badgeSlug, 'bulk-import']"
+				<a
+					class="u-text font-family-plex-blue"
+					[routerLink]="['/issuer/issuers', issuerSlug, 'badges', badgeSlug, 'bulk-import']"
 					>click here to send the badge to several users at the same time</a
 				>
 				to award.
@@ -17,27 +19,29 @@
 		</div>
 	</div>
 
-	<div class="l-containerxaxis l-containeryaxis">
+	<div class="l-containerxaxis l-containeryaxis mt-3 mt-md-5">
 		<form class="l-responsivelist" [formGroup]="issueForm.rawControl" (ngSubmit)="onSubmit()" novalidate>
 			<!-- Recipient Information -->
-			<div class="formsection" role="group" aria-labelledby="heading-recipientinformation">
-				<h3 class="formsection-x-title u-text-dark2" id="heading-recipientinformation" i18n>
+			<div class="formsection new-box-shadow" role="group" aria-labelledby="heading-recipientinformation">
+				<h3 class="formsection-x-title font-family-plex-blue" id="heading-recipientinformation" i18n>
 					Recipient information
 				</h3>
 				<div class="formsection-x-help">
-					<h3 class="u-text-body-bold" i18n>Badge awarding</h3>
-					<p class="u-text u-margin-top1x u-margin-bottom2x" i18n>
+					<h3 class="u-text-body-bold font-family-plex-blue" i18n>Badge awarding</h3>
+					<p class="u-text u-margin-top1x u-margin-bottom2x font-family-plex-gray" i18n>
 						You can assign the bage via an email address or URL.
 					</p>
 				</div>
 				<div class="formsection-x-body">
 					<div class="forminput">
-						<label class="forminput-x-label" i18n>Name of the recipient (optional)</label>
+						<label class="forminput-x-label font-family-plex-gray" i18n
+							>Name of the recipient (optional)</label
+						>
 						<bg-formfield-text
 							[control]="issueForm.rawControlMap.recipientprofile_name"
 							ariaLabel="Recipient Name (optional)"
 						></bg-formfield-text>
-						<p class="u-text u-text-small u-text-dark4 u-margin-top1x u-margin-bottom2x" i18n>
+						<p class="u-text u-text-small font-family-plex-gray u-margin-top1x u-margin-bottom2x" i18n>
 							<strong>Note</strong>: The recipient's name is saved as plain text in the badge.
 						</p>
 					</div>
@@ -68,23 +72,30 @@
 						</div>
 					</div>
 					<div class="l-formsection-x-checkbox" *ngIf="issueForm.controls.recipient_type.value == 'email'">
-						<label class="checkbox checkbox-center u-margin-top2x" for="notifybyemail">
+						<label class="checkbox checkbox-center u-margin-top2x gap-2" for="notifybyemail">
 							<input
 								name="notifybyemail"
 								id="notifybyemail"
 								type="checkbox"
 								[formControl]="issueForm.rawControlMap.notify_earner"
 							/>
-							<span class="checkbox-x-text" i18n>Notify the recipient by email</span>
+							<span class="checkbox-x-text font-family-plex-gray" i18n
+								>Notify the recipient by email</span
+							>
 						</label>
 					</div>
 				</div>
 			</div>
 
 			<!-- Narrative -->
-			<div class="formsection" role="group" aria-labelledby="heading-narrative" *ngIf="narrativeEnabled">
+			<div
+				class="formsection new-box-shadow"
+				role="group"
+				aria-labelledby="heading-narrative"
+				*ngIf="narrativeEnabled"
+			>
 				<div class="formsection-x-title">
-					<h2 i18n>
+					<h2 i18n class="font-family-plex-blue d-flex align-items-center gap-2">
 						Narrative
 						<span>(Optional)</span>
 					</h2>
@@ -95,13 +106,12 @@
 				</div>
 
 				<div class="formsection-x-help">
-					<h3 class="u-text-body-bold" i18n>What is the narrative?</h3>
-					<p class="u-text u-margin-top1x u-margin-bottom2x" i18n>
+					<h3 class="u-text-body-bold font-family-plex-gray" i18n>What is the narrative?</h3>
+					<p class="u-text u-margin-top1x u-margin-bottom2x font-family-plex-gray" i18n>
 						The narrative is a general description of the success related to the badge.
 					</p>
-					<a href="https://support.badgr.io/pages/viewpage.action?pageId=2981918" class="u-text-outlink" i18n
-						>Mehr Information
-						<svg icon="icon_external_link"></svg>
+					<a href="https://support.badgr.io/pages/viewpage.action?pageId=2981918" class="u-text-outlink" i18n>
+						More Information
 					</a>
 				</div>
 				<div class="formsection-x-body">
@@ -114,9 +124,14 @@
 			</div>
 
 			<!-- Evidence -->
-			<div class="formsection" role="group" aria-labelledby="heading-evidence" *ngIf="evidenceEnabled">
+			<div
+				class="formsection new-box-shadow"
+				role="group"
+				aria-labelledby="heading-evidence"
+				*ngIf="evidenceEnabled"
+			>
 				<div class="formsection-x-title">
-					<h2 i18n>
+					<h2 i18n class="font-family-plex-blue d-flex align-items-center gap-2">
 						Proof
 						<span>(Optional)</span>
 					</h2>
@@ -126,23 +141,21 @@
 					</button>
 				</div>
 				<div class="formsection-x-help">
-					<h3 class="u-text-body-bold" i18n>What is the proof??</h3>
-					<p class="u-text u-margin-top1x u-margin-bottom2x" i18n>
-						Evidence is proof that the recipient meets the relevant criteria
-						to receive a badge. This can be in the form of a narrative that describes success and/or
-						as a URL of a website.
+					<h3 class="u-text-body-bold font-family-plex-gray" i18n>What is the proof??</h3>
+					<p class="u-text u-margin-top1x u-margin-bottom2x font-family-plex-gray" i18n>
+						Evidence is proof that the recipient meets the relevant criteria to receive a badge. This can be
+						in the form of a narrative that describes success and/or as a URL of a website.
 					</p>
-					<a href="https://support.badgr.io/pages/viewpage.action?pageId=2981918" class="u-text-outlink"
-						>More information
-						<svg icon="icon_external_link"></svg>
+					<a href="https://support.badgr.io/pages/viewpage.action?pageId=2981918" class="u-text-outlink">
+						More information
 					</a>
 				</div>
 				<div class="formsection-x-body">
 					<ng-container *ngFor="let evidence of issueForm.controls.evidence_items.controls; let i = index">
 						<div class="l-flex l-flex-1x l-flex-justifybetween u-margin-bottom2x">
-							<h3 class="u-text-body-bold u-text-dark1" i18n>Proof {{ i + 1 }}</h3>
+							<h3 class="u-text-body-bold font-family-plex-gray" i18n>Proof {{ i + 1 }}</h3>
 							<button
-								class="u-text-link"
+								class="new-button-secondary"
 								aria-labelledby="heading-nestedevidence"
 								*ngIf="issueForm.controls.evidence_items.length > 1"
 								(click)="removeEvidence(i)"
@@ -167,7 +180,7 @@
 					</ng-container>
 
 					<div class="l-stack">
-						<button class="button button-secondary" type="button" (click)="addEvidence()"  i18n>
+						<button class="primary-button" type="button" (click)="addEvidence()" i18n>
 							Add further evidence
 						</button>
 					</div>
@@ -175,9 +188,14 @@
 			</div>
 
 			<!-- Expiration -->
-			<div class="formsection" role="group" aria-labelledby="heading-expiration" *ngIf="expirationEnabled">
+			<div
+				class="formsection new-box-shadow"
+				role="group"
+				aria-labelledby="heading-expiration"
+				*ngIf="expirationEnabled"
+			>
 				<div class="formsection-x-title">
-					<h2 i18n>
+					<h2 i18n class="font-family-plex-blue d-flex align-items-center gap-2">
 						Expiry Date
 						<span>(Optional)</span>
 					</h2>
@@ -188,14 +206,13 @@
 				</div>
 
 				<div class="formsection-x-help">
-					<h3 class="u-text-body-bold" i18n>What is the expiration date?</h3>
-					<p class="u-text u-margin-top1x u-margin-bottom2x" i18n>
-						The badge can have an expiration date. Here you can set, edit or delete it
-						if the badge should not expire.
+					<h3 class="u-text-body-bold font-family-plex-gray" i18n>What is the expiration date?</h3>
+					<p class="u-text u-margin-top1x u-margin-bottom2x font-family-plex-gray" i18n>
+						The badge can have an expiration date. Here you can set, edit or delete it if the badge should
+						not expire.
 					</p>
-					<a href="https://support.badgr.io/pages/viewpage.action?pageId=2981918" class="u-text-outlink" i18n
-						>Further information
-						<svg icon="icon_external_link"></svg>
+					<a href="https://support.badgr.io/pages/viewpage.action?pageId=2981918" class="u-text-outlink" i18n>
+						Further information
 					</a>
 				</div>
 
@@ -209,16 +226,16 @@
 							ariaLabel="Ablaufdatum"
 							[errorMessage]="'Bitte gebe ein Datum in der Form YYYY/mm/dd an'"
 						></bg-formfield-text>
-						<div class="u-text-error u-text-small" *ngIf="dateError"  i18n>
+						<div class="u-text-error u-text-small font-family-plex-gray" *ngIf="dateError" i18n>
 							Please enter a date in the form YYYY-mm-dd.
 						</div>
 					</div>
 					<div *ngIf="defaultExpiration && !expirationDateEditable" class="forminput">
 						<label class="forminput-x-label" for="date" i18n> Expiry Date </label>
-						<h1 class="u-text-h3-bold">
+						<h1 class="u-text-h3-bold font-family-plex-gray">
 							<strong>{{ defaultExpiration | date }}</strong>
 							<button
-								class="u-text-link-small u-display-inline u-margin-left1x"
+								class="new-button-secondary"
 								type="button"
 								tabindex="0"
 								(click)="expirationDateEditable = true"
@@ -232,18 +249,24 @@
 			</div>
 
 			<!-- Add Optional Details -->
-			<div class="formsection formsection-nohelp" role="group" aria-labelledby="heading-addoptionaldetails">
-				<h3 class="formsection-x-title u-text-dark2" id="heading-addoptionaldetails" i18n>
+			<div
+				class="formsection new-box-shadow formsection-nohelp"
+				role="group"
+				aria-labelledby="heading-addoptionaldetails"
+			>
+				<h3 class="formsection-x-title font-family-plex-blue" id="heading-addoptionaldetails" i18n>
 					Add optional details
 				</h3>
 
 				<div class="formsection-x-body">
 					<ul>
-						<li class="l-flex l-flex-justifybetween l-flex-aligncenter u-padding-bottom2x">
-							<div class="l-flex l-flex-2x">
+						<li
+							class="l-flex l-flex-justifybetween l-flex-aligncenter u-padding-bottom2x border-bottom mb-2"
+						>
+							<div class="l-flex l-flex-2x gap-2">
 								<svg class="icon icon-dark4" icon="icon_narrative"></svg>
 								<p
-									class="u-text-body-semibold"
+									class="u-text-body-semibold font-family-plex-gray"
 									[ngClass]="{ 'u-text-dark2': !narrativeEnabled, 'u-text-dark4': narrativeEnabled }"
 									i18n
 								>
@@ -251,7 +274,7 @@
 								</p>
 							</div>
 							<button
-								class="u-text-link-small"
+								class="primary-button"
 								[class.u-text-light4]="narrativeEnabled"
 								[disabled]="narrativeEnabled"
 								(click)="narrativeEnabled = true"
@@ -262,11 +285,13 @@
 							</button>
 						</li>
 
-						<li class="l-flex l-flex-justifybetween l-flex-aligncenter u-padding-bottom2x">
-							<div class="l-flex l-flex-2x">
+						<li
+							class="l-flex l-flex-justifybetween l-flex-aligncenter u-padding-bottom2x border-bottom mb-2"
+						>
+							<div class="l-flex l-flex-2x gap-2">
 								<svg class="icon icon-dark4" icon="icon_search"></svg>
 								<p
-									class="u-text-body-semibold"
+									class="u-text-body-semibold font-family-plex-gray"
 									[ngClass]="{ 'u-text-dark2': !evidenceEnabled, 'u-text-dark4': evidenceEnabled }"
 									i18n
 								>
@@ -274,7 +299,7 @@
 								</p>
 							</div>
 							<button
-								class="u-text-link-small"
+								class="primary-button"
 								[class.u-text-light4]="evidenceEnabled"
 								[disabled]="evidenceEnabled"
 								(click)="enableEvidence()"
@@ -285,11 +310,13 @@
 							</button>
 						</li>
 
-						<li class="l-flex l-flex-justifybetween l-flex-aligncenter u-padding-bottom2x">
-							<div class="l-flex l-flex-2x">
+						<li
+							class="l-flex l-flex-justifybetween l-flex-aligncenter u-padding-bottom2x border-bottom mb-2"
+						>
+							<div class="l-flex l-flex-2x gap-2">
 								<svg class="icon icon-dark4" icon="icon_pending"></svg>
 								<p
-									class="u-text-body-semibold"
+									class="u-text-body-semibold font-family-plex-gray"
 									[ngClass]="{
 										'u-text-dark2': !expirationEnabled,
 										'u-text-dark4': expirationEnabled
@@ -300,7 +327,7 @@
 								</p>
 							</div>
 							<button
-								class="u-text-link-small"
+								class="primary-button"
 								[class.u-text-light4]="expirationEnabled"
 								[disabled]="expirationEnabled"
 								(click)="toggleExpiration()"
@@ -315,19 +342,19 @@
 			</div>
 
 			<!-- Buttons -->
-			<div class="l-stack l-stack-right">
-				<a
+			<div class="l-flex l-flex-1x l-flex-justifyend u-margin-top2x gap-2">
+				<button
 					[routerLink]="['/issuer/issuers', issuer.slug, 'badges', badgeClass.slug]"
 					type="submit"
-					class="button button-secondary"
+					class="new-button-secondary"
 					[disabled-when-requesting]="true"
 					i18n
 				>
 					Cancel
-				</a>
+				</button>
 				<button
 					type="submit"
-					class="button"
+					class="primary-button"
 					[disabled]="!!issueBadgeFinished"
 					[loading-promises]="[issueBadgeFinished]"
 					loading-message="Award Badge"

@@ -21,6 +21,7 @@ import { LinkEntry } from '../../../common/components/bg-breadcrumbs/bg-breadcru
 @Component({
 	selector: 'issuer-detail',
 	templateUrl: './issuer-detail.component.html',
+	styleUrls: ['../../../public/components/issuer/issuer.component.css'],
 })
 export class IssuerDetailComponent extends BaseAuthenticatedRoutableComponent implements OnInit {
 	readonly issuerImagePlaceHolderUrl = preloadImageURL(

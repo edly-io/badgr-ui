@@ -1,190 +1,198 @@
-<main class="o-container" *bgAwaitPromises="[issuerLoaded, badgeClassLoaded]">
+<main id="issuer-main" *bgAwaitPromises="[issuerLoaded, badgeClassLoaded]" class="pt-0">
 	<form-message></form-message>
 	<external-tool-launch></external-tool-launch>
 
 	<ng-template [ngIf]="badgeClass && issuer">
-		<header class="topbar">
-			<div class="l-containerxaxis">
-				<div class="topbar-x-breadcrumbs">
-					<bg-breadcrumbs [linkentries]="crumbs"> </bg-breadcrumbs>
-				</div>
+		<!-- <header class="topbar-withimage newBadgeTopBar" id="issuer-detail-header">
+			<div class="topbar-x-breadcrumbs">
+				<bg-breadcrumbs [linkentries]="crumbs"> </bg-breadcrumbs>
 			</div>
-		</header>
-		<div class="badgedetail">
-			<div class="badgedetail-x-header">
-				<h1>{{ badgeClass?.name }}</h1>
-				<div class="l-primarymore">
-					<a
-						class="button"
-						[routerLink]="['/issuer/issuers', issuerSlug, 'badges', badgeClass.slug, 'issue']"
-						[disabled-when-requesting]="true"
-						i18n
-						>Badge awarded</a
-					>
-					<button class="buttonicon buttonicon-secondary" id="actionstrigger" [bgPopupMenuTrigger]="moreMenu">
-						<svg icon="icon_more"></svg>
-						<span class="visuallyhidden" i18n>More</span>
-					</button>
-					<bg-popup-menu #moreMenu>
-						<button
-							class="menuitem"
-							type="button"
-							[routerLink]="['/issuer/issuers', issuerSlug, 'badges', badgeClass.slug, 'edit']"
-							i18n
-						>
-							<svg icon="icon_edit"></svg>Edit
-						</button>
-						<button class="menuitem" (click)="deleteBadge()" [disabled-when-requesting]="true" i18n>
-							<svg icon="icon_remove"></svg>Delete
-						</button>
-						<!--
-				        	TODO: Add 'share' action
-				        -->
-					</bg-popup-menu>
+		</header> -->
+		<div class="mainHeaderWrapper">
+			<!-- tags -->
+			<section class="newContainer pt-0">
+				<h3
+					class="u-text-h3-semibold u-text-dark2 u-margin-bottom2x u-margin-top4x font-family-plex-blue"
+					*ngIf="badgeClass.tags && badgeClass.tags.length"
+					i18n
+				>
+					Tags
+				</h3>
+				<div class="l-tags">
+					<div class="tag" *ngFor="let tag of badgeClass.tags; last as last">{{ tag }}</div>
 				</div>
-			</div>
-			<div class="badgedetail-x-sidebar">
-				<div class="badgedetail-x-sidebarinternal">
-					<!-- Badge Assertion Image -->
-					<img
-						class="badgeimage badgeimage-center badgeimage-large"
-						[loaded-src]="badgeClass.image"
-						[loading-src]="badgeLoadingImageUrl"
-						[error-src]="badgeFailedImageUrl"
-						width="200"
-					/>
-					<!-- Issuer Information -->
-					<dl>
-						<div class="l-flex l-flex-2x u-padding-top2x border border-top border-light3">
-							<div>
-								<img
-									[loaded-src]="issuer.image"
-									[loading-src]="issuerImagePlacholderUrl"
-									[error-src]="issuerImagePlacholderUrl"
-									width="40"
-								/>
+			</section>
+			<header class="topbar-withimage newBadgeTopBar flex-column gap-2 mt-3" id="issuer-detail-header">
+				<div class="issuerDetail-main">
+					<div class="issuerDetail-body">
+						<img
+							class="topbar-x-image"
+							[loaded-src]="badgeClass.image"
+							[loading-src]="badgeLoadingImageUrl"
+							[error-src]="badgeFailedImageUrl"
+							width="200"
+						/>
+						<div>
+							<h1 class="issuer-heading">{{ badgeClass?.name }}</h1>
+
+							<div class="badgedetail-x-desc">
+								<!-- <h2 class="issuer-heading" i18n>Description</h2> -->
+								<p class="issuer-desc u-width-paragraph">{{ badgeClass.description }}</p>
 							</div>
+							<div class="u-margin-yaxis2x" *ngIf="badgeClass.criteria_url">
+								<a
+									class="u-text-outlink font-family-plex-blue"
+									target="_blank"
+									[href]="badgeClass.criteria_url"
+									i18n
+									>External criteria View URL
+									<svg icon="icon_external_link"></svg>
+								</a>
+							</div>
+							<!-- criteria -->
+							<section *ngIf="badgeClass.criteria_url || badgeClass.criteria_text">
+								<h3
+									class="u-text-h3-semibold u-text-dark2 u-margin-bottom2x u-margin-top4x font-family-plex-blue"
+									i18n
+								>
+									Criteria
+								</h3>
+								<show-more>
+									<markdown-display
+										*ngIf="badgeClass.criteria_text"
+										[value]="badgeClass.criteria_text"
+										class="font-family-plex-gray"
+									>
+									</markdown-display>
+								</show-more>
+							</section>
+						</div>
+					</div>
+					<div class="topbar-x-buttons">
+						<div class="l-primarymore">
+							<button
+								class="primary-button"
+								[routerLink]="['/issuer/issuers', issuerSlug, 'badges', badgeClass.slug, 'issue']"
+								[disabled-when-requesting]="true"
+								i18n
+							>
+								Badge awarded
+							</button>
+							<button
+								class="buttonicon new-button-secondary"
+								id="actionstrigger"
+								[bgPopupMenuTrigger]="moreMenu"
+							>
+								<img
+									class="forminput-x-icon"
+									src="../../../../assets/badges/icon-more.svg"
+									alt="search"
+								/>
+								<span class="visuallyhidden" i18n>More</span>
+							</button>
+							<bg-popup-menu #moreMenu>
+								<button
+									class="menuitem"
+									type="button"
+									[routerLink]="['/issuer/issuers', issuerSlug, 'badges', badgeClass.slug, 'edit']"
+									i18n
+								>
+									<svg icon="icon_edit"></svg>Edit
+								</button>
+								<button class="menuitem" (click)="deleteBadge()" [disabled-when-requesting]="true" i18n>
+									<svg icon="icon_remove"></svg>Delete
+								</button>
+								<!--
+						TODO: Add 'share' action
+					-->
+							</bg-popup-menu>
+						</div>
+					</div>
+				</div>
+				<div class="badgedetail-x-sidebar w-100">
+					<!-- Badge Assertion Image -->
+
+					<!-- Issuer Information -->
+					<div class="issuer-wrapper">
+						<div class="issuer-wrapper-award">
+							<img
+								[loaded-src]="issuer.image"
+								[loading-src]="issuerImagePlacholderUrl"
+								[error-src]="issuerImagePlacholderUrl"
+								width="40"
+							/>
 							<div>
-								<dt class="u-text-small-bold u-text-dark2" i18n>Awarded by:</dt>
-								<dd class="u-text">
+								<div class="u-text-small-bold font-family-plex-gray" i18n>Awarded by:</div>
+								<div class="u-text">
 									<a class="u-break-word" [routerLink]="['/issuer/issuers/', issuerSlug]">{{
 										issuer.name
 									}}</a>
-								</dd>
+								</div>
+								<div *ngIf="badgeClass.extension['extensions:BasedOnExtension']" class="basedOn">
+									<a
+										style="text-decoration: underline"
+										class="u-break-word u-text-link font-family-plex-gray"
+										[routerLink]="[
+											'/issuer/issuers/',
+											badgeClass.extension['extensions:BasedOnExtension'].BasedOn.issuerSlug,
+											'badges',
+											badgeClass.extension['extensions:BasedOnExtension'].BasedOn.slug
+										]"
+										i18n
+									>
+										Based on
+									</a>
+								</div>
 							</div>
 						</div>
-						<div *ngIf="badgeClass.extension['extensions:BasedOnExtension']" class="l-flex l-flex-2x u-padding-top2x border border-top border-light3">
-							<div>
-								<dt class="u-text-small-bold u-text-dark2"><a 
-									class="u-break-word" 
-									[routerLink]="['/issuer/issuers/', badgeClass.extension['extensions:BasedOnExtension'].BasedOn.issuerSlug, 'badges', badgeClass.extension['extensions:BasedOnExtension'].BasedOn.slug]" i18n>
-									Based on &rarr;
-								</a></dt>
+
+						<div class="issuer-detail-block">
+							<div class="font-family-plex-blue u-text-small-bold">Created on:</div>
+							<div class="u-text"><time [date]="badgeClass.createdAt" format="dd/MM/y"></time></div>
+						</div>
+						<div class="issuer-detail-block">
+							<div class="font-family-plex-blue u-text-small-bold" *ngIf="badgeClass.expiresAmount" i18n>
+								Expiry Date:
+							</div>
+							<div class="u-text" *ngIf="badgeClass.expiresAmount > 1">
+								{{ badgeClass.expiresAmount }} {{ badgeClass.expiresDuration }}
+							</div>
+							<div class="u-text" *ngIf="badgeClass.expiresAmount == 1">
+								{{ badgeClass.expiresAmount }} {{ badgeClass.expiresDuration.slice(0, -1) }}
 							</div>
 						</div>
-						<dt
-							class="
-								u-text-small-bold u-padding-top2x u-margin-top2x
-								border border-top border-light3
-								u-text-dark2
-							"
-						>
-							Created on:
-						</dt>
-						<dd class="u-text"><time [date]="badgeClass.createdAt" format="dd/MM/y"></time></dd>
-						<dt
-							class="
-								u-text-small-bold u-padding-top2x u-margin-top2x
-								border border-top border-light3
-								u-text-dark2
-							"
-							*ngIf="badgeClass.expiresAmount"
-							i18n
-						>
-							Expiry Date:
-						</dt>
-						<dd class="u-text" *ngIf="badgeClass.expiresAmount > 1">
-							{{ badgeClass.expiresAmount }} {{ badgeClass.expiresDuration }}
-						</dd>
-						<dd class="u-text" *ngIf="badgeClass.expiresAmount == 1">
-							{{ badgeClass.expiresAmount }} {{ badgeClass.expiresDuration.slice(0, -1) }}
-						</dd>
 
 						<!-- Study Load -->
-						<div *ngIf="badgeClass.extension['extensions:StudyLoadExtension']">
-							<dt
-								class="
-									u-text-small-bold u-padding-top2x u-margin-top2x
-									border border-top border-light3
-									u-text-dark2
-								"
-								i18n
-							>
-								Minimum duration
-							</dt>
-							<dd class="u-text">
+						<div *ngIf="badgeClass.extension['extensions:StudyLoadExtension']" class="issuer-detail-block">
+							<div class="font-family-plex-blue u-text-small-bold" i18n>Minimum duration</div>
+							<div class="u-text">
 								{{ badgeClass.extension['extensions:StudyLoadExtension'].StudyLoad }} Hours
-							</dd>
+							</div>
 						</div>
 						<!-- Category -->
-						<div *ngIf="badgeClass.extension['extensions:CategoryExtension']">
-							<dt
-								class="
-									u-text-small-bold u-padding-top2x u-margin-top2x
-									border border-top border-light3
-									u-text-dark2
-								"
-								i18n
-							>
-								Category:
-							</dt>
-							<dd class="u-text">
+						<div *ngIf="badgeClass.extension['extensions:CategoryExtension']" class="issuer-detail-block">
+							<div class="font-family-plex-blue u-text-small-bold" i18n>Category:</div>
+							<div class="u-text">
 								{{ categoryOptions[badgeClass.extension['extensions:CategoryExtension'].Category] }}
-							</dd>
+							</div>
 						</div>
 						<!-- LEvel -->
-						<div *ngIf="badgeClass.extension['extensions:LevelExtension']">
-							<dt
-								class="
-									u-text-small-bold u-padding-top2x u-margin-top2x
-									border border-top border-light3
-									u-text-dark2
-								"
-								i18n
-							>
-								Level:
-							</dt>
-							<dd class="u-text">
+						<div *ngIf="badgeClass.extension['extensions:LevelExtension']" class="issuer-detail-block">
+							<div class="font-family-plex-blue u-text-small-bold" i18n>Level:</div>
+							<div class="u-text">
 								{{ levelOptions[badgeClass.extension['extensions:LevelExtension'].Level] }}
-							</dd>
+							</div>
 						</div>
-					</dl>
-				</div>
-			</div>
-			<div class="badgedetail-x-desc">
-				<h2 class="u-text-h3-semibold u-text-dark2 u-margin-bottom2x u-hidden-mintablet" i18n>Description</h2>
-				<p class="u-text-body u-width-paragraph">{{ badgeClass.description }}</p>
-			</div>
-			<div class="badgedetail-x-body">
-				<!-- criteria -->
-				<section *ngIf="badgeClass.criteria_url || badgeClass.criteria_text">
-					<h3 class="u-text-h3-semibold u-text-dark2 u-margin-bottom2x u-margin-top4x" i18n>Criteria</h3>
-					<show-more>
-						<markdown-display *ngIf="badgeClass.criteria_text" [value]="badgeClass.criteria_text">
-						</markdown-display>
-					</show-more>
-					<div class="u-margin-yaxis2x" *ngIf="badgeClass.criteria_url">
-						<a class="u-text-outlink" target="_blank" [href]="badgeClass.criteria_url" i18n
-							>External criteria View URL
-							<svg icon="icon_external_link"></svg>
-						</a>
 					</div>
-				</section>
-
+				</div>
+			</header>
+		</div>
+		<div class="newContainer">
+			<div class="badgedetail-x-body">
 				<!-- alignment -->
 				<section>
 					<h3
-						class="u-text-h3-semibold u-text-dark2 u-margin-yaxis2x"
+						class="u-text-h3-semibold u-text-dark2 u-margin-yaxis2x font-family-plex-blue"
 						*ngIf="badgeClass.alignments && badgeClass?.alignments.length > 0"
 						i18n
 					>
@@ -213,102 +221,100 @@
 					</div>
 				</section>
 
-				<!-- tags -->
-				<section>
-					<h3
-						class="u-text-h3-semibold u-text-dark2 u-margin-bottom2x u-margin-top4x"
-						*ngIf="badgeClass.tags && badgeClass.tags.length"
-						i18n
-					>
-						Tags
-					</h3>
-					<div class="l-tags">
-						<div class="tag" *ngFor="let tag of badgeClass.tags; last as last">{{ tag }}</div>
-					</div>
-				</section>
-
 				<!-- recipients -->
 				<div class="l-stack u-margin-bottom2x u-margin-top4x">
-					<h2 class="u-text-h3-semibold u-text-dark2">
+					<h2 class="u-text-h3-semibold font-family-plex-blue">
 						{{ recipientCount }} Badge {{ recipientCount == 1 ? 'Recipient' : 'Recipients' }}
 					</h2>
 					<div class="forminput forminput-hasicon">
-						<p class="forminput-x-sublabel" i18n>Search for email address</p>
+						<p class="forminput-x-sublabel u-text-outlink u-text-h3-semibold" i18n>
+							Search for email address
+						</p>
 						<div class="forminput-x-inputs">
 							<input type="text" placeholder="Search for email address" [(ngModel)]="searchQuery" />
-							<svg class="forminput-x-icon" icon="icon_search"></svg>
+							<img
+								src="../../../../assets/badges/search-icon.svg"
+								alt="search"
+								class="forminput-x-icon"
+							/>
 						</div>
 					</div>
 				</div>
 				<p class="u-text u-margin-bottom3x" *ngIf="showAssertionCount" i18n>
-					{{ instanceResults.length }} previous awards. You can use the Next/Back buttons below to view additional awards,
-					or search for assignments using the exact email address/recipient ID.
-					
+					{{ instanceResults.length }} previous awards. You can use the Next/Back buttons below to view
+					additional awards, or search for assignments using the exact email address/recipient ID.
 				</p>
 				<ng-template
 					[bgAwaitPromises]="[badgeInstancesLoaded, assertionsLoaded]"
 					*ngIf="instanceResults?.length"
 				>
-					<table class="datatable datatable-roundheaders datatable-onlyfirstcolumn">
-						<thead class="datatable-x-head">
-							<tr class="datatable-x-header">
-								<th class="datatable-x-cell" scope="col" i18n>ID</th>
-								<th class="datatable-x-cell" scope="col" i18n>Awarded on</th>
-								<th class="datatable-x-cell" scope="col">
-									<span class="visuallyhidden" i18n>Actions</span>
-								</th>
-							</tr>
-						</thead>
-						<tbody class="datatable-x-body">
-							<tr class="datatable-x-row" *ngFor="let instance of instanceResults">
-								<th class="datatable-x-cell u-text-body" scope="row">
-									<div class="l-flex l-flex-2x l-flex-aligncenter">
-										<span
-											*ngIf="instance.isExpired"
-											class="badgestatus badgestatus-expired u-margin-right1x"
-											i18n
-											>expired</span
-										>
-										<span class="l-flex-x-grow u-overflow-ellipsis">{{
-											instance.recipientIdentifier
-										}}</span>
-										<span
-											class="
-												l-flex l-flex-justifyend l-flex-aligncenter l-flex-1x
-												u-hidden-minmobilelarge
-											"
-										>
-											<button
-												class="buttonicon buttonicon-link"
-												(click)="popInstance = instance"
-												[bgPopupMenuTrigger]="mobileTableMoreMenu"
-											>
-												<svg icon="icon_more"></svg>
-												<span class="visuallyhidden" i18n>More</span>
-											</button>
-										</span>
-									</div>
-								</th>
-								<td class="datatable-x-cell u-text-smalllineheight3x">
-									<time [date]="instance.issuedOn" format="mediumDate"></time>
-								</td>
-								<td class="datatable-x-cell">
-									<div class="l-flex l-flex-justifyend l-flex-aligncenter l-flex-1x">
-										<a class="u-text-link-small" target="_blank" [href]="instance.url" i18n>Open</a>
-										<button
-											class="buttonicon buttonicon-link"
-											(click)="popInstance = instance"
-											[bgPopupMenuTrigger]="tableMoreMenu"
-										>
-											<svg icon="icon_more"></svg>
-											<span class="visuallyhidden" i18n>More</span>
-										</button>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-
+					<div class="issuerMainWrapper pt-0">
+						<div class="table-responsive">
+							<table class="table table-striped table-hover mb-0">
+								<thead class="thead-dark">
+									<tr>
+										<th scope="col" i18n>ID</th>
+										<th scope="col" i18n>Awarded on</th>
+										<th scope="col">
+											<span class="visuallyhidden" i18n>Actions</span>
+										</th>
+									</tr>
+								</thead>
+								<tbody class="datatable-x-body">
+									<tr class="datatable-x-row" *ngFor="let instance of instanceResults">
+										<th class="datatable-x-cell u-text-body" scope="row">
+											<div class="l-flex l-flex-2x l-flex-aligncenter">
+												<span
+													*ngIf="instance.isExpired"
+													class="badgestatus badgestatus-expired u-margin-right1x"
+													i18n
+													>expired</span
+												>
+												<span class="l-flex-x-grow u-overflow-ellipsis">{{
+													instance.recipientIdentifier
+												}}</span>
+												<span
+													class="l-flex l-flex-justifyend l-flex-aligncenter l-flex-1x u-hidden-minmobilelarge"
+												>
+													<button
+														class="buttonicon buttonicon-link"
+														(click)="popInstance = instance"
+														[bgPopupMenuTrigger]="mobileTableMoreMenu"
+													>
+														<svg icon="icon_more"></svg>
+														<span class="visuallyhidden" i18n>More</span>
+													</button>
+												</span>
+											</div>
+										</th>
+										<td class="datatable-x-cell u-text-smalllineheight3x">
+											<time [date]="instance.issuedOn" format="mediumDate"></time>
+										</td>
+										<td class="datatable-x-cell">
+											<div class="l-flex l-flex-justifyend l-flex-aligncenter l-flex-1x">
+												<a class="u-text-link-small" target="_blank" [href]="instance.url" i18n
+													>Open</a
+												>
+												<button
+													class="buttonicon buttonicon-link"
+													(click)="popInstance = instance"
+													[bgPopupMenuTrigger]="tableMoreMenu"
+												>
+													<!-- <svg icon="icon_more"></svg> -->
+													<img
+														class="forminput-x-icon"
+														src="../../../../assets/badges/icon-more.svg"
+														alt="search"
+													/>
+													<span class="visuallyhidden" i18n>More</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 					<bg-popup-menu #mobileTableMoreMenu>
 						<button type="button" class="menuitem" (click)="shareInstance(popInstance)" i18n>
 							<svg icon="icon_share"></svg>Split

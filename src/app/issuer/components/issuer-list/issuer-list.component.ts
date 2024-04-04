@@ -14,11 +14,10 @@ import { AppConfigService } from '../../../common/app-config.service';
 @Component({
 	selector: 'issuer-list',
 	templateUrl: './issuer-list.component.html',
+	styleUrls: ['./issuer-list.component.scss'],
 })
 export class IssuerListComponent extends BaseAuthenticatedRoutableComponent implements OnInit {
-	readonly issuerPlaceholderSrc = preloadImageURL(
-		'../../../../breakdown/static/images/placeholderavatar-issuer.svg'
-	);
+	readonly issuerPlaceholderSrc = preloadImageURL('../../../../breakdown/static/images/placeholderavatar-issuer.svg');
 	readonly noIssuersPlaceholderSrc =
 		'../../../../assets/@concentricsky/badgr-style/dist/images/image-empty-issuer.svg';
 

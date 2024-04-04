@@ -4,97 +4,89 @@
 	class="dialog dialog-is-active l-dialog"
 	role="dialog"
 >
-		<div class="dialog-x-box o-container">
-			<div class="dialog-x-header u-background-light3">
-				<h1 i18n>Copy badge</h1>
-				<button (click)="closeDialog()" class="buttonicon buttonicon-link">
-					<svg icon="icon_close"></svg>
-					<span class="visuallyhidden">Close</span>
-				</button>
-			</div>
+	<div class="dialog-x-box o-container">
+		<div class="dialog-x-header u-background-light3">
+			<h1 class="font-family-plex-blue" i18n>Copy badge</h1>
+			<button (click)="closeDialog()" class="buttonicon buttonicon-link">
+				<svg icon="icon_close"></svg>
+				<span class="visuallyhidden">Close</span>
+			</button>
+		</div>
 
-			<div class="category u-padding-xaxis3x u-margin-top2x warning">
-				<p i18n>
-					Previous changes will be overwritten when copying!
-				</p>
+		<div class="category u-padding-xaxis3x u-margin-top2x warning">
+			<p i18n>Previous changes will be overwritten when copying!</p>
+		</div>
+		<div class="u-responsivepadding-yaxis u-responsivepadding-xaxis" tabindex="-1" id="sharelink">
+			<div class="forminput l-actionbar-x-search dialog-x-options">
+				<div class="forminput-x-inputs">
+					<input
+						type="text"
+						name="forminput"
+						id="forminput"
+						placeholder="Browse badges"
+						[(ngModel)]="searchQuery"
+					/>
+					<svg class="forminput-x-icon" icon="icon_search"></svg>
+				</div>
 			</div>
-			<div
-				class="u-responsivepadding-yaxis u-responsivepadding-xaxis"
-				tabindex="-1"
-				id="sharelink"
-			>
-				<div class="forminput l-actionbar-x-search dialog-x-options">
-					<div class="forminput-x-inputs">
-						<input
-							type="text"
-							name="forminput"
-							id="forminput"
-							placeholder="Browse badges"
-							[(ngModel)]="searchQuery"
-						/>
-						<svg class="forminput-x-icon" icon="icon_search"></svg>
-					</div>
-				</div>
-				<div class="l-actionbar-x-groupby dialog-x-options">
-					<label class="checkbox checkbox-small">
-						<input name="groupby" type="checkbox" [(ngModel)]="groupByIssuer" />
-						<span class="checkbox-x-text" i18n>Group by institution</span>
-					</label>
-				</div>
-				<div class="dialog-x-height">
-						<table class="datatable datatable-roundheaders datatable-onlyfirstcolumn datatable-verticalalignmiddle">
-							<thead class="datatable-x-head">
-								<tr class="datatable-x-header">
-									<th class="datatable-x-cell" scope="col" i18n>Badge</th>
-									<th class="datatable-x-cell" scope="col" i18n>Institution</th>
-									<th class="datatable-x-cell" scope="col"><span class="visuallyhidden" i18n>Actions</span></th>
+			<div class="l-actionbar-x-groupby dialog-x-options">
+				<label class="checkbox checkbox-small gap-2">
+					<input name="groupby" type="checkbox" [(ngModel)]="groupByIssuer" />
+					<span class="checkbox-x-text font-family-plex-blue" i18n>Group by institution</span>
+				</label>
+			</div>
+			<div class="dialog-x-height">
+				<table class="datatable datatable-roundheaders datatable-onlyfirstcolumn datatable-verticalalignmiddle">
+					<thead class="datatable-x-head" style="background-color: var(--burnt-sienna); color: white">
+						<tr class="datatable-x-header">
+							<th class="datatable-x-cell" style="color: white" scope="col" i18n>Badge</th>
+							<th class="datatable-x-cell" style="color: white" scope="col" i18n>Institution</th>
+							<th class="datatable-x-cell" style="color: white" scope="col">
+								<span class="visuallyhidden" i18n>Actions</span>
+							</th>
+						</tr>
+					</thead>
+					<tbody class="datatable-x-body">
+						<ng-template [showLoader]="true" [bgAwaitPromises]="[badgesLoaded]">
+							<ng-template ngFor let-issuerGroup [ngForOf]="issuerResults" let-i="index">
+								<tr class="datatable-x-row" *ngIf="groupByIssuer">
+									<th class="datatable-x-inlineheader" scope="row" colspan="4">
+										{{ issuerGroup.issuerName }}
+									</th>
 								</tr>
-							</thead>
-							<tbody class="datatable-x-body">
-								<ng-template [showLoader]="true" [bgAwaitPromises]="[badgesLoaded]">
-									<ng-template ngFor let-issuerGroup [ngForOf]="issuerResults" let-i="index">
-										<tr class="datatable-x-row" *ngIf="groupByIssuer">
-											<th class="datatable-x-inlineheader" scope="row" colspan="4">
-												{{ issuerGroup.issuerName }}
-											</th>
-										</tr>
-										<!-- Badges -->
-										<ng-template ngFor let-badge [ngForOf]="issuerGroup.badges" let-i="index">
-											<tr class="datatable-x-row">
-												<td class="datatable-x-cell">
-													<div class="l-flex l-flex-2x l-flex-aligncenter">
-														<img
-															class="badgeimage badgeimage-test badgeimage-small u-margin-right2x l-flex-x-shrink0"
-															width="40"
-															[loading-src]="badgeLoadingImageUrl"
-															[error-src]="badgeFailedImageUrl"
-															[loaded-src]="badge.image"
-														/> 
-														<a
-															class="u-text u-text-link u-text-breakword"
-															[routerLink]=""
-															(click)="copyBadge(badge)"
-															>{{ badge.name }}</a
-														>
-													</div>
-												</td>
-												<td class="datatable-x-cell u-text-body">{{ badge.issuerName }}</td>
-												<td class="datatable-x-cell">
-													<button
-														class="button"
-														(click)="copyBadge(badge)"
-														i18n
-													>
-														Copy
-													</button>
-												</td>
-											</tr>
-										</ng-template>
-									</ng-template>
+								<!-- Badges -->
+								<ng-template ngFor let-badge [ngForOf]="issuerGroup.badges" let-i="index">
+									<tr class="datatable-x-row">
+										<td class="datatable-x-cell">
+											<div class="l-flex l-flex-2x l-flex-aligncenter">
+												<img
+													class="badgeimage badgeimage-test badgeimage-small u-margin-right2x l-flex-x-shrink0"
+													width="40"
+													[loading-src]="badgeLoadingImageUrl"
+													[error-src]="badgeFailedImageUrl"
+													[loaded-src]="badge.image"
+												/>
+												<a
+													class="u-text u-text-link u-text-breakword font-family-plex-blue"
+													[routerLink]=""
+													(click)="copyBadge(badge)"
+													>{{ badge.name }}</a
+												>
+											</div>
+										</td>
+										<td class="datatable-x-cell u-text-body font-family-plex-blue">
+											{{ badge.issuerName }}
+										</td>
+										<td class="datatable-x-cell">
+											<button class="primary-button" (click)="copyBadge(badge)" i18n>Copy</button>
+										</td>
+									</tr>
 								</ng-template>
-							</tbody>
-						</table>
-				</div>
+							</ng-template>
+						</ng-template>
+					</tbody>
+				</table>
 			</div>
 		</div>
+	</div>
 </dialog>

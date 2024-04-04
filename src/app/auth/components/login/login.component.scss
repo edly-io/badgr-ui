@@ -1,0 +1,32 @@
+.loginPage {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	border-radius: 16px;
+	padding: 30px;
+
+	&__button {
+		background-color: var(--primary-color);
+		font-size: 16px;
+		font-weight: 500;
+		padding: 14px 20px;
+		border-radius: 8px;
+		color: white;
+		text-align: center;
+		&:hover {
+			background-color: var(--burnt-sienna);
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.loginPage {
+		margin-top: 60px;
+		padding: 48px;
+		&__button {
+			font-size: 18px;
+			padding: 16px 25px;
+		}
+	}
+}

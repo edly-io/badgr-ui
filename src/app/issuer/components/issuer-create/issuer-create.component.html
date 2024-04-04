@@ -1,13 +1,13 @@
 <form-message></form-message>
-<div class="topbar">
-	<div class="l-containerxaxis">
-		<div class="topbar-x-heading" i18n>Create institution</div>
-		<div class="topbar-x-subheading" i18n>Create an institution to award badges.</div>
-	</div>
+<div class="topMainHeaderWrapper">
+	<header class="newBadgeTopBar gap-3">
+		<div class="topbar-x-heading py-0" i18n>Create institution</div>
+		<div class="badgeSubTitle" i18n>Create an institution to award badges.</div>
+	</header>
 </div>
 
-<div class="l-containerxaxis">
-	<form (ngSubmit)="onSubmit()" class="u-width-formsmall u-margin-top3x" novalidate>
+<div class="smallContainer mt-3 mt-md-5">
+	<form (ngSubmit)="onSubmit()" class="w-100" novalidate>
 		<bg-formfield-image
 			#imageField
 			label="Picture (Optional)"
@@ -58,16 +58,18 @@
 			[placeholder]="'Please enter a category'"
 			[options]="[
 				{
-					label: 'School (primary schools, secondary schools, vocational schools, institutions of formal school education)', 
+					label: 'School (primary schools, secondary schools, vocational schools, institutions of formal school education)',
 					value: 'School'
-				}, {
-					label: 'University (universities, technical colleges, ...)', 
+				},
+				{
+					label: 'University (universities, technical colleges, ...)',
 					value: 'University'
-				}, {
-					label: 'Others (libraries, museums, FabLabs, companies, associations, ...)', 
+				},
+				{
+					label: 'Others (libraries, museums, FabLabs, companies, associations, ...)',
 					value: 'Others'
-				}]"
-
+				}
+			]"
 		></bg-formfield-select>
 
 		<h2 i18n>Address</h2>
@@ -123,13 +125,13 @@
 			</span>
 		</label>
 
-		<div class="l-flex l-flex-1x u-margin-bottom3x u-margin-top4x">
-			<a [routerLink]="['/issuer']" class="button button-secondary" [disabled-when-requesting]="true"
-				>Cancel</a
-			>
+		<div class="l-flex l-flex-1x l-flex-justifyend u-margin-top2x gap-2">
+			<button [routerLink]="['/issuer']" class="new-button-secondary" [disabled-when-requesting]="true">
+				Cancel
+			</button>
 			<button
 				type="submit"
-				class="button"
+				class="primary-button"
 				[disabled]="!!addIssuerFinished"
 				[loading-promises]="[addIssuerFinished]"
 				loading-message="Add"

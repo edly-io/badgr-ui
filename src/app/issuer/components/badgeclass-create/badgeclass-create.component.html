@@ -1,19 +1,18 @@
-<div class="topbar">
-	<div class="l-containerxaxis">
-		<div class="topbar-x-breadcrumbs">
+<div class="topMainHeaderWrapper">
+	<div class="newBadgeTopBar justify-content-between">
+		<!-- <div class="topbar-x-breadcrumbs">
 			<bg-breadcrumbs [linkentries]="breadcrumbLinkEntries"></bg-breadcrumbs>
+		</div> -->
+		<div class="d-flex gap-2 flex-column">
+			<h2 class="topbar-x-heading py-0" i18n>Create badge</h2>
+			<span class="badgeSubTitle" i18n>
+				Once you have created a badge, you can give it to as many recipients as you want.
+			</span>
 		</div>
-	</div>
-	<div class="l-containerxaxis topbar-x-wrap">
-		<div class="topbar-x-heading" i18n>
-			Create badge
-		</div>
-		<div class="topbar-x-subheading" i18n>
-			Once you have created a badge, you can give it to as many recipients as you want.
-		</div>
+
 		<button
 			type="submit"
-			class="button topbar-x-button"
+			class="primary-button"
 			(click)="copyBadge()"
 			loading-message="Loading badges..."
 			[disabled-when-requesting]="true"
@@ -24,16 +23,17 @@
 	</div>
 </div>
 
-<div *bgAwaitPromises="[issuerLoaded]" class="l-containerxaxis l-containeryaxis">
+<div *bgAwaitPromises="[issuerLoaded]" class="l-containerxaxis l-containeryaxis mt-3 mt-md-5 pt-0">
 	<div class="l-responsivelist">
-	<badgeclass-edit-form #badgeimage (save)="badgeClassCreated($event)"
-									(cancel)="creationCanceled($event)"
-									[scrolled]="scrolled"
-									[issuerSlug]="issuerSlug"
-									[initBadgeClass]="copiedBadgeClass"
-									submitText="Create Badge"
-									submittingText="Creating Badge..."
-	></badgeclass-edit-form>
+		<badgeclass-edit-form
+			#badgeimage
+			(save)="badgeClassCreated($event)"
+			(cancel)="creationCanceled($event)"
+			[scrolled]="scrolled"
+			[issuerSlug]="issuerSlug"
+			[initBadgeClass]="copiedBadgeClass"
+			submitText="Create Badge"
+			submittingText="Creating Badge..."
+		></badgeclass-edit-form>
 	</div>
 </div>
-

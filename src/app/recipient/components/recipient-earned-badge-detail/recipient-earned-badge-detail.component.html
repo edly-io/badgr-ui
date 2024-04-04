@@ -1,160 +1,206 @@
 <main *bgAwaitPromises="[badgesLoaded]" class="o-container">
 	<external-tool-launch></external-tool-launch>
 	<form-message></form-message>
-	<div class="topbar">
+	<!-- <div class="topbar test">
 		<div class="l-containerxaxis">
 			<div class="topbar-x-breadcrumbs">
 				<bg-breadcrumbs [linkentries]="crumbs"> </bg-breadcrumbs>
 			</div>
 		</div>
-	</div>
-	<div class="badgedetail">
-		<div class="badgedetail-x-header">
-			<h1>{{ badge.badgeClass.name }}</h1>
+	</div> -->
+	<div class="mainHeaderWrapper">
+		<section *ngIf="badge.badgeClass.tags.length > 0" class="newContainer pt-0">
+			<h3 class="u-text-h3-semibold u-text-dark2 u-margin-bottom2x u-margin-top4x font-family-plex-blue" i18n>
+				Tags
+			</h3>
+			<div class="l-tags">
+				<div class="tag" *ngFor="let tag of badge.badgeClass.tags; last as last">{{ tag }}</div>
+			</div>
+		</section>
 
-			<div class="l-primarymore">
-				<button
-					*ngIf="badge.mostRelevantStatus !== 'pending'"
-					class="button"
-					type="button"
-					(click)="shareBadge()"
-					i18n
-				>
-					Share Badge
-				</button>
-				<button class="buttonicon buttonicon-secondary" id="actionstrigger" [bgPopupMenuTrigger]="moreMenu">
-					<svg icon="icon_more"></svg>
-					<span class="visuallyhidden" i18n>More</span>
-				</button>
-				<bg-popup-menu #moreMenu>
-					<a class="menuitem" [href]="verifyUrl" i18n><svg icon="icon_checkmark"></svg>Verify</a>
-					<!--<a class="menuitem"
+		<header class="topbar-withimage newBadgeTopBar flex-column gap-2 mt-3" id="issuer-detail-header">
+			<div class="issuerDetail-main">
+				<div class="issuerDetail-body">
+					<img
+						[loaded-src]="badge.image"
+						[loading-src]="badgeLoadingImageUrl"
+						[error-src]="badgeFailedImageUrl"
+						[ngStyle]="badge.isExpired && { filter: 'grayscale(1)' }"
+						class="topbar-x-image"
+						width="200"
+					/>
+					<div>
+						<h1 class="issuer-heading">{{ badge.badgeClass.name }}</h1>
+
+						<div class="badgedetail-x-desc">
+							<p class="issuer-desc u-width-paragraph">{{ badge.badgeClass.description }}</p>
+							<div class="u-margin-yaxis2x" *ngIf="badge.badgeClass.criteria_url">
+								<a
+									class="u-text-outlink font-family-plex-blue"
+									target="_blank"
+									[href]="badge.badgeClass.criteria_url"
+									i18n
+									>View external Criteria URL
+									<svg icon="icon_external_link"></svg>
+								</a>
+							</div>
+						</div>
+						<section
+							*ngIf="
+								badge.badgeClass.criteria_url ||
+								badge.badgeClass.criteria_text ||
+								badge.badgeClass.criteria
+							"
+						>
+							<h3
+								class="u-text-h3-semibold u-text-dark2 u-margin-bottom2x u-margin-top4x font-family-plex-blue"
+								i18n
+							>
+								Criteria
+							</h3>
+							<show-more class="u-margin-bottom8x" *ngIf="badge.badgeClass.criteria_text">
+								<markdown-display
+									id="recipient-earned-badge-detail-markdown-display"
+									[value]="badge.badgeClass.criteria_text"
+								></markdown-display>
+							</show-more>
+						</section>
+					</div>
+				</div>
+
+				<div class="topbar-x-buttons">
+					<div class="l-primarymore">
+						<button
+							*ngIf="badge.mostRelevantStatus !== 'pending'"
+							class="primary-button"
+							type="button"
+							(click)="shareBadge()"
+							i18n
+						>
+							Share Badge
+						</button>
+						<button
+							class="buttonicon new-button-secondary"
+							id="actionstrigger"
+							[bgPopupMenuTrigger]="moreMenu"
+						>
+							<!-- <svg icon="icon_more"></svg> -->
+							<img class="forminput-x-icon" src="../../../../assets/badges/icon-more.svg" alt="search" />
+							<span class="visuallyhidden" i18n>More</span>
+						</button>
+						<bg-popup-menu #moreMenu>
+							<a class="menuitem" [href]="verifyUrl" i18n><svg icon="icon_checkmark"></svg>Verify</a>
+							<!--<a class="menuitem"
 						[href]="v2JsonUrl"
 						>Download JSON</a>
 					<a class="menuitem"
 						[href]="v2BakedUrl"
 						>Download Baked Image</a>
 					-->
-					<button
-						class="menuitem"
-						(click)="exportPdf()"
-						loading-message="Loading badge..."
-						[disabled-when-requesting]="true"
-						i18n
-					>
-						<svg icon="icon_file"></svg>Export to PDF
-					</button>
-					<button class="menuitem" (click)="deleteBadge(badge)" [disabled-when-requesting]="true">
-						<svg icon="icon_remove" i18n></svg>Delete
-					</button>
-					<ng-container *ngIf="launchpoints">
-						<a class="menuitem" *ngFor="let lp of launchpoints" (click)="clickLaunchpoint(lp)">
-							<svg icon="icon_external_link"></svg>
-							{{ lp.label }}
-						</a>
-					</ng-container>
-				</bg-popup-menu>
-			</div>
-		</div>
-		<div class="badgedetail-x-sidebar">
-			<div class="badgedetail-x-sidebarinternal">
-				<img
-					[loaded-src]="badge.image"
-					[loading-src]="badgeLoadingImageUrl"
-					[error-src]="badgeFailedImageUrl"
-					[ngStyle]="badge.isExpired && { filter: 'grayscale(1)' }"
-					class="badgeimage badgeimage-center badgeimage-large"
-					width="200"
-				/>
-				<div
-					class="badgestatus badgestatus-{{ badge.mostRelevantStatus }} u-margin-top2x"
-					*ngIf="badge.mostRelevantStatus"
-				>
-					{{ badge.mostRelevantStatus }}
+							<button
+								class="menuitem"
+								(click)="exportPdf()"
+								loading-message="Loading badge..."
+								[disabled-when-requesting]="true"
+								i18n
+							>
+								<svg icon="icon_file"></svg>Export to PDF
+							</button>
+							<button class="menuitem" (click)="deleteBadge(badge)" [disabled-when-requesting]="true">
+								<svg icon="icon_remove" i18n></svg>Delete
+							</button>
+							<ng-container *ngIf="launchpoints">
+								<a class="menuitem" *ngFor="let lp of launchpoints" (click)="clickLaunchpoint(lp)">
+									<svg icon="icon_external_link"></svg>
+									{{ lp.label }}
+								</a>
+							</ng-container>
+						</bg-popup-menu>
+					</div>
 				</div>
-				<dl>
-					<div class="l-flex l-flex-2x u-padding-top2x border border-top border-light3">
-						<div>
-							<img
-								[loaded-src]="badge.badgeClass?.issuer?.image"
-								[loading-src]="issuerImagePlacholderUrl"
-								[error-src]="issuerImagePlacholderUrl"
-								width="40"
-							/>
-						</div>
-						<div>
-							<dt class="u-text-small-bold u-text-dark2" i18n>Issued by:</dt>
-							<dd class="u-text">
-								<a class="u-break-word" [href]="badge.badgeClass.issuer.id">{{
-									badge.badgeClass.issuer.name
-								}}</a>
-							</dd>
-						</div>
-					</div>
-					<dt
-						class="u-text-small-bold u-padding-top2x u-margin-top2x border border-top border-light3 u-text-dark2" i18n
-					>
-						Issued on:
-					</dt>
-					<dd class="u-text"><time [date]="badge?.issueDate" format="mediumDate"></time></dd>
-					<dt
-						class="u-text-small-bold u-padding-top2x u-margin-top2x border border-top border-light3 u-text-dark2" i18n
-					>
-						Awarded to:
-					</dt>
-					<dd class="u-text u-break-all" *ngIf="badge.hasExtension('extensions:recipientProfile')">
-						{{ badge.getExtension('extensions:recipientProfile', null).name }}
-					</dd>
-					<dd class="u-text u-break-all">{{ badge.recipientEmail }}</dd>
-					<div *ngIf="badge && badge.expiresDate">
-						<dt
-							class="u-text-small-bold u-padding-top2x u-margin-top2x border border-top border-light3 u-text-dark2"
-						>
-							{{ compareDate(badge.expiresDate, now) | i18nPlural : tense['expires'] }} on:
-						</dt>
-						<dd class="u-text"><time [date]="badge?.expiresDate" format="mediumDate"></time></dd>
-					</div>
-				</dl>
 			</div>
-		</div>
-		<div class="badgedetail-x-desc">
-			<h2 class="u-text-h3-semibold u-margin-bottom2x u-text-dark2 u-hidden-mintablet" i18n>Description</h2>
-			<p class="u-text-body u-width-paragraph">{{ badge.badgeClass.description }}</p>
-		</div>
+			<div class="badgedetail-x-sidebar w-100">
+				<div class="badgedetail-x-sidebarinternal">
+					<div
+						class="badgestatus badgestatus-{{ badge.mostRelevantStatus }} u-margin-top2x"
+						*ngIf="badge.mostRelevantStatus"
+					>
+						{{ badge.mostRelevantStatus }}
+					</div>
+					<div class="issuer-wrapper">
+						<div class="issuer-wrapper-award">
+							<div>
+								<img
+									[loaded-src]="badge.badgeClass?.issuer?.image"
+									[loading-src]="issuerImagePlacholderUrl"
+									[error-src]="issuerImagePlacholderUrl"
+									width="40"
+								/>
+							</div>
+							<div>
+								<div class="u-text-small-bold font-family-plex-gray" i18n>Issued by:</div>
+								<div class="u-text">
+									<a class="u-break-word" [href]="badge.badgeClass.issuer.id">{{
+										badge.badgeClass.issuer.name
+									}}</a>
+								</div>
+							</div>
+						</div>
+						<div class="issuer-detail-block" i18n>
+							<div class="font-family-plex-blue u-text-small-bold">Issued on:</div>
+							<div class="u-text"><time [date]="badge?.issueDate" format="mediumDate"></time></div>
+						</div>
+						<div class="issuer-detail-block" i18n>
+							<div class="font-family-plex-blue u-text-small-bold">Awarded to:</div>
+							<div>
+								<span
+									class="u-text u-break-all"
+									*ngIf="badge.hasExtension('extensions:recipientProfile')"
+								>
+									{{ badge.getExtension('extensions:recipientProfile', null).name }}
+								</span>
+								<span class="u-text u-break-all">{{ badge.recipientEmail }}</span>
+							</div>
+						</div>
+
+						<div *ngIf="badge && badge.expiresDate">
+							<div class="issuer-detail-block" i18n>
+								<div class="font-family-plex-blue u-text-small-bold">
+									{{ compareDate(badge.expiresDate, now) | i18nPlural : tense['expires'] }} on:
+								</div>
+								<div class="u-text"><time [date]="badge?.expiresDate" format="mediumDate"></time></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="newContainer">
 		<div class="badgedetail-x-body">
+			<!-- tags -->
+
 			<!-- criteria -->
-			<section
-				*ngIf="badge.badgeClass.criteria_url || badge.badgeClass.criteria_text || badge.badgeClass.criteria"
-			>
-				<h3 class="u-text-h3-semibold u-margin-bottom2x u-text-dark2 u-margin-top4x" i18n>Criteria</h3>
-				<show-more class="u-margin-bottom8x" *ngIf="badge.badgeClass.criteria_text">
-					<markdown-display
-						id="recipient-earned-badge-detail-markdown-display"
-						[value]="badge.badgeClass.criteria_text"
-					></markdown-display>
-				</show-more>
-				<div class="u-margin-yaxis2x" *ngIf="badge.badgeClass.criteria_url">
-					<a class="u-text-outlink" target="_blank" [href]="badge.badgeClass.criteria_url" i18n
-						>View external Criteria URL
-						<svg icon="icon_external_link"></svg>
-					</a>
-				</div>
-			</section>
 
 			<!-- alignment -->
 			<section>
 				<h3
-					class="u-text-h3-semibold u-margin-bottom2x u-text-dark2 u-margin-top4x"
-					*ngIf="badge.badgeClass.alignment && badge.badgeClass?.alignment.length > 0" i18n
+					class="u-text-h3-semibold u-margin-bottom2x font-family-plex-blue u-margin-top4x"
+					*ngIf="badge.badgeClass.alignment && badge.badgeClass?.alignment.length > 0"
+					i18n
 				>
 					Alignment
 				</h3>
 				<div *ngFor="let alignment of badge.badgeClass.alignment; let i = index">
 					<div class="l-flex l-flex-justifybetween">
-						<h4 class="u-text-body-bold u-margin-bottom1x">{{ alignment.targetName }}</h4>
+						<h4 class="u-text-body-bold u-margin-bottom1x font-family-plex-gray">
+							{{ alignment.targetName }}
+						</h4>
 						<small>{{ alignment.targetCode }}</small>
 					</div>
-					<p class="u-break-word u-text-body u-width-paragraph">{{ alignment.targetDescription }}</p>
+					<p class="u-break-word u-text-body u-width-paragraph font-family-plex-gray">
+						{{ alignment.targetDescription }}
+					</p>
 					<div *ngIf="alignment.frameworkName">
 						<h1>Framework</h1>
 						{{ alignment.frameworkName }}
@@ -162,9 +208,10 @@
 					<div class="u-margin-yaxis2x">
 						<a
 							*ngIf="alignment.targetUrl"
-							class="u-text-outlink"
+							class="u-text-outlink font-family-plex-blue"
 							[href]="alignment.targetUrl"
-							target="_blank" i18n
+							target="_blank"
+							i18n
 							>View alignment URL
 							<svg icon="icon_external_link"></svg>
 						</a>
@@ -172,19 +219,11 @@
 				</div>
 			</section>
 
-			<!-- tags -->
-			<section *ngIf="badge.badgeClass.tags.length > 0">
-				<h3 class="u-text-h3-semibold u-margin-bottom2x u-text-dark2 u-margin-top4x" i18n>Tags</h3>
-				<div class="l-tags">
-					<div class="tag" *ngFor="let tag of badge.badgeClass.tags; last as last">{{ tag }}</div>
-				</div>
-			</section>
-
 			<!-- evidence -->
 			<section>
 				<div *ngIf="badge.narrative" class="u-break-word">
 					<h3
-						class="u-text-h3-semibold u-margin-bottom2x u-text-dark2 u-margin-top4x"
+						class="u-text-h3-semibold u-margin-bottom2x font-family-plex-blue u-margin-top4x"
 						*ngIf="badge.evidence_items?.length > 0 || badge.narrative"
 						i18n
 					>
@@ -196,13 +235,15 @@
 				</div>
 				<div *ngFor="let evidence of badge.evidence_items; let i = index" class="u-break-word">
 					<div *ngIf="badge.evidence_items?.length > 0 || badge.narrative">
-						<h3 class="u-text-h3-semibold u-margin-bottom2x u-text-dark2 u-margin-top4x" i18n>Evidence</h3>
+						<h3 class="u-text-h3-semibold u-margin-bottom2x font-family-plex-blue u-margin-top4x" i18n>
+							Evidence
+						</h3>
 						<markdown-display [value]="evidence.narrative"></markdown-display>
 					</div>
 					<div class="u-margin-yaxis2x">
 						<a
 							*ngIf="evidence.evidence_url"
-							class="u-text-outlink"
+							class="u-text-outlink font-family-plex-blue"
 							[href]="evidence.evidence_url"
 							target="_blank"
 							i18n
@@ -216,41 +257,50 @@
 			<!-- collections -->
 			<section>
 				<div class="l-flex l-flex-1x l-flex-justifybetween u-margin-bottom2x u-margin-top4x">
-					<h2 class="u-text-h3-semibold u-text-dark2" i18n>Collections</h2>
+					<h2 class="u-text-h3-semibold font-family-plex-blue" i18n>Collections</h2>
 					<button
 						[class.connectionadd-is-added]="badge.collections.length > 0"
 						(click)="manageCollections()"
-						class="button button-secondary"
+						class="button new-button-secondary"
 						i18n
 					>
 						Add to Collection
 					</button>
 				</div>
-				<table
-					class="datatable datatable-roundheaders datatable-verticalalignmiddle"
-					*ngIf="badge.collections.length > 0"
-				>
-					<thead class="datatable-x-head">
-						<tr class="datatable-x-header">
-							<th class="datatable-x-cell" i18n>Collection</th>
-							<th class="datatable-x-cell"><span class="visuallyhidden" i18n>Actions</span></th>
-						</tr>
-					</thead>
-					<tbody class="datatable-x-body">
-						<tr class="datatable-x-row" *ngFor="let collection of badge.collections">
-							<td class="datatable-x-cell">
-								<p class="u-text-body-semibold u-break-word">{{ collection.name }}</p>
-							</td>
-							<td class="datatable-x-cell">
-								<div class="l-flex l-flex-justifyend">
-									<button class="u-text-link-small" (click)="removeCollection(collection)" i18n>
-										Remove
-									</button>
-								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+				<div class="issuerMainWrapper pt-0">
+					<div class="table-responsive">
+						<table
+							class="table table-striped table-hover mb-0"
+							class="datatable datatable-roundheaders datatable-verticalalignmiddle"
+							*ngIf="badge.collections.length > 0"
+						>
+							<thead class="thead-dark">
+								<tr>
+									<th i18n>Collection</th>
+									<th><span class="visuallyhidden" i18n>Actions</span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr *ngFor="let collection of badge.collections">
+									<td class="datatable-x-cell">
+										<p class="u-text-body-semibold u-break-word">{{ collection.name }}</p>
+									</td>
+									<td class="datatable-x-cell">
+										<div class="l-flex l-flex-justifyend">
+											<button
+												class="u-text-link-small"
+												(click)="removeCollection(collection)"
+												i18n
+											>
+												Remove
+											</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</section>
 		</div>
 	</div>

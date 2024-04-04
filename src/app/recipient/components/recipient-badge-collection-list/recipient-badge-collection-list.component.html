@@ -1,33 +1,37 @@
 <main>
 	<form-message></form-message>
-
-	<div class="topbar">
-		<div class="l-containerxaxis topbar-x-wrap">
-			<h2 class="topbar-x-heading" i18n>
+	<div class="topMainHeaderWrapper">
+		<header class="newBadgeTopBar justify-content-between">
+			<h2 class="topbar-x-heading py-0" i18n>
 				Collections
-				<span class="topbar-x-internalheading" *ngIf="!!badgeCollections">
+				<span class="badgeSubTitle" *ngIf="!!badgeCollections">
 					{{ badgeCollections.length }} {{ badgeCollections.length == 1 ? 'collection' : 'Collections' }}
 				</span>
 			</h2>
 			<button
-				class="button topbar-x-button"
+				class="primary-button"
 				[routerLink]="['/recipient/badge-collections/create']"
 				[disabled-when-requesting]="true"
 				i18n
 			>
 				Add collection
 			</button>
-		</div>
+		</header>
 	</div>
 
 	<ng-template [bgAwaitPromises]="[collectionListLoaded]">
 		<!--  Empty state - collection has not badges -->
 		<div class="emptysection l-emptysection" *ngIf="badgeCollections.length == 0">
+			<div class="emptysection-x-imagecontainer">
+				<img alt="Illustration" class="emptysection-x-image" [src]="noCollectionsImageUrl" />
+			</div>
 			<h2 class="emptysection-x-headline" i18n>You don't have any collections</h2>
-			<p class="emptysection-x-copy" i18n>Collections allow you to organize and share the badges you've earned.</p>
+			<p class="emptysection-x-copy" i18n>
+				Collections allow you to organize and share the badges you've earned.
+			</p>
 			<div class="emptysection-x-buttons">
 				<button
-					class="button button-secondary"
+					class="new-button-secondary"
 					[routerLink]="['/recipient/badge-collections/create']"
 					[disabled-when-requesting]="true"
 					i18n
@@ -35,73 +39,78 @@
 					Create collection
 				</button>
 			</div>
-			<div class="emptysection-x-imagecontainer">
-				<img alt="Illustration" class="emptysection-x-image" [src]="noCollectionsImageUrl" />
-			</div>
 		</div>
 
 		<!--  Collection of Badges -->
-		<div *ngIf="badgeCollections.length > 0" class="l-containerxaxis l-containeryaxis l-grid l-grid-medium">
-			<div class="collectioncard" *ngFor="let collection of badgeCollections">
-				<a
-					class="collectioncard-x-headline"
-					[routerLink]="['/recipient/badge-collections/collection', collection.slug]"
-					>{{ collection.name }}</a
-				>
-				<p class="collectioncard-x-label">
-					{{ collection.badgeEntries.length == 1 ? '1 Badge' : collection.badgeEntries.length + ' Badges' }}
-				</p>
-				<div class="l-grid l-grid-badgeimages u-margin-top4x">
-					<img
-						*ngFor="
-							let entry of collection.badgeEntries.entities
-								| slice: 0:(collection.badgeEntries.length > 3 ? 3 : 4)
-						"
-						class="badgeimage badgeimage-48px"
-						[loaded-src]="entry.badge?.image"
-						[loading-src]="badgeLoadingImageUrl"
-						[error-src]="badgeFailedImageUrl"
-						alt="{{ entry.badge?.badgeClass.name }} Image"
-						[ngStyle]="entry.badge?.isExpired && { filter: 'grayscale(1)' }"
-						width="40"
-					/>
-					<div class="badgecount" *ngIf="collection.badges.length > 3">
-						{{ collection.badges.length - 3 }}+
-					</div>
-				</div>
-				<div class="u-margin-top2x" *ngIf="collection.badges.length != 0">
-					<hr class="rule rule-hairline" />
-				</div>
-				<div
-					class="l-flex l-flex-aligncenter l-flex-justifybetween u-margin-top2x"
-					*ngIf="collection.badges.length != 0"
-				>
-					<div class="switch">
-						<fieldset class="switch-x-container">
-							<div class="switch-x-inputcontainer">
-								<label class="switch-x-label">
-									<input
-										class="switch-x-toggletrack"
-										type="checkbox"
-										id="collection-{{ collection.slug }}-published-switch"
-										name="collection-{{ collection.slug }}-published-switch"
-										[checked]="collection.published"
-										(change)="togglePublishCollection(collection)"
-									/>
-									<span class="switch-x-labeltext" i18n>Public</span>
-									<div class="switch-x-toggle"></div>
-								</label>
+		<div class="newContainer">
+			<div *ngIf="badgeCollections.length > 0" class="collectioncardWrapper l-grid l-grid-medium">
+				<div class="collectioncard" *ngFor="let collection of badgeCollections">
+					<div>
+						<a
+							class="collectioncard-x-headline"
+							[routerLink]="['/recipient/badge-collections/collection', collection.slug]"
+							>{{ collection.name }}</a
+						>
+						<p class="collectioncard-x-label">
+							{{
+								collection.badgeEntries.length == 1
+									? '1 Badge'
+									: collection.badgeEntries.length + ' Badges'
+							}}
+						</p>
+						<div class="l-grid l-grid-badgeimages u-margin-top4x">
+							<img
+								*ngFor="
+									let entry of collection.badgeEntries.entities
+										| slice : 0 : (collection.badgeEntries.length > 3 ? 3 : 4)
+								"
+								class="badgeimage badgeimage-48px"
+								[loaded-src]="entry.badge?.image"
+								[loading-src]="badgeLoadingImageUrl"
+								[error-src]="badgeFailedImageUrl"
+								alt="{{ entry.badge?.badgeClass.name }} Image"
+								[ngStyle]="entry.badge?.isExpired && { filter: 'grayscale(1)' }"
+								width="40"
+							/>
+							<div class="badgecount" *ngIf="collection.badges.length > 3">
+								{{ collection.badges.length - 3 }}+
 							</div>
-						</fieldset>
+						</div>
+						<div class="u-margin-top2x" *ngIf="collection.badges.length != 0">
+							<hr class="rule rule-hairline" />
+						</div>
 					</div>
-					<button
-						class="u-text-link-small"
-						*ngIf="collection.published"
-						type="button"
-						(click)="shareCollection(collection)"
+					<div
+						class="l-flex l-flex-aligncenter l-flex-justifybetween mt-auto"
+						*ngIf="collection.badges.length != 0"
 					>
-						Split
-					</button>
+						<div class="switch">
+							<fieldset class="switch-x-container">
+								<div class="switch-x-inputcontainer">
+									<label class="switch-x-label gap-2">
+										<input
+											class="switch-x-toggletrack"
+											type="checkbox"
+											id="collection-{{ collection.slug }}-published-switch"
+											name="collection-{{ collection.slug }}-published-switch"
+											[checked]="collection.published"
+											(change)="togglePublishCollection(collection)"
+										/>
+										<span class="switch-x-labeltext m-0" i18n>Public</span>
+										<div class="switch-x-toggle"></div>
+									</label>
+								</div>
+							</fieldset>
+						</div>
+						<button
+							class="u-text-link-small"
+							*ngIf="collection.published"
+							type="button"
+							(click)="shareCollection(collection)"
+						>
+							Split
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>

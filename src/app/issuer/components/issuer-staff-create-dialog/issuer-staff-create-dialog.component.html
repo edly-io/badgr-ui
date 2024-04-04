@@ -1,28 +1,24 @@
 <dialog class="dialog dialog-is-active dialog l-dialog">
 	<div class="dialog-x-box o-container">
-
 		<div class="dialog-x-header">
-			<h1 i18n>Add Member</h1>
-			<button
-				(click)="closeDialog()"
-				class="buttonicon buttonicon-link">
+			<h1 class="font-family-plex-blue" i18n>Add Member</h1>
+			<button (click)="closeDialog()" class="buttonicon buttonicon-link">
 				<svg icon="icon_close"></svg>
 				<span class="visuallyhidden">Close</span>
 			</button>
 		</div>
 
 		<div class="u-padding-all3x">
-
 			<div class="l-flex l-flex-justifybetween u-margin-bottom3x">
-				<p class="u-text-body" i18n>New Staff Members must create and verify a Badgr account prior to being added to an issuer.</p>
+				<p class="u-text-body font-family-plex-gray" i18n>
+					New Staff Members must create and verify a Badgr account prior to being added to an issuer.
+				</p>
 			</div>
 
-			<h3 class="u-margin-bottom2x u-text-small-bold" i18n>Choose Role</h3>
-			<form
-				[formGroup]="staffCreateForm.rawControl"
-				(ngSubmit)="submitStaffCreate()">
+			<h3 class="u-margin-bottom2x u-text-small-bold font-family-plex-blue" i18n>Choose Role</h3>
+			<form [formGroup]="staffCreateForm.rawControl" (ngSubmit)="submitStaffCreate()">
 				<bg-formfield-radio
-					*ngFor="let role of issuerStaffRoleOptions; last as last;"
+					*ngFor="let role of issuerStaffRoleOptions; last as last"
 					[control]="staffCreateForm.rawControlMap.staffRole"
 					[name]="'staffRole'"
 					[label]="role.label"
@@ -36,34 +32,33 @@
 					[label]="'New Member Email'"
 					[errorMessage]="'Please enter valid email address'"
 					placeholder="Staff Email"
-					class="forminput-light1 u-width-formsmall u-margin-top3x"></bg-formfield-text>
-				<br>
+					class="forminput-light1 u-width-formsmall u-margin-top3x"
+				></bg-formfield-text>
+				<br />
 
 				<div class="notification notification-warning notification-is-active" *ngIf="error">
 					<div class="notification-x-icon">
-
 						<svg>
 							<use xlink:href="/images/icons.svg#icon_priority_high"></use>
 						</svg>
-
 					</div>
 					<div class="notification-x-text">
-
-						<h2 i18n>Failed to add member!</h2>
-						<p>{{error}}</p>
-
+						<h2 class="u-text-body" i18n>Failed to add member!</h2>
+						<p>{{ error }}</p>
 					</div>
 				</div>
 
-				<div class="l-stack l-stack-buttons u-margin-top4x">
+				<div class="l-flex l-flex-1x l-flex-justifyend u-margin-top2x gap-2 gap-2">
+					<button class="primary-button" type="button" i18n>Add Member</button>
 					<button
-						class="button" i18n>Add Member</button>
-					<button
-						class="button button-secondary"
+						class="new-button-secondary"
 						type="button"
-						(click)="$event.preventDefault(); closeDialog();" i18n>Cancel</button>
+						(click)="$event.preventDefault(); closeDialog()"
+						i18n
+					>
+						Cancel
+					</button>
 				</div>
-
 			</form>
 		</div>
 	</div>

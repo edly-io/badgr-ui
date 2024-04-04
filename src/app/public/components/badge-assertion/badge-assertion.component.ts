@@ -21,6 +21,7 @@ import { BadgeClassCategory, BadgeClassLevel } from './../../../issuer/models/ba
 
 @Component({
 	templateUrl: './badge-assertion.component.html',
+	styleUrls: ['../../../public/components/issuer/issuer.component.css'],
 })
 export class PublicBadgeAssertionComponent {
 	constructor(

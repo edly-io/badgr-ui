@@ -1,0 +1,23 @@
+.collectioncardWrapper {
+	margin-top: 30px;
+
+	.collectioncard {
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		border-radius: 8px;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	@media (min-width: 768px) {
+		margin-top: 45px;
+		.collectioncard {
+			padding: 25px;
+		}
+	}
+}
+
+.switch .switch-x-toggle:dir(rtl) {
+	right: 16px;
+	left: unset;
+}

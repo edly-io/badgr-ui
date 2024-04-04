@@ -1,50 +1,80 @@
-
-.u-width-formsmall {
-    box-sizing: border-box;
-}
-
-.fixed-imagefield {
-    position: fixed;
-    top: 0;
-    left: 5px;
-    z-index: 100;
-}
-
-.fixed-imagefield .forminput-x-label {
-    display: none;
-}
-
-.maplibregl-popup-close-button {
-    right: 5px !important;
-}
-
-
-.color {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 0.3em;
-}
-
-.cluster {
-    background: #ccc;
-}
-
-.schule {
-    background: #fbb03b;
-}
-
-.hochschule {
-    background: #e55e5e;
-}
-
-.andere {
-    background: #3bb2d0;
+.datatable .datatable-x-cell,
+body,
+html p,
+span,
+label,
+td,
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+ul,
+button {
+	color: var(--primary-color);
+	font-family: var(--IBM-font-family) !important;
 }
 
 .badgecard-x-issuer:hover {
-    text-decoration: underline;
+	text-decoration: underline;
+}
+
+.u-width-formsmall {
+	box-sizing: border-box;
+}
+
+.fixed-imagefield {
+	position: fixed;
+	top: 0;
+	left: 5px;
+	z-index: 100;
+}
+
+.fixed-imagefield:dir(rtl) {
+	left: unset;
+
+	right: 5px;
+}
+.fixed-imagefield .forminput-x-label {
+	display: none;
+}
+
+label.forminput-x-label,
+.forminput .forminput-x-inputs select,
+.forminput .forminput-x-sublabel {
+	color: var(--primary-color) !important;
+	font-family: var(--IBM-font-family) !important;
+}
+.maplibregl-popup-close-button {
+	right: 5px !important;
+}
+
+.color {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 0.3em;
+}
+
+.cluster {
+	background: #ccc;
+}
+
+.schule {
+	background: #fbb03b;
+}
+
+.hochschule {
+	background: #e55e5e;
+}
+
+.andere {
+	background: #3bb2d0;
 }
 
 /* the dialog background should fill the whole page */
@@ -52,4 +82,86 @@
 	margin: 0;
 	max-width: None;
 	max-height: None;
+}
+
+.loginPage__heading .markdown p {
+	font-size: 20px;
+	font-weight: 500;
+	font-family: var(--IBM-font-family);
+	color: var(--primary-color);
+	margin-bottom: 0;
+}
+.forminput .forminput-x-inputs select {
+	width: 100%;
+	min-width: 100%;
+}
+.forminput .forminput-x-inputs .forminput-x-icon:dir(rtl) {
+	right: unset;
+	left: 10px;
+}
+
+.forminput-hasicon .forminput-x-inputs input:dir(rtl) {
+	padding-right: unset;
+	padding-left: calc(24px + calc(var(--gridspacing) * 2));
+}
+
+.menuitem svg {
+	margin-right: 0;
+}
+
+.menuitem:hover,
+a.menuitem:hover {
+	color: var(--burnt-sienna);
+}
+
+.menuitem {
+	gap: 15px;
+}
+
+.l-tags .tag {
+	color: var(--primary-color);
+	border-radius: 10px;
+	padding: 7px 20px;
+	font-weight: 500;
+	max-width: max-content !important;
+	border: 1px solid var(--border-color);
+}
+
+.dialog .dialog-x-box {
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+	border-radius: 16px !important;
+	font-family: var(--IBM-font-family) !important;
+}
+
+.datatable .datatable-x-cell:dir(rtl) {
+	text-align: right;
+}
+
+.notVerified {
+	overflow: hidden;
+	display: block;
+	max-height: 4rem;
+	-webkit-line-clamp: 2;
+	display: box;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	white-space: normal;
+	width: 300px;
+}
+
+.socialbutton {
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	align-items: center;
+	text-transform: capitalize;
+}
+
+.socialbutton::after {
+	display: none;
+}
+
+.markdown p {
+	margin-bottom: 0;
 }

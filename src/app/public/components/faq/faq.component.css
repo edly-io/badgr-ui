@@ -1,3 +1,110 @@
-b {
-    font-weight: bold;
+.faqs-main {
+	max-width: 1250px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 1rem 10px;
+}
+
+.newFaqsAccordion {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding-top: 30px;
+}
+
+.newFaqsAccordion .accordion-item {
+	border: 1px solid var(--border-color);
+	border-radius: 12px;
+	background-color: white;
+	padding: 10px 20px;
+	display: flex;
+	color: var(--primary-color);
+	font-size: 16px;
+	gap: 10px;
+	flex-direction: column;
+}
+.accordion-button {
+	font-size: 16px;
+	color: var(--primary-color);
+	font-weight: 600;
+	line-height: 25px;
+}
+.newFaqsAccordion .accordion-body {
+	color: var(--primary-color);
+}
+.newFaqsAccordion .accordion-button:not(.collapsed),
+.accordion-button {
+	padding: 0;
+	background-color: transparent;
+	box-shadow: none;
+	font-size: 16px;
+	color: var(--primary-color);
+	line-height: 22px;
+	font-family: var(--IBM-font-family);
+}
+.newFaqsAccordion .accordion-body {
+	font-size: 16px;
+	line-height: 22px;
+	padding: 0;
+}
+.newFaqsAccordion .accordion-button::after {
+	background-image: url(../../../../breakdown/static/images/chevron.svg);
+	margin-top: 10px;
+	margin-right: 8px;
+}
+.newFaqsAccordion .accordion-button:dir(rtl)::after {
+	margin-left: unset;
+	margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+	.newFaqsAccordion .accordion-button:not(.collapsed),
+	.accordion-button {
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.newFaqsAccordion .accordion-body {
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	.newFaqsAccordion {
+		gap: 15px;
+		padding-top: 40px;
+	}
+
+	.newFaqsAccordion .accordion-item {
+		padding: 15px 20px;
+		font-size: 18px;
+		gap: 12px;
+	}
+	.accordion-button {
+		font-size: 22px;
+		line-height: 30px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.accordion-button {
+		font-size: 20px;
+	}
+	.newFaqsAccordion .accordion-body {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.newFaqsAccordion {
+		gap: 20px;
+		padding-top: 60px;
+	}
+
+	.newFaqsAccordion .accordion-item {
+		padding: 20px 32px;
+		font-size: 20px;
+		gap: 15px;
+	}
+	.accordion-button {
+		font-size: 22px;
+		line-height: 30px;
+	}
 }

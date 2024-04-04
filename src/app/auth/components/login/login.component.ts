@@ -22,13 +22,13 @@ import { BadgrApiFailure } from '../../../common/services/api-failure';
 @Component({
 	selector: 'login',
 	templateUrl: './login.component.html',
+	styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent extends BaseRoutableComponent implements OnInit, AfterViewInit {
-	
 	get theme() {
 		return this.configService.theme;
 	}
-	get api(){
+	get api() {
 		return this.configService.apiConfig;
 	}
 	get features() {
