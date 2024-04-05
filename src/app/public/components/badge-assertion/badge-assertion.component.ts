@@ -69,13 +69,12 @@ export class PublicBadgeAssertionComponent {
 		skill: 'Professional competence',
 	};
 
-	levelOptions: { [key in BadgeClassLevel]: string } = {
-		a1: 'A1 beginner',
-		a2: 'A2 explorer',
-		b1: 'B1 Insider',
-		b2: 'B2 Expert',
-		c1: 'C1 Leader',
-		c2: 'C2 pioneer',
+	levelOptions: { [key in BadgeClassLevel]: string } = {		
+		l1: 'Awareness',
+		l2: 'Beginners',
+		l3: 'Specialists',
+		l4: 'Experts',
+		l5: 'Scientists'
 	};
 
 	get showDownload() {

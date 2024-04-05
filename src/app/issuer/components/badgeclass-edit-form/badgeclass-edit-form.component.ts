@@ -145,12 +145,11 @@ export class BadgeClassEditFormComponent extends BaseAuthenticatedRoutableCompon
 	};
 
 	levelOptions: { [key in BadgeClassLevel]: string } = {		
-		a1: 'A1 beginner',
-		a2: 'A2 explorer',
-		b1: 'B1 Insider',
-		b2: 'B2 Expert',
-		c1: 'C1 Leader',
-		c2: 'C2 pioneer',
+		l1: 'Awareness',
+		l2: 'Beginners',
+		l3: 'Specialists',
+		l4: 'Experts',
+		l5: 'Scientists'
 	};
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -183,7 +182,6 @@ export class BadgeClassEditFormComponent extends BaseAuthenticatedRoutableCompon
 	}
 
 	initFormFromExisting(badgeClass: BadgeClass) {
-
 		if (badgeClass) {
 			this.badgeClassForm.setValue({
 				badge_name: badgeClass.name,
@@ -511,7 +509,7 @@ export class BadgeClassEditFormComponent extends BaseAuthenticatedRoutableCompon
 			this.initedCurrentImage = true;
 			this.currentImage = image.slice();
 			this.badgeStudio
-				.generateUploadImage(image.slice(), formdata)
+				.generateDummyImage(image.slice(), formdata)
 				.then((imageUrl) => this.imageField.useDataUrl(imageUrl, 'BADGE'));
 		} else {
 			this.initedCurrentImage = true
@@ -520,7 +518,7 @@ export class BadgeClassEditFormComponent extends BaseAuthenticatedRoutableCompon
 	adjustUploadImage(formdata) {
 		if(this.currentImage && this.badgeStudio) {
 			this.badgeStudio
-				.generateUploadImage(this.currentImage.slice(), formdata)
+				.generateDummyImage(this.currentImage.slice(), formdata)
 				.then((imageUrl) => this.imageField.useDataUrl(imageUrl, 'BADGE'));
 		}
 	}
