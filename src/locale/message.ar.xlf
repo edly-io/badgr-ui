@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="ar">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="cac206f6be7789d842c7e888634035cf9da22185" datatype="html">
         <source> Badges </source>
@@ -708,6 +708,174 @@
           <context context-type="linenumber">134,137</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="4217361779185600572" datatype="html">
+        <source>No Issuers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <target>لا توجد مصدرين</target>
+      </trans-unit>
+      <trans-unit id="5822469630817021095" datatype="html">
+        <source>1 Issuer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <target>1 مصدر</target>
+      </trans-unit>
+      <trans-unit id="4507613343963879177" datatype="html">
+        <source># Issuers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <target># مصدرين</target>
+      </trans-unit>
+      <trans-unit id="8524878922992947766" datatype="html">
+        <source>No Badges</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <target>لا توجد شارات</target>
+      </trans-unit>
+      <trans-unit id="5249284561782887469" datatype="html">
+        <source>1 Badge</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <target>1 شارة</target>
+      </trans-unit>
+      <trans-unit id="4662039213795182929" datatype="html">
+        <source># Badges</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <target># شارات</target>
+      </trans-unit>
+      <trans-unit id="11757095110245921" datatype="html">
+        <source>No Recipients</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <target>لا توجد مستلمين</target>
+      </trans-unit>
+      <trans-unit id="4808744658593565923" datatype="html">
+        <source>1 Recipient</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <target>1 مستلم</target>
+      </trans-unit>
+      <trans-unit id="6221138437773415020" datatype="html">
+        <source># Recipients</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <target># مستلمين</target>
+      </trans-unit>
+      <trans-unit id="3737711445155929474" datatype="html">
+        <source>Membership</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+        <target>العضوية</target>
+      </trans-unit>
+      <trans-unit id="6903627337266533583" datatype="html">
+        <source>Metacompetence</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <target>الميتاكمبيتنس</target>
+      </trans-unit>
+      <trans-unit id="3110786358479707287" datatype="html">
+        <source>Participation/Success</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <target>المشاركة/النجاح</target>
+      </trans-unit>
+      <trans-unit id="7561956209947218865" datatype="html">
+        <source>Professional competence</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <target>الكفاءة المهنية</target>
+      </trans-unit>
+      <trans-unit id="1547013801807710392" datatype="html">
+        <source>No category</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <target>لا تصنيف</target>
+      </trans-unit>
       <trans-unit id="784e7619e80343fc4c1674e8c9613bc96e00a60e" datatype="html">
         <source>Search institutions</source>
         <context-group purpose="location">
@@ -983,6 +1151,62 @@
 					</u"/>
           <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Othe"/>
         </target>
+      </trans-unit>
+      <trans-unit id="8178534585751659700" datatype="html">
+        <source>No institutions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <target>لا توجد مؤسسات</target>
+      </trans-unit>
+      <trans-unit id="238215913017982106" datatype="html">
+        <source>1 Institution</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <target>1 مؤسسة</target>
+      </trans-unit>
+      <trans-unit id="944883757248663420" datatype="html">
+        <source># Institutions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <target># مؤسسات</target>
+      </trans-unit>
+      <trans-unit id="6212788962501686539" datatype="html">
+        <source>&lt;strong class="u-text-bold"&gt;1&lt;/strong&gt; Badge</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <target>&lt;strong class="u-text-bold"&gt;1&lt;/strong&gt; شارة</target>
+      </trans-unit>
+      <trans-unit id="7770819708198049562" datatype="html">
+        <source>&lt;strong class="u-text-bold"&gt;#&lt;/strong&gt; Badges</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <target>&lt;strong class="u-text-bold"&gt;#&lt;/strong&gt; شارات</target>
+      </trans-unit>
+      <trans-unit id="6140413148585860213" datatype="html">
+        <source>No recipient</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+        <target>لا مستلم</target>
+      </trans-unit>
+      <trans-unit id="5601336269855350070" datatype="html">
+        <source># Recipient</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <target># مستلم</target>
       </trans-unit>
       <trans-unit id="f4e529ae5ffd73001d1ff4bbdeeb0a72e342e5c8" datatype="html">
         <source>Close</source>
@@ -2015,6 +2239,86 @@
         </context-group>
         <target>لم يتم العثور على مستلمين.</target>
       </trans-unit>
+      <trans-unit id="8676042323535968772" datatype="html">
+        <source>Awareness</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <target>الوعي</target>
+      </trans-unit>
+      <trans-unit id="2937321406191530145" datatype="html">
+        <source>Beginners</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <target>المبتدئين</target>
+      </trans-unit>
+      <trans-unit id="1888669209740240036" datatype="html">
+        <source>Specialists</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <target>المتخصصين</target>
+      </trans-unit>
+      <trans-unit id="3889195335322693389" datatype="html">
+        <source>Experts</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <target>الخبراء</target>
+      </trans-unit>
+      <trans-unit id="1194019085478366226" datatype="html">
+        <source>Scientists</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <target>العلماء</target>
+      </trans-unit>
       <trans-unit id="1392527b4f53a7c04874346a5f5fd73de51b5d8b" datatype="html">
         <source>Badge Basics</source>
         <context-group purpose="location">
@@ -2502,6 +2806,38 @@
           <context context-type="linenumber">500,502</context>
         </context-group>
         <target>إلغاء</target>
+      </trans-unit>
+      <trans-unit id="840951359074313455" datatype="html">
+        <source>Days</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+        <target>أيام</target>
+      </trans-unit>
+      <trans-unit id="8365450656480095075" datatype="html">
+        <source>Weeks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+        <target>أسابيع</target>
+      </trans-unit>
+      <trans-unit id="4845030128243887325" datatype="html">
+        <source>Months</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+        <target>أشهر</target>
+      </trans-unit>
+      <trans-unit id="953022389548488004" datatype="html">
+        <source>Years</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+        <target>سنوات</target>
       </trans-unit>
       <trans-unit id="8509eb7099a5659edc04a2a80f66dbf1ff12c432" datatype="html">
         <source>Edit Badge</source>
@@ -4724,6 +5060,22 @@
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </target>
+      </trans-unit>
+      <trans-unit id="464749780222721589" datatype="html">
+        <source>Expired</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <target>منتهية الصلاحية</target>
+      </trans-unit>
+      <trans-unit id="8037476586059399916" datatype="html">
+        <source>Expires</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <target>تنتهي الصلاحية</target>
       </trans-unit>
       <trans-unit id="59ef7de64ce68119cc75a7003e276c512c930a8b" datatype="html">
         <source> Badges earned by 
