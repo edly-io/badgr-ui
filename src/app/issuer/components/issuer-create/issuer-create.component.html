@@ -86,7 +86,7 @@
 			[control]="issuerForm.rawControlMap.issuer_streetnumber"
 			[label]="'House number'"
 			[fieldType]="'number'"
-			[errorMessage]="{ required: 'Please enter a house number' }"
+			[errorMessage]="{ required: 'Please enter a house number'}"
 		></bg-formfield-text>
 
 		<bg-formfield-text
@@ -126,7 +126,7 @@
 		</label>
 
 		<div class="l-flex l-flex-1x l-flex-justifyend u-margin-top2x gap-2">
-			<button [routerLink]="['/issuer']" class="new-button-secondary" [disabled-when-requesting]="true">
+			<button [routerLink]="['/issuer']" class="new-button-secondary" [disabled-when-requesting]="true" i18n>
 				Cancel
 			</button>
 			<button

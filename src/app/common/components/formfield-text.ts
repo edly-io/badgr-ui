@@ -18,14 +18,14 @@ import {CommonDialogsService} from '../services/common-dialogs.service';
 	},
 	template: `
 		<div class="forminput-x-labelrow">
-			<label class="forminput-x-label" [attr.for]="inputName" *ngIf="label || includeLabelAsWrapper">
+			<label class="forminput-x-label" [attr.for]="inputName" *ngIf="label || includeLabelAsWrapper" i8n>
 				{{ label }}  <span *ngIf="optional">(OPTIONAL)</span>
 				<span *ngIf="formFieldAside">{{ formFieldAside }}</span>
 				<button type="button" *ngIf="isLockedState" (click)="unlock()">(unlock)</button>
 			</label>
 			<ng-content class="forminput-x-helplink" select="[label-additions]"></ng-content>
 		</div>
-		<p class="forminput-x-sublabel" *ngIf="sublabel"><span *ngIf="remainingCharactersNum >= 0">{{ remainingCharactersNum }}</span>{{ sublabel }}</p>
+		<p class="forminput-x-sublabel" *ngIf="sublabel"><span *ngIf="remainingCharactersNum >= 0" i18n>{{ remainingCharactersNum }}</span>{{ sublabel }}</p>
 
 		<label class="visuallyhidden" [attr.for]="inputName" *ngIf="ariaLabel">{{ ariaLabel }}</label>
 		<div class="forminput-x-inputs">
@@ -42,12 +42,15 @@ import {CommonDialogsService} from '../services/common-dialogs.service';
 			       (keypress)="handleKeyPress($event)"
 			       (keyup)="handleKeyUp($event)"
 			       #textInput
+				   i18n
+
 			/>
 			<div class="forminput-x-button" *ngIf="inlineButtonText">
 				<button class="button button-secondary button-informinput"
 						(click)="buttonClicked.emit($event)"
 						[disabled-when-requesting]="true"
 						type="submit"
+						i18n
 				>
 					{{inlineButtonText}}
 				</button>
@@ -63,9 +66,10 @@ import {CommonDialogsService} from '../services/common-dialogs.service';
 			          (keypress)="handleKeyPress($event)"
 			          (keyup)="handleKeyUp($event)"
 			          #textareaInput
+					  i18n-placeholder
 			></textarea>
 		</div>
-		<p class="forminput-x-error" *ngIf="isErrorState">{{ errorMessageForDisplay }}</p>
+		<p class="forminput-x-error" *ngIf="isErrorState" i18n>{{ errorMessageForDisplay }}</p>
 	`
 })
 export class FormFieldText implements OnChanges, AfterViewInit {

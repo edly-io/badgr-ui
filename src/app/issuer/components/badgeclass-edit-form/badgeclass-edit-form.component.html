@@ -52,6 +52,7 @@
 					label="Name"
 					[errorMessage]="{ required: 'Please give the badge a name' }"
 					[autofocus]="true"
+					i18n-label
 				></bg-formfield-text>
 			</div>
 
@@ -63,6 +64,8 @@
 					placeholder="Short description of the service"
 					[errorMessage]="{ required: 'Please enter a description' }"
 					[multiline]="true"
+					i18n-lable
+					i18n-placeholder
 				></bg-formfield-text>
 			</div>
 		</div>
@@ -102,6 +105,7 @@
 							label=" How do you get this badge?"
 							class="l-formsection-x-inputoffset"
 							[errorMessage]="''"
+							i18n-label
 						></bg-formfield-markdown>
 					</div>
 				</div>
@@ -114,6 +118,8 @@
 					[urlField]="true"
 					fieldType="url"
 					errorMessage="URL to the badge criteria"
+					i18n-label
+					i18n-errorMessage
 				></bg-formfield-text>
 			</div>
 		</div>
@@ -140,6 +146,7 @@
 					[errorMessage]="{
 						required: 'Please enter the duration of the service to receive the badge.'
 					}"
+					i18n-label
 				></bg-formfield-text>
 			</div>
 		</div>
@@ -172,6 +179,7 @@
 					[errorMessage]="{
 						required: 'Please select the badge category.'
 					}"
+					i18n-label
 				></bg-formfield-select>
 			</div>
 		</div>
@@ -204,6 +212,9 @@
 					[errorMessage]="{
 						required: 'Choose a level for the badge'
 					}"
+					i18n-label
+					i18n-placeholder
+					i18n-errorMessage
 				></bg-formfield-select>
 			</div>
 		</div>
@@ -252,14 +263,17 @@
 							label="Name"
 							[errorMessage]="{ required: 'Enter the name of the shortcut.' }"
 							id="alignment_name_{{ i }}"
+							i18n-label
+							i18n-errorMessage
 						></bg-formfield-text>
 
 						<bg-formfield-text
 							[control]="alignment.rawControlMap.target_url"
 							label="URL"
-							[errorMessage]="{ required: 'Please provide a URL to link to.' }"
+							[errorMessage]="{ required: 'Please provide a URL to link to.'}"
 							[urlField]="true"
 							id="alignment_url_{{ i }}"
+							i18n-label
 						></bg-formfield-text>
 
 						<bg-formfield-text
@@ -267,6 +281,7 @@
 							label="Short description"
 							[multiline]="true"
 							id="alignment_description_{{ i }}"
+							i18n-label
 						></bg-formfield-text>
 
 						<button
@@ -348,6 +363,7 @@
 						type="text"
 						maxlength="50"
 						placeholder="Newer Tag..."
+						i18n-placeholder
 					/>
 					<div class="forminput-x-button">
 						<button
@@ -392,6 +408,7 @@
 					[fieldType]="'number'"
 					[max]="1000"
 					[maxchar]="4"
+					i18n-label
 				></bg-formfield-text>
 				<bg-formfield-select
 					ariaLabel="Choose duration"
@@ -399,6 +416,7 @@
 					label="Duration"
 					[placeholder]="'Choose duration'"
 					[optionMap]="durationOptions"
+					i18n-label
 				></bg-formfield-select>
 			</div>
 		</div>

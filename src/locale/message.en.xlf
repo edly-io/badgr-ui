@@ -108,6 +108,27 @@
           <context context-type="linenumber">164</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8cb852f421afffed3f3a6f0feb3e3c44217efb9a" datatype="html">
+        <source><x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;svg icon=&quot;icon_member&quot;&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/>My profile</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a17d6374ae39d20793fbe4fbf0dc4fa8dc1144c0" datatype="html">
+        <source><x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;svg icon=&quot;icon_issuer&quot;&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/>My institutions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d98ab120154323dec16b446baf7a8cc5dddb63ab" datatype="html">
+        <source><x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;svg icon=&quot;icon_exit_to_app&quot;&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/>Logout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="75dc591672a3991cacd52e008f75ed42ce40d0d9" datatype="html">
         <source>Badges</source>
         <context-group purpose="location">
@@ -176,7 +197,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">187,188</context>
+          <context context-type="linenumber">189,190</context>
         </context-group>
       </trans-unit>
       <trans-unit id="30e1888b0eaf23b04c8e01d0d1f53c5faf06ec37" datatype="html">
@@ -233,11 +254,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">352,354</context>
+          <context context-type="linenumber">358,360</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
-          <context context-type="linenumber">118,120</context>
+          <context context-type="linenumber">120,122</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile-edit/profile-edit.component.html</context>
@@ -265,11 +286,30 @@
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="6d3b88a3ae6ff3d987f86395605397ec736dee9c" datatype="html">
+        <source>E-Mail</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/components/request-password-reset/request-password-reset.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue-bulk-award-confirmation/badgeclass-issue-bulk-award-confirmation.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue-bulk-award-error/badgeclass-issue-bulk-award-error.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue-bulk-award-preview/badgeclass-issue-bulk-award-preview.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="d7b35c384aecd25a516200d6921836374613dfe7" datatype="html">
         <source>Cancel</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/components/request-password-reset/request-password-reset.component.html</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="linenumber">32</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/components/reset-password/reset-password.component.html</context>
@@ -289,7 +329,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
-          <context context-type="linenumber">72</context>
+          <context context-type="linenumber">78</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-selection-dialog/recipient-badge-collection-selection-dialog.component.html</context>
@@ -304,7 +344,7 @@
         <source> Reset password </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/components/request-password-reset/request-password-reset.component.html</context>
-          <context context-type="linenumber">40,42</context>
+          <context context-type="linenumber">41,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="56f810274699683db1c4395ad7d487e6206e6506" datatype="html">
@@ -419,47 +459,230 @@
           <context context-type="linenumber">11,18</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="6ea6efab3485b9a2505e0ca3dfbd62c9507bbb4d" datatype="html">
+        <source>Browse badges</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/common/dialogs/copy-badge-dialog/copy-badge-dialog.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="82f343259999ee6e0bea45cee99341d1a6e53c5a" datatype="html">
         <source>Group by </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.html</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6fc2c1a8969bb0645d798d2066d264882d206fcc" datatype="html">
         <source>name</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.html</context>
-          <context context-type="linenumber">62</context>
+          <context context-type="linenumber">63</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">106</context>
+          <context context-type="linenumber">107</context>
         </context-group>
       </trans-unit>
       <trans-unit id="b5b65b50912708c015b40107e71231a85e2933eb" datatype="html">
         <source>-name</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.html</context>
-          <context context-type="linenumber">74</context>
+          <context context-type="linenumber">75</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">111</context>
+          <context context-type="linenumber">112</context>
         </context-group>
       </trans-unit>
       <trans-unit id="63553aca1c1eb2a686dee8439061b4880dc6c29f" datatype="html">
         <source> Tags </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.html</context>
-          <context context-type="linenumber">91,93</context>
+          <context context-type="linenumber">92,94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7d2146e378633856fa8095a00f8ce93d89e3194f" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ issuerGroup.badges.lengt"/> <x id="INTERPOLATION_1" equiv-text="{{ issuerGroup.badges.length == 1 ? &apos;Badge&apos; : &apos;Badges&apos; }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.html</context>
+          <context context-type="linenumber">134,137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4217361779185600572" datatype="html">
+        <source>No Issuers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5822469630817021095" datatype="html">
+        <source>1 Issuer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4507613343963879177" datatype="html">
+        <source># Issuers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8524878922992947766" datatype="html">
+        <source>No Badges</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5249284561782887469" datatype="html">
+        <source>1 Badge</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4662039213795182929" datatype="html">
+        <source># Badges</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="11757095110245921" datatype="html">
+        <source>No Recipients</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4808744658593565923" datatype="html">
+        <source>1 Recipient</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6221138437773415020" datatype="html">
+        <source># Recipients</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3737711445155929474" datatype="html">
+        <source>Membership</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6903627337266533583" datatype="html">
+        <source>Metacompetence</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3110786358479707287" datatype="html">
+        <source>Participation/Success</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7561956209947218865" datatype="html">
+        <source>Professional competence</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1547013801807710392" datatype="html">
+        <source>No category</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="784e7619e80343fc4c1674e8c9613bc96e00a60e" datatype="html">
+        <source>Search institutions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
+          <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="75db4ef038c6035e0eeeea78a51b339ccb3c25e6" datatype="html">
         <source>Group by categories</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">34</context>
+          <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ca6b7f71caf9d667c0babcde8c1483fad87c142f" datatype="html">
@@ -489,43 +712,43 @@
 						cla"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">45,68</context>
+          <context context-type="linenumber">46,69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="e4a329a4a6cf8f9f9526d1c15a5ac11128ff37dd" datatype="html">
         <source>grid</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">76</context>
+          <context context-type="linenumber">77</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.html</context>
-          <context context-type="linenumber">103</context>
+          <context context-type="linenumber">104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="d004331874d3a33127c0e2f00be30b1452a86e5b" datatype="html">
         <source>list</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">88</context>
+          <context context-type="linenumber">89</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.html</context>
-          <context context-type="linenumber">115</context>
+          <context context-type="linenumber">116</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1df5d969bb9e78778add6c87575f657baa3bef56" datatype="html">
         <source><x id="TAG_IMG" ctype="image"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">168,169</context>
+          <context context-type="linenumber">169,170</context>
         </context-group>
       </trans-unit>
       <trans-unit id="c9039b1b13b3ef165b66b3c5d79f810ab1ebb050" datatype="html">
         <source>Open</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">218</context>
+          <context context-type="linenumber">219</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.html</context>
@@ -536,38 +759,15 @@
         <source>Picture</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">232</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">285</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="c764faa8b8c5cad27fad79f0091b3239bf52517e" datatype="html">
-        <source>Institution</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
           <context context-type="linenumber">233</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
           <context context-type="linenumber">286</context>
         </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/common/dialogs/copy-badge-dialog/copy-badge-dialog.component.html</context>
-          <context context-type="linenumber">43</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-detail/recipient-badge-collection-detail.component.html</context>
-          <context context-type="linenumber">122</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.html</context>
-          <context context-type="linenumber">186</context>
-        </context-group>
       </trans-unit>
-      <trans-unit id="ace25fd728578fcce735d7f5ea8a6f639737be7e" datatype="html">
-        <source>Registered since</source>
+      <trans-unit id="c764faa8b8c5cad27fad79f0091b3239bf52517e" datatype="html">
+        <source>Institution</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
           <context context-type="linenumber">234</context>
@@ -576,20 +776,43 @@
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
           <context context-type="linenumber">287</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/common/dialogs/copy-badge-dialog/copy-badge-dialog.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-detail/recipient-badge-collection-detail.component.html</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.html</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ace25fd728578fcce735d7f5ea8a6f639737be7e" datatype="html">
+        <source>Registered since</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
+          <context context-type="linenumber">235</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
+          <context context-type="linenumber">288</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="030b4423b92167200e39519599f9b863b4f7c62c" datatype="html">
         <source>Actions</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">236</context>
+          <context context-type="linenumber">237</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">289</context>
+          <context context-type="linenumber">290</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/common/dialogs/copy-badge-dialog/copy-badge-dialog.component.html</context>
-          <context context-type="linenumber">45</context>
+          <context context-type="linenumber">46</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.html</context>
@@ -601,11 +824,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">41</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">143</context>
+          <context context-type="linenumber">145</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-detail/recipient-earned-badge-detail.component.html</context>
@@ -616,14 +839,14 @@
         <source><x id="TAG_IMG" ctype="image" equiv-text="/&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">270,272</context>
+          <context context-type="linenumber">271,273</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a5738c037b39e9b7863f6900559c7be82d42d740" datatype="html">
         <source><x id="TAG_IMG" ctype="image"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">330,331</context>
+          <context context-type="linenumber">331,332</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4d3cf0825aafce3f90d606251aead71b737c0c38" datatype="html">
@@ -632,7 +855,7 @@
 						&lt;/li&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Clus"/> Cluster </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">349,351</context>
+          <context context-type="linenumber">350,352</context>
         </context-group>
       </trans-unit>
       <trans-unit id="c7f7b55be25868eb79af5e02fe141704031cefb5" datatype="html">
@@ -642,7 +865,7 @@
 						&lt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Scho"/> School </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">353,355</context>
+          <context context-type="linenumber">354,356</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3779b8c749a4be47e84f00d81e34dcb80b01bcbd" datatype="html">
@@ -651,7 +874,7 @@
 						&lt;/li"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Univ"/> University </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">357,359</context>
+          <context context-type="linenumber">358,360</context>
         </context-group>
       </trans-unit>
       <trans-unit id="723181c0ba140a689c8838bfcb3fbfcc1c2c3ec0" datatype="html">
@@ -661,7 +884,56 @@
 					&lt;/u"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Othe"/> Other </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
-          <context context-type="linenumber">361,363</context>
+          <context context-type="linenumber">362,364</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8178534585751659700" datatype="html">
+        <source>No institutions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="238215913017982106" datatype="html">
+        <source>1 Institution</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="944883757248663420" datatype="html">
+        <source># Institutions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6212788962501686539" datatype="html">
+        <source>&lt;strong class=&quot;u-text-bold&quot;&gt;1&lt;/strong&gt; Badge</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7770819708198049562" datatype="html">
+        <source>&lt;strong class=&quot;u-text-bold&quot;&gt;#&lt;/strong&gt; Badges</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6140413148585860213" datatype="html">
+        <source>No recipient</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5601336269855350070" datatype="html">
+        <source># Recipient</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
+          <context context-type="linenumber">92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="f4e529ae5ffd73001d1ff4bbdeeb0a72e342e5c8" datatype="html">
@@ -683,28 +955,32 @@
           <context context-type="linenumber">13</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">221</context>
+          <context context-type="sourcefile">src/app/issuer/components/badge-selection-dialog/badge-selection-dialog.component.ts</context>
+          <context context-type="linenumber">48</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">319</context>
+          <context context-type="linenumber">232</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">376</context>
+          <context context-type="linenumber">334</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">392</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">104</context>
+          <context context-type="linenumber">106</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">140</context>
+          <context context-type="linenumber">142</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">204</context>
+          <context context-type="linenumber">208</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/mozz-transition/components/import-modal/import-modal.component.html</context>
@@ -881,11 +1157,39 @@
           <context context-type="linenumber">57,59</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="ad805ce18d193b70010130c39493e51383fc3d2b" datatype="html">
-        <source>Select from files</source>
+      <trans-unit id="132314f59ecfeca582c8e0469cc21c4c05c82504" datatype="html">
+        <source>Drag &amp; Drop</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/common/components/formfield-image.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="460df001ab1f0af3ec068f6a140a04c23320eb0e" datatype="html">
+        <source>or <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;u-text-link&quot;&gt;"/>Select from files<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/common/components/formfield-image.ts</context>
           <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0be71c42a2259284b879e8ffcf1a23036496edbe" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ remainingCharactersNum }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/common/components/formfield-text.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5b500215b7159cebccc4d76017460ee87167d45d" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{inlineButtonText}}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/common/components/formfield-text.ts</context>
+          <context context-type="linenumber">54,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="05024742a420002675c6c53e0d15a9c0f39692fb" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ errorMessageForDisplay }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/common/components/formfield-text.ts</context>
+          <context context-type="linenumber">72</context>
         </context-group>
       </trans-unit>
       <trans-unit id="94516fa213706c67ce5a5b5765681d7fb032033a" datatype="html">
@@ -896,7 +1200,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/common/dialogs/nounproject-dialog/nounproject-dialog.component.html</context>
-          <context context-type="linenumber">79</context>
+          <context context-type="linenumber">80</context>
         </context-group>
       </trans-unit>
       <trans-unit id="46337a43f737de89c7bf28783ab01530fbef1c36" datatype="html">
@@ -917,18 +1221,18 @@
         <source>Group by institution</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/common/dialogs/copy-badge-dialog/copy-badge-dialog.component.html</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">36</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.html</context>
-          <context context-type="linenumber">95</context>
+          <context context-type="linenumber">96</context>
         </context-group>
       </trans-unit>
       <trans-unit id="92deb10e9df19e424f04158b902432e7bf935db1" datatype="html">
         <source>Badge</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/common/dialogs/copy-badge-dialog/copy-badge-dialog.component.html</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">43</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-detail/issuer-detail.component.html</context>
@@ -944,14 +1248,14 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.html</context>
-          <context context-type="linenumber">185</context>
+          <context context-type="linenumber">186</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1979da7460819153e11d2078244645d94291b69c" datatype="html">
         <source>Copy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/common/dialogs/copy-badge-dialog/copy-badge-dialog.component.html</context>
-          <context context-type="linenumber">81</context>
+          <context context-type="linenumber">82</context>
         </context-group>
       </trans-unit>
       <trans-unit id="620086548cb312829ec56c5cf2bbc7cb43e1b705" datatype="html">
@@ -975,36 +1279,75 @@
           <context context-type="linenumber">31,33</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="887c118b2524c7c8ced8e91711fa5ae69eb40b1f" datatype="html">
+        <source> Updated Terms of Service </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/common/dialogs/new-terms-dialog.component.ts</context>
+          <context context-type="linenumber">17,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4acb8c2c5066ff815aeb9de48320798ba0d45dd5" datatype="html">
+        <source> We’ve updated our <x id="START_LINK" ctype="x-a" equiv-text="&lt;a target=&quot;_blank&quot; [href]=&quot;termsOfServiceLink&quot;&gt;"/>Terms of Service<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/common/dialogs/new-terms-dialog.component.ts</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="02da7e98773c1a1cee69dd2909746b242bb9313f" datatype="html">
+        <source> Please read and agree to the Terms of Service if you want to continue. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/common/dialogs/new-terms-dialog.component.ts</context>
+          <context context-type="linenumber">42,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ac10a3d9b59575640797c1a8e6aea642cf5d5e77" datatype="html">
+        <source>Continue</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/common/dialogs/new-terms-dialog.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e888b50bfba7f71156a880df9843d36f52bd2c50" datatype="html">
+        <source> Need Help? </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/common/dialogs/new-terms-dialog.component.ts</context>
+          <context context-type="linenumber">50,52</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="cccbf3dc001211db0230f7fccf2dace7e9c6946e" datatype="html">
         <source>Search icon</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/common/dialogs/nounproject-dialog/nounproject-dialog.component.html</context>
           <context context-type="linenumber">9</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/common/dialogs/nounproject-dialog/nounproject-dialog.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="14688213d67b2f0e553d66f8255281db245502fb" datatype="html">
         <source>Icon</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/common/dialogs/nounproject-dialog/nounproject-dialog.component.html</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cafc87479686947e2590b9f588a88040aeaf660b" datatype="html">
         <source>Tags</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/common/dialogs/nounproject-dialog/nounproject-dialog.component.html</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">41</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">435</context>
+          <context context-type="linenumber">453</context>
         </context-group>
       </trans-unit>
       <trans-unit id="45cc8ca94b5a50842a9a8ef804a5ab089a38ae5c" datatype="html">
         <source>ID</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/common/dialogs/nounproject-dialog/nounproject-dialog.component.html</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">42</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.html</context>
@@ -1019,28 +1362,28 @@
         <source> Choose </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/common/dialogs/nounproject-dialog/nounproject-dialog.component.html</context>
-          <context context-type="linenumber">71,73</context>
+          <context context-type="linenumber">72,74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a06b18b9d35598a293b88cff5460b0f29a5411be" datatype="html">
         <source>Load More...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/common/dialogs/nounproject-dialog/nounproject-dialog.component.html</context>
-          <context context-type="linenumber">83</context>
+          <context context-type="linenumber">84</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1c9a2242975aaaf277f1bfca4d3945b1ee4f4e99" datatype="html">
         <source> No icon found for &quot;<x id="INTERPOLATION" equiv-text="{{ searchTerm }}"/>&quot; </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/common/dialogs/nounproject-dialog/nounproject-dialog.component.html</context>
-          <context context-type="linenumber">89,91</context>
+          <context context-type="linenumber">90,92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="710edec076d8375a26b3b66acdae1ae18bb9a144" datatype="html">
         <source> Please use English terms to search for the icons. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/common/dialogs/nounproject-dialog/nounproject-dialog.component.html</context>
-          <context context-type="linenumber">98,100</context>
+          <context context-type="linenumber">99,101</context>
         </context-group>
       </trans-unit>
       <trans-unit id="69ae43d8132c8b2e9cafc9ba4460cc8383146040" datatype="html">
@@ -1189,6 +1532,27 @@
           <context context-type="linenumber">262,264</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="c3afa310d081790d0b7a61b11ff60830e2f6f2bd" datatype="html">
+        <source>Filter your badges</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badge-selection-dialog/badge-selection-dialog.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2fac1c5c5881b80d8f0f21b1556b5e57bc3e6070" datatype="html">
+        <source>Group by Issuer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badge-selection-dialog/badge-selection-dialog.component.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="16625a4192326848c5917bf2f6d5b28dec4495f4" datatype="html">
+        <source> No badges or issuers matching your query </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badge-selection-dialog/badge-selection-dialog.component.ts</context>
+          <context context-type="linenumber">63,65</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="8dbb8f86d08681121ddb4393b4197bc01218cafd" datatype="html">
         <source>Create badge</source>
         <context-group purpose="location">
@@ -1262,7 +1626,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">90</context>
+          <context context-type="linenumber">92</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/components/issuer/issuer.component.html</context>
@@ -1358,6 +1722,13 @@
           <context context-type="linenumber">230,232</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="d561adc0058cce22d4ba43bab5c7f7e03bdc7851" datatype="html">
+        <source>Search for email address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.html</context>
+          <context context-type="linenumber">234</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="d379d4106e8fe9eb3981010e869e5e0319527e62" datatype="html">
         <source> <x id="INTERPOLATION" equiv-text="{{ instanceResults.length }}"/> previous awards. You can use the Next/Back buttons below to view additional awards, or search for assignments using the exact email address/recipient ID. </source>
         <context-group purpose="location">
@@ -1381,7 +1752,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.html</context>
-          <context context-type="linenumber">187</context>
+          <context context-type="linenumber">188</context>
         </context-group>
       </trans-unit>
       <trans-unit id="c37eb3024081f733b850d9e5a1fa09c56aa75a4f" datatype="html">
@@ -1441,6 +1812,81 @@
           <context context-type="linenumber">381,383</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8676042323535968772" datatype="html">
+        <source>Awareness</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2937321406191530145" datatype="html">
+        <source>Beginners</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1888669209740240036" datatype="html">
+        <source>Specialists</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3889195335322693389" datatype="html">
+        <source>Experts</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1194019085478366226" datatype="html">
+        <source>Scientists</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="1392527b4f53a7c04874346a5f5fd73de51b5d8b" datatype="html">
         <source>Badge Basics</source>
         <context-group purpose="location">
@@ -1455,275 +1901,362 @@
           <context context-type="linenumber">15,18</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">263</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-staff/issuer-staff.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a51f62109909d476e793ff910626d0ac8e1a881a" datatype="html">
+        <source>Short description of the service</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="dd3d8bb17ffc0fab55fd50667660d008b16d5dc5" datatype="html">
         <source> Criteria <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-family-plex-gray&quot;&gt;"/>(At least one of the fields is mandatory.)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">74,78</context>
+          <context context-type="linenumber">77,81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5dbe7c37ae2ee56bb6b7156c459e7d2dbfed8cb7" datatype="html">
         <source>What are the criteria?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">81</context>
+          <context context-type="linenumber">84</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7302298bf86378ede5d7e7372c3bdea87dcb61b1" datatype="html">
         <source> The criteria field describes exactly what needs to be done to receive the badge. Some issuers choose a URL on your website as an information page that explains what the badge is about and how you receive it. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">82,85</context>
+          <context context-type="linenumber">85,88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="84cd59b01549c2710fafeea97ba5ea7fdd22d95f" datatype="html">
         <source> Either text or a URL is mandatory. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">95,97</context>
+          <context context-type="linenumber">98,100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="badd8ad9a8ca25dfd10a5e9834e0b2a331b987cd" datatype="html">
+        <source> How do you get this badge?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="801b98c6f02fe3b32f6afa3ee854c99ed83474e6" datatype="html">
+        <source>URL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">272</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f05c441107a6aa7a0ed0e3941642098007ef7c61" datatype="html">
+        <source>URL to the badge criteria</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">120</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a02ea1d4e7424ca989929da5e598f379940fdbf2" datatype="html">
         <source>Duration</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">125</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">416</context>
         </context-group>
       </trans-unit>
       <trans-unit id="527c89772bfdc8b4c70c224286a7f29f31dc547e" datatype="html">
         <source>What is the duration?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">129</context>
+          <context context-type="linenumber">135</context>
         </context-group>
       </trans-unit>
       <trans-unit id="d2f7d874e4fa02cd9086ef8d318b0be2d3f39b47" datatype="html">
         <source> In the duration field you describe the time scope of the service that is necessary to receive the badge. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">130,132</context>
+          <context context-type="linenumber">136,138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="adf2ff316690aee31dfdff4ddfefdf2136b9cf3e" datatype="html">
+        <source>Duration in hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">144</context>
         </context-group>
       </trans-unit>
       <trans-unit id="607de17c2a755f65775881c19e276e7c933bcf94" datatype="html">
         <source>Category</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">150</context>
+          <context context-type="linenumber">157</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">176</context>
         </context-group>
       </trans-unit>
       <trans-unit id="e0ada30b822a66a97d83762ed06e510ca80e4c39" datatype="html">
         <source>What is the category?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">154</context>
+          <context context-type="linenumber">161</context>
         </context-group>
       </trans-unit>
       <trans-unit id="d718b51e8ddd07cfb97024805a4f559a2b51ed98" datatype="html">
         <source> As a category you choose between participation/success, membership, professional competence or a meta-competence. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">155,158</context>
+          <context context-type="linenumber">162,165</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a446fb0eb11fbffcac805ece5a2d306d24e733d8" datatype="html">
         <source>Level</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">182</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">205</context>
         </context-group>
       </trans-unit>
       <trans-unit id="f2d221183da56b2bc27ec3f11e0c20aa6f466a95" datatype="html">
         <source>What is the stage?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">186</context>
+          <context context-type="linenumber">194</context>
         </context-group>
       </trans-unit>
       <trans-unit id="095de415a6305d29f31a2abfdf211103172d0bfc" datatype="html">
         <source> Competencies are represented in 5 levels: Awareness, Beginners, Specialists, Experts and Scientists. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">187,190</context>
+          <context context-type="linenumber">195,198</context>
         </context-group>
       </trans-unit>
       <trans-unit id="fa00844096fccbb089ec5938ef77f128d30055b3" datatype="html">
         <source> Shortcut <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>(Optional)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">215,219</context>
+          <context context-type="linenumber">226,230</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aee0521991bab383c921c3e0da64aa7283cdda48" datatype="html">
         <source>What is the link?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">226</context>
+          <context context-type="linenumber">237</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2928f20994e1d054830d12e6b582931ebb131a41" datatype="html">
         <source> Open badges can optionally be linked to educational standards. This link information can be important for people who see which badges you have received or for people who consider receiving a specific badge. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">227,230</context>
+          <context context-type="linenumber">238,241</context>
         </context-group>
       </trans-unit>
       <trans-unit id="b23119e8fca38dccf7898969694f6938364124db" datatype="html">
         <source> Remove </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">244,246</context>
+          <context context-type="linenumber">255,257</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="512b045163a7187b2fc5d554e5f59fb3e49e174b" datatype="html">
+        <source>Short description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">281</context>
         </context-group>
       </trans-unit>
       <trans-unit id="f8e4d85d2d5f9e7906361c215c0c38b28e4adee0" datatype="html">
         <source> Show advanced options </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">278,280</context>
+          <context context-type="linenumber">293,295</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8b2e50aa40fed45f2140bccdb7ebd7f78939d4cc" datatype="html">
         <source> Hide advanced options </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">288,290</context>
+          <context context-type="linenumber">303,305</context>
         </context-group>
       </trans-unit>
       <trans-unit id="abec00f4c137617f1c8ebd11a325e29066ce27f4" datatype="html">
         <source>Frame</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">292</context>
+          <context context-type="linenumber">307</context>
         </context-group>
       </trans-unit>
       <trans-unit id="68572de01b84c678be4bf8a27b990ecac2f41ce9" datatype="html">
         <source>Code</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">295</context>
+          <context context-type="linenumber">310</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6fc21eaa7ae654c48151e8afb86b4146b518220b" datatype="html">
         <source> Add shortcut </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">303,305</context>
+          <context context-type="linenumber">318,320</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cae12030e7fcf0b8191837887808d1fd63cd24b7" datatype="html">
         <source> Tags <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>(Optional)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">313,317</context>
+          <context context-type="linenumber">328,332</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4071b5cf6f436fa8f23a076e48bd4437d7c42c0a" datatype="html">
         <source>What are tags?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">324</context>
+          <context context-type="linenumber">339</context>
         </context-group>
       </trans-unit>
       <trans-unit id="66e117d26dcfefc0d5674bc23fd7e6d0a2ea1283" datatype="html">
         <source> Tags are an optional way to describe a badge. Tags help you find badges on certain topics. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">325,327</context>
+          <context context-type="linenumber">340,342</context>
         </context-group>
       </trans-unit>
       <trans-unit id="826b25211922a1b46436589233cb6f1a163d89b7" datatype="html">
         <source>Delete</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">335</context>
+          <context context-type="linenumber">350</context>
         </context-group>
       </trans-unit>
       <trans-unit id="d9a6d2f30e57a02a6b36a7773c39a3791c42ae9c" datatype="html">
         <source>Add Tag</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">341</context>
+          <context context-type="linenumber">356</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d4ffe86451fff0e00708a47a5b50471151ba3615" datatype="html">
+        <source>Newer Tag...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">365</context>
         </context-group>
       </trans-unit>
       <trans-unit id="177e74eeb153142890f91c5a46fa4344d5e5ab75" datatype="html">
         <source> Add </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">358,360</context>
+          <context context-type="linenumber">374,376</context>
         </context-group>
       </trans-unit>
       <trans-unit id="f36474f574027ce6ace7f483ed49f7c7967cba26" datatype="html">
         <source> Validity <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>(Optional)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">370,374</context>
+          <context context-type="linenumber">386,390</context>
         </context-group>
       </trans-unit>
       <trans-unit id="685950c89fc326494d6d99168ad68150e88d655c" datatype="html">
         <source>What is the validity?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">381</context>
+          <context context-type="linenumber">397</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a58e387f68eb6423fcf25d881bff19ad3826a8ad" datatype="html">
         <source> Describe the duration for which this badge is generally valid. This information can also be found at the award can be changed. Badges are marked as expired once their validity expires. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">382,385</context>
+          <context context-type="linenumber">398,401</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fbcb0d75afbe6aec04269381598a737f4bd19db7" datatype="html">
+        <source>Number</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">407</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cd4fa424485426d3eb87dd8c2cf28f4280a5310d" datatype="html">
         <source>Optional details</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">409</context>
+          <context context-type="linenumber">427</context>
         </context-group>
       </trans-unit>
       <trans-unit id="d62a02b788f5e846e7dc03b2dd9cba88e81e9c86" datatype="html">
         <source>Link to educational standards</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">415</context>
+          <context context-type="linenumber">433</context>
         </context-group>
       </trans-unit>
       <trans-unit id="51b17ebe54d70c340d8515041402b60ebd19532a" datatype="html">
         <source> add </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">423,425</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">437,439</context>
+          <context context-type="linenumber">441,443</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">455,457</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
+          <context context-type="linenumber">473,475</context>
         </context-group>
       </trans-unit>
       <trans-unit id="643d00a89336c569cc037332b5604a4fce313af8" datatype="html">
         <source> added </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">426,428</context>
+          <context context-type="linenumber">444,446</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">458,460</context>
+          <context context-type="linenumber">476,478</context>
         </context-group>
       </trans-unit>
       <trans-unit id="10c61d3713972171993e536279d8a6c7591a40ac" datatype="html">
         <source>added</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">440</context>
+          <context context-type="linenumber">458</context>
         </context-group>
       </trans-unit>
       <trans-unit id="54055286094d0db91b0908fbf202b0f0724d1039" datatype="html">
         <source>validity</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">447</context>
+          <context context-type="linenumber">465</context>
         </context-group>
       </trans-unit>
       <trans-unit id="f9f1f55138fdcb95ef1122c4a271f11881d09068" datatype="html">
@@ -1731,14 +2264,42 @@
 		&lt;/div&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">468,473</context>
+          <context context-type="linenumber">486,491</context>
         </context-group>
       </trans-unit>
       <trans-unit id="dec74a55f3349a7c09020addcb27285848b790f9" datatype="html">
         <source> Cancel </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
-          <context context-type="linenumber">482,484</context>
+          <context context-type="linenumber">500,502</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="840951359074313455" datatype="html">
+        <source>Days</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8365450656480095075" datatype="html">
+        <source>Weeks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4845030128243887325" datatype="html">
+        <source>Months</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="953022389548488004" datatype="html">
+        <source>Years</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
+          <context context-type="linenumber">137</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8509eb7099a5659edc04a2a80f66dbf1ff12c432" datatype="html">
@@ -1767,21 +2328,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue-bulk-award-confirmation/badgeclass-issue-bulk-award-confirmation.component.html</context>
           <context context-type="linenumber">5,9</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6d3b88a3ae6ff3d987f86395605397ec736dee9c" datatype="html">
-        <source>E-Mail</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue-bulk-award-confirmation/badgeclass-issue-bulk-award-confirmation.component.html</context>
-          <context context-type="linenumber">15</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue-bulk-award-error/badgeclass-issue-bulk-award-error.component.html</context>
-          <context context-type="linenumber">20</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue-bulk-award-preview/badgeclass-issue-bulk-award-preview.component.html</context>
-          <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="57dc472f56433ab0543f7717c5185a02ae69cc48" datatype="html">
@@ -1852,7 +2398,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">164,166</context>
+          <context context-type="linenumber">166,168</context>
         </context-group>
       </trans-unit>
       <trans-unit id="84f6e6b856087e9d04f87d5d5739b9aef1276ab2" datatype="html">
@@ -1989,214 +2535,253 @@
           <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="efcb19cf6ac099547efa7d86c42ebd80c3e2c98d" datatype="html">
+        <source>Recipient Name (optional)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="dc2f85e07d689452ace4cf75a76d8e6ec59573d1" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="Note&lt;/strong&gt;: The recipient&apos;s name is saved as plain text"/>Note<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>: The recipient&apos;s name is saved as plain text in the badge. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">45,46</context>
+          <context context-type="linenumber">46,47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4e2591df099ddac796cda401c5f282da779d45f2" datatype="html">
         <source>Identifier</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="43bee9974ee74d7d131bc35163b7937e600e116a" datatype="html">
+        <source>Identifier of the recipient</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
+          <context context-type="linenumber">60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7b65137ac3a9e0ea08e7a90892c2922d10ded6bc" datatype="html">
         <source> Please enter a valid email address. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">63,65</context>
+          <context context-type="linenumber">65,67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a9b2e40bf5336b23ff0c973746f602c29b8ed8a7" datatype="html">
         <source> Please provide a valid URL. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">66,68</context>
+          <context context-type="linenumber">68,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1ab1d212f831c581a3df13c1cb62b3d31107d31f" datatype="html">
         <source> Please enter a valid phone number. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">69,71</context>
+          <context context-type="linenumber">71,73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="b5ffa51bb336b914d07eee5733c7fbee4549ef17" datatype="html">
         <source>Notify the recipient by email</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">83</context>
+          <context context-type="linenumber">85</context>
         </context-group>
       </trans-unit>
       <trans-unit id="fa650b4f1b96b380c515cdfc2556ca014b06dda9" datatype="html">
         <source> Narrative <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>(Optional)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">98,102</context>
+          <context context-type="linenumber">100,104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="c0ed0e539f92ef082b133d96eb80f568ab99ec42" datatype="html">
         <source>What is the narrative?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">109</context>
+          <context context-type="linenumber">111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="63eec461f0176e1e241ef6626fb47a46d72301a2" datatype="html">
         <source> The narrative is a general description of the success related to the badge. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">110,112</context>
+          <context context-type="linenumber">112,114</context>
         </context-group>
       </trans-unit>
       <trans-unit id="c5b4998b713f9d5b4592624bcdf1423c773a6a03" datatype="html">
         <source> More Information </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">113,115</context>
+          <context context-type="linenumber">115,117</context>
         </context-group>
       </trans-unit>
       <trans-unit id="021c1f18da63d1da616ef3bd7cafa126c2a754f7" datatype="html">
         <source> Proof <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>(Optional)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">134,138</context>
+          <context context-type="linenumber">136,140</context>
         </context-group>
       </trans-unit>
       <trans-unit id="fa90f02f8296b3cf09c24df60027dd2cd0478075" datatype="html">
         <source>What is the proof??</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">144</context>
+          <context context-type="linenumber">146</context>
         </context-group>
       </trans-unit>
       <trans-unit id="05681fcdb339fd093ab94743c98a18246376a312" datatype="html">
         <source> Evidence is proof that the recipient meets the relevant criteria to receive a badge. This can be in the form of a narrative that describes success and/or as a URL of a website. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">145,148</context>
+          <context context-type="linenumber">147,150</context>
         </context-group>
       </trans-unit>
       <trans-unit id="741dd7011996e454b8a31f2a3eaf7540828b1c9c" datatype="html">
         <source>Proof <x id="INTERPOLATION" equiv-text="{{ i + 1 }}"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">156,157</context>
+          <context context-type="linenumber">158,159</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="084e827bcabb0c6e13baa24589279cf154031780" datatype="html">
+        <source>URL for proof</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ea5a08d585cf8b15ecb5d1f26763d3028a488089" datatype="html">
+        <source>Please provide a valid URL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
+          <context context-type="linenumber">180</context>
         </context-group>
       </trans-unit>
       <trans-unit id="de2e9c2584e66aa4da74bb8968bbcc1be6db6fd1" datatype="html">
         <source> Add further evidence </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">183,185</context>
+          <context context-type="linenumber">187,189</context>
         </context-group>
       </trans-unit>
       <trans-unit id="c3a76b99f504bea29a0d03e77cf9e33e28e98740" datatype="html">
         <source> Expiry Date <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>(Optional)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">198,202</context>
+          <context context-type="linenumber">202,206</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4977b360dc866234e7d6b9eb545fa4b15cddbecc" datatype="html">
         <source>What is the expiration date?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">209</context>
+          <context context-type="linenumber">213</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1df6cd96d3f533cb32ea0e2ef7299c8de3bee544" datatype="html">
         <source> The badge can have an expiration date. Here you can set, edit or delete it if the badge should not expire. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">210,213</context>
+          <context context-type="linenumber">214,217</context>
         </context-group>
       </trans-unit>
       <trans-unit id="43d22fabf86099cc16b922b792a17f90d1c1a5be" datatype="html">
         <source> Further information </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">214,216</context>
+          <context context-type="linenumber">218,220</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="195153c5164e21b71a3a232b4cfb49044ff892a4" datatype="html">
+        <source>Expiry Date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
+          <context context-type="linenumber">226</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
+          <context context-type="linenumber">230</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cb8612491125370f18e555c01ad1a65d20fabceb" datatype="html">
         <source> Please enter a date in the form YYYY-mm-dd. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">229,231</context>
+          <context context-type="linenumber">235,237</context>
         </context-group>
       </trans-unit>
       <trans-unit id="17b88a7c7d9949f3ccaf140761c6c6556947b78a" datatype="html">
         <source> Expiry Date </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">234</context>
+          <context context-type="linenumber">240</context>
         </context-group>
       </trans-unit>
       <trans-unit id="63964ec4a6cfb4bdd2612ae0d39387a034c91416" datatype="html">
         <source> Edit </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">243,245</context>
+          <context context-type="linenumber">249,251</context>
         </context-group>
       </trans-unit>
       <trans-unit id="887896d47b86b34fb9cd44f75db9e14815c2b7bd" datatype="html">
         <source> Add optional details </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">257,259</context>
+          <context context-type="linenumber">263,265</context>
         </context-group>
       </trans-unit>
       <trans-unit id="587c4b0cffa51d142e7ce236b90be2fb357a81d4" datatype="html">
         <source> Narrative </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">272,274</context>
+          <context context-type="linenumber">278,280</context>
         </context-group>
       </trans-unit>
       <trans-unit id="f326c56054ad28170edf22b807645d2abbec28c2" datatype="html">
         <source> <x id="INTERPOLATION" equiv-text="{{ narrativeEnabled ? &apos;Added&apos; : &apos;Add&apos; }}"/> </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">283,285</context>
+          <context context-type="linenumber">289,291</context>
         </context-group>
       </trans-unit>
       <trans-unit id="e5882be1ce49ceca3fceb4120fd65cdb9367d723" datatype="html">
         <source> Proof </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">297,299</context>
+          <context context-type="linenumber">303,305</context>
         </context-group>
       </trans-unit>
       <trans-unit id="231dd9627ee9edb2c955686fa564dff16cb5605c" datatype="html">
         <source> <x id="INTERPOLATION" equiv-text="{{ evidenceEnabled ? &apos;Added&apos; : &apos;Add&apos; }}"/> </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">308,310</context>
+          <context context-type="linenumber">314,316</context>
         </context-group>
       </trans-unit>
       <trans-unit id="d6db6f96e0bf712a5971c33542a0e63f3e3c8797" datatype="html">
         <source> Expiry Date </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">325,327</context>
+          <context context-type="linenumber">331,333</context>
         </context-group>
       </trans-unit>
       <trans-unit id="393a7f63cc2a5916a6d6b538d8995e029ee16718" datatype="html">
         <source> <x id="INTERPOLATION" equiv-text="{{ expirationEnabled ? &apos;Added&apos; : &apos;Add&apos; }}"/> </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">336,338</context>
+          <context context-type="linenumber">342,344</context>
         </context-group>
       </trans-unit>
       <trans-unit id="bcf56d2fe58b0bae8cb8f790c9859bd9b707dd63" datatype="html">
         <source> Badge awarded </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
-          <context context-type="linenumber">362,364</context>
+          <context context-type="linenumber">368,370</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6c2f1183d948224738964f0029f63b90c7c7ddc1" datatype="html">
@@ -2228,6 +2813,13 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
           <context context-type="linenumber">117,124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="972df4e325a65d1db471e047a19e3cae801c251a" datatype="html">
+        <source> Cancel </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
+          <context context-type="linenumber">129,131</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2ff567684dbbadedfb4425d5ed86f84c7774b335" datatype="html">
@@ -2341,11 +2933,32 @@
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="e868fb696d37ebec917c8853460c5c26108c6d78" datatype="html">
+        <source>Picture (Optional)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="114c23daa6f14ee2df3fa0c194a0903f51c63cf9" datatype="html">
+        <source>issuer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d07a282afc7fbdb39cea6e1c9b544882a7260a86" datatype="html">
+        <source>Adding</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="27ea9446b5a3a547eebdc479dfdded81acbcfbf7" datatype="html">
         <source> Save </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
-          <context context-type="linenumber">128,130</context>
+          <context context-type="linenumber">131,133</context>
         </context-group>
       </trans-unit>
       <trans-unit id="14f3f921808b8f0a69ef8290e303d36792e5d656" datatype="html">
@@ -2405,7 +3018,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-staff-create-dialog/issuer-staff-create-dialog.component.html</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="b01b74d37582ed68f2b524e1c650144af5792a16" datatype="html">
@@ -2422,18 +3035,25 @@
           <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8585db2b3e36ec00202bf21641efc97e3bb6ddf6" datatype="html">
+        <source>Staff Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-staff-create-dialog/issuer-staff-create-dialog.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="da265efac957c7d516a69152c7ecf01a96e68f4b" datatype="html">
         <source>Failed to add member!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-staff-create-dialog/issuer-staff-create-dialog.component.html</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a98e3a98858b451d09b72a63d8043a979bb9f151" datatype="html">
         <source> Cancel </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-staff-create-dialog/issuer-staff-create-dialog.component.html</context>
-          <context context-type="linenumber">58,60</context>
+          <context context-type="linenumber">60,62</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-create/recipient-badge-collection-create.component.html</context>
@@ -2476,13 +3096,6 @@
           <context context-type="linenumber">50</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
-        <source>Name</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/issuer-staff/issuer-staff.component.html</context>
-          <context context-type="linenumber">57</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="c36a66f2107e8da5371ebc9d15c2008dff567f46" datatype="html">
         <source>Role</source>
         <context-group purpose="location">
@@ -2506,6 +3119,69 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-staff/issuer-staff.component.html</context>
           <context context-type="linenumber">138,140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3715596725146409911" datatype="html">
+        <source>Owner</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
+          <context context-type="linenumber">239</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4314883710226975955" datatype="html">
+        <source>an owner</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
+          <context context-type="linenumber">240</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1652614240306250612" datatype="html">
+        <source>Ability to add and remove staff. Full rights to create, delete, and award badges. Ability to edit issuer details.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
+          <context context-type="linenumber">242</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3742657416068781599" datatype="html">
+        <source>Editor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
+          <context context-type="linenumber">246</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4824222184152986128" datatype="html">
+        <source>an editor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
+          <context context-type="linenumber">247</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2107637824403822124" datatype="html">
+        <source>Full rights to create, delete, and award badges. Ability to edit issuer details.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
+          <context context-type="linenumber">248</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6967927751360933807" datatype="html">
+        <source>Staff Member</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8232369688360465904" datatype="html">
+        <source>a staff member</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
+          <context context-type="linenumber">253</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8949485975494444844" datatype="html">
+        <source>Ability to issue badges created by Owners and Editors.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
+          <context context-type="linenumber">254</context>
         </context-group>
       </trans-unit>
       <trans-unit id="0525e323b8f87f27132005726a158b62a27e8455" datatype="html">
@@ -2825,11 +3501,46 @@
           <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="1ae3dcf96b494406b6fd6fbd2f15f7259553bf4d" datatype="html">
+        <source>Current Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4f9c9a56f26481f9ddb22e5c4dd6072b97f7d5e2" datatype="html">
+        <source>Please enter current password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c7014c6360e94b236286b869c3fe0ea9911c0387" datatype="html">
+        <source>New Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f63424457942b8a15e379db70c45546149370a7f" datatype="html">
+        <source>Must be at least 8 characters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b81fbd1b5d0723eba41870071d02065674bdd565" datatype="html">
+        <source>Confirm New Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="6cfa264c88732676f92ad00cbdf7d75d47a7b4c3" datatype="html">
         <source>Change Password </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
-          <context context-type="linenumber">65,66</context>
+          <context context-type="linenumber">71,72</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2e38a634b2cef176da9d75e732eb6269464fd3f7" datatype="html">
@@ -2838,7 +3549,7 @@
 				&gt;"/>Click here<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> to reset by email. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
-          <context context-type="linenumber">74,81</context>
+          <context context-type="linenumber">80,87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="87551c868489f4d9386c291dd8c818fe44b6d468" datatype="html">
@@ -2906,39 +3617,50 @@
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="e527ace700a5dfcd97e170b854de7b539afacc0c" datatype="html">
+        <source>Please enter a valid email address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="ec984ab36f1da5f75ba43f9bd4b866ca9c7e6493" datatype="html">
         <source>Email Address</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="81b97b8ea996ad1e4f9fca8415021850214884b1" datatype="html">
         <source>Status</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="43c43a432d13369cafb3fb852a717a2431022302" datatype="html">
         <source> primary </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">53,55</context>
+          <context context-type="linenumber">55,57</context>
         </context-group>
       </trans-unit>
       <trans-unit id="814efcc244d182cabfdcdf7754097cdd023514d9" datatype="html">
         <source>Verified</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="linenumber">68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="e6a27066251ca1e04c5be86ad758380856df2506" datatype="html">
         <source>Pending</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">70</context>
+          <context context-type="linenumber">72</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9b1f386df6ded1c3cf2396f1d8475d3a24e5c090" datatype="html">
@@ -2946,7 +3668,7 @@
 										Resend Verification"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Resend"/> Resend Verification </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">100,102</context>
+          <context context-type="linenumber">102,104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="18a35b9b4dc0a25da06662287a24ca47544c7f64" datatype="html">
@@ -2955,7 +3677,7 @@
 									&lt;/"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Make p"/> Make primary </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">110,112</context>
+          <context context-type="linenumber">112,114</context>
         </context-group>
       </trans-unit>
       <trans-unit id="da2f0572223e7459d647d1c68552384cdd031def" datatype="html">
@@ -2964,42 +3686,42 @@
 									&lt;/div&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Remove"/> Remove </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">121,123</context>
+          <context context-type="linenumber">123,125</context>
         </context-group>
       </trans-unit>
       <trans-unit id="d00f4312c9904eb96b41c91ab5e374a642bd687a" datatype="html">
         <source>Linked Accounts</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">135</context>
+          <context context-type="linenumber">137</context>
         </context-group>
       </trans-unit>
       <trans-unit id="d473e0f684a60db45d6f31e993f693f74290e056" datatype="html">
         <source>Service</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">141</context>
+          <context context-type="linenumber">143</context>
         </context-group>
       </trans-unit>
       <trans-unit id="29881a45dafbe5aa05cd9d0441a4c0c2fb06df92" datatype="html">
         <source>Account</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">142</context>
+          <context context-type="linenumber">144</context>
         </context-group>
       </trans-unit>
       <trans-unit id="b4c7b8ed9a734473143ebde10fb034c29ec483fd" datatype="html">
         <source>Unlink</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">161</context>
+          <context context-type="linenumber">163</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1264a12a9e831758d213f42f33bf8d4b1482042b" datatype="html">
         <source> Click one of the provider buttons below to allow you to log in to <x id="INTERPOLATION" equiv-text="{{ configService.theme[&apos;serviceName&apos;] || &apos;Badgr&apos; }}"/> in the future using that service rather than your email and password. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
-          <context context-type="linenumber">171,175</context>
+          <context context-type="linenumber">173,177</context>
         </context-group>
       </trans-unit>
       <trans-unit id="905c4f9db1baceffc37d5860203178791288b1b8" datatype="html">
@@ -3177,6 +3899,20 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.html</context>
           <context context-type="linenumber">294,295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="464749780222721589" datatype="html">
+        <source>Expired</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8037476586059399916" datatype="html">
+        <source>Expires</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
+          <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="59ef7de64ce68119cc75a7003e276c512c930a8b" datatype="html">
@@ -3509,25 +4245,53 @@
           <context context-type="linenumber">48,50</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="0a9a4ed23a60f14c4cb51c5044cb8d78b1b67935" datatype="html">
+        <source>Please enter a valid URL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/add-badge-dialog/add-badge-dialog.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9bf7114db050131cebe145b5ee016e22dfd816e6" datatype="html">
+        <source>Enter URL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/add-badge-dialog/add-badge-dialog.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d618b2bb068bfe1cccef4eae950e93b6091e42a2" datatype="html">
+        <source>Please enter valid JSON</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/add-badge-dialog/add-badge-dialog.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b06138bae1b636c256e6e5bf6c2b330d41eb7b9d" datatype="html">
+        <source>Enter JSON</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/add-badge-dialog/add-badge-dialog.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="14920007b75c56065307f4ae40ac5f2be2a97ea6" datatype="html">
         <source> Add badge </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/add-badge-dialog/add-badge-dialog.component.html</context>
-          <context context-type="linenumber">107,109</context>
+          <context context-type="linenumber">111,113</context>
         </context-group>
       </trans-unit>
       <trans-unit id="fe659dfb9d73fa99728ceef9eab33c744705c7b8" datatype="html">
         <source>Uh Oh...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/add-badge-dialog/add-badge-dialog.component.html</context>
-          <context context-type="linenumber">117</context>
+          <context context-type="linenumber">121</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8e1bdfd22da102c8886ff6e2d094a592c3cd2eca" datatype="html">
         <source>Close notification</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/add-badge-dialog/add-badge-dialog.component.html</context>
-          <context context-type="linenumber">122</context>
+          <context context-type="linenumber">126</context>
         </context-group>
       </trans-unit>
       <trans-unit id="254692d27c3da058dcd0a426626336823f88aacc" datatype="html">
@@ -3548,11 +4312,18 @@
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="f6755cff4957d5c3c89bafce5651f1b6fa2b1fd9" datatype="html">
+        <source>Add</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-create/recipient-badge-collection-create.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="b097981edabab7efe56c9ff8bd56c5d1eef803cb" datatype="html">
         <source> Create collection </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-create/recipient-badge-collection-create.component.html</context>
-          <context context-type="linenumber">51,53</context>
+          <context context-type="linenumber">52,54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3c4c080864b313cfdff5fdea6aae5da276246d99" datatype="html">
@@ -3657,6 +4428,13 @@
           <context context-type="linenumber">38,40</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="f3ed0d8c4886b0be02a7c4b6685960a81dc9dd79" datatype="html">
+        <source>Filter your collections</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-selection-dialog/recipient-badge-collection-selection-dialog.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="40cf215f61708390d3aba0212e49596e0d3d981c" datatype="html">
         <source>Collection</source>
         <context-group purpose="location">
@@ -3680,6 +4458,13 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-selection-dialog/recipient-badge-collection-selection-dialog.component.html</context>
           <context context-type="linenumber">67,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7e892ba15f2c6c17e83510e273b3e10fc32ea016" datatype="html">
+        <source>Search</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-badge-selection-dialog/recipient-badge-selection-dialog.component.html</context>
+          <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="09f6c9a92e2c69dde82cf40a232d0f0543bb526e" datatype="html">

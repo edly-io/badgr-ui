@@ -40,6 +40,7 @@
 						<bg-formfield-text
 							[control]="issueForm.rawControlMap.recipientprofile_name"
 							ariaLabel="Recipient Name (optional)"
+							i18n-ariaLabel
 						></bg-formfield-text>
 						<p class="u-text u-text-small font-family-plex-gray u-margin-top1x u-margin-bottom2x" i18n>
 							<strong>Note</strong>: The recipient's name is saved as plain text in the badge.
@@ -59,6 +60,7 @@
 								ariaLabel="Identifier of the recipient"
 								[autofocus]="true"
 								[fieldType]="recipientIdentifierFieldType"
+								i18n-ariaLabel
 							></bg-formfield-text>
 							<div class="u-text-error u-text-small" *ngIf="idError === 'invalidEmail'" i18n>
 								Please enter a valid email address.
@@ -176,6 +178,8 @@
 							fieldType="url"
 							[urlField]="true"
 							errorMessage="Please provide a valid URL"
+							i18n-label
+							i18n-errorMessage
 						></bg-formfield-text>
 					</ng-container>
 
@@ -219,12 +223,14 @@
 				<div class="formsection-x-body">
 					<div *ngIf="!defaultExpiration || expirationDateEditable" class="formfield">
 						<bg-formfield-text
-							label="Ablaufdatum"
+							label="Expiry Date"
 							id="date"
 							fieldType="date"
 							[control]="issueForm.rawControlMap.expires"
-							ariaLabel="Ablaufdatum"
-							[errorMessage]="'Bitte gebe ein Datum in der Form YYYY/mm/dd an'"
+							ariaLabel="Expiry Date"
+							[errorMessage]="'Please enter a date in the form YYYY/mm/dd'"
+							i18n-label
+							i18n-ariaLabel
 						></bg-formfield-text>
 						<div class="u-text-error u-text-small font-family-plex-gray" *ngIf="dateError" i18n>
 							Please enter a date in the form YYYY-mm-dd.

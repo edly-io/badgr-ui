@@ -54,19 +54,19 @@ export class BadgeCatalogComponent extends BaseRoutableComponent implements OnIn
 
 	plural = {
 		issuer: {
-			'=0': 'No Issuers',
-			'=1': '1 Issuer',
-			other: '# Issuers',
+			'=0':  $localize`No Issuers`,
+			'=1':  $localize`1 Issuer`,
+			other: $localize`# Issuers`,
 		},
 		badges: {
-			'=0': 'No Badges',
-			'=1': '1 Badge',
-			other: '# Badges',
+			'=0':  $localize`No Badges`,
+			'=1':  $localize`1 Badge`,
+			other:  $localize`# Badges`,
 		},
 		recipient: {
-			'=0': 'No Recipients',
-			'=1': '1 Recipient',
-			other: '# Recipients',
+			'=0':  $localize`No Recipients`,
+			'=1':  $localize`1 Recipient`,
+			other:  $localize`# Recipients`,
 		},
 	};
 
@@ -89,11 +89,11 @@ export class BadgeCatalogComponent extends BaseRoutableComponent implements OnIn
 	}
 	groups = ['Category', 'Issuer', '---'];
 	categoryOptions: { [key in BadgeClassCategory | 'noCategory']: string } = {
-		membership: 'Membership',
-		ability: 'Metacompetence',
-		archievement: 'Participation/Success',
-		skill: 'Professional competence',
-		noCategory: 'No category',
+		membership: $localize`Membership`,
+		ability: $localize`Metacompetence`,
+		archievement: $localize`Participation/Success`,
+		skill: $localize`Professional competence`,
+		noCategory: $localize`No category`,
 	};
 
 	constructor(

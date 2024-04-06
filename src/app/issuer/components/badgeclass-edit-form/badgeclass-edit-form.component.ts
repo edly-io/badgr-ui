@@ -131,25 +131,25 @@ export class BadgeClassEditFormComponent extends BaseAuthenticatedRoutableCompon
 		.addControl('expires_duration', '', Validators.required);
 
 	durationOptions: { [key in BadgeClassExpiresDuration]: string } = {
-		days: 'Days',
-		weeks: 'Weeks',
-		months: 'Months',
-		years: 'Years',
+		days: $localize`Days`,
+		weeks: $localize`Weeks`,
+		months: $localize`Months`,
+		years: $localize`Years`,
 	};
 
 	categoryOptions: { [key in BadgeClassCategory]: string } = {
-		membership: 'Membership',
-		ability: 'Metacompetence',
-		archievement: 'Participation/Success',
-		skill: 'Professional competence',
+		membership: $localize`Membership`,
+		ability: $localize`Metacompetence`,
+		archievement: $localize`Participation/Success`,
+		skill: $localize`Professional competence`,
 	};
 
 	levelOptions: { [key in BadgeClassLevel]: string } = {		
-		l1: 'Awareness',
-		l2: 'Beginners',
-		l3: 'Specialists',
-		l4: 'Experts',
-		l5: 'Scientists'
+		l1: $localize`Awareness`,
+		l2: $localize`Beginners`,
+		l3: $localize`Specialists`,
+		l4: $localize`Experts`,
+		l5: $localize`Scientists`
 	};
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

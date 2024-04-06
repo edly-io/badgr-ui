@@ -21,6 +21,8 @@
 				imageLoaderName="issuer"
 				[placeholderImage]="issuerImagePlacholderUrl"
 				[control]="issuerForm.rawControlMap.issuer_image"
+				i18n-label
+				i18n-imageLoaderName
 			></bg-formfield-image>
 
 			<bg-formfield-text
@@ -124,6 +126,7 @@
 					[disabled]="!!editIssuerFinished"
 					[loading-promises]="[editIssuerFinished]"
 					loading-message="Adding"
+					i18n-loading-message
 					i18n
 				>
 					Save

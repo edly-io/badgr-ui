@@ -236,22 +236,22 @@ export class IssuerStaffMember extends ManagedEntity<ApiIssuerStaff, IssuerStaff
 export const issuerStaffRoles = [
 	{
 		slug: 'owner',
-		label: 'Owner',
-		indefiniteLabel: 'an owner',
+		label: $localize`Owner`,
+		indefiniteLabel: $localize`an owner`,
 		description:
-			'Ability to add and remove staff. Full rights to create, delete, and award badges. Ability to edit issuer details.',
+			$localize`Ability to add and remove staff. Full rights to create, delete, and award badges. Ability to edit issuer details.`,
 	},
 	{
 		slug: 'editor',
-		label: 'Editor',
-		indefiniteLabel: 'an editor',
-		description: 'Full rights to create, delete, and award badges. Ability to edit issuer details.',
+		label:  $localize`Editor`,
+		indefiniteLabel:  $localize`an editor`,
+		description:  $localize`Full rights to create, delete, and award badges. Ability to edit issuer details.`,
 	},
 	{
 		slug: 'staff',
-		label: 'Staff Member',
-		indefiniteLabel: 'a staff member',
-		description: 'Ability to issue badges created by Owners and Editors.',
+		label:  $localize`Staff Member`,
+		indefiniteLabel:  $localize`a staff member`,
+		description:  $localize`Ability to issue badges created by Owners and Editors.`,
 	},
 ];
 export function issuerRoleInfoFor(slug: IssuerStaffRoleSlug) {

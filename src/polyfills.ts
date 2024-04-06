@@ -68,3 +68,4 @@ import 'zone.js'; // Included with Angular CLI.
 // Custom polyfills
 
 import 'inert-polyfill/inert-polyfill';
+import '@angular/localize/init';

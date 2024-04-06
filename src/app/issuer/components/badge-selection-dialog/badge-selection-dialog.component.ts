@@ -37,15 +37,15 @@ export interface BadgeSelectionDialogSettings {
 				<header class="l-childrenvertical l-childrenvertical-is-smalldesktop bordered bordered-bottom">
 					<h1 class="title">{{ dialogTitle }}</h1>
 					<div class="l-childrenhorizontal l-childrenhorizontal-stackmobile">
-						<input type="text" class="search" placeholder="Filter your badges" [(ngModel)]="searchQuery" />
+						<input type="text" class="search" placeholder="Filter your badges" [(ngModel)]="searchQuery" i18n-placeholder/>
 						<label *ngIf="!isRestrictedToSingleIssuer && hasMultipleIssuers" class="formcheckbox">
 							<input type="checkbox" [(ngModel)]="groupByIssuer" />
-							<span class="formcheckbox-x-text">Group by Issuer</span>
+							<span class="formcheckbox-x-text" i18n>Group by Issuer</span>
 						</label>
 					</div>
 					<button (click)="cancelDialog()" class="buttonicon buttonicon-link">
 						<svg icon="icon_close"></svg>
-						<span class="visuallyhidden">Close</span>
+						<span class="visuallyhidden" i18n>Close</span>
 					</button>
 				</header>
 
@@ -60,7 +60,7 @@ export interface BadgeSelectionDialogSettings {
 						<tbody>
 							<tr *ngIf="badgeResults.length < 1">
 								<td class="table-x-padded" colspan="3">
-									<ng-template [ngIf]="hasMultipleIssuers">
+									<ng-template [ngIf]="hasMultipleIssuers" i18n>
 										No badges or issuers matching your query
 									</ng-template>
 									<ng-template [ngIf]="!hasMultipleIssuers">

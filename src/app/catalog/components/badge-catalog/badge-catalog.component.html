@@ -26,6 +26,7 @@
 										id="forminput"
 										placeholder="Browse badges"
 										[(ngModel)]="searchQuery"
+										i18n-placeholder
 									/>
 									<img
 										class="forminput-x-icon"
@@ -129,7 +130,7 @@
 				<ng-container *ngFor="let issuerGroup of badgeResultsByIssuer">
 					<h3 class="badgeMainHeading mt-3 mt-sm-5">
 						{{ issuerGroup.issuerName }}
-						<span class="badgeSubTitle"
+						<span class="badgeSubTitle" i18n
 							>{{ issuerGroup.badges.length }}
 							{{ issuerGroup.badges.length == 1 ? 'Badge' : 'Badges' }}</span
 						>
