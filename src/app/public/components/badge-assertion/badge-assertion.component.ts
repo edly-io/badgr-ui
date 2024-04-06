@@ -1,4 +1,4 @@
-import { $localize } from '@angular/localize/init';
+import '@angular/localize/init';
 import { Component, Injector, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
