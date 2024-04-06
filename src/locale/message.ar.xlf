@@ -338,11 +338,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
-          <context context-type="linenumber">120,122</context>
+          <context context-type="linenumber">129,131</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile-edit/profile-edit.component.html</context>
-          <context context-type="linenumber">39,41</context>
+          <context context-type="linenumber">44,46</context>
         </context-group>
         <target>إلغاء</target>
       </trans-unit>
@@ -398,7 +398,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/components/reset-password/reset-password.component.html</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">58</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue-bulk-award-error/badgeclass-issue-bulk-award-error.component.html</context>
@@ -466,11 +466,55 @@
         </context-group>
         <target>إدخال كلمة مرور جديدة</target>
       </trans-unit>
+      <trans-unit id="c7014c6360e94b236286b869c3fe0ea9911c0387" datatype="html">
+        <source>New Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/components/reset-password/reset-password.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <target>كلمة المرور الجديدة</target>
+      </trans-unit>
+      <trans-unit id="f63424457942b8a15e379db70c45546149370a7f" datatype="html">
+        <source>Must be at least 8 characters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/components/reset-password/reset-password.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <target>يجب أن تتكون من 8 أحرف على الأقل</target>
+      </trans-unit>
+      <trans-unit id="b81fbd1b5d0723eba41870071d02065674bdd565" datatype="html">
+        <source>Confirm New Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/components/reset-password/reset-password.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <target>تأكيد كلمة المرور الجديدة</target>
+      </trans-unit>
+      <trans-unit id="85349d4873acf089c207a66fb6932e74dc1393bc" datatype="html">
+        <source>Changing Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/components/reset-password/reset-password.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <target>تغيير كلمة المرور</target>
+      </trans-unit>
       <trans-unit id="f265f91d13613ce811be094abfbaab89c115887c" datatype="html">
         <source> Change Password </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/components/reset-password/reset-password.component.html</context>
-          <context context-type="linenumber">50,52</context>
+          <context context-type="linenumber">54,56</context>
         </context-group>
         <target>تغيير كلمة المرور</target>
       </trans-unit>
@@ -663,174 +707,6 @@
           <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.html</context>
           <context context-type="linenumber">134,137</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="4217361779185600572" datatype="html">
-        <source>No Issuers</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
-          <context context-type="linenumber">57</context>
-        </context-group>
-        <target>لا توجد مصدرين</target>
-      </trans-unit>
-      <trans-unit id="5822469630817021095" datatype="html">
-        <source>1 Issuer</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
-          <context context-type="linenumber">58</context>
-        </context-group>
-        <target>1 مصدر</target>
-      </trans-unit>
-      <trans-unit id="4507613343963879177" datatype="html">
-        <source># Issuers</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
-          <context context-type="linenumber">59</context>
-        </context-group>
-        <target># مصدرين</target>
-      </trans-unit>
-      <trans-unit id="8524878922992947766" datatype="html">
-        <source>No Badges</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
-          <context context-type="linenumber">62</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
-          <context context-type="linenumber">85</context>
-        </context-group>
-        <target>لا توجد شارات</target>
-      </trans-unit>
-      <trans-unit id="5249284561782887469" datatype="html">
-        <source>1 Badge</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
-          <context context-type="linenumber">63</context>
-        </context-group>
-        <target>1 شارة</target>
-      </trans-unit>
-      <trans-unit id="4662039213795182929" datatype="html">
-        <source># Badges</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
-          <context context-type="linenumber">64</context>
-        </context-group>
-        <target># شارات</target>
-      </trans-unit>
-      <trans-unit id="11757095110245921" datatype="html">
-        <source>No Recipients</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
-          <context context-type="linenumber">67</context>
-        </context-group>
-        <target>لا توجد مستلمين</target>
-      </trans-unit>
-      <trans-unit id="4808744658593565923" datatype="html">
-        <source>1 Recipient</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
-          <context context-type="linenumber">68</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
-          <context context-type="linenumber">91</context>
-        </context-group>
-        <target>1 مستلم</target>
-      </trans-unit>
-      <trans-unit id="6221138437773415020" datatype="html">
-        <source># Recipients</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
-          <context context-type="linenumber">69</context>
-        </context-group>
-        <target># مستلمين</target>
-      </trans-unit>
-      <trans-unit id="3737711445155929474" datatype="html">
-        <source>Membership</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
-          <context context-type="linenumber">92</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
-          <context context-type="linenumber">95</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
-          <context context-type="linenumber">141</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
-          <context context-type="linenumber">66</context>
-        </context-group>
-        <target>العضوية</target>
-      </trans-unit>
-      <trans-unit id="6903627337266533583" datatype="html">
-        <source>Metacompetence</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
-          <context context-type="linenumber">93</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
-          <context context-type="linenumber">96</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
-          <context context-type="linenumber">142</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
-          <context context-type="linenumber">67</context>
-        </context-group>
-        <target>الميتاكمبيتنس</target>
-      </trans-unit>
-      <trans-unit id="3110786358479707287" datatype="html">
-        <source>Participation/Success</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
-          <context context-type="linenumber">94</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
-          <context context-type="linenumber">97</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
-          <context context-type="linenumber">143</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
-          <context context-type="linenumber">68</context>
-        </context-group>
-        <target>المشاركة/النجاح</target>
-      </trans-unit>
-      <trans-unit id="7561956209947218865" datatype="html">
-        <source>Professional competence</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
-          <context context-type="linenumber">95</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
-          <context context-type="linenumber">98</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
-          <context context-type="linenumber">144</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
-          <context context-type="linenumber">69</context>
-        </context-group>
-        <target>الكفاءة المهنية</target>
-      </trans-unit>
-      <trans-unit id="1547013801807710392" datatype="html">
-        <source>No category</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
-          <context context-type="linenumber">96</context>
-        </context-group>
-        <target>لا تصنيف</target>
       </trans-unit>
       <trans-unit id="784e7619e80343fc4c1674e8c9613bc96e00a60e" datatype="html">
         <source>Search institutions</source>
@@ -1107,62 +983,6 @@
 					</u"/>
           <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Othe"/>
         </target>
-      </trans-unit>
-      <trans-unit id="8178534585751659700" datatype="html">
-        <source>No institutions</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
-          <context context-type="linenumber">80</context>
-        </context-group>
-        <target>لا توجد مؤسسات</target>
-      </trans-unit>
-      <trans-unit id="238215913017982106" datatype="html">
-        <source>1 Institution</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
-          <context context-type="linenumber">81</context>
-        </context-group>
-        <target>1 مؤسسة</target>
-      </trans-unit>
-      <trans-unit id="944883757248663420" datatype="html">
-        <source># Institutions</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
-          <context context-type="linenumber">82</context>
-        </context-group>
-        <target># مؤسسات</target>
-      </trans-unit>
-      <trans-unit id="6212788962501686539" datatype="html">
-        <source>&lt;strong class="u-text-bold"&gt;1&lt;/strong&gt; Badge</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
-          <context context-type="linenumber">86</context>
-        </context-group>
-        <target>&lt;strong class="u-text-bold"&gt;1&lt;/strong&gt; شارة</target>
-      </trans-unit>
-      <trans-unit id="7770819708198049562" datatype="html">
-        <source>&lt;strong class="u-text-bold"&gt;#&lt;/strong&gt; Badges</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
-          <context context-type="linenumber">87</context>
-        </context-group>
-        <target>&lt;strong class="u-text-bold"&gt;#&lt;/strong&gt; شارات</target>
-      </trans-unit>
-      <trans-unit id="6140413148585860213" datatype="html">
-        <source>No recipient</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
-          <context context-type="linenumber">90</context>
-        </context-group>
-        <target>لا مستلم</target>
-      </trans-unit>
-      <trans-unit id="5601336269855350070" datatype="html">
-        <source># Recipient</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
-          <context context-type="linenumber">92</context>
-        </context-group>
-        <target># مستلم</target>
       </trans-unit>
       <trans-unit id="f4e529ae5ffd73001d1ff4bbdeeb0a72e342e5c8" datatype="html">
         <source>Close</source>
@@ -2195,86 +2015,6 @@
         </context-group>
         <target>لم يتم العثور على مستلمين.</target>
       </trans-unit>
-      <trans-unit id="8676042323535968772" datatype="html">
-        <source>Awareness</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
-          <context context-type="linenumber">102</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
-          <context context-type="linenumber">148</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
-          <context context-type="linenumber">73</context>
-        </context-group>
-        <target>الوعي</target>
-      </trans-unit>
-      <trans-unit id="2937321406191530145" datatype="html">
-        <source>Beginners</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
-          <context context-type="linenumber">103</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
-          <context context-type="linenumber">149</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
-          <context context-type="linenumber">74</context>
-        </context-group>
-        <target>المبتدئين</target>
-      </trans-unit>
-      <trans-unit id="1888669209740240036" datatype="html">
-        <source>Specialists</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
-          <context context-type="linenumber">104</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
-          <context context-type="linenumber">150</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
-          <context context-type="linenumber">75</context>
-        </context-group>
-        <target>المتخصصين</target>
-      </trans-unit>
-      <trans-unit id="3889195335322693389" datatype="html">
-        <source>Experts</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
-          <context context-type="linenumber">105</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
-          <context context-type="linenumber">151</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
-          <context context-type="linenumber">76</context>
-        </context-group>
-        <target>الخبراء</target>
-      </trans-unit>
-      <trans-unit id="1194019085478366226" datatype="html">
-        <source>Scientists</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.ts</context>
-          <context context-type="linenumber">106</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
-          <context context-type="linenumber">152</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
-          <context context-type="linenumber">77</context>
-        </context-group>
-        <target>العلماء</target>
-      </trans-unit>
       <trans-unit id="1392527b4f53a7c04874346a5f5fd73de51b5d8b" datatype="html">
         <source>Badge Basics</source>
         <context-group purpose="location">
@@ -2302,8 +2042,20 @@
           <context context-type="linenumber">263</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-staff/issuer-staff.component.html</context>
           <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-edit-form/recipient-badge-collection-edit-form.component.html</context>
+          <context context-type="linenumber">11</context>
         </context-group>
         <target>الاسم</target>
       </trans-unit>
@@ -2426,6 +2178,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">176</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
+          <context context-type="linenumber">68</context>
         </context-group>
         <target>الفئات</target>
       </trans-unit>
@@ -2742,38 +2502,6 @@
           <context context-type="linenumber">500,502</context>
         </context-group>
         <target>إلغاء</target>
-      </trans-unit>
-      <trans-unit id="840951359074313455" datatype="html">
-        <source>Days</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
-          <context context-type="linenumber">134</context>
-        </context-group>
-        <target>أيام</target>
-      </trans-unit>
-      <trans-unit id="8365450656480095075" datatype="html">
-        <source>Weeks</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
-          <context context-type="linenumber">135</context>
-        </context-group>
-        <target>أسابيع</target>
-      </trans-unit>
-      <trans-unit id="4845030128243887325" datatype="html">
-        <source>Months</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
-          <context context-type="linenumber">136</context>
-        </context-group>
-        <target>أشهر</target>
-      </trans-unit>
-      <trans-unit id="953022389548488004" datatype="html">
-        <source>Years</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
-          <context context-type="linenumber">137</context>
-        </context-group>
-        <target>سنوات</target>
       </trans-unit>
       <trans-unit id="8509eb7099a5659edc04a2a80f66dbf1ff12c432" datatype="html">
         <source>Edit Badge</source>
@@ -3418,13 +3146,133 @@
         </context-group>
         <target>أنشئ مؤسسة لمنح الأوسمة.</target>
       </trans-unit>
+      <trans-unit id="e868fb696d37ebec917c8853460c5c26108c6d78" datatype="html">
+        <source>Picture (Optional)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <target>صورة (اختياري)</target>
+      </trans-unit>
+      <trans-unit id="88ce319316dcd711cc76865e8b2c97b24a946038" datatype="html">
+        <source>Website URL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <target>عنوان موقع الويب</target>
+      </trans-unit>
+      <trans-unit id="799fb056af5c32e8e40170f0affa496f701e34fd" datatype="html">
+        <source>Contact email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <target>البريد الإلكتروني للاتصال</target>
+      </trans-unit>
+      <trans-unit id="d4e107f628f98b5a6d5fb8d0577ccfde0c11241c" datatype="html">
+        <source>Please provide a valid email address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <target>يرجى تقديم عنوان بريد إلكتروني صالح</target>
+      </trans-unit>
+      <trans-unit id="eec715de352a6b114713b30b640d319fa78207a0" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-create/recipient-badge-collection-create.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-edit-form/recipient-badge-collection-edit-form.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <target>الوصف</target>
+      </trans-unit>
+      <trans-unit id="8161accc9d5472a5f7e81bc64759c545e94a0397" datatype="html">
+        <source>Please enter a category</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <target>يرجى إدخال فئة</target>
+      </trans-unit>
       <trans-unit id="729754dd19eb9ce0670b0aeb5a6ae60574c2c563" datatype="html">
         <source>Address</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
-          <context context-type="linenumber">75</context>
+          <context context-type="linenumber">83</context>
         </context-group>
         <target>العنوان</target>
+      </trans-unit>
+      <trans-unit id="2150cdcd46580c08f512eaa6d60a1f20877e971d" datatype="html">
+        <source>Street</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <target>الشارع</target>
+      </trans-unit>
+      <trans-unit id="7f5659adf4150c38bfb814ca4dc96a153335c83b" datatype="html">
+        <source>House number</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+        <target>رقم المنزل</target>
+      </trans-unit>
+      <trans-unit id="cd6fe156aeef501950a8b39d88040da4c1301ee3" datatype="html">
+        <source>Postal code</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+        <target>الرمز البريدي</target>
+      </trans-unit>
+      <trans-unit id="5c7012b5a926b32d9e45fefdcc8a1a3cb6f023d0" datatype="html">
+        <source>City</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+        <target>المدينة</target>
       </trans-unit>
       <trans-unit id="f9b9c5906e85e271e52795c3af840ab6d7caf4ee" datatype="html">
         <source>I have read and agree to the Privacy Policy to them.  Please read the privacy policy and agree to it if you wish to continue. 
@@ -3438,7 +3286,7 @@
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
-          <context context-type="linenumber">117,124</context>
+          <context context-type="linenumber">129,136</context>
         </context-group>
         <target>لقد قرأت وأوافق على سياسة الخصوصيةلهم.يرجى قراءة سياسة الخصوصية والموافقة عليها إذا كنت ترغب في المتابعة.
           <x id="START_LINK" ctype="x-a" equiv-text="<a target=&quot;_blank&quot; [href]=&quot;dataProcessorUrl&quot;>"/>
@@ -3454,7 +3302,7 @@
         <source> Cancel </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
-          <context context-type="linenumber">129,131</context>
+          <context context-type="linenumber">141,143</context>
         </context-group>
         <target>إلغاء</target>
       </trans-unit>
@@ -3462,7 +3310,7 @@
         <source> Create institution </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
-          <context context-type="linenumber">139,141</context>
+          <context context-type="linenumber">151,153</context>
         </context-group>
         <target>إنشاء مؤسسة</target>
       </trans-unit>
@@ -3626,14 +3474,6 @@
         </context-group>
         <target>تحرير معلومات هذه المؤسسة.</target>
       </trans-unit>
-      <trans-unit id="e868fb696d37ebec917c8853460c5c26108c6d78" datatype="html">
-        <source>Picture (Optional)</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
-          <context context-type="linenumber">20</context>
-        </context-group>
-        <target>صورة (اختياري)</target>
-      </trans-unit>
       <trans-unit id="114c23daa6f14ee2df3fa0c194a0903f51c63cf9" datatype="html">
         <source>issuer</source>
         <context-group purpose="location">
@@ -3646,7 +3486,7 @@
         <source>Adding</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
-          <context context-type="linenumber">128</context>
+          <context context-type="linenumber">137</context>
         </context-group>
         <target>إضافة</target>
       </trans-unit>
@@ -3654,7 +3494,7 @@
         <source> Save </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
-          <context context-type="linenumber">131,133</context>
+          <context context-type="linenumber">140,142</context>
         </context-group>
         <target>حفظ</target>
       </trans-unit>
@@ -3723,7 +3563,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-staff-create-dialog/issuer-staff-create-dialog.component.html</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">56</context>
         </context-group>
         <target>إضافة عضو</target>
       </trans-unit>
@@ -3743,6 +3583,22 @@
         </context-group>
         <target>اختيار الأدوار</target>
       </trans-unit>
+      <trans-unit id="6f127192891b5b9cae53c27ab043d8941b1b9f75" datatype="html">
+        <source>New Member Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-staff-create-dialog/issuer-staff-create-dialog.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <target>بريد إلكتروني جديد للعضو</target>
+      </trans-unit>
+      <trans-unit id="94745fb3af6212fd389b4c1c1bc8f13a49e694e5" datatype="html">
+        <source>Please enter valid email address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/issuer/components/issuer-staff-create-dialog/issuer-staff-create-dialog.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <target>يرجى إدخال عنوان بريد إلكتروني صالح</target>
+      </trans-unit>
       <trans-unit id="8585db2b3e36ec00202bf21641efc97e3bb6ddf6" datatype="html">
         <source>Staff Email</source>
         <context-group purpose="location">
@@ -3755,7 +3611,7 @@
         <source>Failed to add member!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-staff-create-dialog/issuer-staff-create-dialog.component.html</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">50</context>
         </context-group>
         <target>فشلت عملية إضافة العضو!</target>
       </trans-unit>
@@ -3763,15 +3619,15 @@
         <source> Cancel </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-staff-create-dialog/issuer-staff-create-dialog.component.html</context>
-          <context context-type="linenumber">60,62</context>
+          <context context-type="linenumber">62,64</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-create/recipient-badge-collection-create.component.html</context>
-          <context context-type="linenumber">40,42</context>
+          <context context-type="linenumber">45,47</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-edit-form/recipient-badge-collection-edit-form.component.html</context>
-          <context context-type="linenumber">30,32</context>
+          <context context-type="linenumber">34,36</context>
         </context-group>
         <target>إلغاء</target>
       </trans-unit>
@@ -3840,78 +3696,6 @@
           <context context-type="linenumber">138,140</context>
         </context-group>
         <target>إزالة</target>
-      </trans-unit>
-      <trans-unit id="3715596725146409911" datatype="html">
-        <source>Owner</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
-          <context context-type="linenumber">239</context>
-        </context-group>
-        <target>المالك</target>
-      </trans-unit>
-      <trans-unit id="4314883710226975955" datatype="html">
-        <source>an owner</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
-          <context context-type="linenumber">240</context>
-        </context-group>
-        <target>مالك</target>
-      </trans-unit>
-      <trans-unit id="1652614240306250612" datatype="html">
-        <source>Ability to add and remove staff. Full rights to create, delete, and award badges. Ability to edit issuer details.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
-          <context context-type="linenumber">242</context>
-        </context-group>
-        <target>القدرة على إضافة وإزالة الموظفين. حقوق كاملة لإنشاء وحذف ومنح الشارات. القدرة على تحرير تفاصيل المصدر.</target>
-      </trans-unit>
-      <trans-unit id="3742657416068781599" datatype="html">
-        <source>Editor</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
-          <context context-type="linenumber">246</context>
-        </context-group>
-        <target>المحرر</target>
-      </trans-unit>
-      <trans-unit id="4824222184152986128" datatype="html">
-        <source>an editor</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
-          <context context-type="linenumber">247</context>
-        </context-group>
-        <target>محرر</target>
-      </trans-unit>
-      <trans-unit id="2107637824403822124" datatype="html">
-        <source>Full rights to create, delete, and award badges. Ability to edit issuer details.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
-          <context context-type="linenumber">248</context>
-        </context-group>
-        <target>حقوق كاملة لإنشاء وحذف ومنح الشارات. القدرة على تحرير تفاصيل المصدر.</target>
-      </trans-unit>
-      <trans-unit id="6967927751360933807" datatype="html">
-        <source>Staff Member</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
-          <context context-type="linenumber">252</context>
-        </context-group>
-        <target>عضو في الطاقم</target>
-      </trans-unit>
-      <trans-unit id="8232369688360465904" datatype="html">
-        <source>a staff member</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
-          <context context-type="linenumber">253</context>
-        </context-group>
-        <target>عضو في الطاقم</target>
-      </trans-unit>
-      <trans-unit id="8949485975494444844" datatype="html">
-        <source>Ability to issue badges created by Owners and Editors.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/issuer/models/issuer.model.ts</context>
-          <context context-type="linenumber">254</context>
-        </context-group>
-        <target>القدرة على إصدار الشارات التي تم إنشاؤها من قبل المالكين والمحررين.</target>
       </trans-unit>
       <trans-unit id="0525e323b8f87f27132005726a158b62a27e8455" datatype="html">
         <source> Complete 
@@ -4391,30 +4175,6 @@
         </context-group>
         <target>يرجى إدخال كلمة المرور الحالية</target>
       </trans-unit>
-      <trans-unit id="c7014c6360e94b236286b869c3fe0ea9911c0387" datatype="html">
-        <source>New Password</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
-          <context context-type="linenumber">37</context>
-        </context-group>
-        <target>كلمة المرور الجديدة</target>
-      </trans-unit>
-      <trans-unit id="f63424457942b8a15e379db70c45546149370a7f" datatype="html">
-        <source>Must be at least 8 characters</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
-          <context context-type="linenumber">44</context>
-        </context-group>
-        <target>يجب أن تتكون من 8 أحرف على الأقل</target>
-      </trans-unit>
-      <trans-unit id="b81fbd1b5d0723eba41870071d02065674bdd565" datatype="html">
-        <source>Confirm New Password</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
-          <context context-type="linenumber">53</context>
-        </context-group>
-        <target>تأكيد كلمة المرور الجديدة</target>
-      </trans-unit>
       <trans-unit id="6cfa264c88732676f92ad00cbdf7d75d47a7b4c3" datatype="html">
         <source>Change Password </source>
         <context-group purpose="location">
@@ -4521,11 +4281,43 @@
         </context-group>
         <target>تحرير اسم الملف الشخصي</target>
       </trans-unit>
+      <trans-unit id="c83b838d845690bcb897f775f53b5316535306dc" datatype="html">
+        <source>First Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/components/profile-edit/profile-edit.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <target>الاسم الأول</target>
+      </trans-unit>
+      <trans-unit id="95d3b2a9be1318f1a1090486fec7b27dce48b7ae" datatype="html">
+        <source>'Please enter your first name'</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/components/profile-edit/profile-edit.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <target>'يرجى إدخال اسمك الأول'</target>
+      </trans-unit>
+      <trans-unit id="8f536e344dd164841a7c9383c0c3e628257bd126" datatype="html">
+        <source>'Last Name'</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/components/profile-edit/profile-edit.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <target>'الاسم الأخير'</target>
+      </trans-unit>
+      <trans-unit id="f4c22da9bc83bf4ffd242f68093a7d1336e3418f" datatype="html">
+        <source>'Please enter your last name'</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/components/profile-edit/profile-edit.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <target>'يرجى إدخال اسمك الأخير'</target>
+      </trans-unit>
       <trans-unit id="52c9a103b812f258bcddc3d90a6e3f46871d25fe" datatype="html">
         <source>Save</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile-edit/profile-edit.component.html</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">48</context>
         </context-group>
         <target>حفظ</target>
       </trans-unit>
@@ -4932,22 +4724,6 @@
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </target>
-      </trans-unit>
-      <trans-unit id="464749780222721589" datatype="html">
-        <source>Expired</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
-          <context context-type="linenumber">60</context>
-        </context-group>
-        <target>منتهية الصلاحية</target>
-      </trans-unit>
-      <trans-unit id="8037476586059399916" datatype="html">
-        <source>Expires</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
-          <context context-type="linenumber">61</context>
-        </context-group>
-        <target>تنتهي الصلاحية</target>
       </trans-unit>
       <trans-unit id="59ef7de64ce68119cc75a7003e276c512c930a8b" datatype="html">
         <source> Badges earned by 
@@ -5540,13 +5316,13 @@
         </context-group>
         <target>يرجى إدخال URL صالح</target>
       </trans-unit>
-      <trans-unit id="2c2c755291445091aa94b400c18e332810a4735f" datatype="html">
-        <source>URL eingeben</source>
+      <trans-unit id="9bf7114db050131cebe145b5ee016e22dfd816e6" datatype="html">
+        <source>Enter URL</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/add-badge-dialog/add-badge-dialog.component.html</context>
           <context context-type="linenumber">75</context>
         </context-group>
-        <target>أدخل عنوان URL</target>
+        <target>أدخل الرابط</target>
       </trans-unit>
       <trans-unit id="d618b2bb068bfe1cccef4eae950e93b6091e42a2" datatype="html">
         <source>Please enter valid JSON</source>
@@ -5608,11 +5384,47 @@
         </context-group>
         <target>تنظيم أوسمتك في مجموعات.</target>
       </trans-unit>
+      <trans-unit id="1e3e284bcb0e9b3d680c4d63ef87eb9ca6270ff3" datatype="html">
+        <source>Name of collections</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-create/recipient-badge-collection-create.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <target>اسم المجموعات</target>
+      </trans-unit>
+      <trans-unit id="6c231d7ae008773f82425a9f95c80127cdbeca65" datatype="html">
+        <source>{ required: 'Please enter a name for the collection' }</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-create/recipient-badge-collection-create.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <target>{ مطلوب: 'يرجى إدخال اسم للمجموعة' }</target>
+      </trans-unit>
+      <trans-unit id="9e57dab2a27960c18e57923f45f93dd83305aea7" datatype="html">
+        <source> remaining characters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-create/recipient-badge-collection-create.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-create/recipient-badge-collection-create.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-edit-form/recipient-badge-collection-edit-form.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-edit-form/recipient-badge-collection-edit-form.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <target>الحروف المتبقية</target>
+      </trans-unit>
       <trans-unit id="f6755cff4957d5c3c89bafce5651f1b6fa2b1fd9" datatype="html">
         <source>Add</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-create/recipient-badge-collection-create.component.html</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">54</context>
         </context-group>
         <target>إضافة</target>
       </trans-unit>
@@ -5620,7 +5432,7 @@
         <source> Create collection </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-create/recipient-badge-collection-create.component.html</context>
-          <context context-type="linenumber">52,54</context>
+          <context context-type="linenumber">57,59</context>
         </context-group>
         <target>إنشاء مجموعة</target>
       </trans-unit>
@@ -5702,7 +5514,7 @@
         <source> Save </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-edit-form/recipient-badge-collection-edit-form.component.html</context>
-          <context context-type="linenumber">40,42</context>
+          <context context-type="linenumber">44,46</context>
         </context-group>
         <target>حفظ</target>
       </trans-unit>
@@ -6231,6 +6043,70 @@
         <target>سجل معنا, عن طريق تقديم المعلومات التالية 
           <x id="INTERPOLATION" equiv-text="{{ theme.serviceName || 'MINT-O-Badges' }}"/>
         </target>
+      </trans-unit>
+      <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <target>البريد الإلكتروني</target>
+      </trans-unit>
+      <trans-unit id="029e92c5a205680d523a847824aec3a17c1960f3" datatype="html">
+        <source>Please enter a valid e-mail address.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <target>يرجى إدخال عنوان بريد إلكتروني صالح.</target>
+      </trans-unit>
+      <trans-unit id="62b6c66981335ca6eecc36b331103c60f09d1026" datatype="html">
+        <source>First name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <target>الاسم الأول</target>
+      </trans-unit>
+      <trans-unit id="d0d760ad757db0064df3626403caf5eeebfd9963" datatype="html">
+        <source>Please enter a first name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <target>يرجى إدخال اسم الشخص الأول</target>
+      </trans-unit>
+      <trans-unit id="6ce3dadf53dda1a1ab0c3167a8ed8dced471b0dc" datatype="html">
+        <source>Last name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <target>الاسم الأخير</target>
+      </trans-unit>
+      <trans-unit id="5e0cb17d14a7b8f9a4491c7067235f5bc11427f5" datatype="html">
+        <source>Please enter a last name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <target>يرجى إدخال اسم الشخص الأخير</target>
+      </trans-unit>
+      <trans-unit id="4868100d0fce37b82faba2b7ae627420e505eb9f" datatype="html">
+        <source>Password (At least 8 characters)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+        <target>كلمة المرور (على الأقل ٨ أحرف)</target>
+      </trans-unit>
+      <trans-unit id="c1b7e6d75ff4285c7636c67e5ef259629b81725b" datatype="html">
+        <source>Confirm Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+        <target>تأكيد كلمة المرور</target>
       </trans-unit>
     </body>
   </file>

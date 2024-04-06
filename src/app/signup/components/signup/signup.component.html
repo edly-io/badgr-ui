@@ -62,45 +62,53 @@
 				<bg-formfield-text
 					class="u-margin-bottom2x"
 					[control]="signupForm.rawControlMap.username"
-					[label]="'Email'"
+					label="Email"
 					fieldType="email"
-					[errorMessage]="'Please enter a valid e-mail address.'"
+					errorMessage="Please enter a valid e-mail address."
 					[autofocus]="true"
+					i18n-label
+					i18n-errorMessage
 				></bg-formfield-text>
 
 				<bg-formfield-text
 					class="u-margin-bottom2x"
 					[control]="signupForm.rawControlMap.firstName"
-					[label]="'First name'"
-					[errorMessage]="'Please enter a first name'"
+					label="First name"
+					errorMessage="Please enter a first name"
+					i18n-label
+					i18n-errorMessage
 				></bg-formfield-text>
 
 				<bg-formfield-text
 					class="u-margin-bottom2x"
 					[control]="signupForm.rawControlMap.lastName"
-					[label]="'Last name'"
-					[errorMessage]="'Please enter a last name'"
+					label="Last name"
+					errorMessage="Please enter a last name"
+					i18n-label
+					i18n-errorMessage
 				></bg-formfield-text>
 
 				<bg-formfield-text
 					class="u-margin-bottom2x"
 					[control]="signupForm.rawControlMap.password"
-					[label]="'Password (At least 8 characters)'"
+					label="Password (At least 8 characters)"
 					fieldType="password"
 					[errorMessage]="{
 						required: 'Please enter a password',
 						minlength: 'The password must be at least 8 characters long'
 					}"
+					i18n-label
 				></bg-formfield-text>
 
 				<bg-formfield-text
 					[control]="signupForm.rawControlMap.passwordConfirm"
-					[label]="'Confirm Password'"
+					label="Confirm Password"
 					fieldType="password"
 					[errorMessage]="{
 						required: 'Please confirm your password',
 						passwordsMatch: 'The passwords are not the same'
 					}"
+					i18n-label
 				></bg-formfield-text>
 			</fieldset>
 
