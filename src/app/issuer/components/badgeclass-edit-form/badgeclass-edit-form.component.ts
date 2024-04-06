@@ -305,12 +305,11 @@ export class BadgeClassEditFormComponent extends BaseAuthenticatedRoutableCompon
 		const isPlural = this.badgeClassForm.value.alignments.length > 1;
 		if (
 			!(await this.dialogService.confirmDialog.openTrueFalseDialog({
-				dialogTitle: `Remove Alignment${isPlural ? 's' : ''}?`,
-				dialogBody: `Are you sure you want to remove ${
-					isPlural ? 'these alignments?' : 'this alignment?'
-				} This action cannot be undone.`,
-				resolveButtonLabel: 'Remove',
-				rejectButtonLabel: 'Cancel',
+				dialogTitle: isPlural ? $localize`Remove Alignment?`: $localize`Remove Alignments?`,
+				dialogBody: isPlural ? $localize`Are you sure you want to remove these alignments? This action cannot be undone.` : 
+							$localize`Are you sure you want to remove this alignments? This action cannot be undone.` ,
+				resolveButtonLabel: $localize`Remove`,
+				rejectButtonLabel:  $localize`Cancel`,
 			}))
 		) {
 			return;

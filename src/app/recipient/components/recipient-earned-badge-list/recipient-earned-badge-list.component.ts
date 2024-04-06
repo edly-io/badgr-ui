@@ -32,6 +32,24 @@ export class RecipientEarnedBadgeListComponent extends BaseAuthenticatedRoutable
 	readonly badgeLoadingImageUrl = '../../../../breakdown/static/images/badge-loading.svg';
 	readonly badgeFailedImageUrl = '../../../../breakdown/static/images/badge-failed.svg';
 
+	plural = {
+		issuer: {
+			'=0': 'No institutions',
+			'=1': '1 Institution',
+			other: '# Institutions',
+		},
+		badges: {
+			'=0': 'No badges',
+			'=1': '<strong class="u-text-bold">1</strong> Badge',
+			other: '<strong class="u-text-bold">#</strong> Badges',
+		},
+		recipient: {
+			'=0': 'No recipient',
+			'=1': '1 Recipient',
+			other: '# Recipients',
+		},
+	};
+	
 	@ViewChild('addBadgeDialog')
 	addBadgeDialog: AddBadgeDialogComponent;
 

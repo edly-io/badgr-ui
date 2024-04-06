@@ -26,5 +26,9 @@
         "module": "commonjs",
         "baseUrl": "./",
         "useDefineForClassFields": false
+    },
+    "angularCompilerOptions": {
+        "fullTemplateTypeCheck": true,
+        "strictInjectionParameters": true
     }
 }

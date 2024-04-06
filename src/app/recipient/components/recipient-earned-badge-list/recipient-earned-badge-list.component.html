@@ -9,10 +9,10 @@
 				</bg-breadcrumbs>
 			</div>
 		</div>-->
-			<h2 class="topbar-x-heading p-0">
+			<h2 class="topbar-x-heading p-0" i18n>
 				Backpack
 				<span class="badgeSubTitle" *ngIf="!!allBadges"
-					>{{ allBadges.length }} {{ allBadges.length == 1 ? 'Badge' : 'Badges' }}</span
+					>{{ allBadges.length  | i18nPlural : plural['badges'] }}</span
 				>
 			</h2>
 			<!-- <div class="l-primarymore"> -->
