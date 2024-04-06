@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from "@angular/core";
+import { $localize } from '@angular/localize/init';
 import { ActivatedRoute, Router } from "@angular/router";
 import { SessionService } from "../../../common/services/session.service";
 import { BaseAuthenticatedRoutableComponent } from "../../../common/pages/base-authenticated-routable.component";

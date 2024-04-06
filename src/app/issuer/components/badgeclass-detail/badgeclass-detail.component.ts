@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { $localize } from '@angular/localize/init';
 
 import { ActivatedRoute, Router } from '@angular/router';
 import { MessageService } from '../../../common/services/message.service';
