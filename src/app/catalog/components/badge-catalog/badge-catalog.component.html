@@ -132,7 +132,7 @@
 						{{ issuerGroup.issuerName }}
 						<span class="badgeSubTitle" i18n
 							>{{ issuerGroup.badges.length }}
-							{{ issuerGroup.badges.length == 1 ? 'Badge' : 'Badges' }}</span
+							{{ issuerGroup.badges.length | i18nPlural : plural['badges'] }}</span
 						>
 					</h3>
 					<div class="l-grid l-grid-large">

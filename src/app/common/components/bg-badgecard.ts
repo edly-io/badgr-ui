@@ -54,6 +54,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 				class="badgeNewCard-sharelink"
 				*ngIf="!verifyUrl && !public && mostRelevantStatus !== 'pending'"
 				(click)="shareClicked.emit($event)"
+				i18n
 			>
 				Share
 			</button>

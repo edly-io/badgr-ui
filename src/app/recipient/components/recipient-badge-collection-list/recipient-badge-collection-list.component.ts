@@ -28,6 +28,29 @@ export class RecipientBadgeCollectionListComponent extends BaseAuthenticatedRout
 	}
 
 	collectionListLoaded: Promise<unknown>;
+	
+	plural = {
+		issuer: {
+			'=0':  $localize`No Issuers`,
+			'=1':  $localize`1 Issuer`,
+			other: $localize`# Issuers`,
+		},
+		badges: {
+			'=0':  $localize`No Badges`,
+			'=1':  $localize`1 Badge`,
+			other:  $localize`# Badges`,
+		},
+		recipient: {
+			'=0':  $localize`No Recipients`,
+			'=1':  $localize`1 Recipient`,
+			other:  $localize`# Recipients`,
+		},
+		collection: {
+			'=0':  $localize`No Collection`,
+			'=1':  $localize`1 Collection`,
+			other:  $localize`# Collections`,
+		},
+	};
 
 	constructor(
 		router: Router,

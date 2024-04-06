@@ -35,7 +35,7 @@ import { UserProfile } from '../model/user-profile.model';
 						class="checkbox-x-text font-family-plex-gray p-0 d-flex  gap-1"
 						style="    flex-direction: column;"
 					>
-						<div>
+						<div i18n>
 							I have read and agree to the
 							<a target="_blank" [href]="termsOfServiceLink">Terms of Service</a>.
 						</div>
