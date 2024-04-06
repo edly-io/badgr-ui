@@ -1,4 +1,3 @@
-import { $localize } from '@angular/localize/init';
 import {
 	ApiIssuer,
 	ApiIssuerStaff,
@@ -237,22 +236,22 @@ export class IssuerStaffMember extends ManagedEntity<ApiIssuerStaff, IssuerStaff
 export const issuerStaffRoles = [
 	{
 		slug: 'owner',
-		label: $localize`Owner`,
-		indefiniteLabel: $localize`an owner`,
+		label: 'Owner',
+		indefiniteLabel: 'an owner',
 		description:
-			$localize`Ability to add and remove staff. Full rights to create, delete, and award badges. Ability to edit issuer details.`,
+			'Ability to add and remove staff. Full rights to create, delete, and award badges. Ability to edit issuer details.',
 	},
 	{
 		slug: 'editor',
-		label:  $localize`Editor`,
-		indefiniteLabel:  $localize`an editor`,
-		description:  $localize`Full rights to create, delete, and award badges. Ability to edit issuer details.`,
+		label:  'Editor',
+		indefiniteLabel:  'an editor',
+		description:  'Full rights to create, delete, and award badges. Ability to edit issuer details.',
 	},
 	{
 		slug: 'staff',
-		label:  $localize`Staff Member`,
-		indefiniteLabel:  $localize`a staff member`,
-		description:  $localize`Ability to issue badges created by Owners and Editors.`,
+		label:  'Staff Member',
+		indefiniteLabel:  'a staff member',
+		description:  'Ability to issue badges created by Owners and Editors.',
 	},
 ];
 export function issuerRoleInfoFor(slug: IssuerStaffRoleSlug) {
