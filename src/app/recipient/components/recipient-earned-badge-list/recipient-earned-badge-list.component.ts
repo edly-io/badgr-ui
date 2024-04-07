@@ -32,6 +32,24 @@ export class RecipientEarnedBadgeListComponent extends BaseAuthenticatedRoutable
 	readonly badgeLoadingImageUrl = '../../../../breakdown/static/images/badge-loading.svg';
 	readonly badgeFailedImageUrl = '../../../../breakdown/static/images/badge-failed.svg';
 
+	plural = {
+		issuer: {
+			'=0': $localize`No institutions`,
+			'=1': $localize`1 Institution`,
+			other: $localize`# Institutions`,
+		},
+		badges: {
+			'=0': $localize`No badges`,
+			'=1': $localize`1 Badge`,
+			other: $localize`# Badges`,
+		},
+		recipient: {
+			'=0': $localize`No recipient`,
+			'=1': $localize`1 Recipient`,
+			other: $localize`# Recipients`,
+		},
+	};
+	
 	@ViewChild('addBadgeDialog')
 	addBadgeDialog: AddBadgeDialogComponent;
 
@@ -109,7 +127,7 @@ export class RecipientEarnedBadgeListComponent extends BaseAuthenticatedRoutable
 			// force a refresh of the userProfileSet now that we are authenticated
 			profileManager.userProfileSet.updateList().then((p) => {
 				if (profileManager.userProfile.agreedTermsVersion !== profileManager.userProfile.latestTermsVersion) {
-					dialogService.newTermsDialog.openDialog();
+					// dialogService.newTermsDialog.openDialog();
 				}
 			});
 		}

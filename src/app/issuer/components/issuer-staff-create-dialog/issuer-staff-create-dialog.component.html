@@ -25,14 +25,18 @@
 					[value]="role.value"
 					[sublabel]="role.description"
 					[last]="last"
-					[errorMessage]="'Please select a staff role'"
+					errorMessage="Please select a staff role"
+					i18n-placeholder
 				></bg-formfield-radio>
 				<bg-formfield-text
 					[control]="staffCreateForm.rawControlMap.staffEmail"
-					[label]="'New Member Email'"
-					[errorMessage]="'Please enter valid email address'"
+					label="New Member Email"
+					errorMessage="Please enter valid email address"
 					placeholder="Staff Email"
 					class="forminput-light1 u-width-formsmall u-margin-top3x"
+					i18n-label
+					i18n-errorMessage
+					i18n-placeholder
 				></bg-formfield-text>
 				<br />
 

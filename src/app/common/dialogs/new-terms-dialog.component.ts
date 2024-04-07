@@ -14,12 +14,12 @@ import { UserProfile } from '../model/user-profile.model';
 	>
 		<div class="dialog-x-box o-container">
 			<div class="l-flex l-flex-justifybetween u-padding-top2x u-padding-xaxis3x">
-				<h2 id="updatedTermsDialog" class="u-text-body-bold-caps font-family-plex-blue">
+				<h2 id="updatedTermsDialog" class="u-text-body-bold-caps font-family-plex-blue" i18n>
 					Updated Terms of Service
 				</h2>
 			</div>
 			<div class="u-padding-all3x">
-				<p class="u-text u-text-body u-margin-bottom2x font-family-plex-blue">
+				<p class="u-text u-text-body u-margin-bottom2x font-family-plex-blue" i18n>
 					We’ve updated our <a target="_blank" [href]="termsOfServiceLink">Terms of Service</a>.
 				</p>
 
@@ -35,19 +35,19 @@ import { UserProfile } from '../model/user-profile.model';
 						class="checkbox-x-text font-family-plex-gray p-0 d-flex  gap-1"
 						style="    flex-direction: column;"
 					>
-						<div>
+						<div i18n>
 							I have read and agree to the
 							<a target="_blank" [href]="termsOfServiceLink">Terms of Service</a>.
 						</div>
-						<div *ngIf="isErrorState" class="checkbox-x-errortext font-family-plex-gray">
+						<div *ngIf="isErrorState" class="checkbox-x-errortext font-family-plex-gray" i18n>
 							Please read and agree to the Terms of Service if you want to continue.
 						</div>
 					</span>
 				</label>
 
 				<div class="l-flex l-flex-2x gap-2">
-					<button class="primary-button" (click)="submitAgreement()">Continue</button>
-					<button class="new-button-secondary" *ngIf="termsHelpLink" [href]="termsHelpLink" target="_blank">
+					<button class="primary-button" (click)="submitAgreement()" i18n>Continue</button>
+					<button class="new-button-secondary" *ngIf="termsHelpLink" [href]="termsHelpLink" target="_blank" i18n>
 						Need Help?
 					</button>
 				</div>

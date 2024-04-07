@@ -16,17 +16,22 @@
 			<div class="w-100">
 				<bg-formfield-text
 					[control]="profileEditForm.rawControlMap.firstName"
-					[label]="'First Name'"
-					[errorMessage]="'Please enter your first name'"
+					label="First Name"
+					errorMessage="'Please enter your first name'"
 					class="u-margin-bottom2x forminput-large"
+					i18n-label
+					i18n-errorMessage
+
 				>
 				</bg-formfield-text>
 
 				<bg-formfield-text
 					[control]="profileEditForm.rawControlMap.lastName"
-					[label]="'Last Name'"
-					[errorMessage]="'Please enter your last name'"
+					label="'Last Name'"
+					errorMessage="'Please enter your last name'"
 					class="u-margin-bottom4x forminput-large"
+					i18n-label
+					i18n-errorMessage
 				></bg-formfield-text>
 			</div>
 

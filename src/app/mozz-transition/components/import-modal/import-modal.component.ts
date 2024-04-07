@@ -39,9 +39,9 @@ export class ImportModalComponent extends BaseDialog implements OnInit {
 	};
 	plural = {
 		'badge': {
-			'=0' : 'No Badges',
-			'=1' : '1 Badge',
-			'other' : '# Badges'
+			'=0' : $localize`No Badges`,
+			'=1' : $localize`1 Badge`,
+			'other' : $localize`# Badges`
 		}
 	};
 

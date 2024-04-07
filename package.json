@@ -32,6 +32,7 @@
     "@angular/platform-browser": "^17.0.4",
     "@angular/platform-browser-dynamic": "^17.0.4",
     "@angular/router": "^17.0.4",
+    "@angular/localize": "^17.0.6",
     "@angularclass/request-idle-callback": "1.0.7",
     "@concentricsky/badgr-style": "^20.1.2",
     "@types/fontfaceobserver": "2.1.3",
