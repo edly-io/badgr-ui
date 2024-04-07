@@ -131,25 +131,25 @@ export class BadgeClassEditFormComponent extends BaseAuthenticatedRoutableCompon
 		.addControl('expires_duration', '', Validators.required);
 
 	durationOptions: { [key in BadgeClassExpiresDuration]: string } = {
-		days: 'Days',
-		weeks: 'Weeks',
-		months: 'Months',
-		years: 'Years',
+		days: $localize`Days`,
+		weeks: $localize`Weeks`,
+		months: $localize`Months`,
+		years: $localize`Years`,
 	};
 
 	categoryOptions: { [key in BadgeClassCategory]: string } = {
-		membership: 'Membership',
-		ability: 'Metacompetence',
-		archievement: 'Participation/Success',
-		skill: 'Professional competence',
+		membership: $localize`Membership`,
+		ability: $localize`Metacompetence`,
+		archievement: $localize`Participation/Success`,
+		skill: $localize`Professional competence`,
 	};
 
 	levelOptions: { [key in BadgeClassLevel]: string } = {		
-		l1: 'Awareness',
-		l2: 'Beginners',
-		l3: 'Specialists',
-		l4: 'Experts',
-		l5: 'Scientists'
+		l1: $localize`Awareness`,
+		l2: $localize`Beginners`,
+		l3: $localize`Specialists`,
+		l4: $localize`Experts`,
+		l5: $localize`Scientists`
 	};
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -305,12 +305,11 @@ export class BadgeClassEditFormComponent extends BaseAuthenticatedRoutableCompon
 		const isPlural = this.badgeClassForm.value.alignments.length > 1;
 		if (
 			!(await this.dialogService.confirmDialog.openTrueFalseDialog({
-				dialogTitle: `Remove Alignment${isPlural ? 's' : ''}?`,
-				dialogBody: `Are you sure you want to remove ${
-					isPlural ? 'these alignments?' : 'this alignment?'
-				} This action cannot be undone.`,
-				resolveButtonLabel: 'Remove',
-				rejectButtonLabel: 'Cancel',
+				dialogTitle: isPlural ? $localize`Remove Alignment?`: $localize`Remove Alignments?`,
+				dialogBody: isPlural ? $localize`Are you sure you want to remove these alignments? This action cannot be undone.` : 
+							$localize`Are you sure you want to remove this alignments? This action cannot be undone.` ,
+				resolveButtonLabel: $localize`Remove`,
+				rejectButtonLabel:  $localize`Cancel`,
 			}))
 		) {
 			return;

@@ -57,24 +57,24 @@ export class PublicBadgeAssertionComponent {
 
 	tense = {
 		expires: {
-			'=1': 'Expired',
-			'=0': 'Expires',
+			'=1': $localize`Expired`,
+			'=0': $localize`Expires`,
 		},
 	};
 
 	categoryOptions: { [key in BadgeClassCategory]: string } = {
-		membership: 'Membership',
-		ability: 'Metacompetence',
-		archievement: 'Participation/Success',
-		skill: 'Professional competence',
+		membership: $localize`Membership`,
+		ability: $localize`Metacompetence`,
+		archievement: $localize`Participation/Success`,
+		skill: $localize`Professional competence`,
 	};
 
 	levelOptions: { [key in BadgeClassLevel]: string } = {		
-		l1: 'Awareness',
-		l2: 'Beginners',
-		l3: 'Specialists',
-		l4: 'Experts',
-		l5: 'Scientists'
+		l1: $localize`Awareness`,
+		l2: $localize`Beginners`,
+		l3: $localize`Specialists`,
+		l4: $localize`Experts`,
+		l5: $localize`Scientists`
 	};
 
 	get showDownload() {

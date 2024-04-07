@@ -62,8 +62,8 @@ import { MessageService } from '../services/message.service';
 
 				<ng-container *ngIf="!imageDataUrl">
 					<svg class="dropzone-x-icon" icon="icon_upload"></svg>
-					<p class="dropzone-x-info1">Drag & Drop</p>
-					<p class="dropzone-x-info2">or <span class="u-text-link" i18n>Select from files</span></p>
+					<p class="dropzone-x-info1" i18n>Drag & Drop</p>
+					<p class="dropzone-x-info2" i18n>or <span class="u-text-link">Select from files</span></p>
 				</ng-container>
 			</label>
 

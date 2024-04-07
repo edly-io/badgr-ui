@@ -13,21 +13,25 @@
 				<legend class="visuallyhidden" id="heading-add-badge-collection" i18n>Create collection</legend>
 				<bg-formfield-text
 					[control]="badgeCollectionForm.rawControlMap.collectionName"
-					[label]="'Name of collections'"
+					label="Name of collections"
 					[maxchar]="128"
 					[errorMessage]="{ required: 'Please enter a name for the collection' }"
 					[autofocus]="true"
-					[sublabel]="' remaining characters'"
+					sublabel=" remaining characters"
+					i18n-label
+					i18n-sublabel
 				></bg-formfield-text>
 
 				<div class="u-margin-top2x">
 					<bg-formfield-text
 						[control]="badgeCollectionForm.rawControlMap.collectionDescription"
-						[label]="'Description'"
+						label="Description"
 						[errorMessage]="{ required: 'Please provide a description' }"
 						[maxchar]="255"
 						[multiline]="true"
-						[sublabel]="' remaining characters'"
+						sublabel=" remaining characters"
+						i18n-label
+						i18n-sublabel
 					></bg-formfield-text>
 				</div>
 
@@ -47,7 +51,8 @@
 						[disabled]="!!createCollectionPromise"
 						[loading-promises]="[createCollectionPromise]"
 						loading-message="Add"
-						i18n
+						i18n-loading-message
+						i18n	
 					>
 						Create collection
 					</button>

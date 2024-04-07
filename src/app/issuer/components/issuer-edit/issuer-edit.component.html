@@ -21,45 +21,51 @@
 				imageLoaderName="issuer"
 				[placeholderImage]="issuerImagePlacholderUrl"
 				[control]="issuerForm.rawControlMap.issuer_image"
+				i18n-label
+				i18n-imageLoaderName
 			></bg-formfield-image>
 
 			<bg-formfield-text
 				class="u-margin-bottom2x"
 				[control]="issuerForm.rawControlMap.issuer_name"
-				[label]="'Name'"
+				label="Name"
 				[errorMessage]="{ required: 'Please enter a name' }"
 				[autofocus]="true"
+				i18n-label
 			></bg-formfield-text>
 
 			<bg-formfield-text
 				class="u-margin-bottom2x"
 				[control]="issuerForm.rawControlMap.issuer_url"
-				[label]="'Website URL'"
+				label="Website URL"
 				[errorMessage]="'Please provide a valid URL'"
 				[urlField]="true"
+				i18n-label
 			></bg-formfield-text>
 
 			<bg-formfield-select
 				class="u-margin-bottom2x"
 				[control]="issuerForm.rawControlMap.issuer_email"
-				[label]="'Contact email'"
+				label="Contact email"
 				[placeholder]="'Please choose a verified email'"
 				[options]="emailsOptions"
 				[errorMessage]="{ required: 'Please choose a verified email' }"
+				i18n-label
 			></bg-formfield-select>
 
 			<bg-formfield-text
 				class="u-margin-bottom2x"
 				[control]="issuerForm.rawControlMap.issuer_description"
-				[label]="'Description'"
+				label="Description"
 				[errorMessage]="{ required: 'Please provide a description' }"
 				[multiline]="true"
+				i18n-label
 			></bg-formfield-text>
 
 			<bg-formfield-select
 				class="u-margin-bottom2x"
 				[control]="issuerForm.rawControlMap.issuer_category"
-				[label]="'Category'"
+				label="Category"
 				[placeholder]="'Please enter a category'"
 				[options]="[
 					{
@@ -75,6 +81,7 @@
 						value: 'Others'
 					}
 				]"
+				i18n-label
 			></bg-formfield-select>
 
 			<h2>Adresse</h2>
@@ -82,31 +89,35 @@
 			<bg-formfield-text
 				class="u-margin-bottom2x"
 				[control]="issuerForm.rawControlMap.issuer_street"
-				[label]="'Street'"
+				label="Street"
 				[errorMessage]="{ required: 'Please enter a street' }"
+				i18n-label
 			></bg-formfield-text>
 
 			<bg-formfield-text
 				class="u-margin-bottom2x"
 				[control]="issuerForm.rawControlMap.issuer_streetnumber"
-				[label]="'House number'"
+				label="House number"
 				[fieldType]="'number'"
 				[errorMessage]="{ required: 'Please enter a house number' }"
+				i18n-label
 			></bg-formfield-text>
 
 			<bg-formfield-text
 				class="u-margin-bottom2x"
 				[control]="issuerForm.rawControlMap.issuer_zip"
-				[label]="'Postal code'"
+				label="Postal code"
 				[fieldType]="'number'"
 				[errorMessage]="{ required: 'Please enter a zip code' }"
+				i18n-label
 			></bg-formfield-text>
 
 			<bg-formfield-text
 				class="u-margin-bottom2x"
 				[control]="issuerForm.rawControlMap.issuer_city"
-				[label]="'City'"
+				label="City"
 				[errorMessage]="{ required: 'Please enter a city' }"
+				i18n-label
 			></bg-formfield-text>
 
 			<div class="l-flex l-flex-1x l-flex-justifyend u-margin-top2x gap-2">
@@ -124,6 +135,7 @@
 					[disabled]="!!editIssuerFinished"
 					[loading-promises]="[editIssuerFinished]"
 					loading-message="Adding"
+					i18n-loading-message
 					i18n
 				>
 					Save

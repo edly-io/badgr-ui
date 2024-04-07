@@ -8,18 +8,22 @@
 					[autofocus]="true"
 					[control]="badgeCollectionForm.rawControlMap.collectionName"
 					[errorMessage]="{ required: 'Please enter a collection name' }"
-					[label]="'Name'"
+					label="Name"
 					[maxchar]="128"
-					[sublabel]="' remaining characters'"
+					sublabel=" remaining characters"
+					i18n-label
+					i18n-sublabel
 				></bg-formfield-text>
 				<bg-formfield-text
 					class="u-margin-top3x"
 					[control]="badgeCollectionForm.rawControlMap.collectionDescription"
 					[errorMessage]="{ required: 'Please enter a description' }"
-					[label]="'Description'"
+					label="Description"
 					[maxchar]="255"
 					[multiline]="true"
-					[sublabel]="' remaining characters'"
+					sublabel=" remaining characters"
+					i18n-label
+					i18n-sublabel
 				></bg-formfield-text>
 				<div class="l-flex l-flex-1x l-flex-justifyend u-margin-top2x gap-2">
 					<button

@@ -72,9 +72,11 @@
 						errorMessage="Please enter a valid URL"
 						(change)="controlUpdated(addRecipientBadgeForm.controls.url)"
 						includeLabelAsWrapper="true"
-						placeholder="URL eingeben"
+						placeholder="Enter URL"
 						[autofocus]="true"
 						#urlField
+						i18n-placeholder
+						i18n-errorMessage
 					></bg-formfield-text>
 				</div>
 			</div>
@@ -86,13 +88,15 @@
 					<bg-formfield-text
 						[control]="addRecipientBadgeForm.rawControlMap.assertion"
 						errorMessage="Please enter valid JSON"
-						placeholder="JSON eingeben"
+						placeholder="Enter JSON"
 						(change)="controlUpdated(addRecipientBadgeForm.controls.assertion)"
 						[multiline]="true"
 						[monospaced]="true"
 						[autofocus]="true"
 						class="formfield-x-badgePasteJson-text-height"
 						#jsonField
+						i18n-placeholder
+						i18n-errorMessage
 					></bg-formfield-text>
 				</div>
 			</div>
