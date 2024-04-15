@@ -116,6 +116,8 @@ a.menuitem:hover {
 
 .menuitem {
 	gap: 15px;
+	color: var(--primary-color);
+	font-weight: 500;
 }
 
 .l-tags .tag {
@@ -164,4 +166,8 @@ a.menuitem:hover {
 
 .markdown p {
 	margin-bottom: 0;
+}
+
+.u-text-outlink svg {
+	width: 21px;
 }

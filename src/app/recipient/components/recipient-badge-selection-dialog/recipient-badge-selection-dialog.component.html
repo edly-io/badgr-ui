@@ -13,7 +13,13 @@
 		<div class="u-padding-xaxis2x u-padding-bottom2x l-flex l-flex-1x l-flex-aligncenter">
 			<div class="forminput forminput-hasicon">
 				<div class="forminput-x-inputs">
-					<input type="text" name="forminput" placeholder="Search" [(ngModel)]="searchQuery" i18n-placeholder/>
+					<input
+						type="text"
+						name="forminput"
+						placeholder="Search"
+						[(ngModel)]="searchQuery"
+						i18n-placeholder
+					/>
 					<svg class="forminput-x-icon" icon="icon_search"></svg>
 				</div>
 			</div>
@@ -174,7 +180,7 @@
 			</tbody>
 		</table>
 
-		<div class="u-padding-all2x l-stack l-stack-buttons">
+		<div class="l-flex l-flex-1x l-flex-justifyend u-margin-top2x gap-2 u-padding-xaxis2x u-padding-bottom2x">
 			<button class="primary-button" (click)="saveDialog()" i18n>Save Changes</button>
 			<button class="new-button-secondary" (click)="cancelDialog()" i18n>Cancel</button>
 		</div>

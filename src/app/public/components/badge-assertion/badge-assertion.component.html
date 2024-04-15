@@ -253,7 +253,9 @@
 								<h4 class="u-text-body-bold u-margin-bottom1x">{{ alignment.targetName }}</h4>
 								<small>{{ alignment.targetCode }}</small>
 							</div>
-							<p class="u-break-word u-text-body u-width-paragraph">{{ alignment.targetDescription }}</p>
+							<p class="u-break-word u-text-body u-width-paragraph d-flex align-items-center gap-2">
+								{{ alignment.targetDescription }}
+							</p>
 							<div *ngIf="alignment.frameworkName">
 								<h1>Framework</h1>
 								{{ alignment.frameworkName }}
