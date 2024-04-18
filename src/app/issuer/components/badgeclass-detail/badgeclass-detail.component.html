@@ -41,7 +41,7 @@
 							</div>
 							<div class="u-margin-yaxis2x" *ngIf="badgeClass.criteria_url">
 								<a
-									class="u-text-outlink font-family-plex-blue"
+									class="u-text-outlink font-family-plex-blue gap-2"
 									target="_blank"
 									[href]="badgeClass.criteria_url"
 									i18n
@@ -207,7 +207,9 @@
 							<h4 class="u-text-body-bold u-margin-bottom1x">{{ alignment.target_name }}</h4>
 							<small>{{ alignment.target_code }}</small>
 						</div>
-						<p class="u-break-word u-text-body u-width-paragraph">{{ alignment.target_description }}</p>
+						<p class="u-break-word u-text-body u-width-paragraph d-flex align-items-center gap-2">
+							{{ alignment.target_description }}
+						</p>
 						<div *ngIf="alignment.framework_name">
 							<h1>Framework</h1>
 							{{ alignment.framework_name }}
@@ -231,7 +233,12 @@
 							Search for email address
 						</p>
 						<div class="forminput-x-inputs">
-							<input type="text" placeholder="Search for email address" [(ngModel)]="searchQuery" i18n-placeholder/>
+							<input
+								type="text"
+								placeholder="Search for email address"
+								[(ngModel)]="searchQuery"
+								i18n-placeholder
+							/>
 							<img
 								src="../../../../assets/badges/search-icon.svg"
 								alt="search"
@@ -274,7 +281,7 @@
 													instance.recipientIdentifier
 												}}</span>
 												<span
-													class="l-flex l-flex-justifyend l-flex-aligncenter l-flex-1x u-hidden-minmobilelarge"
+													class="l-flex l-flex-justifyend l-flex-aligncenter l-flex-1x u-hidden-minmobilelarge gap-2"
 												>
 													<button
 														class="buttonicon buttonicon-link"
@@ -291,7 +298,7 @@
 											<time [date]="instance.issuedOn" format="mediumDate"></time>
 										</td>
 										<td class="datatable-x-cell">
-											<div class="l-flex l-flex-justifyend l-flex-aligncenter l-flex-1x">
+											<div class="l-flex l-flex-justifyend l-flex-aligncenter l-flex-1x gap-2">
 												<a class="u-text-link-small" target="_blank" [href]="instance.url" i18n
 													>Open</a
 												>

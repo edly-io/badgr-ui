@@ -29,9 +29,12 @@
 								<p class="u-text u-text-small font-family-plex-gray" i18n>
 									<strong [truncatedText]="issuer.email" [maxLength]="64"></strong>
 									<br class="u-hidden-minmobilelarge" /><span class="u-hidden-maxmobilelarge">
-										— </span
-									>Your Role:
-									{{ issuer?.currentUserStaffMember?.roleInfo?.label }}
+										—
+									</span>
+									<span class="d-flex align-items-center gap-2">
+										Your Role:
+										{{ issuer?.currentUserStaffMember?.roleInfo?.label }}
+									</span>
 								</p>
 								<p class="issuer-desc u-width-paragraph">
 									{{ issuer.description }}

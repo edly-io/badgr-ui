@@ -95,7 +95,7 @@
         <target>مجموعات</target>
       </trans-unit>
       <trans-unit id="4bfd83bd50b150fd8b46aa0f86d730a58fa36b3f" datatype="html">
-        <source> Apps 
+        <source> Apps
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg class=&quot;navitem-x-icon&quot; icon=&quot;icon_dropdown&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </source>
@@ -109,7 +109,7 @@
         </target>
       </trans-unit>
       <trans-unit id="a2afae80aa0017bb4c94120522e61392a373f8a5" datatype="html">
-        <source> Account 
+        <source> Account
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg class=&quot;navitem-x-icon&quot; icon=&quot;icon_dropdown&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </source>
@@ -139,9 +139,9 @@
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">184</context>
         </context-group>
-        <target>ملفي الشخصي
+        <target>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_member&quot;>"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>ملفي الشخصي
         </target>
       </trans-unit>
       <trans-unit id="a17d6374ae39d20793fbe4fbf0dc4fa8dc1144c0" datatype="html">
@@ -153,9 +153,10 @@
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">187</context>
         </context-group>
-        <target>مؤسستي
+        <target>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_issuer&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
+        مؤسستي
         </target>
       </trans-unit>
       <trans-unit id="d98ab120154323dec16b446baf7a8cc5dddb63ab" datatype="html">
@@ -167,9 +168,10 @@
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">191</context>
         </context-group>
-        <target>تسجيل الخروج
+        <target>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_exit_to_app&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
+        تسجيل الخروج
         </target>
       </trans-unit>
       <trans-unit id="75dc591672a3991cacd52e008f75ed42ce40d0d9" datatype="html">
@@ -243,7 +245,7 @@
         <target>كل الحقوق محفوظة. SDAIA © 2023</target>
       </trans-unit>
       <trans-unit id="fc5bbcadeb757865ab2a5b71be107a0d7f491605" datatype="html">
-        <source>Access with 
+        <source>Access with
           <x id="INTERPOLATION" equiv-text="{{ provider.label }}"/>
         </source>
         <context-group purpose="location">
@@ -280,7 +282,7 @@
       </trans-unit>
       <trans-unit id="e005676b7af9bb1faf9f83975ed5313b0c9b653d" datatype="html">
         <source>
-          <x id="INTERPOLATION" equiv-text="{{ authorizingApp?.application?.name }}"/> would like to 
+          <x id="INTERPOLATION" equiv-text="{{ authorizingApp?.application?.name }}"/> would like to
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/components/oauth2-authorize/oauth2-authorize.component.html</context>
@@ -294,7 +296,7 @@
         <source>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_member&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
-          <x id="INTERPOLATION" equiv-text="{{ theme.serviceName || &quot;Badgr&quot; }}"/> Know who you are on 
+          <x id="INTERPOLATION" equiv-text="{{ theme.serviceName || &quot;Badgr&quot; }}"/> Know who you are on
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/components/oauth2-authorize/oauth2-authorize.component.html</context>
@@ -307,7 +309,7 @@
         </target>
       </trans-unit>
       <trans-unit id="f4f3abf7f5203bbfa775384a91b62a496c407413" datatype="html">
-        <source> By clicking Authorize, you are allowing this application and  to use your information in accordance with their respective terms of service and privacy policies. You can change this and other account permissions at any time from the Profile menu. 
+        <source> By clicking Authorize, you are allowing this application and  to use your information in accordance with their respective terms of service and privacy policies. You can change this and other account permissions at any time from the Profile menu.
           <x id="INTERPOLATION" equiv-text="{{ theme.serviceName || &quot;Badgr&quot; }}"/>
         </source>
         <context-group purpose="location">
@@ -1180,7 +1182,7 @@
           <x id="START_TAG_DIV" ctype="x-div" equiv-text="</div>
 							Cluster
 						</li>"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Clus"/> Cluster 
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Clus"/> Cluster
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
@@ -1199,7 +1201,7 @@
 							School
 						</li>
 						<"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Scho"/> School 
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Scho"/> School
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
@@ -1218,7 +1220,7 @@
           <x id="START_TAG_DIV" ctype="x-div" equiv-text="</div>
 							University
 						</li"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Univ"/> University 
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Univ"/> University
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
@@ -1237,7 +1239,7 @@
 							Other
 						</li>
 					</u"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Othe"/> Other 
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Othe"/> Other
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
@@ -1725,7 +1727,7 @@
         <target>شروط الخدمة المحدثة</target>
       </trans-unit>
       <trans-unit id="4acb8c2c5066ff815aeb9de48320798ba0d45dd5" datatype="html">
-        <source> We’ve updated our Terms of Service. 
+        <source> We’ve updated our Terms of Service.
           <x id="START_LINK" ctype="x-a" equiv-text="<a target=&quot;_blank&quot; [href]=&quot;termsOfServiceLink&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </source>
@@ -1733,13 +1735,13 @@
           <context context-type="sourcefile">src/app/common/dialogs/new-terms-dialog.component.ts</context>
           <context context-type="linenumber">22,24</context>
         </context-group>
-        <target>لقد قمنا بتحديث شروط الخدمة. 
+        <target>لقد قمنا بتحديث شروط الخدمة.
           <x id="START_LINK" ctype="x-a" equiv-text="<a target=&quot;_blank&quot; [href]=&quot;termsOfServiceLink&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </target>
       </trans-unit>
       <trans-unit id="98129849f400a78782af16ad686490299c1bf20c" datatype="html">
-        <source> I have read and agree to the Terms of Service. 
+        <source> I have read and agree to the Terms of Service.
           <x id="START_LINK" ctype="x-a" equiv-text="<a target=&quot;_blank&quot; [href]=&quot;termsOfServiceLink&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </source>
@@ -1747,7 +1749,7 @@
           <context context-type="sourcefile">src/app/common/dialogs/new-terms-dialog.component.ts</context>
           <context context-type="linenumber">38,41</context>
         </context-group>
-        <target>لقد قرأت ووافقت على شروط الخدمة. 
+        <target>لقد قرأت ووافقت على شروط الخدمة.
           <x id="START_LINK" ctype="x-a" equiv-text="<a target=&quot;_blank&quot; [href]=&quot;termsOfServiceLink&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </target>
@@ -1841,7 +1843,7 @@
         <target>تحميل المزيد...</target>
       </trans-unit>
       <trans-unit id="1c9a2242975aaaf277f1bfca4d3945b1ee4f4e99" datatype="html">
-        <source> No icon found for "" 
+        <source> No icon found for ""
           <x id="INTERPOLATION" equiv-text="{{ searchTerm }}"/>
         </source>
         <context-group purpose="location">
@@ -2101,7 +2103,7 @@
         <target>العلامات</target>
       </trans-unit>
       <trans-unit id="f8622a24b433981dd6c7a0998a7ac333f572a230" datatype="html">
-        <source>External criteria View URL 
+        <source>External criteria View URL
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </source>
@@ -2165,7 +2167,7 @@
       <trans-unit id="513649b097494c5c245d77a9dddac37e8ebe34ec" datatype="html">
         <source>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_edit&quot;>"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>Edit 
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>Edit
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.html</context>
@@ -2179,7 +2181,7 @@
       <trans-unit id="af56034ccbb4a1aa023acdee081f747ee94439e4" datatype="html">
         <source>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_remove&quot;>"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>Delete 
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>Delete
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.html</context>
@@ -2255,7 +2257,7 @@
         <target>الاختصارات</target>
       </trans-unit>
       <trans-unit id="b07cc41ea90329a998218bdaf54f10e76de40a46" datatype="html">
-        <source>Visit link URL 
+        <source>Visit link URL
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </source>
@@ -2286,7 +2288,7 @@
       </trans-unit>
       <trans-unit id="d379d4106e8fe9eb3981010e869e5e0319527e62" datatype="html">
         <source>
-          <x id="INTERPOLATION" equiv-text="{{ instanceResults.length }}"/> previous awards. You can use the Next/Back buttons below to view additional awards, or search for assignments using the exact email address/recipient ID. 
+          <x id="INTERPOLATION" equiv-text="{{ instanceResults.length }}"/> previous awards. You can use the Next/Back buttons below to view additional awards, or search for assignments using the exact email address/recipient ID.
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.html</context>
@@ -2327,7 +2329,7 @@
       <trans-unit id="2aea4f5fc4822b1653790b501924e5eb0d6f7b31" datatype="html">
         <source>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_share&quot;>"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>Split 
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>Split
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.html</context>
@@ -2345,7 +2347,7 @@
       <trans-unit id="9ae4a4c5622b0484ddb367b92610ea189d66b2c4" datatype="html">
         <source>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_remove&quot;>"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>Take back 
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>Take back
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.html</context>
@@ -2937,7 +2939,7 @@
         <target>الصلاحية</target>
       </trans-unit>
       <trans-unit id="f9f1f55138fdcb95ef1122c4a271f11881d09068" datatype="html">
-        <source> Find out more about Open Badges 
+        <source> Find out more about Open Badges
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</a>
 		</div>"/>
@@ -3067,7 +3069,7 @@
       <trans-unit id="e17ab85fb639218bbe92f94b766e7887ee564418" datatype="html">
         <source>
           <x id="INTERPOLATION" equiv-text="{{ transformedImportData.validRowsTransformed.size }}"/>
-          <x id="INTERPOLATION_1" equiv-text="{{ transformedImportData.duplicateRecords.length }}"/> Rows can be imported.  Rows are duplicates and will be ignored. Click click GIVE BADGE to award the badge. 
+          <x id="INTERPOLATION_1" equiv-text="{{ transformedImportData.duplicateRecords.length }}"/> Rows can be imported.  Rows are duplicates and will be ignored. Click click GIVE BADGE to award the badge.
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue-bulk-award-confirmation/badgeclass-issue-bulk-award-confirmation.component.html</context>
@@ -3129,7 +3131,7 @@
       <trans-unit id="7103b001ef7f56f085b0818643ad5343bd56b145" datatype="html">
         <source>
           <x id="INTERPOLATION" equiv-text="{{ transformedImportData.validRowsTransformed.size }}"/>
-          <x id="INTERPOLATION_1" equiv-text="{{ transformedImportData.invalidRowsTransformed.length }}"/> Rows are imported. The following  contain errors. Please fix the errors or select REMOVE. 
+          <x id="INTERPOLATION_1" equiv-text="{{ transformedImportData.invalidRowsTransformed.length }}"/> Rows are imported. The following  contain errors. Please fix the errors or select REMOVE.
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue-bulk-award-error/badgeclass-issue-bulk-award-error.component.html</context>
@@ -3207,7 +3209,7 @@
         </target>
       </trans-unit>
       <trans-unit id="ecddc9486029b9cbe9dfdfdb1297e3bca8fe1d60" datatype="html">
-        <source> Use these  Example template  to create a CSV or TXT file 
+        <source> Use these  Example template  to create a CSV or TXT file
           <x id="START_LINK" ctype="x-a" equiv-text="<a [href]=&quot;badgrBulkIssueTemplateUrl&quot; download=&quot;badgr-bulk-issue-template.csv&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </source>
@@ -3215,7 +3217,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue-bulk-award-import/badgeclass-issue-bulk-award-import.component.html</context>
           <context context-type="linenumber">13,17</context>
         </context-group>
-        <target>استخدم هذه نموذج مثالي لإنشاء ملف CSV أو TXT 
+        <target>استخدم هذه نموذج مثالي لإنشاء ملف CSV أو TXT
           <x id="START_LINK" ctype="x-a" equiv-text="<a [href]=&quot;badgrBulkIssueTemplateUrl&quot; download=&quot;badgr-bulk-issue-template.csv&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </target>
@@ -3237,7 +3239,7 @@
         <target>أعمدة CSV</target>
       </trans-unit>
       <trans-unit id="4d7c2b985c38a509633211476b05cd92a52d639e" datatype="html">
-        <source> Here's a preview of the first one  from  lines of your file. Choose the appropriate heading matches the respective column of your CSV file. 
+        <source> Here's a preview of the first one  from  lines of your file. Choose the appropriate heading matches the respective column of your CSV file.
           <x id="INTERPOLATION" equiv-text="{{
 					importPreviewData.rows.length < MAX_ROWS_TO_DISPLAY
 						? importPreviewData.rows.length
@@ -3299,7 +3301,7 @@
         <target>منح الوسام</target>
       </trans-unit>
       <trans-unit id="a926620009f532099b6229e4893fba0b20138e4b" datatype="html">
-        <source> Award the badge to a user or click here to send the badge to several users at the same time to award. 
+        <source> Award the badge to a user or click here to send the badge to several users at the same time to award.
           <x id="START_LINK" ctype="x-a" equiv-text="<a
 					class=&quot;u-text font-family-plex-blue&quot;
 					[routerLink]=&quot;['/issuer/issuers', issuerSlug, 'badges', badgeSlug, 'bulk-import']&quot;
@@ -3363,7 +3365,7 @@
       <trans-unit id="dc2f85e07d689452ace4cf75a76d8e6ec59573d1" datatype="html">
         <source>
           <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="Note</strong>: The recipient's name is saved as plain text"/>
-          <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="</strong>"/>Note: The recipient's name is saved as plain text in the badge. 
+          <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="</strong>"/>Note: The recipient's name is saved as plain text in the badge.
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
@@ -3491,7 +3493,7 @@
         <target>هو البرهان الذي يثبت أن المستلم يفي بمعايير الحصول على الوسام. يمكن أن يكون ذلك على شكل سرد يصف الإنجاز و/أو عنوان URL لموقع ويب.</target>
       </trans-unit>
       <trans-unit id="741dd7011996e454b8a31f2a3eaf7540828b1c9c" datatype="html">
-        <source>Proof 
+        <source>Proof
           <x id="INTERPOLATION" equiv-text="{{ i + 1 }}"/>
         </source>
         <context-group purpose="location">
@@ -3812,7 +3814,7 @@
         <target>المدينة</target>
       </trans-unit>
       <trans-unit id="f9b9c5906e85e271e52795c3af840ab6d7caf4ee" datatype="html">
-        <source>I have read and agree to the Privacy Policy to them.  Please read the privacy policy and agree to it if you wish to continue. 
+        <source>I have read and agree to the Privacy Policy to them.  Please read the privacy policy and agree to it if you wish to continue.
           <x id="START_LINK" ctype="x-a" equiv-text="<a target=&quot;_blank&quot; [href]=&quot;dataProcessorUrl&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
           <x id="START_TAG_DIV" ctype="x-div" equiv-text="<div
@@ -3859,13 +3861,13 @@
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span class=&quot;u-hidden-maxmobilelarge&quot;>"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span
 									>"/>
-          <x id="INTERPOLATION" equiv-text="{{ issuer?.currentUserStaffMember?.roleInfo?.label }}"/> — Your Role: 
+          <x id="INTERPOLATION" equiv-text="{{ issuer?.currentUserStaffMember?.roleInfo?.label }}"/> — Your Role:
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-detail/issuer-detail.component.html</context>
           <context context-type="linenumber">30,35</context>
         </context-group>
-        <target> - دورك: 
+        <target> - دورك:
           <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="<strong [truncatedText]=&quot;issuer.email&quot; [maxLength]=&quot;64&quot;>"/>
           <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="</strong>"/>
           <x id="LINE_BREAK" ctype="lb" equiv-text="<br class=&quot;u-hidden-minmobilelarge&quot; />"/>
@@ -3879,7 +3881,7 @@
         <source>
           <x id="START_LINK" ctype="x-a" equiv-text="<a href=&quot;{{ issuer.websiteUrl }}&quot; class=&quot;newBadgeDetail-link&quot;>"/>
           <x id="TAG_IMG" ctype="image" equiv-text="<img src=&quot;../../../../breakdown/static/images/arrow-external.svg&quot; alt=&quot;arrow&quot; />"/>
-          <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/> Visit website 
+          <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/> Visit website
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-detail/issuer-detail.component.html</context>
@@ -3910,7 +3912,7 @@
       <trans-unit id="7438da42dacef359f800a94a27e0171bc9ccc2ab" datatype="html">
         <source>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_edit&quot;>"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/> Edit 
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/> Edit
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-detail/issuer-detail.component.html</context>
@@ -3928,7 +3930,7 @@
       <trans-unit id="b0877b7bafaefda9a744a9e7262f78a7c2a592a0" datatype="html">
         <source>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_remove&quot;>"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/> Delete 
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/> Delete
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-detail/issuer-detail.component.html</context>
@@ -3947,7 +3949,7 @@
         <source>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_group&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
-          <x id="INTERPOLATION" equiv-text="{{ issuer?.currentUserStaffMember?.isOwner ? 'edit' : '' }}"/> Members 
+          <x id="INTERPOLATION" equiv-text="{{ issuer?.currentUserStaffMember?.isOwner ? 'edit' : '' }}"/> Members
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/issuer/components/issuer-detail/issuer-detail.component.html</context>
@@ -4247,7 +4249,7 @@
         <target>إزالة</target>
       </trans-unit>
       <trans-unit id="0525e323b8f87f27132005726a158b62a27e8455" datatype="html">
-        <source> Complete 
+        <source> Complete
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_complete&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </source>
@@ -4277,7 +4279,7 @@
         <target>تنزيل ملف ZIP الخاص بك</target>
       </trans-unit>
       <trans-unit id="da9568301920bc45e8fc193c4567212c2f75bc15" datatype="html">
-        <source> In progress 
+        <source> In progress
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_complete&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </source>
@@ -4307,7 +4309,7 @@
         <target>الوصول إلى Badgr</target>
       </trans-unit>
       <trans-unit id="993cedae45104a0ff4f0ea3481133a339f9a619d" datatype="html">
-        <source> Not started 
+        <source> Not started
           <x id="TAG_IMG" ctype="image" equiv-text="<img
 											class=&quot;forminput-x-icon&quot;
 											src=&quot;../../../../assets/badges/icon-more.svg&quot;
@@ -4345,7 +4347,7 @@
       <trans-unit id="c0d9ec5196bf65059e4795d309bc3c3093ad1b9f" datatype="html">
         <source>
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span class=&quot;u-text-bold&quot;>"/>
-          <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>Step 3: Upload your badges 
+          <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>Step 3: Upload your badges
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/mozz-transition/components/import-modal/import-modal.component.html</context>
@@ -4385,7 +4387,7 @@
         <target>هذا ليس الملف من موزيلا. يرجى المحاولة مرة أخرى.</target>
       </trans-unit>
       <trans-unit id="bed577c23e8154a79dbefb4b853c0a74b0c75d1d" datatype="html">
-        <source> We’re uploading your badge(s). This might take a minute. 
+        <source> We’re uploading your badge(s). This might take a minute.
           <x id="LINE_BREAK" ctype="lb" equiv-text="<br />"/>
         </source>
         <context-group purpose="location">
@@ -4397,7 +4399,7 @@
         </target>
       </trans-unit>
       <trans-unit id="ea386b84d353a01fc7d52379626e45b9bf602dc5" datatype="html">
-        <source> Congrats!  badges of  uploaded will be added to your Backpack 
+        <source> Congrats!  badges of  uploaded will be added to your Backpack
           <x id="INTERPOLATION" equiv-text="{{ successes }}"/>
           <x id="INTERPOLATION_1" equiv-text="{{ attempts }}"/>
         </source>
@@ -4483,7 +4485,7 @@
         <target>دمج التطبيقات</target>
       </trans-unit>
       <trans-unit id="7a3555f6cf6d6225fa91b3b02e4bb68038dd3364" datatype="html">
-        <source> The following apps and sites have access to yours  Account 
+        <source> The following apps and sites have access to yours  Account
           <x id="INTERPOLATION" equiv-text="{{ configService.theme['serviceName'] || 'Badgr' }}"/>
         </source>
         <context-group purpose="location">
@@ -4513,7 +4515,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="a0950b78ccd755ba3aa919790fb13e2fd8e75842" datatype="html">
-        <source> This app has access to your  Account. 
+        <source> This app has access to your  Account.
           <x id="INTERPOLATION" equiv-text="{{ configService.theme['serviceName'] || 'Badgr' }}"/>
         </source>
         <context-group purpose="location">
@@ -4525,7 +4527,7 @@
         </target>
       </trans-unit>
       <trans-unit id="7ad6781d7d8767e310251eeaaa545eca54565b96" datatype="html">
-        <source> Authorized: 
+        <source> Authorized:
           <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="<strong>"/>
           <x id="START_TAG_TIME" ctype="x-time" equiv-text="atedDate&quot; format=&quot;mediumDate&quot;>"/>
           <x id="CLOSE_TAG_TIME" ctype="x-time" equiv-text="</strong>"/>
@@ -4607,7 +4609,7 @@
         <target>دمج Badgr في Canvas</target>
       </trans-unit>
       <trans-unit id="0c1fa97b33669dd89094428f889623c2c7c97db9" datatype="html">
-        <source> Make sure your Badgr account has the email address confirmed that you log into Canvas with. 
+        <source> Make sure your Badgr account has the email address confirmed that you log into Canvas with.
           <x id="START_LINK" ctype="x-a" equiv-text="<a [routerLink]=&quot;['/profile']&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </source>
@@ -4621,7 +4623,7 @@
         </target>
       </trans-unit>
       <trans-unit id="37c9bf67868f10f5f04da543983255d28b4539c3" datatype="html">
-        <source> Log into Canvas with your administrator credentials. Go to the desired Canvas account or sub-account, choose Settings in the left-hand menu, and select the Apps tab 
+        <source> Log into Canvas with your administrator credentials. Go to the desired Canvas account or sub-account, choose Settings in the left-hand menu, and select the Apps tab
           <x id="START_ORDERED_LIST" ctype="x-ol" equiv-text="<ol>"/>
           <x id="START_LIST_ITEM" ctype="x-li" equiv-text="<li [integration-image]=&quot;externalAppsBadgrImageUrl&quot; caption=&quot;External Apps&quot;>"/>
           <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="</li>"/>
@@ -4639,7 +4641,7 @@
         </target>
       </trans-unit>
       <trans-unit id="f31c79a683d9f03c91359983dfac483265a9e6a2" datatype="html">
-        <source> Select Badgr from the list (if connected with the EduAppCenter) or add a new custom integration  Copy the values for your LTI Shared Secret and Consumer key from Badgr into the dialog  If you are not using the EduAppCenter, choose the By URL method and copy the Consumer key and Shared Secret into the dialog, along with the Config URL 
+        <source> Select Badgr from the list (if connected with the EduAppCenter) or add a new custom integration  Copy the values for your LTI Shared Secret and Consumer key from Badgr into the dialog  If you are not using the EduAppCenter, choose the By URL method and copy the Consumer key and Shared Secret into the dialog, along with the Config URL
           <x id="START_ORDERED_LIST" ctype="x-ol" equiv-text="<ol>"/>
           <x id="START_LIST_ITEM_1" equiv-text="<li>"/>
           <x id="START_ORDERED_LIST" ctype="x-ol" equiv-text="<ol>"/>
@@ -4733,7 +4735,7 @@
         <target>تغيير كلمة المرور</target>
       </trans-unit>
       <trans-unit id="2e38a634b2cef176da9d75e732eb6269464fd3f7" datatype="html">
-        <source> Don’t have your current password? Click here to reset by email. 
+        <source> Don’t have your current password? Click here to reset by email.
           <x id="LINE_BREAK" ctype="lb" equiv-text="<br>"/>
           <x id="START_LINK" ctype="x-a" equiv-text="<a (click)=&quot;forgotPassword()&quot;
 				   class=&quot;u-text-link&quot;
@@ -4765,7 +4767,7 @@
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</a>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/> Authorized:  This application has been granted permission to sign you in using your Badgr account. Visit Website 
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/> Authorized:  This application has been granted permission to sign you in using your Badgr account. Visit Website
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/oauth-app-detail/oauth-app-detail.html</context>
@@ -4796,7 +4798,7 @@
       </trans-unit>
       <trans-unit id="d25ae2cdf5704c0e5db9659960127119b178f24e" datatype="html">
         <source>
-          <x id="INTERPOLATION" equiv-text="{{ app.name }}"/> has permission to: 
+          <x id="INTERPOLATION" equiv-text="{{ app.name }}"/> has permission to:
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/oauth-app-detail/oauth-app-detail.html</context>
@@ -4810,7 +4812,7 @@
         <source>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>
 					Know who you are on Badgr"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Know who yo"/> Know who you are on Badgr 
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Know who yo"/> Know who you are on Badgr
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/oauth-app-detail/oauth-app-detail.html</context>
@@ -4965,7 +4967,7 @@
         <source>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>
 										Resend Verification"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Resend"/> Resend Verification 
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Resend"/> Resend Verification
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
@@ -4982,7 +4984,7 @@
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>
 										Make primary
 									</"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Make p"/> Make primary 
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Make p"/> Make primary
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
@@ -5000,7 +5002,7 @@
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>
 										Remove
 									</div>"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Remove"/> Remove 
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Remove"/> Remove
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
@@ -5046,7 +5048,7 @@
         <target>إلغاء الارتباط</target>
       </trans-unit>
       <trans-unit id="1264a12a9e831758d213f42f33bf8d4b1482042b" datatype="html">
-        <source> Click one of the provider buttons below to allow you to log in to  in the future using that service rather than your email and password. 
+        <source> Click one of the provider buttons below to allow you to log in to  in the future using that service rather than your email and password.
           <x id="INTERPOLATION" equiv-text="{{ configService.theme['serviceName'] || 'Badgr' }}"/>
         </source>
         <context-group purpose="location">
@@ -5158,7 +5160,7 @@
       </trans-unit>
       <trans-unit id="2c18de704fcc9aa26981997cf192283f788f8851" datatype="html">
         <source>
-          <x id="INTERPOLATION" equiv-text="{{ badgeClass.extension['extensions:StudyLoadExtension'].StudyLoad }}"/> Hours 
+          <x id="INTERPOLATION" equiv-text="{{ badgeClass.extension['extensions:StudyLoadExtension'].StudyLoad }}"/> Hours
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.html</context>
@@ -5181,7 +5183,7 @@
         <target>ينتهي في</target>
       </trans-unit>
       <trans-unit id="7cb2aef844cfa1ee26cab8977c5ed288e6d3b2e0" datatype="html">
-        <source>View External Criteria URL 
+        <source>View External Criteria URL
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </source>
@@ -5243,7 +5245,7 @@
         <target>منح لـ:</target>
       </trans-unit>
       <trans-unit id="d3cdbb8f0b4cf3b7f73d43be631b8d99fc5ca093" datatype="html">
-        <source>View alignment URL 
+        <source>View alignment URL
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </source>
@@ -5273,7 +5275,7 @@
         <target>الدليل</target>
       </trans-unit>
       <trans-unit id="64af428810290f1035663b2266f96a818c9313b7" datatype="html">
-        <source>View Evidence URL 
+        <source>View Evidence URL
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </source>
@@ -5303,7 +5305,7 @@
         <target>تنتهي الصلاحية</target>
       </trans-unit>
       <trans-unit id="59ef7de64ce68119cc75a7003e276c512c930a8b" datatype="html">
-        <source> Badges earned by 
+        <source> Badges earned by
           <x id="INTERPOLATION" equiv-text="{{ collection.owner.firstName }}"/>
           <x id="INTERPOLATION_1" equiv-text="{{ collection.owner.lastName }}"/>
         </source>
@@ -5311,7 +5313,7 @@
           <context context-type="sourcefile">src/app/public/components/badge-collection/badge-collection.component.html</context>
           <context context-type="linenumber">29,31</context>
         </context-group>
-        <target>الشارات التي حصل عليها 
+        <target>الشارات التي حصل عليها
           <x id="INTERPOLATION" equiv-text="{{ collection.owner.firstName }}"/>
           <x id="INTERPOLATION_1" equiv-text="{{ collection.owner.lastName }}"/>
         </target>
@@ -5326,7 +5328,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="bb8d6e6cf5ebabcd98f5f4e3ae7580be090d0b50" datatype="html">
-        <source>View External Criteria URL 
+        <source>View External Criteria URL
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </source>
@@ -5392,7 +5394,7 @@
           <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="<b>"/>
           <x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="</b>"/>
           <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="</li>"/>
-          <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="</ul>"/> The awarding of badges is based on the level of independence and the level of complexity Skill. We are guided by the 6 competency levels of Digcomp Edu. A1: Beginner - Initial knowledge has been acquired but cannot yet be applied become. A2: Explorer - Basic knowledge and skills are available with which Further knowledge can be acquired in a self-directed manner. This can be used in standard situations but it is not enough to be able to solve unexpected problems independently. B1: Insiders - Acquired knowledge and skills can be applied to unknown people Situations are transferred. B2: Expert - The knowledge is used to understand connections and possible alternatives recognize. In addition, there is the competence to independently acquire and develop additional knowledge Sharing knowledge (digitally). C1: Leader - The developed knowledge and skills are based on Experiences used and applied innovatively. C2: Pioneer - Through the acquired skills you can develop your own skills and New definitions are carried out and existing procedures are critically examined. 
+          <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="</ul>"/> The awarding of badges is based on the level of independence and the level of complexity Skill. We are guided by the 6 competency levels of Digcomp Edu. A1: Beginner - Initial knowledge has been acquired but cannot yet be applied become. A2: Explorer - Basic knowledge and skills are available with which Further knowledge can be acquired in a self-directed manner. This can be used in standard situations but it is not enough to be able to solve unexpected problems independently. B1: Insiders - Acquired knowledge and skills can be applied to unknown people Situations are transferred. B2: Expert - The knowledge is used to understand connections and possible alternatives recognize. In addition, there is the competence to independently acquire and develop additional knowledge Sharing knowledge (digitally). C1: Leader - The developed knowledge and skills are based on Experiences used and applied innovatively. C2: Pioneer - Through the acquired skills you can develop your own skills and New definitions are carried out and existing procedures are critically examined.
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/components/faq/faq.component.html</context>
@@ -5488,7 +5490,7 @@
         </target>
       </trans-unit>
       <trans-unit id="de285a59f6a39bdc11d00d41a0e404e745e4dc63" datatype="html">
-        <source> Visit website 
+        <source> Visit website
           <x id="TAG_IMG" ctype="image" equiv-text="<img src=&quot;../../../../breakdown/static/images/arrow-external.svg&quot; alt=&quot;arrow&quot; />"/>
         </source>
         <context-group purpose="location">
@@ -5579,7 +5581,7 @@
           <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="<h4 class=&quot;principalBlocks__heading&quot;>"/>
           <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="</h4>"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="<p class=&quot;principalBlocks__desc&quot;>"/>
-          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>offen Other institutions can expand the system according to their educational offerings develop. 
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>offen Other institutions can expand the system according to their educational offerings develop.
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/components/start/start.component.html</context>
@@ -5607,7 +5609,7 @@
           <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="<h4 class=&quot;principalBlocks__heading&quot;>"/>
           <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="</h4>"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="<p class=&quot;principalBlocks__desc&quot;>"/>
-          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>transparent &amp; flexible The learner has insight into his portfolio and can decide for himself who he should give which provides information. 
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>transparent &amp; flexible The learner has insight into his portfolio and can decide for himself who he should give which provides information.
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/components/start/start.component.html</context>
@@ -5631,7 +5633,7 @@
           <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="<h4 class=&quot;principalBlocks__heading&quot;>"/>
           <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="</h4>"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="<p class=&quot;principalBlocks__desc&quot;>"/>
-          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>standardized By bringing together various educational actors, a standardization tool is created, that provides orientation. 
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>standardized By bringing together various educational actors, a standardization tool is created, that provides orientation.
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/components/start/start.component.html</context>
@@ -5655,7 +5657,7 @@
           <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="<h4 class=&quot;principalBlocks__heading&quot;>"/>
           <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="</h4>"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="<p class=&quot;principalBlocks__desc&quot;>"/>
-          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>motivating Portfolio &amp; Badges are a form of performance representation; not the rating. They promote the Appreciation for the acquired skills and increasing the learner's self-responsibility. 
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>motivating Portfolio &amp; Badges are a form of performance representation; not the rating. They promote the Appreciation for the acquired skills and increasing the learner's self-responsibility.
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/components/start/start.component.html</context>
@@ -5683,7 +5685,7 @@
           <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="<h4 class=&quot;principalBlocks__heading&quot;>"/>
           <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="</h4>"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="<p class=&quot;principalBlocks__desc&quot;>"/>
-          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>digital &amp; decentralized We rely on established technical standards with which proof of competence is created digitally can be managed decentrally. 
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>digital &amp; decentralized We rely on established technical standards with which proof of competence is created digitally can be managed decentrally.
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/components/start/start.component.html</context>
@@ -5711,7 +5713,7 @@
           <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="<h4 class=&quot;principalBlocks__heading&quot;>"/>
           <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="</h4>"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="<p class=&quot;principalBlocks__desc&quot;>"/>
-          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>individually Portfolio &amp; Badges can document individual learning paths and thus promote this self-determined, lifelong learning. 
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>individually Portfolio &amp; Badges can document individual learning paths and thus promote this self-determined, lifelong learning.
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/components/start/start.component.html</context>
@@ -5768,7 +5770,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="130a12a59f1dd39fa79193dc86faf9ca72d3e48d" datatype="html">
-        <source> This badge was not awarded to 
+        <source> This badge was not awarded to
           <x id="INTERPOLATION" equiv-text="{{ identityEmail }}"/>
         </source>
         <context-group purpose="location">
@@ -5818,7 +5820,7 @@
         <target>لم تنتهي صلاحيتها بعد</target>
       </trans-unit>
       <trans-unit id="a95e496d979cdddf33b66626490b6b2ae1f7beb1" datatype="html">
-        <source> Independently Verify Badge 
+        <source> Independently Verify Badge
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</a>
 				<bu"/>
@@ -6080,7 +6082,7 @@
         <target>حفظ</target>
       </trans-unit>
       <trans-unit id="f27dce8afa76ec013fa542393cb7daa349449f99" datatype="html">
-        <source> Collections 
+        <source> Collections
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span class=&quot;badgeSubTitle&quot; *ngIf=&quot;!!badgeCollections&quot;>"/>
           <x id="INTERPOLATION" equiv-text="{{ badgeCollections.length | i18nPlural : plural['collection']}}"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
@@ -6264,7 +6266,7 @@
         <target>العلامات</target>
       </trans-unit>
       <trans-unit id="0b1449ad0a9140d7154ab38b269a3a7cbba0745b" datatype="html">
-        <source>View external Criteria URL 
+        <source>View external Criteria URL
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </source>
@@ -6310,7 +6312,7 @@
       <trans-unit id="ef1a6dd7539f1cd08a5140131d7fe157787da1fd" datatype="html">
         <source>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_file&quot;>"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>Export to PDF 
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>Export to PDF
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-detail/recipient-earned-badge-detail.component.html</context>
@@ -6387,13 +6389,13 @@
           <x id="START_TAG_DIV_1" ctype="x-div_1" equiv-text="<div class=&quot;u-text&quot;>"/>
           <x id="START_TAG_TIME" ctype="x-time" equiv-text="<time [date]=&quot;badge?.expiresDate&quot; format=&quot;mediumDate&quot;>"/>
           <x id="CLOSE_TAG_TIME" ctype="x-time" equiv-text="</time>"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/> on: 
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/> on:
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-detail/recipient-earned-badge-detail.component.html</context>
           <context context-type="linenumber">168,171</context>
         </context-group>
-        <target> في: 
+        <target> في:
           <x id="START_TAG_DIV" ctype="x-div" equiv-text="<div class=&quot;font-family-plex-blue u-text-small-bold&quot;>"/>
           <x id="INTERPOLATION" equiv-text="{{ compareDate(badge.expiresDate, now) | i18nPlural : tense['expires'] }}"/>
           <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/>
@@ -6412,7 +6414,7 @@
         <target>المحاذاة</target>
       </trans-unit>
       <trans-unit id="62f1a13e741effbf8b5275b88ed11ada781552b9" datatype="html">
-        <source>View alignment URL 
+        <source>View alignment URL
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </source>
@@ -6442,7 +6444,7 @@
         <target>الدليل</target>
       </trans-unit>
       <trans-unit id="5c3cdebb0af80dc33d0c4d2ad2eb506ba519f48d" datatype="html">
-        <source>View Evidence URL 
+        <source>View Evidence URL
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </source>
@@ -6472,7 +6474,7 @@
         <target>إزالة</target>
       </trans-unit>
       <trans-unit id="22631a7e4643d83e91966934a41665ad17c41b37" datatype="html">
-        <source> Backpack 
+        <source> Backpack
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span class=&quot;badgeSubTitle&quot; *ngIf=&quot;!!allBadges&quot;
 					>"/>
           <x id="INTERPOLATION" equiv-text="{{ allBadges.length  | i18nPlural : plural['badges'] }}"/>
@@ -6500,7 +6502,7 @@
         <target>هل هي مقدمة من موزيلا؟</target>
       </trans-unit>
       <trans-unit id="c27da5ff1b5138a63ee1b06bf673e1af3315e2e3" datatype="html">
-        <source> Let's finish adding your badges. 
+        <source> Let's finish adding your badges.
           <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="<button (click)=&quot;launchImport($event)&quot; class=&quot;u-display-inline u-text-link&quot;>"/>
           <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="</button>"/>
         </source>
@@ -6566,7 +6568,7 @@
         </target>
       </trans-unit>
       <trans-unit id="16f4a0ed1b1037ebbfc256eb1d1d71cfcedd00c1" datatype="html">
-        <source>We have sent you a verification email  sent. 
+        <source>We have sent you a verification email  sent.
           <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="<strong class=&quot;u-text-bold&quot;>"/>
           <x id="INTERPOLATION" equiv-text="{{ email }}"/>
           <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="</strong>"/>
@@ -6596,7 +6598,7 @@
         </target>
       </trans-unit>
       <trans-unit id="791a905016191ec67a18e5a7f35a12f570da7bf4" datatype="html">
-        <source> Create a  Account 
+        <source> Create a  Account
           <x id="INTERPOLATION" equiv-text="{{ theme.serviceName || 'Badgr' }}"/>
         </source>
         <context-group purpose="location">
@@ -6608,7 +6610,7 @@
         </target>
       </trans-unit>
       <trans-unit id="08d7838e6e31c4c788736b0726f7e7b0601fc742" datatype="html">
-        <source> Do you already have an account? Sign in. 
+        <source> Do you already have an account? Sign in.
           <x id="START_LINK" ctype="x-a" equiv-text="<a [routerLink]=&quot;['/auth/login']&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </source>
@@ -6616,13 +6618,13 @@
           <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
           <context context-type="linenumber">16,19</context>
         </context-group>
-        <target>هل لديك حساب بالفعل؟تسجيل الدخول. 
+        <target>هل لديك حساب بالفعل؟تسجيل الدخول.
           <x id="START_LINK" ctype="x-a" equiv-text="<a [routerLink]=&quot;['/auth/login']&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </target>
       </trans-unit>
       <trans-unit id="159ce4c17e2933cdd71685bbf04fb9b7f67e791b" datatype="html">
-        <source> The application  would like you log in with . You already have an account? Sign in! 
+        <source> The application  would like you log in with . You already have an account? Sign in!
           <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="<strong>"/>
           <x id="INTERPOLATION" equiv-text="{{ oAuthManager.currentAuthorization.application.name }}"/>
           <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="</strong>"/>
@@ -6652,14 +6654,14 @@
         <target>تسجيل الدخول باستخدام</target>
       </trans-unit>
       <trans-unit id="50c51558b63360a06f5f0c5de5a6b5551ba9217a" datatype="html">
-        <source> Register with us , by providing the following information 
+        <source> Register with us , by providing the following information
           <x id="INTERPOLATION" equiv-text="{{ theme.serviceName || 'MINT-O-Badges' }}"/>
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
           <context context-type="linenumber">58,60</context>
         </context-group>
-        <target>سجل معنا, عن طريق تقديم المعلومات التالية 
+        <target>سجل معنا, عن طريق تقديم المعلومات التالية
           <x id="INTERPOLATION" equiv-text="{{ theme.serviceName || 'MINT-O-Badges' }}"/>
         </target>
       </trans-unit>

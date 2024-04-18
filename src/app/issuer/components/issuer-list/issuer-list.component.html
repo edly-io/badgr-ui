@@ -59,7 +59,7 @@
 					<div class="issuercard-body">
 						<div class="issuercard-x-title">
 							<a [routerLink]="['/issuer/issuers/', issuer.slug]">{{ issuer.name }}</a>
-							<p class="mt-2 font-family-plex-gray">
+							<p class="mt-2 font-family-plex-gray d-flex align-items-center gap-2">
 								<b i18n>Your role: </b>{{ issuer.currentUserStaffMember?.roleInfo.label }}
 							</p>
 						</div>

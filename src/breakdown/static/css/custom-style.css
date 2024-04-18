@@ -393,11 +393,15 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	border-radius: 12px;
 	border: 1px solid var(--primary-color);
 	margin-top: 25px;
+	align-items: center;
+	gap: 10px;
+	display: flex;
 	width: max-content;
 }
 .newBadgeDetail-link {
 	font-size: 18px;
 	font-weight: 500;
+	align-items: center;
 	display: flex;
 	gap: 10px;
 }
