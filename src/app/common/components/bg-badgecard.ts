@@ -42,12 +42,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 		</div>
 		<div class="badgeNewCard-footer">
 			<div class="badgeNewCard-date">
-				<span *ngIf="badgeClass" i18n>
-					<!--	متاح منذ: -->
+				<span *ngIf="badgeClass" i18n>					
 					Available since:
 				</span>
 				<time [date]="badgeIssueDate" format="mediumDate"></time>
-				<!-- 12 يناير 2024 -->
 			</div>
 			<!-- Show Verify or Share Button unless public -->
 			<button
