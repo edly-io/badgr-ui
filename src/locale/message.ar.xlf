@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="ar">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="cac206f6be7789d842c7e888634035cf9da22185" datatype="html">
         <source> Badges </source>
@@ -76,7 +76,7 @@
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">227</context>
         </context-group>
-        <target>حقيبة الظهر</target>
+        <target>الحقيبة</target>
       </trans-unit>
       <trans-unit id="d14d93e7ed17daa7a6b4238a3413056df11e1acb" datatype="html">
         <source>Collections</source>
@@ -182,7 +182,7 @@
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">225</context>
         </context-group>
-        <target>شارات</target>
+        <target>الأوسمة</target>
       </trans-unit>
       <trans-unit id="be541ddfd65eae6004d425c9e84d2bc2709ebe8c" datatype="html">
         <source>My institutions</source>
@@ -206,7 +206,7 @@
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">265,267</context>
         </context-group>
-        <target>عذرًا! الخادم لا يستجيب.</target>
+        <target>عذرًا! الخادم لا يستجيب. </target>
       </trans-unit>
       <trans-unit id="35393266d2a58b8c323a02fb31926f5e674eac19" datatype="html">
         <source>Please reload the page.</source>
@@ -240,7 +240,7 @@
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">301,303</context>
         </context-group>
-        <target>كل الحقوق محفوظة. SDAIA © 2023</target>
+        <target>جميع الحقوق محفوظة. سدايا © 2023</target>
       </trans-unit>
       <trans-unit id="fc5bbcadeb757865ab2a5b71be107a0d7f491605" datatype="html">
         <source>Access with 
@@ -254,7 +254,7 @@
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
           <context context-type="linenumber">190,191</context>
         </context-group>
-        <target>الوصول باستخدام
+        <target>الوصول إلى
           <x id="INTERPOLATION" equiv-text="{{ provider.label }}"/>
         </target>
       </trans-unit>
@@ -287,7 +287,7 @@
           <context context-type="linenumber">22,24</context>
         </context-group>
         <target>
-          <x id="INTERPOLATION" equiv-text="{{ authorizingApp?.application?.name }}"/>يرغب في
+          <x id="INTERPOLATION" equiv-text="{{ authorizingApp?.application?.name }}"/>أترغب في
         </target>
       </trans-unit>
       <trans-unit id="5e9bb6a4001efb853d19ccd7a0018cfb0a3f1c1d" datatype="html">
@@ -303,7 +303,7 @@
         <target>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_member&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
-          <x id="INTERPOLATION" equiv-text="{{ theme.serviceName || &quot;Badgr&quot; }}"/>معرفة من أنت على
+          <x id="INTERPOLATION" equiv-text="{{ theme.serviceName || &quot;Badgr&quot; }}"/>افهم من تكون على
         </target>
       </trans-unit>
       <trans-unit id="f4f3abf7f5203bbfa775384a91b62a496c407413" datatype="html">
@@ -314,7 +314,7 @@
           <context context-type="sourcefile">src/app/auth/components/oauth2-authorize/oauth2-authorize.component.html</context>
           <context context-type="linenumber">36,42</context>
         </context-group>
-        <target>بالنقر فوق المصادقة، أنت تسمح لهذا التطبيق واستخدام معلوماتك وفقًا لشروط الخدمة وسياسات الخصوصية الخاصة بهم. يمكنك تغيير هذه الأذونات وغيرها في أي وقت من قائمة الملف الشخصي.
+        <target>بالنقر على منح أذن الوصول، فإنك تسمح للتطبيق باستخدام معلوماتك وفقًا للمعلومات الموضحة في شروط الخدمة وسياسات الخصوصية. يمكنك تعديل أو تغيير أذونات الحساب الأخرى في أي وقت من قائمة الملف الشخصي. 
           <x id="INTERPOLATION" equiv-text="{{ theme.serviceName || &quot;Badgr&quot; }}"/>
         </target>
       </trans-unit>
@@ -360,7 +360,7 @@
           <context context-type="sourcefile">src/app/auth/components/request-password-reset/request-password-reset.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
-        <target>أدخل عنوان بريدك الإلكتروني وسنساعدك في إعادة تعيين كلمة المرور الخاصة بك.</target>
+        <target>يرجى إدخال عنوان بريدك الإلكتروني؛ لإعادة ضبط كلمة المرور.</target>
       </trans-unit>
       <trans-unit id="01734e91d32b9ad040c703e5608e8bad5c3f5521" datatype="html">
         <source>password forgotten</source>
@@ -488,7 +488,7 @@
           <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
           <context context-type="linenumber">44</context>
         </context-group>
-        <target>يجب أن تتكون من 8 أحرف على الأقل</target>
+        <target>يجب أن تكون كلمة المرور من ٨ أحرف على الأقل</target>
       </trans-unit>
       <trans-unit id="b81fbd1b5d0723eba41870071d02065674bdd565" datatype="html">
         <source>Confirm New Password</source>
@@ -527,7 +527,7 @@
           <context context-type="sourcefile">src/app/auth/components/welcome/welcome.component.html</context>
           <context context-type="linenumber">1</context>
         </context-group>
-        <target>مرحبًا بك فيشارات SDAIA
+        <target>مرحبا بكم فيأوسمة سدايا
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span class=&quot;u-text-bold u-text-light1&quot;>"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
         </target>
@@ -541,7 +541,7 @@
           <context context-type="sourcefile">src/app/auth/components/welcome/welcome.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
-        <target>شارك قصتكشارات
+        <target>شارك تجربتكالأوسمة
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span>"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
         </target>
@@ -563,7 +563,7 @@
           <context context-type="sourcefile">src/app/auth/components/welcome/welcome.component.html</context>
           <context context-type="linenumber">13</context>
         </context-group>
-        <target>احفظ شاراتك في حقيبتك الشخصيةحقيبة الظهر
+        <target>احفظ أوسمتك فيالحقيبة
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span>"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
         </target>
@@ -585,7 +585,7 @@
           <context context-type="sourcefile">src/app/auth/components/welcome/welcome.component.html</context>
           <context context-type="linenumber">20</context>
         </context-group>
-        <target>رتب شاراتك فيمجموعات
+        <target>فرز أوسمتك إلىمجموعات
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span>"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
         </target>
@@ -607,7 +607,7 @@
           <context context-type="sourcefile">src/app/auth/components/welcome/welcome.component.html</context>
           <context context-type="linenumber">27</context>
         </context-group>
-        <target>المزايدة كـالمُصدرالشارات للمهارات.
+        <target>عرض كـالمصدرأوسمة للمهارات
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span>"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
         </target>
@@ -656,7 +656,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.html</context>
           <context context-type="linenumber">81</context>
         </context-group>
-        <target>تصفح الشارات</target>
+        <target>استعرض الأوسمة</target>
       </trans-unit>
       <trans-unit id="82f343259999ee6e0bea45cee99341d1a6e53c5a" datatype="html">
         <source>Group by </source>
@@ -696,7 +696,7 @@
           <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.html</context>
           <context context-type="linenumber">92,94</context>
         </context-group>
-        <target>العلامات</target>
+        <target>الوسوم</target>
       </trans-unit>
       <trans-unit id="f1e5366b09d8d0582be327e9c590fb404b3e4fc8" datatype="html">
         <source>
@@ -717,7 +717,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-list/recipient-badge-collection-list.component.ts</context>
           <context context-type="linenumber">34</context>
         </context-group>
-        <target>لا توجد مصدرين</target>
+        <target>لا توجد جهة مصدرة</target>
       </trans-unit>
       <trans-unit id="5822469630817021095" datatype="html">
         <source>1 Issuer</source>
@@ -729,7 +729,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-list/recipient-badge-collection-list.component.ts</context>
           <context context-type="linenumber">35</context>
         </context-group>
-        <target>1 مصدر</target>
+        <target>الجهة المصدرة 1</target>
       </trans-unit>
       <trans-unit id="4507613343963879177" datatype="html">
         <source># Issuers</source>
@@ -741,7 +741,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-list/recipient-badge-collection-list.component.ts</context>
           <context context-type="linenumber">36</context>
         </context-group>
-        <target># مصدرين</target>
+        <target># الجهة المصدرة</target>
       </trans-unit>
       <trans-unit id="8524878922992947766" datatype="html">
         <source>No Badges</source>
@@ -765,7 +765,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-list/recipient-badge-collection-list.component.ts</context>
           <context context-type="linenumber">39</context>
         </context-group>
-        <target>لا توجد شارات</target>
+        <target>لا توجد أوسمة</target>
       </trans-unit>
       <trans-unit id="5249284561782887469" datatype="html">
         <source>1 Badge</source>
@@ -797,7 +797,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.ts</context>
           <context context-type="linenumber">43</context>
         </context-group>
-        <target>1 شارة</target>
+        <target>وسام 1</target>
       </trans-unit>
       <trans-unit id="4662039213795182929" datatype="html">
         <source># Badges</source>
@@ -829,7 +829,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.ts</context>
           <context context-type="linenumber">44</context>
         </context-group>
-        <target># شارات</target>
+        <target># الأوسمة</target>
       </trans-unit>
       <trans-unit id="11757095110245921" datatype="html">
         <source>No Recipients</source>
@@ -841,7 +841,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-list/recipient-badge-collection-list.component.ts</context>
           <context context-type="linenumber">44</context>
         </context-group>
-        <target>لا توجد مستلمين</target>
+        <target>لا يوجد مستلمون</target>
       </trans-unit>
       <trans-unit id="4808744658593565923" datatype="html">
         <source>1 Recipient</source>
@@ -865,7 +865,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.ts</context>
           <context context-type="linenumber">48</context>
         </context-group>
-        <target>1 مستلم</target>
+        <target>المستلم 1</target>
       </trans-unit>
       <trans-unit id="6221138437773415020" datatype="html">
         <source># Recipients</source>
@@ -885,7 +885,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.ts</context>
           <context context-type="linenumber">49</context>
         </context-group>
-        <target># مستلمين</target>
+        <target># المستلمون</target>
       </trans-unit>
       <trans-unit id="3737711445155929474" datatype="html">
         <source>Membership</source>
@@ -925,7 +925,7 @@
           <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
           <context context-type="linenumber">67</context>
         </context-group>
-        <target>الميتاكمبيتنس</target>
+        <target>كفاءة ميتا</target>
       </trans-unit>
       <trans-unit id="3110786358479707287" datatype="html">
         <source>Participation/Success</source>
@@ -973,7 +973,7 @@
           <context context-type="sourcefile">src/app/catalog/components/badge-catalog/badge-catalog.component.ts</context>
           <context context-type="linenumber">96</context>
         </context-group>
-        <target>لا تصنيف</target>
+        <target>لا يوجد تصنيف</target>
       </trans-unit>
       <trans-unit id="784e7619e80343fc4c1674e8c9613bc96e00a60e" datatype="html">
         <source>Search institutions</source>
@@ -981,7 +981,7 @@
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.html</context>
           <context context-type="linenumber">21</context>
         </context-group>
-        <target>البحث في المؤسسات</target>
+        <target>المؤسسات البحثية</target>
       </trans-unit>
       <trans-unit id="75db4ef038c6035e0eeeea78a51b339ccb3c25e6" datatype="html">
         <source>Group by categories</source>
@@ -1190,7 +1190,7 @@
           <x id="START_TAG_DIV" ctype="x-div" equiv-text="</div>
 							Cluster
 						</li>"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Clus"/>التجمع
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Clus"/>المجموعة
         </target>
       </trans-unit>
       <trans-unit id="c7f7b55be25868eb79af5e02fe141704031cefb5" datatype="html">
@@ -1210,7 +1210,7 @@
 							School
 						</li>
 						<"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Scho"/>المدرسة
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Scho"/>التعليم
         </target>
       </trans-unit>
       <trans-unit id="3779b8c749a4be47e84f00d81e34dcb80b01bcbd" datatype="html">
@@ -1228,7 +1228,7 @@
           <x id="START_TAG_DIV" ctype="x-div" equiv-text="</div>
 							University
 						</li"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Univ"/>الجامعة
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="Univ"/>جامعي
         </target>
       </trans-unit>
       <trans-unit id="723181c0ba140a689c8838bfcb3fbfcc1c2c3ec0" datatype="html">
@@ -1281,7 +1281,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.ts</context>
           <context context-type="linenumber">38</context>
         </context-group>
-        <target>1 مؤسسة</target>
+        <target>المؤسسة 1</target>
       </trans-unit>
       <trans-unit id="944883757248663420" datatype="html">
         <source># Institutions</source>
@@ -1297,7 +1297,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.ts</context>
           <context context-type="linenumber">39</context>
         </context-group>
-        <target># مؤسسات</target>
+        <target>#المؤسسات</target>
       </trans-unit>
       <trans-unit id="6140413148585860213" datatype="html">
         <source>No recipient</source>
@@ -1313,7 +1313,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.ts</context>
           <context context-type="linenumber">47</context>
         </context-group>
-        <target>لا مستلم</target>
+        <target>لا يوجد مستلمون</target>
       </trans-unit>
       <trans-unit id="5601336269855350070" datatype="html">
         <source># Recipient</source>
@@ -1321,7 +1321,7 @@
           <context context-type="sourcefile">src/app/catalog/components/issuer-catalog/issuer-catalog.component.ts</context>
           <context context-type="linenumber">92</context>
         </context-group>
-        <target># مستلم</target>
+        <target># المستلم</target>
       </trans-unit>
       <trans-unit id="f4e529ae5ffd73001d1ff4bbdeeb0a72e342e5c8" datatype="html">
         <source>Close</source>
@@ -1577,7 +1577,7 @@
           <context context-type="sourcefile">src/app/common/components/formfield-image.ts</context>
           <context context-type="linenumber">65</context>
         </context-group>
-        <target>اسحب وأسقط</target>
+        <target>السحب والإفلات</target>
       </trans-unit>
       <trans-unit id="460df001ab1f0af3ec068f6a140a04c23320eb0e" datatype="html">
         <source>or Select from files
@@ -1588,7 +1588,7 @@
           <context context-type="sourcefile">src/app/common/components/formfield-image.ts</context>
           <context context-type="linenumber">66</context>
         </context-group>
-        <target> أواختر من الملفات
+        <target>أواختر من الملفات
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span class=&quot;u-text-link&quot;>"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
         </target>
@@ -1646,7 +1646,7 @@
           <context context-type="sourcefile">src/app/common/dialogs/copy-badge-dialog/copy-badge-dialog.component.html</context>
           <context context-type="linenumber">17</context>
         </context-group>
-        <target>سيتم الكتابة فوق التغييرات السابقة عند النسخ!</target>
+        <target>ستفقد كافة التغييرات عند النسخ!</target>
       </trans-unit>
       <trans-unit id="06dc7d3cb171a4604d0e08c103bacc5f8cb7d0e3" datatype="html">
         <source>Group by institution</source>
@@ -1722,7 +1722,7 @@
           <context context-type="sourcefile">src/app/common/dialogs/new-terms-dialog.component.ts</context>
           <context context-type="linenumber">17,19</context>
         </context-group>
-        <target>شروط الخدمة المحدثة</target>
+        <target>تحديث شروط الخدمة</target>
       </trans-unit>
       <trans-unit id="4acb8c2c5066ff815aeb9de48320798ba0d45dd5" datatype="html">
         <source> We’ve updated our Terms of Service. 
@@ -1733,7 +1733,7 @@
           <context context-type="sourcefile">src/app/common/dialogs/new-terms-dialog.component.ts</context>
           <context context-type="linenumber">22,24</context>
         </context-group>
-        <target>لقد قمنا بتحديث شروط الخدمة. 
+        <target>قمنا بتحديثشروط الخدمة. 
           <x id="START_LINK" ctype="x-a" equiv-text="<a target=&quot;_blank&quot; [href]=&quot;termsOfServiceLink&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </target>
@@ -1747,7 +1747,7 @@
           <context context-type="sourcefile">src/app/common/dialogs/new-terms-dialog.component.ts</context>
           <context context-type="linenumber">38,41</context>
         </context-group>
-        <target>لقد قرأت ووافقت على شروط الخدمة. 
+        <target>أقر وأوافق علىشروط الخدمة. 
           <x id="START_LINK" ctype="x-a" equiv-text="<a target=&quot;_blank&quot; [href]=&quot;termsOfServiceLink&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </target>
@@ -1758,7 +1758,7 @@
           <context context-type="sourcefile">src/app/common/dialogs/new-terms-dialog.component.ts</context>
           <context context-type="linenumber">42,44</context>
         </context-group>
-        <target>يرجى قراءة والموافقة على شروط الخدمة إذا كنت ترغب في المتابعة.</target>
+        <target>يرجى قراءة شروط الخدمة والموافقة عليها إذا كنت ترغب في المتابعة. </target>
       </trans-unit>
       <trans-unit id="ac10a3d9b59575640797c1a8e6aea642cf5d5e77" datatype="html">
         <source>Continue</source>
@@ -1766,7 +1766,7 @@
           <context context-type="sourcefile">src/app/common/dialogs/new-terms-dialog.component.ts</context>
           <context context-type="linenumber">49</context>
         </context-group>
-        <target>متابعة</target>
+        <target>المتابعة</target>
       </trans-unit>
       <trans-unit id="e888b50bfba7f71156a880df9843d36f52bd2c50" datatype="html">
         <source> Need Help? </source>
@@ -1774,7 +1774,7 @@
           <context context-type="sourcefile">src/app/common/dialogs/new-terms-dialog.component.ts</context>
           <context context-type="linenumber">50,52</context>
         </context-group>
-        <target>تحتاج مساعدة؟</target>
+        <target>هل تحتاج مساعدة؟ </target>
       </trans-unit>
       <trans-unit id="cccbf3dc001211db0230f7fccf2dace7e9c6946e" datatype="html">
         <source>Search icon</source>
@@ -1848,7 +1848,7 @@
           <context context-type="sourcefile">src/app/common/dialogs/nounproject-dialog/nounproject-dialog.component.html</context>
           <context context-type="linenumber">90,92</context>
         </context-group>
-        <target>لم يتم العثور على أيقونة لـ""
+        <target>لم يتم العثور على رمز لـ\ 
           <x id="INTERPOLATION" equiv-text="{{ searchTerm }}"/>
         </target>
       </trans-unit>
@@ -2030,7 +2030,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badge-selection-dialog/badge-selection-dialog.component.ts</context>
           <context context-type="linenumber">40</context>
         </context-group>
-        <target>تصفية الشارات الخاصة بك</target>
+        <target>تصفية الأوسمة</target>
       </trans-unit>
       <trans-unit id="2fac1c5c5881b80d8f0f21b1556b5e57bc3e6070" datatype="html">
         <source>Group by Issuer</source>
@@ -2038,7 +2038,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badge-selection-dialog/badge-selection-dialog.component.ts</context>
           <context context-type="linenumber">43</context>
         </context-group>
-        <target>تجميع حسب المصدر</target>
+        <target>المجموعة حسب الجهة المصدرة</target>
       </trans-unit>
       <trans-unit id="16625a4192326848c5917bf2f6d5b28dec4495f4" datatype="html">
         <source> No badges or issuers matching your query </source>
@@ -2054,7 +2054,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-create/badgeclass-create.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
-        <target>إنشاء شارة</target>
+        <target>إنشاء وسام</target>
       </trans-unit>
       <trans-unit id="9ffe2522143c3295c2aa3792be3d45ee31cb5673" datatype="html">
         <source> Once you have created a badge, you can give it to as many recipients as you want. </source>
@@ -2078,7 +2078,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-create/badgeclass-create.component.html</context>
           <context context-type="linenumber">35</context>
         </context-group>
-        <target>إنشاء شارة</target>
+        <target>إنشاء وسام</target>
       </trans-unit>
       <trans-unit id="fc10d81629836f09dff95708d7ce7c74400aefad" datatype="html">
         <source>Creating Badge...</source>
@@ -2086,7 +2086,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-create/badgeclass-create.component.html</context>
           <context context-type="linenumber">36</context>
         </context-group>
-        <target>جارٍ إنشاء الشارة...</target>
+        <target>جاري إنشاء وسام...</target>
       </trans-unit>
       <trans-unit id="5644cab989718ad846159a703682f51ccf781e78" datatype="html">
         <source> Tags </source>
@@ -2098,7 +2098,7 @@
           <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.html</context>
           <context context-type="linenumber">101,103</context>
         </context-group>
-        <target>العلامات</target>
+        <target>الوسوم</target>
       </trans-unit>
       <trans-unit id="f8622a24b433981dd6c7a0998a7ac333f572a230" datatype="html">
         <source>External criteria View URL 
@@ -2109,7 +2109,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.html</context>
           <context context-type="linenumber">48,49</context>
         </context-group>
-        <target>عرض عنوان URL الخاص بالمعايير الخارجية
+        <target>عرض المعايير الخارجية لـ URL
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </target>
@@ -2204,7 +2204,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.html</context>
           <context context-type="linenumber">142,144</context>
         </context-group>
-        <target>بناءً على</target>
+        <target>استنادا إلى</target>
       </trans-unit>
       <trans-unit id="06df0998dd197350aa729806d63aea0117e17aab" datatype="html">
         <source> Expiry Date: </source>
@@ -2232,7 +2232,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.html</context>
           <context context-type="linenumber">174</context>
         </context-group>
-        <target>الفئة:</target>
+        <target>التصنيف</target>
       </trans-unit>
       <trans-unit id="7097a7e261682ecdfdf828f549d2fd084bd6a822" datatype="html">
         <source>Level:</source>
@@ -2263,7 +2263,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-detail/badgeclass-detail.component.html</context>
           <context context-type="linenumber">219,220</context>
         </context-group>
-        <target>زيارة عنوان URL للرابط
+        <target>زيارة الرابط URL
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </target>
@@ -2293,7 +2293,7 @@
           <context context-type="linenumber">250,253</context>
         </context-group>
         <target>
-          <x id="INTERPOLATION" equiv-text="{{ instanceResults.length }}"/>الجوائز السابقة. يمكنك استخدام الأزرار التالية/السابقة أدناه لعرض المزيد من الجوائز، أو البحث عن المهام باستخدام عنوان البريد الإلكتروني/معرف المستلم الدقيق.
+          <x id="INTERPOLATION" equiv-text="{{ instanceResults.length }}"/>المنح السابقة. يمكنك النقر على التالي/السابق أدناه لعرض المزيد من المنح، أو البحث عن المهام باستخدام عنوان البريد الإلكتروني / هوية المستلم. 
         </target>
       </trans-unit>
       <trans-unit id="5c5b1c1f720256ff45bc587e3f6ce5930269e6e7" datatype="html">
@@ -2357,7 +2357,7 @@
         </context-group>
         <target>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_remove&quot;>"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>استرجاع
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>استعادة
         </target>
       </trans-unit>
       <trans-unit id="61bfa880555aa252d681e5b5ab41fa9a42056846" datatype="html">
@@ -2422,7 +2422,7 @@
           <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
           <context context-type="linenumber">74</context>
         </context-group>
-        <target>المبتدئين</target>
+        <target>المبتدئون</target>
       </trans-unit>
       <trans-unit id="1888669209740240036" datatype="html">
         <source>Specialists</source>
@@ -2438,7 +2438,7 @@
           <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
           <context context-type="linenumber">75</context>
         </context-group>
-        <target>المتخصصين</target>
+        <target>المتخصصون</target>
       </trans-unit>
       <trans-unit id="3889195335322693389" datatype="html">
         <source>Experts</source>
@@ -2522,7 +2522,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">64</context>
         </context-group>
-        <target>وصف قصير للخدمة</target>
+        <target>نبذة عن الخدمة</target>
       </trans-unit>
       <trans-unit id="dd3d8bb17ffc0fab55fd50667660d008b16d5dc5" datatype="html">
         <source> Criteria (At least one of the fields is mandatory.)
@@ -2533,7 +2533,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">77,81</context>
         </context-group>
-        <target>المعايير(مطلوب على الأقل واحد من الحقول.)
+        <target>المعايير(يجب ملء حقل واحد على الأقل.)
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span class=&quot;font-family-plex-gray&quot;>"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
         </target>
@@ -2568,7 +2568,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">105</context>
         </context-group>
-        <target>كيف تحصل على هذه الشارة؟</target>
+        <target>كيف يمكنك الحصول على هذا الوسام؟</target>
       </trans-unit>
       <trans-unit id="801b98c6f02fe3b32f6afa3ee854c99ed83474e6" datatype="html">
         <source>URL</source>
@@ -2580,7 +2580,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">272</context>
         </context-group>
-        <target>رابط</target>
+        <target>عنوان URL</target>
       </trans-unit>
       <trans-unit id="f05c441107a6aa7a0ed0e3941642098007ef7c61" datatype="html">
         <source>URL to the badge criteria</source>
@@ -2588,7 +2588,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">120</context>
         </context-group>
-        <target>رابط لمعايير الشارة</target>
+        <target>عنوان URL لمعايير الحصول على الوسام</target>
       </trans-unit>
       <trans-unit id="a02ea1d4e7424ca989929da5e598f379940fdbf2" datatype="html">
         <source>Duration</source>
@@ -2624,7 +2624,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">144</context>
         </context-group>
-        <target>المدة بالساعات</target>
+        <target>المدة الزمنية بالساعات</target>
       </trans-unit>
       <trans-unit id="607de17c2a755f65775881c19e276e7c933bcf94" datatype="html">
         <source>Category</source>
@@ -2688,7 +2688,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">195,198</context>
         </context-group>
-        <target>تتمثل الكفاءات في 5 مستويات: الوعي، المبتدئين، الاختصاصيين، الخبراء والعلماء.</target>
+        <target>تُمثل الكفاءات في 5 مستويات: الواعون، المبتدئون، المتخصصون، والخبراء، والعلماء. </target>
       </trans-unit>
       <trans-unit id="fa00844096fccbb089ec5938ef77f128d30055b3" datatype="html">
         <source> Shortcut (Optional)
@@ -2699,7 +2699,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">226,230</context>
         </context-group>
-        <target>الاختصار(اختياري)
+        <target>الاختصارات(الخيارات)
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span>"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
         </target>
@@ -2734,7 +2734,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">281</context>
         </context-group>
-        <target>وصف قصير</target>
+        <target>نبذة مختصرة</target>
       </trans-unit>
       <trans-unit id="f8e4d85d2d5f9e7906361c215c0c38b28e4adee0" datatype="html">
         <source> Show advanced options </source>
@@ -2785,7 +2785,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">328,332</context>
         </context-group>
-        <target>العلامات(اختياري)
+        <target>الوسوم(الخيارات)
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span>"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
         </target>
@@ -2828,7 +2828,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">365</context>
         </context-group>
-        <target>وسم جديد...</target>
+        <target>أحدث وسام...</target>
       </trans-unit>
       <trans-unit id="177e74eeb153142890f91c5a46fa4344d5e5ab75" datatype="html">
         <source> Add </source>
@@ -2847,7 +2847,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">386,390</context>
         </context-group>
-        <target>الصلاحية(اختياري)
+        <target>الصلاحية(الخيارات)
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span>"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
         </target>
@@ -2866,7 +2866,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">398,401</context>
         </context-group>
-        <target>صف المدة التي تكون فيها هذه الشارة عمومًا صالحة. يمكن العثور على هذه المعلومات أيضًا في الجائزة ويمكن تغييرها. تُعتبر الشارات منتهية الصلاحية بمجرد انتهاء صلاحيتها.</target>
+        <target>وصف مدة صلاحية الأوسمة بشكل عام. يمكن العثور على هذه المعلومات في خانة المنح ويمكن تعديلها، توجد علامة على الأوسمة؛ تشير إلى انتهاء مدة صلاحيتها.</target>
       </trans-unit>
       <trans-unit id="fbcb0d75afbe6aec04269381598a737f4bd19db7" datatype="html">
         <source>Number</source>
@@ -2926,7 +2926,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">458</context>
         </context-group>
-        <target>تمت الإضافة</target>
+        <target>مضاف</target>
       </trans-unit>
       <trans-unit id="54055286094d0db91b0908fbf202b0f0724d1039" datatype="html">
         <source>validity</source>
@@ -2946,7 +2946,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.html</context>
           <context context-type="linenumber">486,491</context>
         </context-group>
-        <target>اعرف المزيد عن الشارات المفتوحة
+        <target>معرفة المزيد عن الأوسمة المتاحة
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</a>
 		</div>"/>
@@ -2966,7 +2966,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
           <context context-type="linenumber">134</context>
         </context-group>
-        <target>أيام</target>
+        <target>الأيام</target>
       </trans-unit>
       <trans-unit id="8365450656480095075" datatype="html">
         <source>Weeks</source>
@@ -2974,7 +2974,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
           <context context-type="linenumber">135</context>
         </context-group>
-        <target>أسابيع</target>
+        <target>الأسابيع</target>
       </trans-unit>
       <trans-unit id="4845030128243887325" datatype="html">
         <source>Months</source>
@@ -2982,7 +2982,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
           <context context-type="linenumber">136</context>
         </context-group>
-        <target>أشهر</target>
+        <target>الشهور</target>
       </trans-unit>
       <trans-unit id="953022389548488004" datatype="html">
         <source>Years</source>
@@ -2990,7 +2990,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
           <context context-type="linenumber">137</context>
         </context-group>
-        <target>سنوات</target>
+        <target>السنوات</target>
       </trans-unit>
       <trans-unit id="6566493108624858656" datatype="html">
         <source>Remove Alignment?</source>
@@ -2998,7 +2998,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
           <context context-type="linenumber">308</context>
         </context-group>
-        <target>هل أنت متأكد أنك تريد إزالة التوافق؟</target>
+        <target>إزالة المحاذاة؟</target>
       </trans-unit>
       <trans-unit id="674512163123441688" datatype="html">
         <source>Remove Alignments?</source>
@@ -3006,7 +3006,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
           <context context-type="linenumber">308</context>
         </context-group>
-        <target>هل أنت متأكد أنك تريد إزالة التوافقات؟</target>
+        <target>إزالة المحاذاة؟</target>
       </trans-unit>
       <trans-unit id="4708097251002751180" datatype="html">
         <source>Are you sure you want to remove these alignments? This action cannot be undone.</source>
@@ -3014,7 +3014,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
           <context context-type="linenumber">309</context>
         </context-group>
-        <target>هل أنت متأكد أنك تريد إزالة هذه التوافقات؟ لا يمكن التراجع عن هذا الإجراء.</target>
+        <target>هل أنت متأكد من حذف هذه المحاذاة؟ لا يمكن التراجع عن هذا الإجراء.</target>
       </trans-unit>
       <trans-unit id="8616045486585212528" datatype="html">
         <source>Are you sure you want to remove this alignments? This action cannot be undone.</source>
@@ -3022,7 +3022,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-edit-form/badgeclass-edit-form.component.ts</context>
           <context context-type="linenumber">310</context>
         </context-group>
-        <target>هل أنت متأكد أنك تريد إزالة هذا التوافق؟ لا يمكن التراجع عن هذا الإجراء.</target>
+        <target>هل أنت متأكد من حذف هذه المحاذاة؟ لا يمكن التراجع عن هذا الإجراء.</target>
       </trans-unit>
       <trans-unit id="4814285799071780083" datatype="html">
         <source>Remove</source>
@@ -3075,7 +3075,7 @@
         </context-group>
         <target>
           <x id="INTERPOLATION" equiv-text="{{ transformedImportData.validRowsTransformed.size }}"/>
-          <x id="INTERPOLATION_1" equiv-text="{{ transformedImportData.duplicateRecords.length }}"/>يمكن استيراد الصفوف.الصفوف مكررة وسيتم تجاهلها. انقر فوق 'إعطاء شارة' لتكريم الشارة.
+          <x id="INTERPOLATION_1" equiv-text="{{ transformedImportData.duplicateRecords.length }}"/>يمكن استيراد الصفوف.توجد صفوف مكرّرة سيتم تجاهلها. انقر على 'منح الأوسمة' لمنح وسام.
         </target>
       </trans-unit>
       <trans-unit id="57dc472f56433ab0543f7717c5185a02ae69cc48" datatype="html">
@@ -3137,7 +3137,7 @@
         </context-group>
         <target>
           <x id="INTERPOLATION" equiv-text="{{ transformedImportData.validRowsTransformed.size }}"/>
-          <x id="INTERPOLATION_1" equiv-text="{{ transformedImportData.invalidRowsTransformed.length }}"/>الصفوف تم استيرادها. الآتي تحتوي على أخطاء. يرجى إصلاح الأخطاء أو تحديد إزالة.
+          <x id="INTERPOLATION_1" equiv-text="{{ transformedImportData.invalidRowsTransformed.length }}"/>تم استيراد الصفوف.تحتوي الصفوف التالية على أخطاء. رجى إصلاح الأخطاء أو اختيار إزالة. 
         </target>
       </trans-unit>
       <trans-unit id="4b1e106c4c5d0c344bf8ae1d6a1f760126661cf0" datatype="html">
@@ -3203,7 +3203,7 @@
           <x id="START_LIST_ITEM" ctype="x-li" equiv-text="<li>"/>
           <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="</li>"/>
           <x id="START_LIST_ITEM" ctype="x-li" equiv-text="<li>"/>
-          <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="</li>"/>تضمين عنوان البريد الإلكتروني وعنوان URL الدليلتنسيق CSV أو TXT.
+          <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="</li>"/>يتضمن عنوان البريد الإلكتروني ودليل URLيجب أن يكون بتنسيق نصي txt أو csv
         </target>
       </trans-unit>
       <trans-unit id="ecddc9486029b9cbe9dfdfdb1297e3bca8fe1d60" datatype="html">
@@ -3215,7 +3215,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue-bulk-award-import/badgeclass-issue-bulk-award-import.component.html</context>
           <context context-type="linenumber">13,17</context>
         </context-group>
-        <target>استخدم هذه نموذج مثالي لإنشاء ملف CSV أو TXT 
+        <target>استخدم هذهكنماذجلإنشاء ملف بتنسيق CSV أو TXT.
           <x id="START_LINK" ctype="x-a" equiv-text="<a [href]=&quot;badgrBulkIssueTemplateUrl&quot; download=&quot;badgr-bulk-issue-template.csv&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </target>
@@ -3249,7 +3249,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue-bulk-award-preview/badgeclass-issue-bulk-award-preview.component.html</context>
           <context context-type="linenumber">5,14</context>
         </context-group>
-        <target>إليك معاينة للأولىمنأسطر من ملفك. اختر العنوان المناسب الذي يتطابق مع العمود المقابل في ملف CSV الخاص بك.
+        <target>إليك المعاينة الأولىمن إجماليخطوط في ملفك. اختر العنوان المناسب الذي يتطابق مع العمود المقابل في ملف CSV
           <x id="INTERPOLATION" equiv-text="{{
 					importPreviewData.rows.length < MAX_ROWS_TO_DISPLAY
 						? importPreviewData.rows.length
@@ -3311,7 +3311,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
           <context context-type="linenumber">10,18</context>
         </context-group>
-        <target>منح الشارة لمستخدم أو انقر هنا لإرسال الشارة إلى عدة مستخدمين في نفس الوقت لمنحها.
+        <target>منح الوسام لمستخدم معين أوانقر هنا لإرسال الوسام إلى عدة مستخدمين في نفس الوقتمنح وسام.
           <x id="START_LINK" ctype="x-a" equiv-text="<a
 					class=&quot;u-text font-family-plex-blue&quot;
 					[routerLink]=&quot;['/issuer/issuers', issuerSlug, 'badges', badgeSlug, 'bulk-import']&quot;
@@ -3371,7 +3371,7 @@
         </context-group>
         <target>
           <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="Note</strong>: The recipient's name is saved as plain text"/>
-          <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="</strong>"/>ملحوظة: اسم المستلم يتم حفظه كنص عادي في الشارة.
+          <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="</strong>"/>ملاحظة: يحفظ اسم المستلم بتنسيق نص عادي في الوسام.
         </target>
       </trans-unit>
       <trans-unit id="4e2591df099ddac796cda401c5f282da779d45f2" datatype="html">
@@ -3388,7 +3388,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
           <context context-type="linenumber">63</context>
         </context-group>
-        <target>معرف المستلم</target>
+        <target>هوية المستلم</target>
       </trans-unit>
       <trans-unit id="7b65137ac3a9e0ea08e7a90892c2922d10ded6bc" datatype="html">
         <source> Please enter a valid email address. </source>
@@ -3431,7 +3431,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
           <context context-type="linenumber">103,107</context>
         </context-group>
-        <target>السرد(اختياري)
+        <target>السرد(الخيارات)
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span>"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
         </target>
@@ -3458,7 +3458,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
           <context context-type="linenumber">118,120</context>
         </context-group>
-        <target>مزيد من المعلومات</target>
+        <target>المزيد من المعلومات</target>
       </trans-unit>
       <trans-unit id="021c1f18da63d1da616ef3bd7cafa126c2a754f7" datatype="html">
         <source> Proof (Optional)
@@ -3469,7 +3469,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
           <context context-type="linenumber">139,143</context>
         </context-group>
-        <target>دليل(اختياري)
+        <target>الدليل(الخيارات)
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span>"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
         </target>
@@ -3498,7 +3498,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
           <context context-type="linenumber">161,162</context>
         </context-group>
-        <target>دليل
+        <target>الدليل
           <x id="INTERPOLATION" equiv-text="{{ i + 1 }}"/>
         </target>
       </trans-unit>
@@ -3508,7 +3508,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
           <context context-type="linenumber">180</context>
         </context-group>
-        <target>رابط للدليل</target>
+        <target>عنوان URL للدليل</target>
       </trans-unit>
       <trans-unit id="ea5a08d585cf8b15ecb5d1f26763d3028a488089" datatype="html">
         <source>Please provide a valid URL</source>
@@ -3516,7 +3516,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
           <context context-type="linenumber">183</context>
         </context-group>
-        <target>يرجى تقديم عنوان URL صالح</target>
+        <target>يرجى إدخال عنوان URL صحيح</target>
       </trans-unit>
       <trans-unit id="de2e9c2584e66aa4da74bb8968bbcc1be6db6fd1" datatype="html">
         <source> Add further evidence </source>
@@ -3535,7 +3535,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
           <context context-type="linenumber">205,209</context>
         </context-group>
-        <target>تاريخ الانتهاء(اختياري)
+        <target>تاريخ انتهاء الصلاحية(الخيارات)
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span>"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
         </target>
@@ -3562,7 +3562,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
           <context context-type="linenumber">221,223</context>
         </context-group>
-        <target>مزيد من المعلومات</target>
+        <target>المزيد من المعلومات</target>
       </trans-unit>
       <trans-unit id="195153c5164e21b71a3a232b4cfb49044ff892a4" datatype="html">
         <source>Expiry Date</source>
@@ -3574,7 +3574,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
           <context context-type="linenumber">233</context>
         </context-group>
-        <target>تاريخ الانتهاء</target>
+        <target>تاريخ انتهاء الصلاحية</target>
       </trans-unit>
       <trans-unit id="cb8612491125370f18e555c01ad1a65d20fabceb" datatype="html">
         <source> Please enter a date in the form YYYY-mm-dd. </source>
@@ -3590,7 +3590,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
           <context context-type="linenumber">243</context>
         </context-group>
-        <target>تاريخ الانتهاء</target>
+        <target>تاريخ انتهاء الصلاحية</target>
       </trans-unit>
       <trans-unit id="63964ec4a6cfb4bdd2612ae0d39387a034c91416" datatype="html">
         <source> Edit </source>
@@ -3631,7 +3631,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
           <context context-type="linenumber">306,308</context>
         </context-group>
-        <target>دليل</target>
+        <target>الدليل</target>
       </trans-unit>
       <trans-unit id="231dd9627ee9edb2c955686fa564dff16cb5605c" datatype="html">
         <source>
@@ -3648,7 +3648,7 @@
           <context context-type="sourcefile">src/app/issuer/components/badgeclass-issue/badgeclass-issue.component.html</context>
           <context context-type="linenumber">334,336</context>
         </context-group>
-        <target>تاريخ الانتهاء</target>
+        <target>تاريخ انتهاء الصلاحية</target>
       </trans-unit>
       <trans-unit id="393a7f63cc2a5916a6d6b538d8995e029ee16718" datatype="html">
         <source>
@@ -3705,7 +3705,7 @@
           <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
           <context context-type="linenumber">40</context>
         </context-group>
-        <target>عنوان موقع الويب</target>
+        <target>عنوان URL الموقع الإلكتروني</target>
       </trans-unit>
       <trans-unit id="799fb056af5c32e8e40170f0affa496f701e34fd" datatype="html">
         <source>Contact email</source>
@@ -3717,7 +3717,7 @@
           <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
           <context context-type="linenumber">49</context>
         </context-group>
-        <target>البريد الإلكتروني للاتصال</target>
+        <target>بريد إلكتروني خاص لجهة الاتصال</target>
       </trans-unit>
       <trans-unit id="d4e107f628f98b5a6d5fb8d0577ccfde0c11241c" datatype="html">
         <source>Please provide a valid email address</source>
@@ -3725,7 +3725,7 @@
           <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
           <context context-type="linenumber">44</context>
         </context-group>
-        <target>يرجى تقديم عنوان بريد إلكتروني صالح</target>
+        <target>يرجى إدخال عنوان بريد إلكتروني صحيح</target>
       </trans-unit>
       <trans-unit id="eec715de352a6b114713b30b640d319fa78207a0" datatype="html">
         <source>Description</source>
@@ -3753,7 +3753,7 @@
           <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
           <context context-type="linenumber">64</context>
         </context-group>
-        <target>يرجى إدخال فئة</target>
+        <target>يرجى إدخال التصنيف</target>
       </trans-unit>
       <trans-unit id="729754dd19eb9ce0670b0aeb5a6ae60574c2c563" datatype="html">
         <source>Address</source>
@@ -3825,7 +3825,7 @@
           <context context-type="sourcefile">src/app/issuer/components/issuer-create/issuer-create.component.html</context>
           <context context-type="linenumber">129,136</context>
         </context-group>
-        <target>لقد قرأت وأوافق على سياسة الخصوصيةلهم.يرجى قراءة سياسة الخصوصية والموافقة عليها إذا كنت ترغب في المتابعة.
+        <target>أقر وأوافق علىسياسة الخصوصيةالخاصة بهم.يرجى قراءة سياسة الخصوصية والموافقة عليها، في حال رغبتك بالمتابعة.
           <x id="START_LINK" ctype="x-a" equiv-text="<a target=&quot;_blank&quot; [href]=&quot;dataProcessorUrl&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
           <x id="START_TAG_DIV" ctype="x-div" equiv-text="<div
@@ -3874,7 +3874,7 @@
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
           <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="<span class=&quot;d-flex align-items-center gap-2&quot;>"/>
           <x id="INTERPOLATION" equiv-text="{{ issuer?.currentUserStaffMember?.roleInfo?.label }}"/>
-          <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/> -  دورك: 
+          <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/> —  دورك: 
         </target>
       </trans-unit>
       <trans-unit id="2f80d073d1b473be1a96f1dbd8d280153b7d3428" datatype="html">
@@ -4019,7 +4019,7 @@
           <context context-type="sourcefile">src/app/issuer/components/issuer-edit/issuer-edit.component.html</context>
           <context context-type="linenumber">21</context>
         </context-group>
-        <target>المُصدر</target>
+        <target>الجهة المصدرة</target>
       </trans-unit>
       <trans-unit id="d07a282afc7fbdb39cea6e1c9b544882a7260a86" datatype="html">
         <source>Adding</source>
@@ -4051,7 +4051,7 @@
           <context context-type="sourcefile">src/app/issuer/components/issuer-list/issuer-list.component.html</context>
           <context context-type="linenumber">33</context>
         </context-group>
-        <target>مع المؤسسات يمكنك إنشاء شارات ومنحها للمستخدمين.</target>
+        <target>يمكنك إنشاء الأوسمة من خلال المؤسسات ومنحها للمستخدمين.</target>
       </trans-unit>
       <trans-unit id="eb19ecd31ef71541171bfb00da03c6b98572d62f" datatype="html">
         <source> Create institution </source>
@@ -4075,7 +4075,7 @@
           <context context-type="sourcefile">src/app/issuer/components/issuer-list/issuer-list.component.html</context>
           <context context-type="linenumber">70,72</context>
         </context-group>
-        <target>أفضل الشارات:</target>
+        <target>أفضل الأوسمة</target>
       </trans-unit>
       <trans-unit id="773cda45f9097354be19ba30024d8e47485c4815" datatype="html">
         <source>
@@ -4096,7 +4096,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.ts</context>
           <context context-type="linenumber">42</context>
         </context-group>
-        <target>لا توجد شارات</target>
+        <target>لا توجد أوسمة</target>
       </trans-unit>
       <trans-unit id="9d53d8e1956abdb1196991271f1b8cb1649da84f" datatype="html">
         <source>Add Member</source>
@@ -4116,7 +4116,7 @@
           <context context-type="sourcefile">src/app/issuer/components/issuer-staff-create-dialog/issuer-staff-create-dialog.component.html</context>
           <context context-type="linenumber">13,15</context>
         </context-group>
-        <target>يجب على الأعضاء الجدد إنشاء حساب Badgr والتحقق منه قبل إضافتهم إلى المُصدر.</target>
+        <target>يجب على أعضاء الفريق الجدد إنشاء حساب Badgr وتأكيده قبل إضافتهم إلى الجهة المصدرة.</target>
       </trans-unit>
       <trans-unit id="b8e13ce7990192aa67f393487cba079fc990f1e6" datatype="html">
         <source>Choose Role</source>
@@ -4132,7 +4132,7 @@
           <context context-type="sourcefile">src/app/issuer/components/issuer-staff-create-dialog/issuer-staff-create-dialog.component.html</context>
           <context context-type="linenumber">33</context>
         </context-group>
-        <target>بريد إلكتروني جديد للعضو</target>
+        <target>البريد الإلكتروني للأعضاء الجدد</target>
       </trans-unit>
       <trans-unit id="94745fb3af6212fd389b4c1c1bc8f13a49e694e5" datatype="html">
         <source>Please enter valid email address</source>
@@ -4140,7 +4140,7 @@
           <context context-type="sourcefile">src/app/issuer/components/issuer-staff-create-dialog/issuer-staff-create-dialog.component.html</context>
           <context context-type="linenumber">34</context>
         </context-group>
-        <target>يرجى إدخال عنوان بريد إلكتروني صالح</target>
+        <target>يرجى إدخال عنوان بريد إلكتروني صحيح</target>
       </trans-unit>
       <trans-unit id="8585db2b3e36ec00202bf21641efc97e3bb6ddf6" datatype="html">
         <source>Staff Email</source>
@@ -4148,7 +4148,7 @@
           <context context-type="sourcefile">src/app/issuer/components/issuer-staff-create-dialog/issuer-staff-create-dialog.component.html</context>
           <context context-type="linenumber">35</context>
         </context-group>
-        <target>بريد الموظفين</target>
+        <target>البريد الإلكتروني للموظفين</target>
       </trans-unit>
       <trans-unit id="da265efac957c7d516a69152c7ecf01a96e68f4b" datatype="html">
         <source>Failed to add member!</source>
@@ -4249,7 +4249,7 @@
           <context context-type="sourcefile">src/app/mozz-transition/components/import-modal/import-modal.component.html</context>
           <context context-type="linenumber">21,23</context>
         </context-group>
-        <target>اكتمال
+        <target>اكتمل
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_complete&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </target>
@@ -4279,7 +4279,7 @@
           <context context-type="sourcefile">src/app/mozz-transition/components/import-modal/import-modal.component.html</context>
           <context context-type="linenumber">33,35</context>
         </context-group>
-        <target>قيد التقدم
+        <target>قيد التنفيذ
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_complete&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </target>
@@ -4312,7 +4312,7 @@
           <context context-type="sourcefile">src/app/mozz-transition/components/import-modal/import-modal.component.html</context>
           <context context-type="linenumber">47,54</context>
         </context-group>
-        <target>لم يبدأ
+        <target> لم يبدأ بعد
           <x id="TAG_IMG" ctype="image" equiv-text="<img
 											class=&quot;forminput-x-icon&quot;
 											src=&quot;../../../../assets/badges/icon-more.svg&quot;
@@ -4347,7 +4347,7 @@
         </context-group>
         <target>
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span class=&quot;u-text-bold&quot;>"/>
-          <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>الخطوة 3:قم بتحميل شاراتك
+          <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>الخطوة 3:تحميل أوسمتك
         </target>
       </trans-unit>
       <trans-unit id="a96203e27ea821ad4dc15f5c6886bb0a6e58b5c6" datatype="html">
@@ -4376,7 +4376,7 @@
           <context context-type="sourcefile">src/app/mozz-transition/components/import-modal/import-modal.component.html</context>
           <context context-type="linenumber">77,79</context>
         </context-group>
-        <target>هذا ليس الملف من موزيلا. يرجى المحاولة مرة أخرى.</target>
+        <target>هذا الملف ليس من مطور البرامج موزيلا. يرجى المحاولة مرة أخرى.</target>
       </trans-unit>
       <trans-unit id="bed577c23e8154a79dbefb4b853c0a74b0c75d1d" datatype="html">
         <source> We’re uploading your badge(s). This might take a minute. 
@@ -4386,7 +4386,7 @@
           <context context-type="sourcefile">src/app/mozz-transition/components/import-modal/import-modal.component.html</context>
           <context context-type="linenumber">112,115</context>
         </context-group>
-        <target>نحن نقوم بتحميل شارتك/شاراتك.قد يستغرق هذا دقيقة.
+        <target>نقوم برفع أوسمتك.قد يستغرق ذلك دقيقة.
           <x id="LINE_BREAK" ctype="lb" equiv-text="<br />"/>
         </target>
       </trans-unit>
@@ -4399,7 +4399,7 @@
           <context context-type="sourcefile">src/app/mozz-transition/components/import-modal/import-modal.component.html</context>
           <context context-type="linenumber">123,126</context>
         </context-group>
-        <target>تهانينا!شارات من سيتم إضافة الشارات المحملة إلى حقيبتك الشخصية
+        <target>مبروك!أوسمة لـسيتم إضافة الأوسمة لحقيبتك ويمكنك تحميلها
           <x id="INTERPOLATION" equiv-text="{{ successes }}"/>
           <x id="INTERPOLATION_1" equiv-text="{{ attempts }}"/>
         </target>
@@ -4418,7 +4418,7 @@
           <context context-type="sourcefile">src/app/mozz-transition/components/import-modal/import-modal.component.html</context>
           <context context-type="linenumber">161,163</context>
         </context-group>
-        <target>إرسال رسائل التحقق</target>
+        <target>إرسال بريد إلكتروني للتحقق</target>
       </trans-unit>
       <trans-unit id="86b1ce06e8dc9edcaae8d073223ca17fd425e6de" datatype="html">
         <source>No Badges will be added.</source>
@@ -4458,7 +4458,7 @@
           <context context-type="sourcefile">src/app/mozz-transition/components/import-modal/import-modal.component.html</context>
           <context context-type="linenumber">191,193</context>
         </context-group>
-        <target>يمكنك كسب شارة في أقل من 5 دقائق. وعد.</target>
+        <target>بإمكانك الحصول على الوسام في أقل من 5 دقائق. نعدك بذلك.</target>
       </trans-unit>
       <trans-unit id="c1cffc5ea5a0f6a212cc78f86cdad69990dd3088" datatype="html">
         <source>Earn a Badge</source>
@@ -4484,7 +4484,7 @@
           <context context-type="sourcefile">src/app/profile/components/app-integrations-list/app-integrations-list.component.html</context>
           <context context-type="linenumber">5,8</context>
         </context-group>
-        <target>التطبيقات والمواقع التالية لديها وصول إلى الحساب
+        <target>لدى التطبيقات والمواقع التالية صلاحية الوصول إلىالحساب
           <x id="INTERPOLATION" equiv-text="{{ configService.theme['serviceName'] || 'Badgr' }}"/>
         </target>
       </trans-unit>
@@ -4514,7 +4514,7 @@
           <context context-type="sourcefile">src/app/profile/components/app-integrations-list/app-integrations-list.component.html</context>
           <context context-type="linenumber">55,57</context>
         </context-group>
-        <target>هذا التطبيق لديه وصول إلى الحساب.
+        <target>لدى هذا التطبيق صلاحية الوصول إلى. حسابك. منح أذن الوصول: 
           <x id="INTERPOLATION" equiv-text="{{ configService.theme['serviceName'] || 'Badgr' }}"/>
         </target>
       </trans-unit>
@@ -4529,7 +4529,7 @@
           <context context-type="sourcefile">src/app/profile/components/app-integrations-list/app-integrations-list.component.html</context>
           <context context-type="linenumber">60,63</context>
         </context-group>
-        <target>تم التفويض:
+        <target>يرجى تأكيد عنوان بريدك الإلكتروني الذي تستخدمه في تسجيل الدخول إلى Canvas في حساب Badgr
           <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="<strong>"/>
           <x id="START_TAG_TIME" ctype="x-time" equiv-text="atedDate&quot; format=&quot;mediumDate&quot;>"/>
           <x id="CLOSE_TAG_TIME" ctype="x-time" equiv-text="</strong>"/>
@@ -4609,7 +4609,7 @@
           <context context-type="sourcefile">src/app/profile/components/badgebook-lti1-integration-detail/badgebook-lti1-integration-detail.component.html</context>
           <context context-type="linenumber">67,71</context>
         </context-group>
-        <target>تأكد من أن حساب Badgr الخاص بك يحتوي على تم تأكيد عنوان البريد الإلكترونيالذي تسجل الدخول به إلى Canvas.
+        <target>يرجى تأكيد عنوان بريدك الإلكتروني الذي تستخدمه في تسجيل الدخول إلى Canvas في حساب Badgrيرجى تأكيد عنوان بريدك الإلكتروني الذي تستخدمه في تسجيل الدخول إلى Canvas في حساب Badgr, قم بتسجيل الدخول إلى Canvas باستخدام بيانات اعتماد المسؤول. انتقل إلى الحساب المطلوب أو الحساب الفرعي في Canvas، واختر الإعدادات من القائمة اليسرى، ثم اختر علامة التبويب التطبيقات
           <x id="START_LINK" ctype="x-a" equiv-text="<a [routerLink]=&quot;['/profile']&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </target>
@@ -4625,7 +4625,7 @@
           <context context-type="sourcefile">src/app/profile/components/badgebook-lti1-integration-detail/badgebook-lti1-integration-detail.component.html</context>
           <context context-type="linenumber">73,79</context>
         </context-group>
-        <target>قم بتسجيل الدخول إلى Canvas باستخدام بيانات اعتماد المسؤول الخاصة بك. انتقل إلى الحساب أو الحساب الفرعي في Canvas الذي تريده، اختر الإعدادات في القائمة اليسرى، وحدد علامة التبويب الت طبيقات
+        <target>اختر Badgr من القائمة (إذا كان متصلاً بـ EduAppCenter) أو إضافة طلب تكامل مخصص جديد
           <x id="START_ORDERED_LIST" ctype="x-ol" equiv-text="<ol>"/>
           <x id="START_LIST_ITEM" ctype="x-li" equiv-text="<li [integration-image]=&quot;externalAppsBadgrImageUrl&quot; caption=&quot;External Apps&quot;>"/>
           <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="</li>"/>
@@ -4653,7 +4653,7 @@
           <context context-type="sourcefile">src/app/profile/components/badgebook-lti1-integration-detail/badgebook-lti1-integration-detail.component.html</context>
           <context context-type="linenumber">81,99</context>
         </context-group>
-        <target>حدد Badgr من القائمة (إذا كان متصلاً بـ EduAppCenter) أو أضف تكامل مخصص جديدانسخ القيم للسر المشترك ومفتاح المستهلك من Badgr إلى الحوارإذا لم تكن تستخدم EduAppCenter، اختر طريقة By URL وانسخ مفتاح المستهلك والسر المشترك إلى الحوار، جنبًا إلى جنب مع عنوان URL للتكوين
+        <target>انسخ القيم الخاصة بكلمة السر المشتركة بـ LTI Shared Secret و Consumer Key من Badgr والصقها في مربع الحوار.إذا كنت لا تستخدم EduAppCenter، اختر طريقة "باستخدام عنوان URL" وانسخ Consumer key و Shared Secret إلى مربع الحوار، مع إعدادات عنوان URLليس لديك كلمة مرور حالية؟
           <x id="START_ORDERED_LIST" ctype="x-ol" equiv-text="<ol>"/>
           <x id="START_LIST_ITEM_1" equiv-text="<li>"/>
           <x id="START_ORDERED_LIST" ctype="x-ol" equiv-text="<ol>"/>
@@ -4738,7 +4738,7 @@
           <context context-type="sourcefile">src/app/profile/components/change-password/change-password.component.html</context>
           <context context-type="linenumber">80,87</context>
         </context-group>
-        <target>ليس لديك كلمة مرورك الحالية؟انقر هنالإعادة تعيينها عبر البريد الإلكتروني.
+        <target>انقر هنالإعادة تعيينها عبر البريد الإلكترونيمنح التطبيق إذن تسجيل الدخول باستخدام حسابك في Badgr.
           <x id="LINE_BREAK" ctype="lb" equiv-text="<br>"/>
           <x id="START_LINK" ctype="x-a" equiv-text="<a (click)=&quot;forgotPassword()&quot;
 				   class=&quot;u-text-link&quot;
@@ -4777,7 +4777,7 @@
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</a>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/>تم التفويض:تم منح هذا التطبيق إذنًا لتسجيل الدخول باستخدام حساب Badgr الخاص بك.زيارة الموقع الإلكتروني
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/>يرجى تأكيد عنوان بريدك الإلكتروني الذي تستخدمه في تسجيل الدخول إلى Canvas في حساب Badgrزيارة الموقع الإلكترونيلديه الإذن لـ:
         </target>
       </trans-unit>
       <trans-unit id="53ea2772322e7d4d21515bb0c6dead283f8e18a5" datatype="html">
@@ -4797,7 +4797,7 @@
           <context context-type="linenumber">30,32</context>
         </context-group>
         <target>
-          <x id="INTERPOLATION" equiv-text="{{ app.name }}"/>لديه الإذن لـ:
+          <x id="INTERPOLATION" equiv-text="{{ app.name }}"/>افهم من تكون على Badgr
         </target>
       </trans-unit>
       <trans-unit id="67dd0bdc634212db0b0613e2ee4791205dee4025" datatype="html">
@@ -4813,7 +4813,7 @@
         <target>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>
 					Know who you are on Badgr"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Know who yo"/>معرفة من أنت على Badgr
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Know who yo"/>تحرير الاسم في الملف الشخصي
         </target>
       </trans-unit>
       <trans-unit id="16d5c6372ac3effd4a80441401dd1420f5c4de4b" datatype="html">
@@ -4822,7 +4822,7 @@
           <context context-type="sourcefile">src/app/profile/components/profile-edit/profile-edit.component.html</context>
           <context context-type="linenumber">11</context>
         </context-group>
-        <target>تحرير اسم الملف الشخصي</target>
+        <target>تحرير</target>
       </trans-unit>
       <trans-unit id="c83b838d845690bcb897f775f53b5316535306dc" datatype="html">
         <source>First Name</source>
@@ -4881,7 +4881,7 @@
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
-        <target>تحرير</target>
+        <target>البريد الإلكتروني</target>
       </trans-unit>
       <trans-unit id="3d89e1cbbea74b1b32e80aad8bfba75c62ba86c5" datatype="html">
         <source>Emails</source>
@@ -4889,7 +4889,7 @@
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
           <context context-type="linenumber">12</context>
         </context-group>
-        <target>البريد الإلكتروني</target>
+        <target>عنوان البريد الإلكتروني</target>
       </trans-unit>
       <trans-unit id="e527ace700a5dfcd97e170b854de7b539afacc0c" datatype="html">
         <source>Please enter a valid email address</source>
@@ -4897,7 +4897,7 @@
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
           <context context-type="linenumber">22</context>
         </context-group>
-        <target>يرجى إدخال عنوان بريد إلكتروني صالح</target>
+        <target>يرجى إدخال عنوان بريد إلكتروني صحيح</target>
       </trans-unit>
       <trans-unit id="ec984ab36f1da5f75ba43f9bd4b866ca9c7e6493" datatype="html">
         <source>Email Address</source>
@@ -4909,7 +4909,7 @@
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
           <context context-type="linenumber">40</context>
         </context-group>
-        <target>عنوان البريد الإلكتروني</target>
+        <target>أساسي</target>
       </trans-unit>
       <trans-unit id="f6755cff4957d5c3c89bafce5651f1b6fa2b1fd9" datatype="html">
         <source>Add</source>
@@ -4937,7 +4937,7 @@
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
           <context context-type="linenumber">56,58</context>
         </context-group>
-        <target>الأساسي</target>
+        <target>التحقق</target>
       </trans-unit>
       <trans-unit id="814efcc244d182cabfdcdf7754097cdd023514d9" datatype="html">
         <source>Verified</source>
@@ -4945,7 +4945,7 @@
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
           <context context-type="linenumber">69</context>
         </context-group>
-        <target>تم التحقق منه</target>
+        <target>معلق</target>
       </trans-unit>
       <trans-unit id="e6a27066251ca1e04c5be86ad758380856df2506" datatype="html">
         <source>Pending</source>
@@ -4953,7 +4953,7 @@
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
           <context context-type="linenumber">73</context>
         </context-group>
-        <target>معلق</target>
+        <target>إعادة إرسال رابط التحقق</target>
       </trans-unit>
       <trans-unit id="9b1f386df6ded1c3cf2396f1d8475d3a24e5c090" datatype="html">
         <source>
@@ -4968,7 +4968,7 @@
         <target>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>
 										Resend Verification"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Resend"/>إعادة إرسال التحقق
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Resend"/>جعله أساسي
         </target>
       </trans-unit>
       <trans-unit id="18a35b9b4dc0a25da06662287a24ca47544c7f64" datatype="html">
@@ -4986,7 +4986,7 @@
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>
 										Make primary
 									</"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Make p"/>جعله أساسياً
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="Make p"/>انقر على أحد أزرار مزود الخدمة أدناه للسماح لك بتسجيل الدخول إلى
         </target>
       </trans-unit>
       <trans-unit id="da2f0572223e7459d647d1c68552384cdd031def" datatype="html">
@@ -5047,7 +5047,7 @@
           <context context-type="sourcefile">src/app/profile/components/profile/profile.component.html</context>
           <context context-type="linenumber">174,178</context>
         </context-group>
-        <target>انقر على أحد الأزرار الموفرة أدناه للسماح لك بتسجيل الدخول إلى في المستقبل باستخدام هذه الخدمة بدلاً من بريدك الإلكتروني وكلمة المرور.
+        <target>في المستقبل باستخدام هذه الخدمة بدلا من البريد الإلكتروني وكلمة المرور الخاصة بك. التواصل: 
           <x id="INTERPOLATION" equiv-text="{{ configService.theme['serviceName'] || 'Badgr' }}"/>
         </target>
       </trans-unit>
@@ -5076,7 +5076,7 @@
           <context context-type="sourcefile">src/app/public/components/about/about.component.html</context>
           <context context-type="linenumber">23</context>
         </context-group>
-        <target>اتصال:info@mybadges.org
+        <target>info@mybadges.orgالساعات
           <x id="START_LINK" ctype="x-a" equiv-text="<a href=&quot;mailto:info@mybadges.org&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </target>
@@ -5159,7 +5159,7 @@
           <context context-type="linenumber">62,64</context>
         </context-group>
         <target>
-          <x id="INTERPOLATION" equiv-text="{{ badgeClass.extension['extensions:StudyLoadExtension'].StudyLoad }}"/>الساعات
+          <x id="INTERPOLATION" equiv-text="{{ badgeClass.extension['extensions:StudyLoadExtension'].StudyLoad }}"/>عرض المعايير الخارجية لعنوان URL:
         </target>
       </trans-unit>
       <trans-unit id="d88e933392db8d6227d2abc01ca867df857cee0e" datatype="html">
@@ -5183,7 +5183,7 @@
           <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.html</context>
           <context context-type="linenumber">129,130</context>
         </context-group>
-        <target>عرض عنوان URL الخاص بالمعايير الخارجية
+        <target>الصادر في:
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </target>
@@ -5226,7 +5226,7 @@
           <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.html</context>
           <context context-type="linenumber">220</context>
         </context-group>
-        <target>صدر في:</target>
+        <target>عرض المحاذاة لعنوان URL</target>
       </trans-unit>
       <trans-unit id="36aed442c9a075eefc964fbd1cda9eeac46779de" datatype="html">
         <source> Awarded to: </source>
@@ -5245,7 +5245,7 @@
           <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.html</context>
           <context context-type="linenumber">265,266</context>
         </context-group>
-        <target>عرض عنوان URL التوافق
+        <target>عرض الدليل لعنوان URL
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </target>
@@ -5275,7 +5275,7 @@
           <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.html</context>
           <context context-type="linenumber">296,297</context>
         </context-group>
-        <target>عرض عنوان URL الدليل
+        <target>الأوسمة المكتسبة بواسطة
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </target>
@@ -5286,7 +5286,7 @@
           <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
           <context context-type="linenumber">60</context>
         </context-group>
-        <target>منتهية الصلاحية</target>
+        <target>انتهت الصلاحية</target>
       </trans-unit>
       <trans-unit id="8037476586059399916" datatype="html">
         <source>Expires</source>
@@ -5294,7 +5294,7 @@
           <context context-type="sourcefile">src/app/public/components/badge-assertion/badge-assertion.component.ts</context>
           <context context-type="linenumber">61</context>
         </context-group>
-        <target>تنتهي الصلاحية</target>
+        <target>انتهاء الصلاحية</target>
       </trans-unit>
       <trans-unit id="59ef7de64ce68119cc75a7003e276c512c930a8b" datatype="html">
         <source> Badges earned by 
@@ -5305,7 +5305,7 @@
           <context context-type="sourcefile">src/app/public/components/badge-collection/badge-collection.component.html</context>
           <context context-type="linenumber">29,31</context>
         </context-group>
-        <target>الشارات التي حصل عليها 
+        <target>1. هل يمكن توزيع الأوسمة واستخدامها في السياق التعليمي فقط؟
           <x id="INTERPOLATION" equiv-text="{{ collection.owner.firstName }}"/>
           <x id="INTERPOLATION_1" equiv-text="{{ collection.owner.lastName }}"/>
         </target>
@@ -5328,7 +5328,7 @@
           <context context-type="sourcefile">src/app/public/components/badgeclass/badgeclass.component.html</context>
           <context context-type="linenumber">79,80</context>
         </context-group>
-        <target>عرض عنوان URL الخاص بالمعايير الخارجية
+        <target>الصادر في:
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </target>
@@ -5339,7 +5339,7 @@
           <context context-type="sourcefile">src/app/public/components/faq/faq.component.html</context>
           <context context-type="linenumber">19,21</context>
         </context-group>
-        <target>1. هل يمكن توزيع الشارات واستخدامها فقط في سياق المدرسة؟</target>
+        <target>2. أي مستوى (من أ-1 إلى ج-2) يصف المستوى الذي يتعلق بالأوسمة؟</target>
       </trans-unit>
       <trans-unit id="48e19132034661be36dc40a010e8b51e975c5f40" datatype="html">
         <source> Badgr can be used across institutions: both in a formal school context also outside. It therefore offers the potential to be a bridge between formal, non-formal, and to build informal educational institutions and to make them more interconnected in the sense of networking connect. This is important because learning in the sense of lifelong and networked learning occurs everywhere takes place. Important skills are also acquired in informal areas, which are needed in the spirit of the future Skills can be of great importance. </source>
@@ -5355,7 +5355,7 @@
           <context context-type="sourcefile">src/app/public/components/faq/faq.component.html</context>
           <context context-type="linenumber">51,53</context>
         </context-group>
-        <target>2. أي مستوى (من A1 إلى C2) من الشارات يصف أي مستوى؟</target>
+        <target>تمنح الأوسمة بناءً على مستوى الاستقلالية ومستوى التعقيد في المهارة. نحن نسترشد بالمستويات الستة للكفاءة في Digcomp Edu. </target>
       </trans-unit>
       <trans-unit id="685c28f23cc4b73abe287e20e0eb67c690e5d442" datatype="html">
         <source>
@@ -5420,7 +5420,7 @@
           <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="<b>"/>
           <x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="</b>"/>
           <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="</li>"/>
-          <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="</ul>"/>تستند منح الشارات إلى مستوى الاستقلالية ومستوى مهارة الصعوبة. نحن موجهون بمستويات الكفاءة الست لـ Digcomp Edu.A1:المبتدئ - تم اكتساب المعرفة الأولية ولكن لا يمكن تطبيقها بعد.A2:المستكشف - المعرفة الأساسية والمهارات متاحة بحيث يمكن اكتساب المعرفة الإضافية بطريقة ذاتية التوجيه. يمكن استخدامه في المواقف القياسية ولكن ليس كافياً لحل المشاكل غير المتوقعة بشكل مستقل.B1:المشاركون - يمكن تطبيق المعرفة والمهارات المكتسبة على الأشخاص الغير معروفين ونقلها إلى مواقف غير معروفة.B2:الخبير - يتم استخدام المعرفة لفهم الاتصالات والبدائل الممكنة. بالإضافة إلى ذلك، هناك الكفاءة لاكتساب المعرفة بشكل مستقل وتطويرها بالإضافة إلى مشاركة المعرفة (رقميًا).C1:القائد - المعرفة والمهارات المطورة تستند إلى التجارب المستخدمة وتطبق بشكل مبتكر.C2:الرائد - من خلال المهارات المكتسبة يمكنك تطوير مهاراتك الخاصة وإجراء تعريفات جديدة وفحص الإجراءات الحالية بشكل نقدي.
+          <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="</ul>"/>المبتدئ - يكتسب المعارف الأولية، ولكن لا يمكنه تطبيقها بعد. A1:المستكشف - تتوفر لديه المعارف والمهارات الأساسية التي تمكنه من اكتساب معارف أخرى ذاتيًا. يستخدم هذا المستوى للحالات القياسية، ولكنه غير كافٍ لحل المشاكل غير المتوقعة بشكل مستقل. A2:المطلع- يمكنه تطبيق ونقل المعارف والمهارات المكتسبة على حالات لأشخاص مجهولين. B1:الخبير - يستخدم المعرفة لفهم الاتصالات واكتشاف البدائل الممكنة. بالإضافة إلى أنه يتمتع بالكفاءة في اكتساب المعارف وتطويرها بشكل مستقل، ومشاركة المعرفة (رقمياً). B2:القائد - يستند في تطوير المعارف والمهارات إلى التجارب المكتسبة ويطبقها بشكل مبتكر. C1:الرائد - من خلال المهارات المكتسبة، يمكن تطوير مهاراتك الخاصة وتنفيذ مفاهيم جديدة وفحص الإجراءات الحالية بشكل نقدي. C2:تعتمد Badgr على النهج الشامل في المفهوم التربوي والتعليمي، مما يجعل توثيق إنجازات المتعلمين أكثر ملائمة. نظام التوثيق الذي يستخدم النهج القائم على إنشاء الحافظات ويتكامل مع مفهوم الأوسمة المتاحة (Open Badges) يمكن أن يكون أداة فعّالة لتوثيق وتقييم مهارات المعلمين والمتعلمين بشكل شامل وموثوق. يمكن لهذا النظام توفير صورة عملية للمهارات التي يكتسبها الفرد، ويعكس تقدمه وتطوره. من جهة أخرى، تتمتع أنظمة التقييم التقليدية المتبعة في السياق المدرسي بتأثير تصنيفي قوي، حيث تعمم في العديد من جوانب إنجازات التعلم الفردية، إلا أنها غالبًا ما تكون غير كافية ولها تأثير سلبي. 
         </target>
       </trans-unit>
       <trans-unit id="9dc3bf471ea238c2011aed10c0b89f29623ec282" datatype="html">
@@ -5437,7 +5437,7 @@
           <context context-type="sourcefile">src/app/public/components/faq/faq.component.html</context>
           <context context-type="linenumber">117,127</context>
         </context-group>
-        <target>يستند Badgr إلى نهج المحفظة في مفهومهم التربوي والتدريسي. يجعل هذا توثيق إنجازات المتعلم أكثر ملاءمة بكثير. يجعل توصيل نهج المحفظة بمفهوم الشارات المفتوحة من الممكن إنشاء نظام توثيق حيث يحصل المعلمون والمتعلمون على تجربة مفصلة بقدر الإمكان باستخدام دليل وأعمال أصلية، مما يوفر صورة عن مهارات المتعلم المكتسبة وتقدمه وتطويره تشجيعاً وتحفيزاً للفرد. من ناحية أخرى، يحتوي الأنظمة التقييمية القائمة تقليدياً في السياقات المدرسية على تأثير تصنيفي قوي وتعميمي في العديد من الجوانب. إن إنجازات التعلم للأفراد ليست كافية بما فيه الكفاية وغالبًا ما تكون لها تأثير سلبي على الدافعية.</target>
+        <target>حماية البيانات أولويتنا القصوى، لذا نسعى للحفاظ عليها قدر الإمكان. عندما يمنح المصدر وسام للمتعلم؛ فإنه يطلب من المتعلم عنوان بريده الإلكتروني فقط، لحفظ الأوسمة عليه. </target>
       </trans-unit>
       <trans-unit id="52c7aebf7ee4e8c730ece33ba9d37c975bee066d" datatype="html">
         <source> 4. How are the badges transferred from the issuer to the learners? What data must/am I allowed to use? Raise organization from learners? </source>
@@ -5453,7 +5453,7 @@
           <context context-type="sourcefile">src/app/public/components/faq/faq.component.html</context>
           <context context-type="linenumber">153,157</context>
         </context-group>
-        <target>حماية البيانات تحظى بأولوية قصوى، ولهذا يتم حفظ البيانات قدر الإمكان. يتطلب المصدر من المتعلم فقط استلام عنوان بريد إلكتروني. تُحفظ الشارات على هذا العنوان الإلكتروني.</target>
+        <target>الاتصال بالمؤسسة</target>
       </trans-unit>
       <trans-unit id="b181e66f6bb50302bed4be7c20e07a533a443e54" datatype="html">
         <source>
@@ -5478,7 +5478,7 @@
           <x id="START_HEADING_LEVEL3" ctype="x-h3" equiv-text="<h3 class=&quot;u-text-h3-semibold u-margin-bottom2x u-text-dark2 u-margin-top4x&quot;>"/>
           <x id="CLOSE_HEADING_LEVEL3" ctype="x-h3" equiv-text="</h3>"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="<p>"/>
-          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>الطبعةالاتصال:يحتاج إلى تحديث.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>الناشرالاتصال:تحتاج إلى تحديث.
         </target>
       </trans-unit>
       <trans-unit id="de285a59f6a39bdc11d00d41a0e404e745e4dc63" datatype="html">
@@ -5499,7 +5499,7 @@
           <context context-type="sourcefile">src/app/public/components/issuer/issuer.component.html</context>
           <context context-type="linenumber">65,67</context>
         </context-group>
-        <target>الاتصال بالمؤسسة</target>
+        <target>العرض الأصلي</target>
       </trans-unit>
       <trans-unit id="3476f109ab38542ea0833c4555035b31fd8e1b04" datatype="html">
         <source>
@@ -5512,7 +5512,7 @@
         </context-group>
         <target>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>العرض الأصلي
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>يركز النهج على المتعلم للتوثيق وتقديم الإفادة المرتجعة حول عملية التعلم
         </target>
       </trans-unit>
       <trans-unit id="06130f75fbc04be8d6575c9e7314edadeaa25111" datatype="html">
@@ -5521,7 +5521,7 @@
           <context context-type="sourcefile">src/app/public/components/start/start.component.html</context>
           <context context-type="linenumber">7,9</context>
         </context-group>
-        <target>نهج مركز المتعلم لوثائق وملاحظات عملية التعلم</target>
+        <target>باستخدام أوسمة موزيلا المتاحة، إننا نعمل على تطوير نظام توثيق مفتوح وقابل للتوسع لإثبات الكفاءات والمهارات المكتسبة في البيئة التعليمية واللاصفية.</target>
       </trans-unit>
       <trans-unit id="c1c3d8d0b3331c62132c778d23beb407d5055ba5" datatype="html">
         <source>Our idea</source>
@@ -5537,7 +5537,7 @@
           <context context-type="sourcefile">src/app/public/components/start/start.component.html</context>
           <context context-type="linenumber">18,22</context>
         </context-group>
-        <target>بمساعدة شارات Mozilla المفتوحة، نقوم بتطوير نظام وثائقي مفتوح وقابل للتوسع لإثبات الكفاءات والمهارات المكتسبة في البيئة المدرسية واللاصفية. تُوثّق الشارات وإنجازات التعلم باستخدام محفظة إلكترونية.</target>
+        <target>توضع الأوسمة في سياقها وتوثق إنجازات التعلم باستخدام محفظة إلكترونية. </target>
       </trans-unit>
       <trans-unit id="b3b604e07a2a3b3a21fe0a57a42c283eab502eb8" datatype="html">
         <source>Our approach</source>
@@ -5561,7 +5561,7 @@
           <context context-type="sourcefile">src/app/public/components/start/start.component.html</context>
           <context context-type="linenumber">40</context>
         </context-group>
-        <target>يعتمد نهجنا على 6 مبادئ:</target>
+        <target>يقوم نهجنا على 6 مبادئ:</target>
       </trans-unit>
       <trans-unit id="e7e3237bee8fa647d0270902313df38117e63b52" datatype="html">
         <source>
@@ -5588,7 +5588,7 @@
           <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="<h4 class=&quot;principalBlocks__heading&quot;>"/>
           <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="</h4>"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="<p class=&quot;principalBlocks__desc&quot;>"/>
-          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>غالبًايمكن للمؤسسات الأخرى توسيع النظام وفقًا لعروضها التعليمية.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>غالبًايمكن للمؤسسات الأخرى توسيع نطاق النظام بما يتوافق مع تطور عروضها التعليمية. 
         </target>
       </trans-unit>
       <trans-unit id="740576ff979e66f50aac83c2576fb2638dc17444" datatype="html">
@@ -5616,7 +5616,7 @@
           <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="<h4 class=&quot;principalBlocks__heading&quot;>"/>
           <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="</h4>"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="<p class=&quot;principalBlocks__desc&quot;>"/>
-          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>شفاف ومرنالمتعلم لديه رؤية عما في محفظته ويمكنه أن يقرر بنفسه من يجب أن يعطي ما يقدم معلومات.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>الشفافية والمرونةيمتلك المتعلم رؤية واضحة حول محتوى محفظته ويقرر بنفسه لمن يجب أن يقدم معلوماته. 
         </target>
       </trans-unit>
       <trans-unit id="13f3164434e062be51861afc50501bb2661c5070" datatype="html">
@@ -5636,7 +5636,7 @@
           <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="<h4 class=&quot;principalBlocks__heading&quot;>"/>
           <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="</h4>"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="<p class=&quot;principalBlocks__desc&quot;>"/>
-          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>موحدمن خلال جمع مختلف الجهات التعليمية، يتم إنشاء أداة توحيد، تقدم التوجيه.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>توحيد المعاييرمن خلال جمع مختلف الجهات التعليمية معًا، يتم إنشاء أداة لتوحيد المعايير وتوفر التوجيه. 
         </target>
       </trans-unit>
       <trans-unit id="a61fcd15ce0edb17d340140a6b16463a700c8034" datatype="html">
@@ -5664,7 +5664,7 @@
           <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="<h4 class=&quot;principalBlocks__heading&quot;>"/>
           <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="</h4>"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="<p class=&quot;principalBlocks__desc&quot;>"/>
-          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>محفزالمحفظة والشارات هي شكل من أشكال التمثيل الأدائي؛ ليست التقييم. إنها تعزز التقدير للمهارات المكتسبة وزيادة مسؤولية المتعلم.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>التحفيزالمحفظة والأوسمة هي شكل من أشكال تمثيل الأداء؛ وليست للتقييم. يشجعون على تقدير المهارات المكتسبة وزيادة المسؤولية الذاتية للمتعلم. 
         </target>
       </trans-unit>
       <trans-unit id="3df9c0b3a161c8fee3bf718d4a9c0df7ab56e248" datatype="html">
@@ -5692,7 +5692,7 @@
           <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="<h4 class=&quot;principalBlocks__heading&quot;>"/>
           <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="</h4>"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="<p class=&quot;principalBlocks__desc&quot;>"/>
-          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>رقمي ولامركزينعتمد على المعايير التقنية المثبتة التي يمكن إنشاء دليل الكفاءة الرقمي وإدارته بشكل لامركزي.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>الرقمية واللامركزيةنعتمد على المعايير التقنية الراسخة لإنشاء دليل الكفاءة الرقمي ويمكن إدارته بنظام لامركزي. 
         </target>
       </trans-unit>
       <trans-unit id="c5ad8618028b7fd01f3aaa4a23bf08139916beac" datatype="html">
@@ -5720,7 +5720,7 @@
           <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="<h4 class=&quot;principalBlocks__heading&quot;>"/>
           <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="</h4>"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="<p class=&quot;principalBlocks__desc&quot;>"/>
-          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>على حدةيمكن للمحفظة والشارات وثيقة مسارات التعلم الفردية وبالتالي تعزيز هذا التعلم المستمر المحدد ذاتيًا.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="</p>"/>الفرديةيمكن أن توثق المحفظة والأوسمة مسارات التعلم الفردية وبالتالي تعزز التعلم المحدد ذاتيًا، والمستمر مدى الحياة. 
         </target>
       </trans-unit>
       <trans-unit id="d5506fd88a7d57be6d9521e11edbb05f87befc5f" datatype="html">
@@ -5769,7 +5769,7 @@
           <context context-type="sourcefile">src/app/public/components/verify-badge-dialog/verify-badge-dialog.component.html</context>
           <context context-type="linenumber">84,86</context>
         </context-group>
-        <target>لم يتم منح هذه الشارة لـ
+        <target>لم يُمنح هذا الوسام لـ
           <x id="INTERPOLATION" equiv-text="{{ identityEmail }}"/>
         </target>
       </trans-unit>
@@ -5784,7 +5784,7 @@
         </context-group>
         <target>
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="Recipient not verified</span>"/>
-          <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>لم يتم التحقق من المستلم
+          <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>لم يتم التحقق من هوية المستلم
         </target>
       </trans-unit>
       <trans-unit id="3a1d8ab29e1c771fecfb1166a809e762c252af46" datatype="html">
@@ -5821,7 +5821,7 @@
           <context context-type="sourcefile">src/app/public/components/verify-badge-dialog/verify-badge-dialog.component.html</context>
           <context context-type="linenumber">141,145</context>
         </context-group>
-        <target>التحقق المستقل من الشارة
+        <target>التحقق من الوسام بشكل مستقل
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</a>
 				<bu"/>
@@ -5885,7 +5885,7 @@
           <context context-type="sourcefile">src/app/recipient/components/add-badge-dialog/add-badge-dialog.component.html</context>
           <context context-type="linenumber">72</context>
         </context-group>
-        <target>يرجى إدخال URL صالح</target>
+        <target>يرجى إدخال عنوان URL صحيح</target>
       </trans-unit>
       <trans-unit id="9bf7114db050131cebe145b5ee016e22dfd816e6" datatype="html">
         <source>Enter URL</source>
@@ -5893,7 +5893,7 @@
           <context context-type="sourcefile">src/app/recipient/components/add-badge-dialog/add-badge-dialog.component.html</context>
           <context context-type="linenumber">75</context>
         </context-group>
-        <target>أدخل الرابط</target>
+        <target>إدخال عنوان URL</target>
       </trans-unit>
       <trans-unit id="d618b2bb068bfe1cccef4eae950e93b6091e42a2" datatype="html">
         <source>Please enter valid JSON</source>
@@ -5901,7 +5901,7 @@
           <context context-type="sourcefile">src/app/recipient/components/add-badge-dialog/add-badge-dialog.component.html</context>
           <context context-type="linenumber">90</context>
         </context-group>
-        <target>يرجى إدخال JSON صالح</target>
+        <target>الرجاء إدخال صيغة JSON بشكل صحيح</target>
       </trans-unit>
       <trans-unit id="b06138bae1b636c256e6e5bf6c2b330d41eb7b9d" datatype="html">
         <source>Enter JSON</source>
@@ -5909,7 +5909,7 @@
           <context context-type="sourcefile">src/app/recipient/components/add-badge-dialog/add-badge-dialog.component.html</context>
           <context context-type="linenumber">91</context>
         </context-group>
-        <target>أدخل JSON</target>
+        <target>إدخال JSON</target>
       </trans-unit>
       <trans-unit id="14920007b75c56065307f4ae40ac5f2be2a97ea6" datatype="html">
         <source> Add badge </source>
@@ -5961,7 +5961,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-create/recipient-badge-collection-create.component.html</context>
           <context context-type="linenumber">16</context>
         </context-group>
-        <target>اسم المجموعات</target>
+        <target>اسم المجموعة</target>
       </trans-unit>
       <trans-unit id="9e57dab2a27960c18e57923f45f93dd83305aea7" datatype="html">
         <source> remaining characters</source>
@@ -5981,7 +5981,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-edit-form/recipient-badge-collection-edit-form.component.html</context>
           <context context-type="linenumber">24</context>
         </context-group>
-        <target>الحروف المتبقية</target>
+        <target>الأحرف المتبقية</target>
       </trans-unit>
       <trans-unit id="b097981edabab7efe56c9ff8bd56c5d1eef803cb" datatype="html">
         <source> Create collection </source>
@@ -6111,7 +6111,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-list/recipient-badge-collection-list.component.html</context>
           <context context-type="linenumber">29,31</context>
         </context-group>
-        <target>تتيح المجموعات لك تنظيم ومشاركة الشارات التي قمت بكسبها.</target>
+        <target>تسمح لك المجموعات بتنظيم ومشاركة الأوسمة التي حصلت عليها. </target>
       </trans-unit>
       <trans-unit id="ac6e8f05c609626761a3fa6e59715a40cc37183b" datatype="html">
         <source> Create collection </source>
@@ -6135,7 +6135,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-list/recipient-badge-collection-list.component.ts</context>
           <context context-type="linenumber">49</context>
         </context-group>
-        <target>لا يوجد مجموعة</target>
+        <target>لا توجد مجموعات</target>
       </trans-unit>
       <trans-unit id="4087372556537772714" datatype="html">
         <source>1 Collection</source>
@@ -6143,7 +6143,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-list/recipient-badge-collection-list.component.ts</context>
           <context context-type="linenumber">50</context>
         </context-group>
-        <target>1 مجموعة</target>
+        <target>المجموعة 1</target>
       </trans-unit>
       <trans-unit id="2494959885458675515" datatype="html">
         <source># Collections</source>
@@ -6151,7 +6151,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-collection-list/recipient-badge-collection-list.component.ts</context>
           <context context-type="linenumber">51</context>
         </context-group>
-        <target># المجموعات</target>
+        <target>المجموعة #</target>
       </trans-unit>
       <trans-unit id="f3ed0d8c4886b0be02a7c4b6685960a81dc9dd79" datatype="html">
         <source>Filter your collections</source>
@@ -6195,7 +6195,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-badge-selection-dialog/recipient-badge-selection-dialog.component.html</context>
           <context context-type="linenumber">19</context>
         </context-group>
-        <target>بحث</target>
+        <target>البحث</target>
       </trans-unit>
       <trans-unit id="09f6c9a92e2c69dde82cf40a232d0f0543bb526e" datatype="html">
         <source> Group by Issuer </source>
@@ -6224,7 +6224,7 @@
         </context-group>
         <target>
           <x id="START_TAG_DIV" ctype="x-div" equiv-text="<div class=&quot;text-center&quot;>"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/>لا توجد شارات أو مصدرين يتطابقان مع استعلامك
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/>لا توجد أوسمة أو جهة مصدرة مطابقين لاستعلامك
         </target>
       </trans-unit>
       <trans-unit id="aa2e56ce70288e26536690da808d088d265ef96b" datatype="html">
@@ -6238,7 +6238,7 @@
         </context-group>
         <target>
           <x id="START_TAG_DIV" ctype="x-div" equiv-text="<div class=&quot;text-center&quot;>"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/>لا توجد شارات تتطابق مع استعلامك
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/>لا توجد أوسمة تطابق استعلامك
         </target>
       </trans-unit>
       <trans-unit id="afa960379d26eb20fd22e6e10537c1c5ec74c5d1" datatype="html">
@@ -6255,7 +6255,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-detail/recipient-earned-badge-detail.component.html</context>
           <context context-type="linenumber">13,15</context>
         </context-group>
-        <target>العلامات</target>
+        <target>الوسوم</target>
       </trans-unit>
       <trans-unit id="0b1449ad0a9140d7154ab38b269a3a7cbba0745b" datatype="html">
         <source>View external Criteria URL 
@@ -6266,7 +6266,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-detail/recipient-earned-badge-detail.component.html</context>
           <context context-type="linenumber">43,44</context>
         </context-group>
-        <target>عرض عنوان URL المعايير الخارجية
+        <target>عرض المعايير الخارجية لعنوان URL
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </target>
@@ -6312,7 +6312,7 @@
         </context-group>
         <target>
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_file&quot;>"/>
-          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>تصدير إلى PDF
+          <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>تصدير ملف PDF
         </target>
       </trans-unit>
       <trans-unit id="f1599163ef3263b16ee02f2f01bf01773f5a75cd" datatype="html">
@@ -6334,7 +6334,7 @@
           <x id="START_TAG_DIV_1" ctype="x-div_1" equiv-text="<div class=&quot;u-text&quot;>"/>
           <x id="START_TAG_TIME" ctype="x-time" equiv-text="<time [date]=&quot;badge?.issueDate&quot; format=&quot;mediumDate&quot;>"/>
           <x id="CLOSE_TAG_TIME" ctype="x-time" equiv-text="</time>"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/>صدر في:
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/>عرض المحاذاة لعنوان URL
         </target>
       </trans-unit>
       <trans-unit id="d5fd4b8783be40c2038e61f6667cd04606d6b5e6" datatype="html">
@@ -6370,7 +6370,7 @@
           <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="<span class=&quot;u-text u-break-all&quot;>"/>
           <x id="INTERPOLATION_1" equiv-text="{{ badge.recipientEmail }}"/>
           <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="</span>"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/>مُمنحة لـ:
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/>الممنوحة لـ:
         </target>
       </trans-unit>
       <trans-unit id="d06891407d1adfddd4b7db2d9027b42a8f71444e" datatype="html">
@@ -6394,7 +6394,7 @@
           <x id="START_TAG_DIV_1" ctype="x-div_1" equiv-text="<div class=&quot;u-text&quot;>"/>
           <x id="START_TAG_TIME" ctype="x-time" equiv-text="<time [date]=&quot;badge?.expiresDate&quot; format=&quot;mediumDate&quot;>"/>
           <x id="CLOSE_TAG_TIME" ctype="x-time" equiv-text="</time>"/>
-          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/> في: 
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="</div>"/>على: 
         </target>
       </trans-unit>
       <trans-unit id="cce277d4aa4fdc7b787658060a07ce6dc1bcfddb" datatype="html">
@@ -6414,7 +6414,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-detail/recipient-earned-badge-detail.component.html</context>
           <context context-type="linenumber">215,216</context>
         </context-group>
-        <target>عرض عنوان URL التوافق
+        <target>عرض الدليل لعنوان URL
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </target>
@@ -6444,7 +6444,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-detail/recipient-earned-badge-detail.component.html</context>
           <context context-type="linenumber">250,251</context>
         </context-group>
-        <target>عرض عنوان URL الدليل
+        <target>الأوسمة المكتسبة بواسطة
           <x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="<svg icon=&quot;icon_external_link&quot;>"/>
           <x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="</svg>"/>
         </target>
@@ -6477,7 +6477,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.html</context>
           <context context-type="linenumber">12,16</context>
         </context-group>
-        <target>حقيبة الظهر
+        <target>الحقيبة
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="<span class=&quot;badgeSubTitle&quot; *ngIf=&quot;!!allBadges&quot;
 					>"/>
           <x id="INTERPOLATION" equiv-text="{{ allBadges.length  | i18nPlural : plural['badges'] }}"/>
@@ -6502,7 +6502,7 @@
           <context context-type="sourcefile">src/app/recipient/components/recipient-earned-badge-list/recipient-earned-badge-list.component.html</context>
           <context context-type="linenumber">48,52</context>
         </context-group>
-        <target>لننهيإضافةشاراتك.
+        <target>لننهيإضافةأوسمتك. 
           <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="<button (click)=&quot;launchImport($event)&quot; class=&quot;u-display-inline u-text-link&quot;>"/>
           <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="</button>"/>
         </target>
@@ -6555,7 +6555,7 @@
           <context context-type="sourcefile">src/app/signup/components/signup-success/signup-success.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
-        <target>مرحبًا بك في!
+        <target>مرحبا بكم في!
           <x id="INTERPOLATION" equiv-text="{{ service }}"/>
         </target>
       </trans-unit>
@@ -6569,7 +6569,7 @@
           <context context-type="sourcefile">src/app/signup/components/signup-success/signup-success.component.html</context>
           <context context-type="linenumber">7,8</context>
         </context-group>
-        <target>لقد أرسلنا لك بريدًا إلكترونيًا للتحقق تم الإرسال.
+        <target>أرسلنا لك رسالة بريد إلكتروني للتحققإرسال. 
           <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="<strong class=&quot;u-text-bold&quot;>"/>
           <x id="INTERPOLATION" equiv-text="{{ email }}"/>
           <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="</strong>"/>
@@ -6584,7 +6584,7 @@
           <context context-type="sourcefile">src/app/signup/components/signup-success/signup-success.component.html</context>
           <context context-type="linenumber">9,11</context>
         </context-group>
-        <target>انقر فوق عنوان URL لإكمال عملية التسجيل. إذا لم تتلق البريد الإلكتروني خلال بضع دقائق، تحقق من مجلد البريد العشوائي الخاص بك. إذا لم تجد البريد الإلكتروني بعد ذلك، ثماكتب لنا.
+        <target>انقر على عنوان URL لإكمال عملية التسجيل. إذا لم تستلم البريد الإلكتروني في غضون دقائق، ينبغي عليك التأكد من مجلد الرسائل المهملة.  إذا لم تجد رسالة البريد الإلكترونيتواصل معنا.
           <x id="START_LINK" ctype="x-a" equiv-text="<a class=&quot;u-text-link&quot; [href]=&quot;helpEmailUrl&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </target>
@@ -6597,7 +6597,7 @@
           <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
           <context context-type="linenumber">9,11</context>
         </context-group>
-        <target>أنشئالحساب
+        <target>إنشاء حسابالحساب
           <x id="INTERPOLATION" equiv-text="{{ theme.serviceName || 'Badgr' }}"/>
         </target>
       </trans-unit>
@@ -6610,7 +6610,7 @@
           <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
           <context context-type="linenumber">16,19</context>
         </context-group>
-        <target>هل لديك حساب بالفعل؟تسجيل الدخول. 
+        <target>هل لديك حساب؟ تسجيل الدخول. 
           <x id="START_LINK" ctype="x-a" equiv-text="<a [routerLink]=&quot;['/auth/login']&quot;>"/>
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="</a>"/>
         </target>
@@ -6628,7 +6628,7 @@
           <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
           <context context-type="linenumber">20,27</context>
         </context-group>
-        <target>التطبيقيرغب في تسجيل الدخول باستخدام. هل لديك حساب بالفعل؟تسجيل الدخول!
+        <target>التطبيقهل ترغب في تسجيل الدخول باستخدام. لديك حساب بالفعل؟ تسجيل الدخول! 
           <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="<strong>"/>
           <x id="INTERPOLATION" equiv-text="{{ oAuthManager.currentAuthorization.application.name }}"/>
           <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="</strong>"/>
@@ -6653,7 +6653,7 @@
           <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
           <context context-type="linenumber">58,60</context>
         </context-group>
-        <target>سجل معنا, عن طريق تقديم المعلومات التالية 
+        <target>سجل معنامن خلال تزويدنا بالمعلومات التالية
           <x id="INTERPOLATION" equiv-text="{{ theme.serviceName || 'MINT-O-Badges' }}"/>
         </target>
       </trans-unit>
@@ -6687,7 +6687,7 @@
           <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
           <context context-type="linenumber">77</context>
         </context-group>
-        <target>يرجى إدخال اسم الشخص الأول</target>
+        <target>يرجى إدخال الاسم الأول</target>
       </trans-unit>
       <trans-unit id="6ce3dadf53dda1a1ab0c3167a8ed8dced471b0dc" datatype="html">
         <source>Last name</source>
@@ -6703,7 +6703,7 @@
           <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
           <context context-type="linenumber">86</context>
         </context-group>
-        <target>يرجى إدخال اسم الشخص الأخير</target>
+        <target>يرجى إدخال الاسم الأخير</target>
       </trans-unit>
       <trans-unit id="4868100d0fce37b82faba2b7ae627420e505eb9f" datatype="html">
         <source>Password (At least 8 characters)</source>
@@ -6711,7 +6711,7 @@
           <context context-type="sourcefile">src/app/signup/components/signup/signup.component.html</context>
           <context context-type="linenumber">94</context>
         </context-group>
-        <target>كلمة المرور (على الأقل ٨ أحرف)</target>
+        <target>كلمة المرور (يجب أن تحتوي على 8 حروف على الأقل)</target>
       </trans-unit>
       <trans-unit id="c1b7e6d75ff4285c7636c67e5ef259629b81725b" datatype="html">
         <source>Confirm Password</source>
