@@ -165,7 +165,7 @@
 						<!-- Study Load -->
 						<div *ngIf="badgeClass.extension['extensions:StudyLoadExtension']" class="issuer-detail-block">
 							<div class="font-family-plex-blue u-text-small-bold" i18n>Minimum duration</div>
-							<div class="u-text">
+							<div class="u-text" i18n>
 								{{ badgeClass.extension['extensions:StudyLoadExtension'].StudyLoad }} Hours
 							</div>
 						</div>
@@ -226,7 +226,7 @@
 				<!-- recipients -->
 				<div class="l-stack u-margin-bottom2x u-margin-top4x">
 					<h2 class="u-text-h3-semibold font-family-plex-blue">
-						{{ recipientCount }} Badge {{ recipientCount == 1 ? 'Recipient' : 'Recipients' }}
+						{{ recipientCount | i18nPlural : plural['badge_recipients'] }}
 					</h2>
 					<div class="forminput forminput-hasicon">
 						<p class="forminput-x-sublabel u-text-outlink u-text-h3-semibold" i18n>

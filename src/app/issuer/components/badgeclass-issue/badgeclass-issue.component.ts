@@ -124,6 +124,11 @@ export class BadgeClassIssueComponent extends BaseAuthenticatedRoutableComponent
 		}
 	};
 
+	buttonText = {
+		add: $localize`Add`,
+		added: $localize`Added`,
+	}
+
 	constructor(
 		protected title: Title,
 		protected messageService: MessageService,

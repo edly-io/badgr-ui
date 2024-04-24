@@ -87,7 +87,12 @@ export class BadgeCatalogComponent extends BaseRoutableComponent implements OnIn
 		this._groupBy = val;
 		this.updateResults();
 	}
-	groups = ['Category', 'Issuer', '---'];
+	groups = {
+		'Category':  $localize`Category`,
+		'Issuer': $localize`Issuer`,
+		'---': $localize`---`,
+	};
+	
 	categoryOptions: { [key in BadgeClassCategory | 'noCategory']: string } = {
 		membership: $localize`Membership`,
 		ability: $localize`Metacompetence`,

@@ -106,6 +106,14 @@ export class BadgeClassDetailComponent extends BaseAuthenticatedRoutableComponen
 		l5: $localize`Scientists`
 	};
 
+	plural = {
+		badge_recipients: {
+			'=0':  $localize`No Badge Recipients`,
+			'=1':  $localize`1 Badge Recipient`,
+			other:  $localize`# Badge Recipients`,
+		},
+	};
+
 	private _searchQuery = '';
 
 	constructor(
@@ -171,7 +179,7 @@ export class BadgeClassDetailComponent extends BaseAuthenticatedRoutableComponen
 			},
 			(error) => {
 				this.messageService.reportLoadingError(
-					`Could not load recipients ${this.issuerSlug} / ${this.badgeSlug}`
+					$localize `Could not load recipients ${this.issuerSlug} / ${this.badgeSlug}`
 				);
 				return error;
 			}
@@ -185,22 +193,22 @@ export class BadgeClassDetailComponent extends BaseAuthenticatedRoutableComponen
 	revokeInstance(instance: BadgeInstance) {
 		this.confirmDialog
 			.openResolveRejectDialog({
-				dialogTitle: 'Warning',
-				dialogBody: `Are you sure you want to revoke <strong>${this.badgeClass.name}</strong> from <strong>${instance.recipientIdentifier}</strong>?`,
-				resolveButtonLabel: 'Revoke Badge',
-				rejectButtonLabel: 'Cancel',
+				dialogTitle: $localize`Warning`,
+				dialogBody: $localize`Are you sure you want to revoke <strong>${this.badgeClass.name}</strong> from <strong>${instance.recipientIdentifier}</strong>?`,
+				resolveButtonLabel: $localize`Revoke Badge`,
+				rejectButtonLabel: $localize`Cancel`,
 			})
 			.then(
 				() => {
 					instance.revokeBadgeInstance('Manually revoked by Issuer').then(
 						(result) => {
-							this.messageService.reportMinorSuccess(`Revoked badge to ${instance.recipientIdentifier}`);
+							this.messageService.reportMinorSuccess($localize`Revoked badge to ${instance.recipientIdentifier}`);
 							this.badgeClass.update();
 							this.updateResults();
 						},
 						(error) =>
 							this.messageService.reportAndThrowError(
-								`Failed to revoke badge to ${instance.recipientIdentifier}`
+								$localize`Failed to revoke badge to ${instance.recipientIdentifier}`
 							)
 					);
 				},
@@ -212,21 +220,21 @@ export class BadgeClassDetailComponent extends BaseAuthenticatedRoutableComponen
 		if (this.activeRecipientCount === 0) {
 			this.confirmDialog
 				.openResolveRejectDialog({
-					dialogTitle: 'Warning',
-					dialogBody: `Are you sure you want to delete the badge <strong>${this.badgeClass.name}</strong>?`,
-					resolveButtonLabel: 'Delete Badge',
-					rejectButtonLabel: 'Cancel',
+					dialogTitle: $localize`Warning`,
+					dialogBody: $localize`Are you sure you want to delete the badge <strong>${this.badgeClass.name}</strong>?`,
+					resolveButtonLabel: $localize`Delete Badge`,
+					rejectButtonLabel: $localize`Cancel`,
 				})
 				.then(
 					() => {
 						this.badgeManager.removeBadgeClass(this.badgeClass).then(
 							(success) => {
-								this.messageService.reportMajorSuccess(`Removed badge class: ${this.badgeClass.name}.`);
+								this.messageService.reportMajorSuccess($localize`Removed badge class: ${this.badgeClass.name}.`);
 								this.router.navigate(['issuer/issuers', this.issuerSlug]);
 							},
 							(error) => {
 								this.messageService.reportAndThrowError(
-									`Failed to delete badge class: ${BadgrApiFailure.from(error).firstMessage}`
+									$localize`Failed to delete badge class: ${BadgrApiFailure.from(error).firstMessage}`
 								);
 							}
 						);
@@ -236,9 +244,9 @@ export class BadgeClassDetailComponent extends BaseAuthenticatedRoutableComponen
 		} else {
 			this.confirmDialog
 				.openResolveRejectDialog({
-					dialogTitle: 'Error',
-					dialogBody: `All instances of <strong>${this.badgeClass.name}</strong> must be revoked before you can delete it`,
-					resolveButtonLabel: 'Ok',
+					dialogTitle: $localize`Error`,
+					dialogBody: $localize`All instances of "${this.badgeClass.name}" must be revoked before you can delete it`,
+					resolveButtonLabel: $localize`Ok`,
 					showRejectButton: false,
 				})
 				.then(

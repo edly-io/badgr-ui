@@ -24,7 +24,7 @@
 						"tsConfig": "src/tsconfig.app.json",
 						"polyfills": "src/polyfills.ts",
 						"localize": [
-							"en-US", "en", "ar"
+							"en", "ar"
 						],
 						"assets": [
 							"src/assets",
@@ -42,7 +42,6 @@
 							}
 						],
 						"styles": [
-							// "src/breakdown/static/css/custom-style.css",
 							"node_modules/@concentricsky/badgr-style/dist/css/screen.css",
 							"node_modules/dialog-polyfill/dialog-polyfill.css",
 							"src/breakdown/static/css/re-style.css",
@@ -87,7 +86,8 @@
 									"replace": "src/environments/environment.ts",
 									"with": "src/environments/environment.dev.ts"
 								}
-							]
+							],
+							"localize": ["ar"]
 						}
 					},
 					"defaultConfiguration": ""
