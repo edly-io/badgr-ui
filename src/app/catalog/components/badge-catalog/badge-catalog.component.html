@@ -46,8 +46,8 @@
 												class="border"
 												id="badge-catalog-select"
 											>
-												<option *ngFor="let option of groups" [value]="option">
-													{{ option }}
+												<option *ngFor="let option of groups | keyvalue" [value]="option.key">
+													{{ option.value }}
 												</option>
 											</select>
 										</div>

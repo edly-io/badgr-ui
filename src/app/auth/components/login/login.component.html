@@ -3,7 +3,8 @@
 		<img class="loginPage__logo" src="../assets/logos/header-logo.svg" alt="Logo" />
 		<markdown-display
 			class="loginPage__heading"
-			[value]="theme.welcomeMessage || 'Welcome to MINT-O-Badges'"
+			value="Welcome to SDAIA Badges"
+			i18n-value
 		></markdown-display>
 		<ng-template [ngIf]="!sessionService.enabledExternalAuthProviders.length"> </ng-template>
 		<ng-template [ngIf]="sessionService.enabledExternalAuthProviders.length">

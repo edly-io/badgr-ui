@@ -288,9 +288,8 @@
 								[disabled]="narrativeEnabled"
 								(click)="narrativeEnabled = true"
 								type="button"
-								i18n
 							>
-								{{ narrativeEnabled ? 'Added' : 'Add' }}
+								{{ narrativeEnabled ? buttonText.added : buttonText.add }}
 							</button>
 						</li>
 
@@ -313,9 +312,8 @@
 								[disabled]="evidenceEnabled"
 								(click)="enableEvidence()"
 								type="button"
-								i18n
 							>
-								{{ evidenceEnabled ? 'Added' : 'Add' }}
+								{{ evidenceEnabled ? buttonText.added : buttonText.add }}
 							</button>
 						</li>
 
@@ -341,9 +339,8 @@
 								[disabled]="expirationEnabled"
 								(click)="toggleExpiration()"
 								type="button"
-								i18n
 							>
-								{{ expirationEnabled ? 'Added' : 'Add' }}
+								{{ expirationEnabled ? buttonText.added : buttonText.add }}
 							</button>
 						</li>
 					</ul>
