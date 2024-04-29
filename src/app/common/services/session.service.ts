@@ -192,7 +192,7 @@ export class SessionService {
 				responseType: "json"
 			}
 		).toPromise()
-			.then(r => r);
+			.then(r => r.body);
 	}
 
 	submitResetPasswordRequest(email: string) {
