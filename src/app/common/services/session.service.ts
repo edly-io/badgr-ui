@@ -105,7 +105,7 @@ export class SessionService {
 
 	storeToken(token: AuthorizationToken, sessionOnlyStorage = false): void {
 		const expirationDateStr = new Date(Date.now() + (token.expires_in || DEFAULT_EXPIRATION_SECONDS) * 1000).toISOString();
-
+		console.log("sessionOnlyStorage", sessionOnlyStorage)
 		if (sessionOnlyStorage) {
 			sessionStorage.setItem(TOKEN_STORAGE_KEY, token.access_token);
 			sessionStorage.setItem(EXPIRATION_DATE_STORAGE_KEY, expirationDateStr);
@@ -177,6 +177,25 @@ export class SessionService {
 			}
 		).toPromise()
 			.then(r => r.body);
+	}
+
+	authenticateThroughSession(session: string){
+		const scope = "rw:profile rw:issuer rw:backpack";
+		const client_id = "public";
+
+		const payload = `grant_type=password&client_id=${encodeURIComponent(client_id)}&scope=${encodeURIComponent(scope)}`;
+
+		return this.http.get<AuthorizationToken>(
+			this.baseUrl + '/authenticate_through_badgr_session/',
+			{
+				observe: "response",
+				responseType: "json",
+				headers: new HttpHeaders()
+					.append('Content-Type', 'application/x-www-form-urlencoded')
+					.append("Cookie", `sessionid=${session}`)
+			}
+		).toPromise()
+			.then(r => r);
 	}
 
 	submitResetPasswordRequest(email: string) {
