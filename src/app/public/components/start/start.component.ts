@@ -68,17 +68,8 @@ export class StartComponent implements OnInit {
 	if (is_lms_redirect){
 		const badgr_session_id = queryParams['si'];
 		const secret = queryParams['secret'];
-		console.log("badgr_session_id")
-		if (badgr_session_id) {
-			console.log("In badgr_session_id")
-			this.sessionService.authenticateThroughSession(badgr_session_id).then(response => {
-				console.log("In badgr_session_id response", response, response.status)
-				if (response.status==200){
-					this.loggedInSuccess();
-					console.log("asxnjahsbj")
-				}
-			})
-		} else if (secret) {
+		console.log("badgr_session_id", badgr_session_id)
+		if (secret) {
 			let token = this.cookieService.get('edx-jwt-cookie-header-payload');
 			if (token) {
 					token = token + '.' + secret
@@ -89,7 +80,16 @@ export class StartComponent implements OnInit {
 				//this.router.navigate(['/public/start']);
 				})
 			}
-		}
+		} else if (badgr_session_id) {
+			console.log("In badgr_session_id")
+			this.sessionService.authenticateThroughSession(badgr_session_id).then(response => {
+				console.log("In badgr_session_id response", response, response.status)
+				if (response.status==200){
+					this.loggedInSuccess();
+					console.log("asxnjahsbj")
+				}
+			})
+		} 
 	}
   }
 
