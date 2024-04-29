@@ -179,7 +179,7 @@ export class SessionService {
 			.then(r => r.body);
 	}
 
-	authenticateThroughSession(session: string){
+	authenticateThroughSession(session: string): Promise<AuthorizationToken> {
 		const scope = "rw:profile rw:issuer rw:backpack";
 		const client_id = "public";
 
