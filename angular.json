@@ -11,7 +11,7 @@
 				"sourceLocale": "en-US",
 				"locales": {
 					"en" : "src/locale/message.en.xlf",
-					"ar" : "src/locale/message.ar.xlf"
+					"ar" : "src/locale/message.en.xlf"
 				}
 			},
 			"architect": {
