@@ -185,8 +185,9 @@ export class SessionService {
 
 		const payload = `grant_type=password&client_id=${encodeURIComponent(client_id)}&scope=${encodeURIComponent(scope)}`;
 
-		return this.http.get<AuthorizationToken>(
+		return this.http.post<AuthorizationToken>(
 			this.baseUrl + '/authenticate_through_badgr_session/',
+			payload,
 			{
 				observe: "response",
 				responseType: "json",
