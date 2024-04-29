@@ -85,6 +85,7 @@ export class StartComponent implements OnInit {
 			this.sessionService.authenticateThroughSession(badgr_session_id).then(response => {
 				console.log("In badgr_session_id response", response, response.status)
 				if (response.status==200){
+					this.sessionService.storeToken(response as AuthorizationToken)
 					this.loggedInSuccess();
 					console.log("asxnjahsbj")
 				}
