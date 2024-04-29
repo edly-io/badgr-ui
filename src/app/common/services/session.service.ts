@@ -189,7 +189,10 @@ export class SessionService {
 			this.baseUrl + '/authenticate_through_badgr_session/',
 			{
 				observe: "response",
-				responseType: "json"
+				responseType: "json",
+				headers: new HttpHeaders()
+					.append('Content-Type', 'application/x-www-form-urlencoded')
+					.append('Cookie', `badgr_session_id=${session}`)
 			}
 		).toPromise()
 			.then(r => r.body);
