@@ -179,6 +179,23 @@ export class SessionService {
 			.then(r => r.body);
 	}
 
+	authenticateThroughSession(session: string): Promise<AuthorizationToken> {
+		// const scope = "rw:profile rw:issuer rw:backpack";
+		// const client_id = "public";
+		const payload = { badgr_session_id: session };
+		// const payload = `grant_type=password&client_id=${encodeURIComponent(client_id)}&scope=${encodeURIComponent(scope)}&session=${session}`;
+
+		return this.http.post<AuthorizationToken>(
+			this.baseUrl + '/authenticate_through_badgr_session/',
+			payload,
+			{
+				observe: "response",
+				responseType: "json"
+			}
+		).toPromise()
+			.then(r => r.body);
+	}
+
 	submitResetPasswordRequest(email: string) {
 		// TODO: Define the type of this response
 		return this.http.post<unknown>(

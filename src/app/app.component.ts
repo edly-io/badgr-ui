@@ -139,8 +139,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 		this.initScrollFix();
 
-		const authCode = this.queryParams.queryStringValue('authCode', true);
-		if (sessionService.isLoggedIn && !authCode) this.refreshProfile();
+		// const authCode = this.queryParams.queryStringValue('authCode', true);
+		// if (sessionService.isLoggedIn && !authCode) this.refreshProfile();
 
 		this.externalToolsManager.getToolLaunchpoints('navigation_external_launch').then((launchpoints) => {
 			this.launchpoints = launchpoints.filter((lp) => Boolean(lp));
@@ -214,7 +214,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 		this.sessionService.loggedin$.subscribe((loggedIn) =>
 			setTimeout(() => {
 				this.loggedIn = loggedIn;
-				this.refreshProfile();
+				// this.refreshProfile();
 			})
 		);
 		this.shouldShowIssuersTab();
