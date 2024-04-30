@@ -183,17 +183,14 @@ export class SessionService {
 		const scope = "rw:profile rw:issuer rw:backpack";
 		const client_id = "public";
 
-		const payload = `grant_type=password&client_id=${encodeURIComponent(client_id)}&scope=${encodeURIComponent(scope)}`;
+		const payload = `grant_type=password&client_id=${encodeURIComponent(client_id)}&scope=${encodeURIComponent(scope)}&session=${session}`;
 
 		return this.http.post<AuthorizationToken>(
 			this.baseUrl + '/authenticate_through_badgr_session/',
 			payload,
 			{
 				observe: "response",
-				responseType: "json",
-				headers: new HttpHeaders()
-					.append('Content-Type', 'application/x-www-form-urlencoded')
-					.append('Cookie', `badgr_session_id=${session}`)
+				responseType: "json"
 			}
 		).toPromise()
 			.then(r => r.body);
