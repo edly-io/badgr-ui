@@ -64,22 +64,21 @@ export class StartComponent implements OnInit {
 
   ngOnInit() {
     const queryParams = this.activeRoute.snapshot['queryParams'];
-		const is_lms_redirect = queryParams['is-lms-redirect'];
-		const secret = queryParams['secret'];
+	const is_lms_redirect = queryParams['is-lms-redirect'];
+	const secret = queryParams['secret'];
+	const payload = queryParams['payload'];
     
-		if (queryParams && is_lms_redirect && secret) {
-      let token = this.cookieService.get('edx-jwt-cookie-header-payload');
+	if (queryParams && is_lms_redirect && secret) {
+      	let token = payload || this.cookieService.get('edx-jwt-cookie-header-payload');
       
-      if (token) {
-			  token = token + '.' + secret
-
-        this.sessionService.authenticateLMSToken(token).then(response => {
-          this.sessionService.storeToken(response as AuthorizationToken)
-          this.loggedInSuccess();
-          //this.router.navigate(['/public/start']);
-        })
-      }
+		if (token) {
+			token = token + '.' + secret
+			this.sessionService.authenticateLMSToken(token).then(response => {
+			this.sessionService.storeToken(response as AuthorizationToken)
+			this.loggedInSuccess();
+			//this.router.navigate(['/public/start']);
+			})
 		}
+	}
   }
-
 }
