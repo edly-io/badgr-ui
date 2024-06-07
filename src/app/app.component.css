@@ -34,7 +34,7 @@
 	margin-left: 0;
 }
 #new-header .navbar .navbar-x-navitems .navitem.navitem-is-active {
-	color: var(--burnt-sienna);
+	color: var(--dark-turquoise);
 }
 #new-header .navbar-x-navitems.loginBtn a.navitem {
 	background-color: var(--primary-color);
@@ -48,7 +48,7 @@
 }
 #new-header .navbar-x-navitems.loginBtn .navitem:hover,
 #new-header .navbar-x-navitems.loginBtn a.navitem.navitem-is-active {
-	background-color: var(--burnt-sienna);
+	background-color: var(--dark-turquoise);
 }
 #new-header .navbar-wrapper {
 	display: flex;

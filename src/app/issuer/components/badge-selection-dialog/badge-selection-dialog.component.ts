@@ -52,7 +52,7 @@ export interface BadgeSelectionDialogSettings {
 				<!-- Badge List -->
 				<div class="l-overflowlist-x-list">
 					<table class="table table-dialog" *bgAwaitPromises="[badgesLoaded]">
-						<thead style="background-color: var(--burnt-sienna); color: white">
+						<thead style="background-color: var(--dark-turquoise); color: white">
 							<tr>
 								<th colspan="3">Badge</th>
 							</tr>

@@ -33,7 +33,7 @@
 }
 
 .viewtoggle-button.active svg path {
-	stroke: var(--burnt-sienna);
+	stroke: var(--dark-turquoise);
 }
 
 .largeToggle .viewtoggle-map .viewtoggle-button {

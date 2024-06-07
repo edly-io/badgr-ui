@@ -11,6 +11,7 @@
 	--burnt-sienna: #ea6852;
 	--gray: #8a8a8a;
 	--sliver: #bbbbbb;
+	--dark-turquoise: #00C1DE;
 }
 
 .body-bg,
@@ -215,7 +216,7 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	padding: 0;
 }
 .newBadgeSearchBar .viewtoggle .viewtoggle-x-grid svg {
-	fill: var(--burnt-sienna);
+	fill: var(--dark-turquoise);
 }
 .newBadgeSearchBar .viewtoggle .viewtoggle-x-grid:dir(rtl) {
 	border-bottom-left-radius: unset;
@@ -248,7 +249,7 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	background-color: var(--color-light1);
 }
 .newBadgeSearchBar .viewtoggle.viewtoggle-is-listview .viewtoggle-x-list svg {
-	fill: var(--burnt-sienna);
+	fill: var(--dark-turquoise);
 }
 /* Bagde heading and tags*/
 .badgeMainHeading {
@@ -351,7 +352,7 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	white-space: normal;
 }
 .badgeNewCard-title:hover {
-	color: var(--burnt-sienna);
+	color: var(--dark-turquoise);
 }
 .badgeNewCard-issuer,
 .badgeNewCard-date,
@@ -362,7 +363,7 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 }
 
 .badgeNewCard-issuer:hover {
-	color: var(--burnt-sienna);
+	color: var(--dark-turquoise);
 }
 .badgeNewCard-desc {
 	line-height: 25px;
@@ -412,7 +413,7 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 	transform: scaleX(1);
 }
 .newBadgeDetail-link:hover {
-	color: var(--burnt-sienna);
+	color: var(--dark-turquoise);
 }
 
 /* table design */
@@ -441,7 +442,7 @@ header.newBadgeTopBar .l-containerxaxis.topbar-x-wrap {
 .issuerMainWrapper table .thead-dark th {
 	box-shadow: none;
 	padding: 18px;
-	background-color: var(--burnt-sienna);
+	background-color: var(--dark-turquoise);
 	font-size: 18px;
 	font-weight: 500;
 	color: var(--color-light1);
@@ -511,7 +512,7 @@ a.primary-button:hover {
 	color: white;
 }
 .primary-button:hover {
-	background-color: var(--burnt-sienna);
+	background-color: var(--dark-turquoise);
 }
 .primary-button.button-is-disabled {
 	opacity: 0.5;
@@ -527,7 +528,7 @@ button.new-button-secondary {
 	color: var(--primary-color);
 }
 button.new-button-secondary:focus {
-	color: var(--burnt-sienna);
+	color: var(--dark-turquoise);
 }
 button.new-button-secondary:focus:hover {
 	background-color: white;
