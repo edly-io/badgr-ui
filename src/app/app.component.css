@@ -33,8 +33,9 @@
 #new-header .navbar .navbar-x-items:dir(rtl) {
 	margin-left: 0;
 }
+#new-header .navbar .navbar-x-navitems .navitem:hover,
 #new-header .navbar .navbar-x-navitems .navitem.navitem-is-active {
-	color: var(--burnt-sienna);
+	border-bottom: 3px solid var(--dark-turquoise);
 }
 #new-header .navbar-x-navitems.loginBtn a.navitem {
 	background-color: var(--primary-color);
@@ -46,9 +47,12 @@
 #new-header .navbar-x-navitems.loginBtn .navitem::after {
 	display: none;
 }
-#new-header .navbar-x-navitems.loginBtn .navitem:hover,
+#new-header .navbar-x-navitems.loginBtn .navitem:hover {
+	background-color: var(--dark-turquoise);
+}
+#new-header .navbar-x-navitems.loginBtn a.navitem:hover,
 #new-header .navbar-x-navitems.loginBtn a.navitem.navitem-is-active {
-	background-color: var(--burnt-sienna);
+	border-bottom: none !important;
 }
 #new-header .navbar-wrapper {
 	display: flex;
